@@ -222,8 +222,10 @@ def main():
             print("All processing complete!")
             exit()
 
+    os.chdir("../docs")
     directory = os.getcwd()
-
+    
+    print(directory)
     for subdir, dirs, files in os.walk(directory):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
