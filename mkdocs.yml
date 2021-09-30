@@ -10,6 +10,7 @@ nav:
   - API Conditions and Maintenance of Certification requirements at § 170.404: 404-conditions-maintenance.md
   - Real World Testing Condition and Maintenance of Certification: real-world-testing-conditions-maintenance.md
   - Standards Version Advancement Process: standards-version-advancement-process.md
+  - Directory of Published Versions: version-directory.md
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
 theme:
   name: material

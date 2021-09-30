@@ -1,4 +1,4 @@
-# API Resource Guide
+# API Resource Guide ([version 2.0](version-directory.md))
 
 ## How to use this resource guide
 
