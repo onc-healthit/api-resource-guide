@@ -11,7 +11,7 @@ The API certification criterion finalized in § 170.315(g)(10) was included as p
 
 ## Tools for testing and certification
 
-- **Inferno Program Edition / g10 Test Kit**
+- **Inferno Program Edition / (g)(10) Test Kit**
     The Inferno Program Edition is used for (g)(10) API testing for the ONC Health IT Certification Program. The Inferno Program Edition is a streamlined testing tool for services seeking to meet the requirements of the Standardized API for Patient and Population Services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>. This tool is used for testing and certification to the § 170.315(g)(10) certification criterion for the ONC Health IT Certification Program.
 
 ## Information and Clarifications

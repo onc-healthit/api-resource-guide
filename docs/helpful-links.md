@@ -54,6 +54,8 @@
     - <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170#p-170.315(g)(8)">§170.315(g)(8) Application access — data category request</a>
     - <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170#p-170.315(g)(7)">§170.315(g)(7) Application access — patient selection</a>
 
+## **Links to ONC Fact Sheets relevant to API criteria**
+
 ## **Links to adopted standards for API criteria**
 === "§ 170.315(g)(10)"
     - <a target = "_blank" href = "https://www.healthit.gov/isa/us-core-data-interoperability-uscdi">§ 170.213: United States Core Data for Interoperability (USCDI)</a>

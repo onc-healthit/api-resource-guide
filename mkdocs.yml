@@ -11,6 +11,7 @@ nav:
   - Real World Testing Condition and Maintenance of Certification: real-world-testing-conditions-maintenance.md
   - Standards Version Advancement Process: standards-version-advancement-process.md
   - Directory of Published Versions: version-directory.md
+  - HealthIT.gov: https://www.healthit.gov/
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
 theme:
   name: material
@@ -29,6 +30,10 @@ theme:
 extra:
   version:
     provider: mike
+  social:
+    - icon: fontawesome/regular/bookmark
+      link: https://www.healthit.gov/
+      name: HealthIT.gov
 markdown_extensions:
   - abbr
   - pymdownx.snippets
