@@ -55,6 +55,9 @@
     - <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170#p-170.315(g)(7)">§170.315(g)(7) Application access — patient selection</a>
 
 ## **Links to ONC Fact Sheets relevant to API criteria**
+ - <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-07/Clarifications_For_Native_Apps_v5.pdf">ONC Clarifications in the Interim Final Rule to Support Native Applications</a>
+ - <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-02/ConditionOfCertification_IB_FactSheet.pdf">Condition of Certification: Information Blocking Fact Sheet</a>
+ - <a target = "_blank" href = "https://oncprojectracking.healthit.gov/support/browse/TTB-12">Relied Upon Software Program Guidance</a>
 
 ## **Links to adopted standards for API criteria**
 === "§ 170.315(g)(10)"
