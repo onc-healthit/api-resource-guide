@@ -19,6 +19,9 @@
     - <a target = "_blank" href = "https://www.healthit.gov/test-method/application-access-patient-selection#ccg">§ 170.315(g)(7) Certification Companion Guide (CCG)</a>
     - <a target = "_blank" href = "https://www.healthit.gov/test-method/application-access-patient-selection#test_procedure">§ 170.315(g)(7) Test Procedure</a>
 
+=== "§ 170.404"
+    - <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Certification Companion Guide (CCG)</a>
+
 ## **Testing tool links**
 
 - Inferno Program Edition (§ 170.315(g)(10))
@@ -39,7 +42,7 @@
     - <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136">§ 170.315(g)(10) Preamble</a>
     - <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-282">§ 170.315(g)(10) Regulation text</a>
     - <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-98">§ 170.404 Preamble</a>
-    - <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3518">§ 170.404 Regulation text</a>
+    - <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-299">§ 170.404 Regulation text</a>
 
 === "2015 Edition"
     - <a target = "_blank" href = "http://www.federalregister.gov/a/2015-25597/p-1060">§ 170.315(g)(8) Preamble</a>
@@ -57,7 +60,7 @@
 ## **Links to ONC Fact Sheets relevant to API criteria**
  - <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-07/Clarifications_For_Native_Apps_v5.pdf">ONC Clarifications in the Interim Final Rule to Support Native Applications</a>
  - <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-02/ConditionOfCertification_IB_FactSheet.pdf">Condition of Certification: Information Blocking Fact Sheet</a>
- - <a target = "_blank" href = "https://oncprojectracking.healthit.gov/support/browse/TTB-12">Relied Upon Software Program Guidance</a>
+ - <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/relieduponsoftwareguidance.pdf">Relied Upon Software Program Guidance</a>
 
 ## **Links to adopted standards for API criteria**
 === "§ 170.315(g)(10)"
