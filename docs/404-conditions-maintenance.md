@@ -2,7 +2,7 @@
 
 # API Condition and Maintenance of Certification at § 170.404
 
-This section considers the API Condition and Maintenance of Certification requirements, including all the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule Conditions of Certification API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136">ONC Interim Final Rule API preamble</a>, and the regulation paragraphs in <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3456">§ 170.315(g)(10)</a>.
+This section considers the API Condition and Maintenance of Certification requirements, including all the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule Conditions of Certification API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-98">ONC Interim Final Rule API preamble</a> and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170#p-170.404(a)">regulation paragraphs in § 170.404</a>.
 
 ## Applicability
 § 170.404 applies to all health IT developers with health IT certified to § 170.315(g)(7) – § 170.315(g)(10).
@@ -138,12 +138,12 @@ Certified API Developers are required to publish Service Base URLs (§ 170.404(b
 	- To be open and transparent to the public, developers must provide a hyperlink to the list of service base URLs to be published with the product on the ONC Certified Health IT Product List (CHPL). Certified API Developers are encouraged to use a standardized format when publishing the service base URLs for all of its customers. ONC recommends Certified API Developers leverage the <a href="https://www.hl7.org/fhir/endpoint.html" target="_blank">HL7 FHIR 4.0.1 “Endpoint” resource</a>, or profiles of this resource such as the Validated Healthcare Directory Implementation Guide STU1 <a href="http://hl7.org/fhir/uv/vhdir/2018Jan/StructureDefinition-vhdir-endpoint.html" target="_blank">“vhdir-endpoint” profile</a>, to represent service base URLs that can be used by patients to access their health information. ONC also encourages developers to provide as much information about the service base URLs as available, including the API Information Source’s organization details, such as name, location, and provider identifiers (e.g., NPI, CCN, or health system ID). These steps will help industry coalesce around standards that enable application developers to more easily and consistently provide patients access to their electronic health information.
 
 ### Rollout Of (G)(10)-Certified APIs
-???+ quote "**Regulation text at § 170.404(B)(2)**"
+???+ quote "**Regulation text at § 170.404(B)(3)**"
     (3) Rollout of (g)(10)-certified APIs. A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology deployed with certified API technology certified to the certification criterion in § 170.315(g)(10) by no later than December 31, 2022.
 
-<!-- $ref{404:CCG["(b) Maintenance of certification requirements—(2) Service base URL publication."], tabbed} -->
+<!-- $ref{404:CCG["(b) Maintenance of certification requirements—(3) Rollout of (g)(10)-certified APIs."], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(3)*"
-	.
+	- A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology with certified API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022.
 
 ### Compliance For Existing Certified API Technology
 ???+ quote "**Regulation text at § 170.404(B)(4)**"

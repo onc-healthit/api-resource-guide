@@ -52,7 +52,7 @@
 
 ### Documentation Requirements (API Terms of Use)
 
-???+ quote "**Regulation text at § 170.315(g)(7)(ii)(A)(2)**"
+???+ quote "**Regulation text at § 170.315(g)(7)(ii)(A)(3)**"
 	(3) Terms of use. The terms of use for the API must be provided, including, at a minimum, any associated developer policies and required developer agreements.
 
 <!-- $ref{g-7:CCG["Paragraph (g)(7)(ii)(A)(3)"], tabbed} -->
@@ -64,7 +64,7 @@
 
 ### Documentation Requirements (Availability)
 
-???+ quote "**Regulation text at § 170.315(g)(7)(ii)(A)(2)**"
+???+ quote "**Regulation text at § 170.315(g)(7)(ii)(B)**"
 	(B) The documentation used to meet paragraph (g)(7)(ii)(A) of this section must be available via a publicly accessible hyperlink.
 
 <!-- $ref{g-7:CCG["Paragraph (g)(7)(ii)(B)"], tabbed} -->

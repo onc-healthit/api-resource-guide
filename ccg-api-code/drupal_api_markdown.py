@@ -212,20 +212,19 @@ def main():
 
     params = zip(opts, args)
 
+    os.chdir("../docs")
+    directory = os.getcwd()
+
     for (flag, value) in params:
         # -i is "input" -- means specific file has been specified 
         if flag == "-i":
-            onc_template = open(value, 'r', encoding="utf8")
+            onc_template = open("{}/{}".format(directory,  value), 'r', encoding="utf8")
             onc_template_str = onc_template.read()
             onc_template.close()
             process_template(onc_template_str, value)
             print("All processing complete!")
             exit()
 
-    os.chdir("../docs")
-    directory = os.getcwd()
-    
-    print(directory)
     for subdir, dirs, files in os.walk(directory):
         for file in files:
             ext = os.path.splitext(file)[-1].lower()
