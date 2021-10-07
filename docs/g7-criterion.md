@@ -8,7 +8,7 @@
 
 <!-- $ref{g-7:CCG["Applies to entire criterion"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(7) CCG that apply to the entire criterion*"
-	- While no standard is required for this criterion, we intend to adopt a standards-based approach for certification in a future rulemaking. We encourage the use of the Fast Healthcare Interoperability Resources (FHIR) specification.
+	- While no standard is required for this criterion, we intend to adopt a standards-based approach for certification in a future rulemaking. We encourage the use of the Fast Healthcare Interoperability Resources (FHIR®) specification.
 	- Security:
 		- For the purposes of certification there is no conformance requirement related to the registration of third party applications that use the APIs. If a Health IT module requires registration as a pre-condition for accessing the APIs, then, the process must be clearly specified in the API documentation as required by the criterion. We strongly believe that registration should not be used as a means to block information sharing via APIs.
 		- This criterion does not currently include any security requirements beyond the privacy and security approach detailed above, but we encourage organizations to follow security best practices and implement security controls, such as penetration testing, encryption, audits, and monitoring as appropriate. We expect health IT developers to include information on how to securely use their APIs in the public documentation required by the certification criteria and follow industry best practices. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1072" target="_blank">80 FR 62676</a>]
