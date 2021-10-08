@@ -20,18 +20,17 @@ The API certification criterion finalized in § 170.315(g)(10) was included as p
 
 <!-- $ref{g-10:CCG["Applies to Entire Criterion"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to the entire criterion*"
-	- On December 31, 2022, the API certification criterion in § 170.315(g)(10) replaces the “application access—data category request” certification criterion (§ 170.315(g)(8)).
+	- On December 31, 2022, the Application Programming Interface (API) certification criterion in § 170.315(g)(10) replaces the “Application access—data category request” certification criterion (§ 170.315(g)(8)).
 	- Health IT Modules are not required to support patient-facing API-enabled “read” services for multiple patients for the purposes of this certification criterion.
-	- The clinical note text included in any of the notes described in the “Clinical Notes Guidance” section of the US Core IG adopted in § 170.215(a)(2) must be represented in a “plain text” form, and it would be unacceptable for the note text to be converted to another file or format (e.g., .docx, PDF) when it is provided as part of an API response. The intent of this policy is to prohibit Health IT Modules from converting clinical notes from a “machine readable” format to a non-“machine readable” format (e.g., PDF). Clinical note text that originates from outside Health IT Modules should be exchanged using its original format. Additionally, “plain text” does not necessarily mean the FHIR® “contentType” “text/plain.”
-	- The US Core IG Profile “StructureDefinition-us-core-patient” element “name.suffix” is required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” Data Class: “Suffix” Data Element.
-	- Either the US Core IG Profile “StructureDefinition-us-core-patient” element “name.period” or “name.use” is required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” Data Class: “Previous Name” Data Element.
+	- The clinical note text included in any of the notes described in the “Clinical Notes Guidance” section of the US Core Implementation Guide (IG) adopted in § 170.215(a)(2) must be represented in a “plain text” form, and it would be unacceptable for the note text to be converted to another file or format (e.g., .docx, PDF) when it is provided as part of an API response. The intent of this policy is to prohibit Health IT Modules from converting clinical notes from a “machine readable” format to a non-“machine readable” format (e.g., PDF). Clinical note text that originates from outside Health IT Modules should be exchanged using its original format. Additionally, “plain text” does not necessarily mean the FHIR® “contentType” “text/plain.”
+	- The US Core IG Profile “StructureDefinition-us-core-patient” element “name.suffix” is required for testing and certification in the Certification Program to meet the USCDI requirement to support the “Patient Demographics” Data Class: “Suffix” Data Element.
+	- Either the US Core IG Profile “StructureDefinition-us-core-patient” element “name.period” or “name.use” is required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” data class: “Previous Name” data element.
 	- A Health IT Module must support at least one Choice or Reference for US Core IG “must support” elements with multiple Choices or References, respectively.
 	- A Health IT Module must be conformant to the US Core IG for all Choices and References included in its standardized API, and cannot misrepresent Choices via the standardized API (e.g. a Health IT Module cannot transform “integer” values to “string” values).
 	- A health IT developer must document which US Core IG Choices and References are supported by their Health IT Module via public technical documentation to meet the requirements at § 170.315(g)(10)(viii) and the transparency conditions at § 170.404(a)(2).
-	- Information originating from the (g)(10)-certified Health IT Module must conform to the requirements included in the criterion, but legacy information and information from outside systems is not required to be mapped to the United States Core Data for Interoperability (USCDI) “Applicable Standards” and the US Core IG terminologies and value sets. However, health IT developers are encouraged to exceed the minimum requirements described in § 170.315(g)(10) to support the mapping of legacy information to the terminologies and value sets included in the USCDI and US Core IG where possible.
-	- In order to mitigate potential interoperability errors and inconsistent implementation of the FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) standard, ONC assesses, approves, and incorporates corrections (errata) as part of required certification and testing to this criterion. Compliance with the following errata is necessary because the errata implements technical corrections and clarifications to the FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) standard. There is a 90-day delay from the time the CCG has been updated with the ONC-approved errata to when compliance with the errata will be required to pass testing. Similarly, there will be an 18-month delay before a finding of an erratum’s absence in a Certified Health IT Module during surveillance would constitute a non-conformity under the Program.
-		- Version: <a href="https://hl7.org/fhir/uv/bulkdata/STU1.0.1/" target="_blank">FHIR® Bulk Data Access (Flat FHIR®) (v1.0.1: STU 1)</a>. Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.
-
+	- Information originating from the (g)(10)-certified Health IT Module must conform to the requirements included in the criterion, but legacy information and information from outside systems is not required to be mapped to the USCDI “Applicable Standards” and the US Core IG terminologies and value sets. However, health IT developers are encouraged to exceed the minimum requirements described in § 170.315(g)(10) to support the mapping of legacy information to the terminologies and value sets included in the USCDI and US Core IG where possible.
+	- In order to mitigate potential interoperability errors and inconsistent implementation of the Fast Healthcare Interoperability Resources (FHIR®) Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) standard, ONC assesses, approves, and incorporates corrections (errata) as part of required certification and testing to this criterion. Compliance with the following errata is necessary because the errata implements technical corrections and clarifications to the FHIR® Bulk Data Access (Flat FHIR) (v1.0.0: STU 1) standard. There is a 90-day delay from the time the CCG has been updated with the ONC-approved errata to when compliance with the errata will be required to pass testing. Similarly, there will be an 18-month delay before a finding of an erratum’s absence in a Certified Health IT Module during surveillance would constitute a non-conformity under the Certification Program.
+		- Version: <a href="https://hl7.org/fhir/uv/bulkdata/STU1.0.1/" target="_blank">FHIR Bulk Data Access (Flat FHIR) (v1.0.1: STU 1)</a>. Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.
 
 *Additional clarifications that apply to the entire (g)(10) criterion:*
 
@@ -47,7 +46,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(A)**" 
     (i) Data response. (A) Respond to requests for a single patient's data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(i)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(A)*"
 	- All data elements and operations indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in-scope for testing.
 	- For “Encounter,” “Organization,” and “Practitioner,” US Core IG profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and FHIR® resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the USCDI.
@@ -67,7 +66,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
     (B) Respond to requests for multiple patients' data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(i)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(B)*"
 	- Health IT Modules may support scopes using either “system/*.read” or a list of “system/[resource].read,” where [resource] is the FHIR® resource name, to enable the export of multiple patients’ data as a group.
 	- During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core IG FHIR® Profiles.
@@ -79,7 +78,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(A)**"
     (ii) Supported search operations. (A) Respond to search requests for a single patient's data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(2), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”
 
-<!-- $ref{g-10:CCG["Paragraph (10)(ii)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(A)*"
 	- All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in scope for testing.
 
@@ -91,7 +90,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(B)**"
     (B) Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(4)
 
-<!-- $ref{g-10:CCG["Paragraph (10)(ii)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(B)*"
 	- No additional clarifications.
 
@@ -105,7 +104,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(iii)**"
     (iii) Application registration. Enable an application to register with the Health IT Module's “authorization server.”
 
-<!-- $ref{g-10:CCG["Paragraph (10)(iii)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iii)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iii)*"
 	- Health IT presented for testing and certification must support app registration regardless of the scope of patient search utilized by the application (e.g. single or multiple).
 	- This certification criterion requires a health IT developer, as finalized in the Condition of Certification requirements, to demonstrate its registration process, but does not require conformance to a standard.
@@ -122,7 +121,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
     (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3).
 
-<!-- $ref{g-10:CCG["Paragraph (10)(iv)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)(A)*"
 	- Connections below TLS version 1.2 must be denied.
 
@@ -130,7 +129,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(B)**"
     (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(a)(4).
 
-<!-- $ref{g-10:CCG["Paragraph (10)(iv)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)(B)*"
 	- Connections below TLS version 1.2 must be denied.
 
@@ -138,7 +137,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(1)**"
     (v) Authentication and authorization—(A) Authentication and authorization for patient and user scopes—(1) First time connections—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b). (ii) A Health IT Module's authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret. (iii) A Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(iv)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(A)(1)*"
 	- Health IT Modules will be explicitly tested for US Core IG operations using authentication and authorization tokens acquired via the process described in the implementation specification adopted in § 170.215(a)(3).
 	- Only the relevant parts of the OpenID Connect Core 1.0 including errata set 1 adopted in § 170.215(b) that are also included in the implementation specification adopted in § 170.215(a)(3) will be in-scope for testing and certification.
@@ -169,7 +168,7 @@ health care providers to implement Health IT Modules certified to requirements i
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(2)**"
     (2) Subsequent connections. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) without requiring reauthorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(iv)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(V)(A)(2)*"
 	- No additional clarifications.
 
@@ -188,7 +187,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(v)(B)**" 
     (B) Authentication and authorization for system scopes. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(v)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
 	- No additional clarifications.
 
@@ -196,7 +195,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
     (vi) Patient authorization revocation. A Health IT Module's authorization server must be able to revoke an authorized application's access at a patient's direction.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(vi)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vi)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vi)*"
 	- This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.
 	- Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.
@@ -205,7 +204,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(vii)**" 
     (vii) Token introspection. A Health IT Module's authorization server must be able to receive and validate tokens it has issued.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(vii)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vii)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vii)*"
 	- Although ONC does not specify a standard for token introspection, ONC encourages industry to coalesce around using a common standard, like OAuth 2.0 Token Introspection (RFC 7662).
 
@@ -213,7 +212,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(viii)(A)**" 
     (viii) Documentation. (A) The API(s) must include complete accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s). (3) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module's authorization server.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(viii)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(A)*"
 	- Health IT developers are not required to re-publish documentation from the adopted standards and implementation specifications. However, health IT developers must publish documentation that goes beyond the adopted standards and implementation specifications.
 	- Health IT developers are expected to disclose any additional data their § 170.315(g)(10)-certified Health IT Module supports in the context of the adopted standards and implementation specifications.
@@ -222,7 +221,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(viii)(B)**"
     (B) The documentation used to meet paragraph (g)(10)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.
 
-<!-- $ref{g-10:CCG["Paragraph (10)(viii)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
 	- No additional clarifications.
 
