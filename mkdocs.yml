@@ -43,4 +43,3 @@ markdown_extensions:
   - pymdownx.tabbed
   - toc:
       permalink: true
-use_directory_urls: false # Remove when deploying to GH
