@@ -14,7 +14,7 @@ The code and content for this resource is publicly <a href = "https://github.com
         <img src="../images/gh-history-button.jpg" width="500" />
         <figcaption>History button on GitHub</figcaption>
     </figure>
-1. You are not on the page that shows the "commit" history for this file. Click on the button containing the hash of the commit you want to inspect.
+1. You are now on the page that shows the "commit" history for this file. Click on the button containing the hash of the commit you want to inspect.
     <figure>
         <img src="../images/gh-commit-hash-button.jpg" width="600" />
         <figcaption>Button containing commit hash on GitHub</figcaption>
