@@ -13,7 +13,7 @@ Learn more at our website, <a target = "_blank" href = "https://www.healthit.gov
 
 ### *ONC Cures Act Final Rule and Interim Final Rule - (g)(10) & API Conditions and Maintenance of Certification*
 
-The <a target = "_blank" href = "https://www.congress.gov/bill/114th-congress/house-bill/34/text">21st Century Cures Act (Section 4002)</a> and subsequent 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program Final Rule (<a target = "_blank" href = "https://www.healthit.gov/curesrule/">ONC Cures Act Final Rule</a>) established a condition of certification requirement in the ONC Health IT Certification Program which requires applicable health IT developers participating in the program to develop and deploy a standardized API:
+The <a target = "_blank" href = "https://www.congress.gov/bill/114th-congress/house-bill/34/text">21st Century Cures Act (Section 4002)</a> and subsequent 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program Final Rule (<a target = "_blank" href = "https://www.healthit.gov/curesrule/">ONC Cures Act Final Rule</a>) established a Condition of Certification requirement in the ONC Health IT Certification Program, which requires applicable health IT developers participating in the Program to develop and deploy a standardized API:
 
 >“health information from such technology [is] to be accessed, exchanged, and used without special effort through the use of APIs or successor technology or standards, as provided for under applicable law.”
 

@@ -12,7 +12,7 @@ The API certification criterion finalized in § 170.315(g)(10) was included as p
 ## Tools for testing and certification
 
 - **Inferno Program Edition / (g)(10) Test Kit**
-    The Inferno Program Edition is used for (g)(10) API testing for the ONC Health IT Certification Program. The Inferno Program Edition is a streamlined testing tool for services seeking to meet the requirements of the Standardized API for Patient and Population Services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>. This tool is used for testing and certification to the § 170.315(g)(10) certification criterion for the ONC Health IT Certification Program.
+    The Inferno Program Edition is used for (g)(10) API testing for the ONC Health IT Certification Program. The Inferno Program Edition is a streamlined testing tool for services seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>. This tool is used for testing and certification to the § 170.315(g)(10) certification criterion for the ONC Health IT Certification Program.
 
 ## Information and Clarifications
 
@@ -38,9 +38,9 @@ The API certification criterion finalized in § 170.315(g)(10) was included as p
 - The term “services” includes all § 170.315(g)(10)-related technical capabilities included in a Health IT Module presented for testing and certification. The API-enabled “read” services for single patients is intended to support EHI requests and responses for individual patient records and the API-enabled “read” services for multiple patients is intended to support EHI requests and responses for multiple patients’ records.
 - The scope of patient cohorts for “population services” can include various groups defined at the discretion of the user of the API-enabled “read” services for multiple patients, including, for example, a group of patients that meet certain disease criteria or fall under a certain insurance plan.
 - The <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking policies</a> established by the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1665">ONC Cures Act Final Rule</a> do not compel
-health care providers to implement Health IT Modules certified to requirements in
+healthcare providers to implement Health IT Modules certified to requirements in
 § 170.315(g)(10).
-- While there may be slight variation between each instance of a Standardized API for Patient and Population Services Health IT Module implemented by API Information Sources, we believe the standards that form the basis of the § 170.315(g)(10) certification criterion will enable interoperability across implementations.
+- While there may be slight variation between each instance of a Standardized API for patient and population services Health IT Module implemented by API Information Sources, ONC believes the standards that form the basis of the § 170.315(g)(10) certification criterion will enable interoperability across implementations.
 
 ### Data Response (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(A)**" 
@@ -98,7 +98,7 @@ health care providers to implement Health IT Modules certified to requirements i
 
 - The scope of data available in the data responses defined in § 170.315(g)(10)(i) must be supported for searches for multiple patients via the supported search operations finalized in § 170.315(g)(10)(ii).
 - The HL7® FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) implementation specification adopted in § 170.215(a)(4) includes mandatory support for the “group-export” "OperationDefinition."
-- We have not included a requirement for Bulk FHIR® import because the standards for these features are still being developed by industry. Applications or systems seeking to import information formatting according to the <a target = "_blank" href = "http://www.hl7.org/fhir/uv/bulkdata/history.cfml">HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.0:STU 1)</a> can use several methods developed by industry, or can refer to Bulk FHIR® import methods being defined by <a target = "_blank" href = "https://github.com/HL7/bulk-data">HL7® at the HL7® FHIR® Bulk Data GitHub page</a>.
+- ONC has not included a requirement for Bulk FHIR® import because the standards for these features are still being developed by industry. Applications or systems seeking to import information formatting according to the <a target = "_blank" href = "http://www.hl7.org/fhir/uv/bulkdata/history.cfml">HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.0:STU 1)</a> can use several methods developed by industry, or can refer to Bulk FHIR® import methods being defined by <a target = "_blank" href = "https://github.com/HL7/bulk-data">HL7® at the HL7® FHIR® Bulk Data GitHub page</a>.
 
 ### Application Registration
 ???+ quote "**Regulation text at § 170.315(g)(10)(iii)**"
@@ -113,8 +113,8 @@ health care providers to implement Health IT Modules certified to requirements i
 
 *Additional Clarifications to the (g)(10) CCG:*
 
-- We expect that apps executed within an implementer’s clinical environment will be registered with an authorization server, but we do not require a health IT developer to demonstrate its registration process for these “provider-facing” apps.
-- The requirement that health IT developers must enable an application to register with the § 170.315(g)(10)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and API Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.
+- ONC expects that apps executed within an implementer’s clinical environment will be registered with an authorization server, but ONC does not require a health IT developer to demonstrate its registration process for these “provider-facing” apps.
+- The requirement that health IT developers must enable an application to register with the § 170.315(g)(10)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and API Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of Certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.
 - Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> established in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1665">ONC Cures Act Final Rule</a>.
 
 ### Secure Connection (Patient / User Scopes)
@@ -155,9 +155,9 @@ health care providers to implement Health IT Modules certified to requirements i
 
 *Additional Clarifications to the (g)(10) CCG:*
 
-- We expect implementers of § 170.315(g)(10)-certified Health IT Modules to have the capability of revoking refresh tokens where appropriate.
-- Neither § 170.315(g)(10) nor applicable API Condition and Maintenance of Certification requirements require restricting discretion of implementers (health care providers, clinician practices, hospitals, etc.) to set the length of refresh tokens for users of the API including patients and health care providers to align with their institutional policies.
-- Implementers of § 170.315(g)(10)-certified Health IT Modules are not prohibited from implementing their § 170.315(g)(10)-certified Health IT Modules in accordance with their organizational security policies and posture, including by instituting policies for reauthentication and re-authorization (e.g., health care providers and/or patients could always be required to re-authenticate and re-authorize after a set number of refresh tokens have been issued).
+- ONC expects implementers of § 170.315(g)(10)-certified Health IT Modules to have the capability of revoking refresh tokens where appropriate.
+- Neither § 170.315(g)(10) nor applicable API Condition and Maintenance of Certification requirements require restricting discretion of implementers (healthcare providers, clinician practices, hospitals, etc.) to set the length of refresh tokens for users of the API including patients and healthcare providers to align with their institutional policies.
+- Implementers of § 170.315(g)(10)-certified Health IT Modules are not prohibited from implementing their § 170.315(g)(10)-certified Health IT Modules in accordance with their organizational security policies and posture, including by instituting policies for reauthentication and re-authorization (e.g., healthcare providers and/or patients could always be required to re-authenticate and re-authorize after a set number of refresh tokens have been issued).
 - Patients are not prohibited from changing the length of refresh tokens to the degree this option is available to them.
 - Implementers of § 170.315(g)(10)-certified Health IT Modules should be mindful of <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> applicable to them and that requiring patients to reauthenticate and re-authorize at a high frequency could inhibit patient access and implicate information blocking.
 
@@ -174,7 +174,7 @@ health care providers to implement Health IT Modules certified to requirements i
 
 *Additional Clarifications to the (g)(10) CCG:*
 
-- For subsequent connections, certified Health IT Modules are not required to issue a new
+- For subsequent connections, Certified Health IT Modules are not required to issue a new
 refresh token, but must issue a refresh token valid for a new period of no less than three
 months. Whether the application receives a “new” refresh token is an implementation
 decision left to the health IT developer, as long as the “refreshed” refresh token is valid for a
