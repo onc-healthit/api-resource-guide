@@ -11,12 +11,12 @@ The code and content for this resource is publicly <a href = "https://github.com
 1. Click on a `.md` file that you want to inspect the history of.
 1. To browse the commit history click on the "History" button in the upper right hand corner of the page.
     <figure>
-        <img src="../images/gh-history-button.jpg" width="500" />
+        <img alt = "GitHub history button located in the upper right hand corner" src="../images/gh-history-button.jpg" width="500" />
         <figcaption>History button on GitHub</figcaption>
     </figure>
 1. You are now on the page that shows the "commit" history for this file. Click on the button containing the hash of the commit you want to inspect.
     <figure>
-        <img src="../images/gh-commit-hash-button.jpg" width="600" />
+        <img alt = "Commit hash button on GitHub" src="../images/gh-commit-hash-button.jpg" width="600" />
         <figcaption>Button containing commit hash on GitHub</figcaption>
     </figure>
 1. Now you can see the specific lines that changed with this commit.
@@ -24,7 +24,7 @@ The code and content for this resource is publicly <a href = "https://github.com
     !!! tip
         Toggle between different views on GitHub using the "Unified" and "Split" buttons.
         <figure>
-            <img src="../images/gh-unified-split-buttons.jpg" width="600" />
+            <img alt = "Unified and Split toggle buttons on GitHub" src="../images/gh-unified-split-buttons.jpg" width="600" />
             <figcaption>Toggling between "Unified" and "Split" views on GitHub</figcaption>
          </figure>
 
