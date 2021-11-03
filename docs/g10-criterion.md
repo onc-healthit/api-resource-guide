@@ -50,7 +50,8 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(A)*"
 	- All data elements and operations indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in-scope for testing.
 	- For “Encounter,” “Organization,” and “Practitioner,” US Core IG profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and FHIR resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR resource because they are included as “must support” data elements in US Core IG profiles required by the USCDI.
-	- Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/basic-provenance.html#basic-provenance-guidance" target="_blank">“Basic Provenance Guidance” section of the US Core IG. </a>
+	- Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html" target="_blank">“Basic Provenance Guidance” section of the US Core IG. </a>
+	- For purposes of  ONC Health IT Certification , health IT developers that always provide HL7 FHIR "observation" values are not required to demonstrate Health IT Module support for “dataAbsentReason” elements. These include "dataAbsentReason" elements contained in the US Core implementation guide profiles and FHIR Vital Sign profiles that build on the HL7 FHIR "observation" and its derived profiles including HL7 FHIR "observation-vitalsigns", and HL7 FHIR "observation-oxygensat", including "component.dataAbsentReason" elements. However, health IT developers are still required to adhere to and demonstrate Health IT Module support for the <a href="http://hl7.org/fhir/us/core/STU3.1.1/general-guidance.html#missing-data" target="_blank">“Missing Data” section</a> of the US Core implementation guide.
 
 
 !!! example "Examples of “must support” in the US Core IG 3.1.1:"
@@ -71,7 +72,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	- Health IT Modules may support scopes using either “system/*.read” or a list of “system/[resource].read,” where [resource] is the FHIR® resource name, to enable the export of multiple patients’ data as a group.
 	- During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core IG FHIR® Profiles.
 	- Health IT Modules must demonstrate support for “Location” FHIR® resources by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.
-	- Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/basic-provenance.html#basic-provenance-guidance" target="_blank">“Basic Provenance Guidance” section of the US Core IG. </a>
+	- Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html" target="_blank">“Basic Provenance Guidance” section of the US Core IG. </a>
 
 
 ### Supported Search Operations (Single Patient)
@@ -81,6 +82,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(A)*"
 	- All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in scope for testing.
+	- The § 170.315(g)(10) certification criterion requires Health IT Modules to support API-enabled “read” services for single and multiple patients. “Read” services include those that allow authenticated and authorized third-party applications to view EHI through a secure API. These services specifically exclude “write” capabilities, where authenticated and authorized third-party applications would be able to create or modify EHI through a secure API.
 
 *Additional Clarifications to the (g)(10) CCG:*
 
@@ -189,7 +191,7 @@ new period of no less than three months.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
-	- No additional clarifications.
+	- Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token. In order for the issued access token to be valid, the application must be able to access patient data using that issued access token. Health IT developers may support additional access-control schemes beyond OAuth 2.0.
 
 ### Patient Authorization Revocation
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
