@@ -201,6 +201,7 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vi)*"
 	- This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.
 	- Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.
+	- For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a href="https://hl7.org/fhir/smart-app-launch/1.0.0/" target="_blank">SMART Application Launch Framework Implementation Guide Release 1.0.0</a>. For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.
 
 ### Token Introspection
 ???+ quote "**Regulation text at § 170.315(g)(10)(vii)**" 
