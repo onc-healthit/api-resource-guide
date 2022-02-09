@@ -28,6 +28,9 @@ theme:
   favicon: images/logo.png
   logo: images/logo.png
 extra:
+  analytics:
+    provider: google
+    property: G-R4K3R06Z68
   version:
     provider: mike
   social:
