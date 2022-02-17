@@ -30,7 +30,11 @@ The Inferno Program Edition is used for (g)(10) API testing for the ONC Health I
 	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
 	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
 
-	 **Check Out Inferno Overview and Walkthrough Presentations**
+	 **Inferno Walkthroughs/Documentation**
+
+	  - <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/wiki/Walkthrough">Inferno Walkthrough</a> (GitHub Wiki)
+	 
+	 **Previously Recorded Presentations**
 
 	*Note that some of these may contain out-of-date information*
 
