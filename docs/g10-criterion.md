@@ -9,16 +9,36 @@ This section considers the standardized API for patient and population services 
 
 The API certification criterion finalized in § 170.315(g)(10) was included as part of the EHR Base Definition at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3216">§ 170.102</a>. While developers of health information technology are not required by the ONC to meet certification requirements, including certification requirements that are included as part of the EHR Base Definition, several federal, state and tribal entities, including <a target = "_blank" href = "https://www.cms.gov/">Centers for Medicare & Medicaid Services</a>, <a target = "_blank" href = "https://www.cdc.gov/">Centers for Disease Control and Prevention</a>, and other programs reference the ONC Health IT Certification Program and require the use of certified health IT for program participation.
 
-## Tools for testing and certification
+## Inferno Testing Tool for Certification
+The Inferno Program Edition is used for (g)(10) API testing for the ONC Health IT Certification Program. The Inferno Program Edition is a streamlined testing tool for services seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>. This tool is used for testing and certification to the § 170.315(g)(10) certification criterion for the ONC Health IT Certification Program.
 
-- **Inferno Program Edition / (g)(10) Test Kit**
-    The Inferno Program Edition is used for (g)(10) API testing for the ONC Health IT Certification Program. The Inferno Program Edition is a streamlined testing tool for services seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>. This tool is used for testing and certification to the § 170.315(g)(10) certification criterion for the ONC Health IT Certification Program.
+!!! note ""
+	<p align="center">
+		![Inferno (g)(10) testing tool logo](../images/inferno-logo.PNG){: style="height:100px"}
+	</p>
+	<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
 
-	!!! note ""
-		<p align="center">
-			![Inferno (g)(10) testing tool logo](../images/inferno-logo.PNG){: style="height:100px"}
-		</p>
-		<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
+??? tip "Explore Inferno for (g)(10) Testing"
+	**Latest News**
+
+	- ONC Buzz Blog: <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/calling-all-beta-testers-new-opportunity-to-help-onc-update-the-inferno-test-tool">Calling all Beta Testers: New Opportunity to help ONC Update the Inferno Test Tool</a>
+
+	**Get Involved and Ask Questions**
+
+	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
+	 - Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org. This stream is actively monitored by Inferno's development team. (*creating a Zulip account is free*).
+	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
+	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
+
+	 **Check Out Inferno Overview and Walkthrough Presentations**
+
+	*Note that some of these may contain out-of-date information*
+
+	 - <a target = "_blank" href = "https://youtu.be/OGzPC56gSBk">Robert Scanlon - FHIR API Testing with Inferno | DevDays June 2021 Virtual</a>
+	 - <a target = "_blank" href = "https://youtu.be/QTY1HbigsjQ?t=254 ">Online FHIR® Meetup #4: FHIR Testing</a> (starting at 4:14)
+	 - <a target = "_blank" href = "https://youtu.be/FAfS8veda1w">Steve Posnack & Robert Scanlon - Testing HL7® FHIR® Implementation Guides | DevDays 2020 June</a>
+	 - <a target = "_blank" href = "https://youtu.be/C92CoKNV3KA">Robert Scanlon - FHIR Server Certification with Inferno | DevDays Redmond 2019</a>
+	 - <a target = "_blank" href = "https://youtu.be/_i9C825GSSM ">Robert Scanlon - INFERNO | DevDays 2018 Amsterdam</a>
 
 ## Information and Clarifications
 
