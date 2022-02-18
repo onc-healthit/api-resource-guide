@@ -206,6 +206,28 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
 	- Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token. In order for the issued access token to be valid, the application must be able to access patient data using that issued access token. Health IT developers may support additional access-control schemes beyond OAuth 2.0.
 
+<!-- https://sequencediagram.org/ -->
+??? info "Authentication / Authorization for Multiple Patient Services: Sequence Diagrams"
+	The Bulk Data Export and Authentication/Authorization sequences, according to the §170.315(g)(10) requirements, are described below.
+
+	First, according to <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3468">§170.315(g)(10)(v)(B)</a>, Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “<a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/authorization/index.html">SMART Backend Services: Authorization Guide</a>” section of the Bulk Data implementation guide.
+	
+	![Sequence diagram for initial backend services authentication and authorization flow](images/backend-services-initial.png)
+
+	*Note that generated Bulk Data files <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/export/index.html#response---complete-status">may</a> be served by file servers other than a FHIR-specific server.*
+
+	There are different ways for a client to receive generated Bulk Data files including via <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a>. The client will refer to the `requiresAccessToken` field included in the output manifest when retrieving files.
+
+	If `reqiresAccessToken = true`
+
+	![Sequence diagram for retrieving bulk data files using an access token](images/bulk-data-access-token-true.png)
+
+	If `reqiresAccessToken = false`	
+
+	![Sequence diagram for retrieving bulk data files without an access token](images/bulk-data-access-token-false.png)
+
+	It is critical that server developers follow the HL7 guidance on  <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a> when choosing to generate output manifests with `requiresAccessToken = false`.
+
 ### Patient Authorization Revocation
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
     (vi) Patient authorization revocation. A Health IT Module's authorization server must be able to revoke an authorized application's access at a patient's direction.
