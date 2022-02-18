@@ -37,6 +37,7 @@ extra:
       name: HealthIT.gov
 markdown_extensions:
   - abbr
+  - attr_list
   - pymdownx.snippets
   - pymdownx.details
   - admonition
