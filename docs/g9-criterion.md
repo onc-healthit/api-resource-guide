@@ -46,25 +46,14 @@
 	- The approach used to provide the CCD document(s) is set by the API. An approach based on providing one or more CCD documents matching to the patient’s selected date or date range is a valid approach.
 
 
-### Documentation Requirements (API Interface)
+### Documentation Requirements (API Interface & Interaction)
 
-???+ quote "**Regulation text at § 170.315(g)(9)(ii)(A)(1)**"
-    (A) The API must include accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns.
+???+ quote "**Regulation text at § 170.315(g)(9)(ii)(A)**"
+    (A) The API must include accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s). (3) The terms of use for the API must be provided including, at a minimum, any associated developer policies and required developer agreements.
 
-<!-- $ref{g-9:CCG["Paragraph (g)(9)(ii)(A)(1)"], tabbed} -->
+<!-- $ref{g-9:CCG["Paragraph (g)(9)(ii)(A)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(9) CCG that apply to paragraph § 170.315(g)(9)(ii)(A)(1)*"
 	- No additional clarifications available.
-
-
-### Documentation Requirements (API Interaction)
-
-???+ quote "**Regulation text at § 170.315(g)(9)(ii)(A)(2)**"
-    (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s).
-
-<!-- $ref{g-9:CCG["Paragraph (g)(9)(ii)(A)(2)"], tabbed} -->
-??? quote "*Clarifications included in the (g)(9) CCG that apply to paragraph § 170.315(g)(9)(ii)(A)(2)*"
-	- No additional clarifications available.
-
 
 ### Documentation Requirements (Availability)
 
