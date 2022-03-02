@@ -214,7 +214,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(2)**"
     (2) Subsequent connections. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) without requiring reauthorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(V)(A)(2)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(2)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(V)(A)(2)*"
 	- No additional clarifications.
 
