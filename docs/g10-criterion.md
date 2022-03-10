@@ -21,6 +21,7 @@ The Inferno Program Edition is used for (g)(10) API testing for the ONC Health I
 ??? tip "Explore Inferno for (g)(10) Testing"
 	**Latest News**
 
+	- ONC Buzz Blog: <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/inferno-redesigned-easier-faster-extensible">Inferno Redesigned: Easier, Faster, Extensible</a>
 	- ONC Buzz Blog: <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/calling-all-beta-testers-new-opportunity-to-help-onc-update-the-inferno-test-tool">Calling all Beta Testers: New Opportunity to help ONC Update the Inferno Test Tool</a>
 
 	**Get Involved and Ask Questions**
