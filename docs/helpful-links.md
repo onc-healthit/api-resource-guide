@@ -25,8 +25,8 @@
 ## **Testing tool links**
 
 - Inferno Program Edition (§ 170.315(g)(10))
-    - <a target = "_blank" href = "https://inferno.healthit.gov/inferno">Inferno Program Edition Online Demonstration Instance</a>
-    - <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program#installation-and-deployment">Inferno Program Edition Installation and Deployment Instructions</a>
+    - <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">Inferno Framework: (g)(10) Standardized API Test Kit Online Demonstration Instance</a>
+    - <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/releases">Inferno Framework: (g)(10) Standardized API Test Kit Source Code</a>
 
 ## **Rules and regulations links**
 
