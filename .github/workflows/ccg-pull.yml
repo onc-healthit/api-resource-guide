@@ -1,0 +1,28 @@
+# This is a basic workflow that is manually triggered
+
+name: Pull CCG Clarifications from Healthit.gov workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on: workflow_dispatch
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  ccg-pull:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout repo
+          uses: actions/checkout@v2
+        - name: setup python
+          uses: actions/setup-python@v4.1.0
+        - name: install dependencies
+          run: pip install -r ccg-api-code/requirements.txt
+        - name: run python script
+          run: python ccg-api-code/drupal_api_markdown.py
+        - name: push changes to repo
+          run : |
+            git config --global user.name "github-actions[bot]"
+            
+            git add -A
+            git commit -m "pull latest ccg clarifications from healthit.gov"
+            git push
