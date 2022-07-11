@@ -8,17 +8,14 @@ import time
 from pathlib import Path
 from bs4 import BeautifulSoup
 
-call_api = True
-
 def read_to_line_end(input_str, pos):
     """Builds a string from a position to the end of the line
     and returns the result.
-
+    
     Parameters
     ----------
     input_str : str, required
         String containing template file contents (default is None)
-
     pos : int, required
         Integer represetning the position in the input_str we start
         reading at and continue to first new line.
@@ -91,23 +88,14 @@ def gather_data_from_web(criterion):
 
     base_url = "https://healthit.gov"
 
-    entity_ids_json = None
-    if call_api:
-        entity_ids_json = requests.get("{}/{}?_format=json".format(base_url, criterion)).json()["field_clarification_table"]
-    else:
-        with open('cached_entities.json') as f:
-            entity_ids_json = json.load(f)["field_clarification_table"]
+    entity_ids_json = entity_ids_json = requests.get("{}/{}?_format=json".format(base_url, criterion)).json()["field_clarification_table"]
 
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
-        data_json = None
-        if call_api:
-            data_json = requests.get("{}/{}?_format=json".format(data_url, entity_id["target_id"])).json()
-            time.sleep(1.2) # Buffer between API calls for 50 calls / minute
-        else:
-            with open('cached_test_files/cached_response.json') as f:
-                data_json = json.load(f)
+        data_json = requests.get("{}/{}?_format=json".format(data_url, entity_id["target_id"])).json()
+        
+        time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
         element = data_json["field_standard_s_referenced"][0]["processed"]
         
@@ -152,17 +140,7 @@ def process_template(onc_template_str, file_path):
 
     criterion_endpoint = criterion_endpoint_tag[0] # Extracting criterion endpoint value
 
-    web_data = None
-    if call_api:
-        api_check = input("Warning! Numerous API calls are about to be made, are you sure you want to proceed? ('y' for yes): ")
-        if api_check.lower() == 'y':
-            web_data = gather_data_from_web(criterion_endpoint)
-        else:
-            print("Exiting...")
-            exit()
-    else:
-        with open('cached_test_files/g8-cache.json') as f:
-            web_data = json.load(f)
+    web_data = gather_data_from_web(criterion_endpoint)
 
     # Extracting list of $ref tags
     tags = re.findall(r'\$ref\{.*?\}', onc_template_str)
@@ -212,7 +190,7 @@ def main():
 
     params = zip(opts, args)
 
-    os.chdir("../docs")
+    os.chdir("docs")
     directory = os.getcwd()
 
     for (flag, value) in params:
