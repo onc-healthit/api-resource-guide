@@ -1,0 +1,15 @@
+# This is a basic workflow that is manually triggered
+
+name: Pull CCG Clarifications from Healthit.gov workflow
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on: workflow_dispatch
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/setup-python@v4.1.0
+      - run: pip install -r ccg-api-code/requirements.txt
