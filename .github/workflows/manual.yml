@@ -12,4 +12,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/setup-python@v4.1.0
+      - run: echo $PWD
       - run: pip install -r ccg-api-code/requirements.txt
