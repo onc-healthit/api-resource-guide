@@ -24,5 +24,5 @@ jobs:
             git config --global user.name "github-actions[bot]"
             
             git add -A
-            git commit -m "pull latest ccg clarifications from healthit.gov"
+            git commit -m "pull latest ccg clarifications from healthit.gov" || echo "no changes. no commit"
             git push
