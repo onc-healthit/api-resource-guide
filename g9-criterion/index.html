@@ -1,0 +1,718 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      <link rel="icon" href="../images/logo.png">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+    
+    
+      
+        <title>HL7® C-CDA API criterion - (g)(9) - ONC Health IT Certification Program API Resource Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.1d29e8d0.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
+        
+          
+          
+          <meta name="theme-color" content="#4051b5">
+        
+      
+      
+    
+    
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-KC3FP96');</script>
+<!-- End Google Tag Manager -->
+  
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="" data-md-color-primary="indigo" data-md-color-accent="">
+  
+    
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hl7-c-cda-api-criterion-at-170315g9" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-component="outdated" hidden>
+        <aside class="md-banner md-banner--warning">
+          
+        </aside>
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ONC Health IT Certification Program API Resource Guide" class="md-header__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ONC Health IT Certification Program API Resource Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HL7&#174 C-CDA API criterion - (g)(9)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src=https://www.googletagmanager.com/ns.html?id=GTM-KC3FP96
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->  
+
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ONC Health IT Certification Program API Resource Guide" class="md-nav__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    ONC Health IT Certification Program API Resource Guide
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../about/" class="md-nav__link">
+        About
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../helpful-links/" class="md-nav__link">
+        Helpful Links
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../g10-criterion/" class="md-nav__link">
+        HL7&#174 FHIR&#174 API criterion - (g)(10)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          HL7&#174 C-CDA API criterion - (g)(9)
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        HL7&#174 C-CDA API criterion - (g)(9)
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-and-clarifications" class="md-nav__link">
+    Information and Clarifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Information and Clarifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entire-criterion" class="md-nav__link">
+    Entire Criterion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements-data-categories" class="md-nav__link">
+    Functional Requirements (Data Categories)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements-date-date-range" class="md-nav__link">
+    Functional Requirements (Date &amp; Date Range)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-requirements-api-interface-interaction" class="md-nav__link">
+    Documentation Requirements (API Interface &amp; Interaction)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-requirements-availability" class="md-nav__link">
+    Documentation Requirements (Availability)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../g8-criterion/" class="md-nav__link">
+        Non-standarized data request API criterion - (g)(8)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../g7-criterion/" class="md-nav__link">
+        Non-standardized patient selection API criterion - (g)(7)
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../404-conditions-maintenance/" class="md-nav__link">
+        API Conditions and Maintenance of Certification requirements at § 170.404
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../real-world-testing-conditions-maintenance/" class="md-nav__link">
+        Real World Testing Condition and Maintenance of Certification
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../standards-version-advancement-process/" class="md-nav__link">
+        Standards Version Advancement Process
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-directory/" class="md-nav__link">
+        Directory of Published Versions
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.healthit.gov/" class="md-nav__link">
+        HealthIT.gov
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#information-and-clarifications" class="md-nav__link">
+    Information and Clarifications
+  </a>
+  
+    <nav class="md-nav" aria-label="Information and Clarifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entire-criterion" class="md-nav__link">
+    Entire Criterion
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements-data-categories" class="md-nav__link">
+    Functional Requirements (Data Categories)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#functional-requirements-date-date-range" class="md-nav__link">
+    Functional Requirements (Date &amp; Date Range)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-requirements-api-interface-interaction" class="md-nav__link">
+    Documentation Requirements (API Interface &amp; Interaction)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#documentation-requirements-availability" class="md-nav__link">
+    Documentation Requirements (Availability)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content" data-md-component="content">
+            <article class="md-content__inner md-typeset">
+              
+                
+
+
+<!-- $criterion-endpoint{"test-method/application-access-all-data-request-0"} -->
+
+<h1 id="hl7-c-cda-api-criterion-at-170315g9"><abbr title="Health Level 7">HL7</abbr>® C-CDA <abbr title="Application Programming Interface">API</abbr> criterion at § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)<a class="headerlink" href="#hl7-c-cda-api-criterion-at-170315g9" title="Permanent link">&para;</a></h1>
+<h2 id="information-and-clarifications">Information and Clarifications<a class="headerlink" href="#information-and-clarifications" title="Permanent link">&para;</a></h2>
+<h3 id="entire-criterion">Entire Criterion<a class="headerlink" href="#entire-criterion" title="Permanent link">&para;</a></h3>
+<!-- $ref{g-9:CCG["Applies to entire criterion"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to the entire criterion</em></summary>
+<ul>
+<li>Security:<ul>
+<li>For the purposes of certification there is no conformance requirement related to the registration of third-party applications that use the application programming interfaces (<abbr title="Application Programming Interfaces">APIs</abbr>). If a Health IT module requires registration as a pre-condition for accessing the <abbr title="Application Programming Interfaces">APIs</abbr>, then, the process must be clearly specified in the <abbr title="Application Programming Interface">API</abbr> documentation as required by the criterion. We strongly believe that registration should not be used to block information sharing via <abbr title="Application Programming Interfaces">APIs</abbr>.</li>
+<li>This criterion does not currently include any security requirements beyond the privacy and security approach detailed above, but <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> encourages organizations to follow security best practices and implement security controls, such as penetration testing, encryption, audits, and monitoring as appropriate. <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> expects health IT developers to include information on how to securely use their <abbr title="Application Programming Interfaces">APIs</abbr> in the public documentation required by the certification criteria and follow industry best practices. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1072" target="_blank">80 FR 62676</a> and <a href="https://www.federalregister.gov/d/2020-07419/p-3518" target="_blank">85 FR 25642</a>]</li>
+<li><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> strongly encourages developers to build security into their <abbr title="Application Programming Interfaces">APIs</abbr> following industry best practice. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1084" target="_blank">80 FR 62677</a>]</li>
+<li>A “trusted connection” means the link is encrypted/integrity protected according to § 170.210(<abbr title="FHIR® US Core Implementation Guide STU V3.1.1">a)(2</abbr>) or (c)(2). As such, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> does not believe it is necessary to specifically name HTTPS and/or SSL/TLS as this standard already covers encryption and integrity protection for data in motion. [see also <a href="https://www.federalregister.gov/d/2015-25597/p-1072" target="_blank">80 FR 62676</a>]</li>
+<li><abbr title="Application Programming Interfaces">APIs</abbr> could be used when consent or authorization by an individual is required. In circumstances where there is a requirement to document a patient’s request or particular preferences, <abbr title="Application Programming Interfaces">APIs</abbr> can enable compliance with documentation requirements. The Health Insurance Portability and Accountability Act of 1996 Privacy Rule (45 <abbr title="Code of Federal Regulations">CFR</abbr> Part 160 and Part 164, Subparts A and E) permits the use of electronic documents to qualify as writings for the purpose of proving signature, e.g., electronic signatures. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1094" target="_blank">80 FR 62677</a>]</li>
+</ul>
+</li>
+<li>The audit record should be able to distinguish the specific user who accessed the data using a third-party application through the certified <abbr title="Application Programming Interface">API</abbr> to meet the requirements of § 170.315(d)(2) or (d)(10).</li>
+<li>A health IT developer must demonstrate the <abbr title="Application Programming Interface">API</abbr> functionality of the Health IT Module properly performs consistent with this certification criterion’s requirements. As part of the demonstration process, a health IT developer is permitted, but is not limited, to using existing tools for creating its own app or “client” to interact with the <abbr title="Application Programming Interface">API</abbr> or using a third-party application for demonstration.</li>
+<li>By requiring that documentation and terms of use be open and transparent to the public by requiring a hyperlink to such documentation to be published with the product on the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Certified Health IT Product List, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> hopes to encourage an open ecosystem of diverse and innovative applications that can successfully and easily interact with different Health IT Modules’ <abbr title="Application Programming Interfaces">APIs</abbr>. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1112" target="_blank">80 FR 62679</a> and <a href="https://www.federalregister.gov/d/2020-07419/p-3518" target="_blank">85 FR 25642</a>]</li>
+<li>By no later than April 5, 2021, a Certified <abbr title="Application Programming Interface">API</abbr> Developer with Health IT Module(s) certified to the certification criteria in § 170.315(<abbr title="Non-standardized API certification criterion (patient selection)">g)(7</abbr>), (8), or (9) must comply with paragraph (a) of this section, including revisions to their existing business and technical <abbr title="Application Programming Interface">API</abbr> documentation and make such documentation available via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps.</li>
+</ul>
+</details>
+<h3 id="functional-requirements-data-categories">Functional Requirements (Data Categories)<a class="headerlink" href="#functional-requirements-data-categories" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(A)</strong></summary>
+<p>(i) Functional requirements. (A)(1) Respond to requests for patient data (based on an ID or other token) for all of the data classes expressed in the standards in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> at one time and return such data (according to the specified standards, where applicable) in a summary record formatted in accordance with § 170.205(a)(4) and (5) following the CCD document template, and as specified in paragraphs (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(A)(3)(i) through (iii) of this section, or (2) The Common Clinical Data Set in accordance with paragraphs (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(A)(3)(i) through (iv) of this section for the period before December 31, 2022, and (3) The following data classes: (i) Assessment and plan of treatment. In accordance with the “Assessment and Plan Section (V2)” of the standards specified in § 170.205(a)(4); or in accordance with the “Assessment Section (V2)” and “Plan of Treatment Section (V2)” of the standards specified in § 170.205(a)(4). (ii) Goals. In accordance with the “Goals Section” of the standards specified in § 170.205(a)(4). (iii) Health concerns. In accordance with the “Health Concerns Section” of the standards specified in § 170.205(a)(4). (iv) Unique device identifier(s) for a patient's implantable device(s). In accordance with the “Product Instance” in the “Procedure Activity Procedure Section” of the standards specified in § 170.205(a)(4).</p>
+</details>
+<!-- $ref{g-9:CCG["Paragraph (g)(9)(i)(A)"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(A)</em></summary>
+<ul>
+<li>Please refer to the USCDI for the data standards that are required.</li>
+<li>The technology specifications should be designed and implemented in such a way as to return meaningful responses to queries, particularly with regard to exceptions and exception handling, and should make it easy for applications to discover what data exists for the patient. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1109" target="_blank">80 FR 62678</a>]</li>
+<li>The term “token” that is used here is not to be interpreted as the token in the OAuth2 workflow, but simply as something that would uniquely identify a patient.</li>
+<li>In order to mitigate potential interoperability errors and inconsistent implementation of the <abbr title="Health Level 7">HL7</abbr>® Implementation Guide for CDA® Release 2: Consolidated CDA Templates for Clinical Notes, Draft Standard for Trial Use, Release 2.1, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> assesses, approves, and incorporates corrections as part of required testing and certification to this criterion. [see also <a href="https://www.healthit.gov/sites/default/files/PUBLICHealthITCertificationProgramOverview.pdf" target="_blank">Health IT Certification Program Overview</a>] Certified health IT adoption and compliance with the following corrections are necessary because they implement updates to vocabularies, update rules for cardinality and conformance statements, and promote proper exchange of C-CDA documents. There will be  a 90-day delay from the time the <abbr title="Certification Companion Guide">CCG</abbr> has been updated with the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr>-approved corrections to when compliance with the corrections will be required to pass testing (i.e., C-CDA 2.1 Validator).There will be an 18-month delay before a finding of a correction’s absence in certified health IT during surveillance would constitute a non-conformity under the Certification Program.</li>
+</ul>
+</details>
+<h3 id="functional-requirements-date-date-range">Functional Requirements (Date &amp; Date Range)<a class="headerlink" href="#functional-requirements-date-date-range" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(B)</strong></summary>
+<p>(B) Respond to requests for patient data associated with a specific date as well as requests for patient data within a specified date range.</p>
+</details>
+<!-- $ref{g-9:CCG["Paragraph (g)(9)(i)(B)"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(i)(B)</em></summary>
+<ul>
+<li>Health IT returning an entire patient record that does not reflect the specific date or date range requested is not permissible when a specific date or date range is requested. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1109" target="_blank">80 FR 62678</a>]</li>
+<li>The health IT developer can determine the method and the amount of data by which the health IT uniquely identifies a patient. [see also <a href="http://www.federalregister.gov/a/2015-25597/p-1101" target="_blank">80 FR 62678</a>]</li>
+<li>The <abbr title="Application Programming Interface">API</abbr> must be able to send, at minimum all required data for a specified date range(s). <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> acknowledges that there will be organizational policies and/or safety best practices that will dictate additional data to be sent and when data is considered complete and/or ready for being sent. This should be appropriately described in the <abbr title="Application Programming Interface">API</abbr> documentation.</li>
+<li>The approach used to provide the CCD document(s) is set by the <abbr title="Application Programming Interface">API</abbr>. An approach based on providing one or more CCD documents matching to the patient’s selected date or date range is a valid approach.</li>
+</ul>
+</details>
+<h3 id="documentation-requirements-api-interface-interaction">Documentation Requirements (<abbr title="Application Programming Interface">API</abbr> Interface &amp; Interaction)<a class="headerlink" href="#documentation-requirements-api-interface-interaction" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(A)</strong></summary>
+<p>(A) The <abbr title="Application Programming Interface">API</abbr> must include accompanying documentation that contains, at a minimum: (1) <abbr title="Application Programming Interface">API</abbr> syntax, function names, required and optional parameters and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the <abbr title="Application Programming Interface">API</abbr> and process its response(s). (3) The terms of use for the <abbr title="Application Programming Interface">API</abbr> must be provided including, at a minimum, any associated developer policies and required developer agreements.</p>
+</details>
+<!-- $ref{g-9:CCG["Paragraph (g)(9)(ii)(A)"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(A)(1)</em></summary>
+<ul>
+<li><abbr title="Application Programming Interface">API</abbr> syntax, function names, required and optional parameters and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns.</li>
+<li>The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the <abbr title="Application Programming Interface">API</abbr> and process its response(s).</li>
+<li>The terms of use for the <abbr title="Application Programming Interface">API</abbr> must be provided including, at a minimum, any associated developer policies and required developer agreements.</li>
+</ul>
+</details>
+<h3 id="documentation-requirements-availability">Documentation Requirements (Availability)<a class="headerlink" href="#documentation-requirements-availability" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(B)</strong></summary>
+<p>(B) The documentation used to meet paragraph (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(A) of this section must be available via a publicly accessible hyperlink.</p>
+</details>
+<!-- $ref{g-9:CCG["Paragraph (g)(9)(ii)(B)"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(B)</em></summary>
+<ul>
+<li>The hyperlink provided for all of the documentation referenced by provision (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(A) must reflect the most current version of the health IT developer’s documentation.</li>
+<li>All the documentation referenced by provision (<abbr title="Non-standardized API certification criterion (all data request)">g)(9</abbr>)(ii)(A) must be accessible to the public via a hyperlink without additional access requirements, including, without limitation, any form of registration, account creation, “click-through” agreements, or requirement to provide contact details or other information prior to accessing the documentation.</li>
+</ul>
+</details>
+<!-- Standards Referenced -->
+<!-- ONC Certification Criteria -->
+<!-- ONC Rules -->
+
+              
+            </article>
+            
+          </div>
+        </div>
+        
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </a>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
+      
+        
+        <a href="../g10-criterion/" class="md-footer__link md-footer__link--prev" aria-label="Previous: HL7&amp;#174 FHIR&amp;#174 API criterion - (g)(10)" rel="prev">
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+          </div>
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              HL7&#174 FHIR&#174 API criterion - (g)(10)
+            </div>
+          </div>
+        </a>
+      
+      
+        
+        <a href="../g8-criterion/" class="md-footer__link md-footer__link--next" aria-label="Next: Non-standarized data request API criterion - (g)(8)" rel="next">
+          <div class="md-footer__title">
+            <div class="md-ellipsis">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              Non-standarized data request API criterion - (g)(8)
+            </div>
+          </div>
+          <div class="md-footer__button md-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+          </div>
+        </a>
+      
+    </nav>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    <a href="https://www.healthit.gov/" target="_blank" rel="noopener" title="HealthIT.gov" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M336 0H48C21.49 0 0 21.49 0 48v431.9c0 24.7 26.79 40.08 48.12 27.64L192 423.6l143.9 83.93c21.3 11.57 48.1-2.93 48.1-27.63V48c0-26.51-21.5-48-48-48zm0 452-144-84-144 84V54c0-3.37 2.63-6 5.1-6h276c4.3 0 6.9 2.63 6.9 6v398z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6c7ad80a.min.js"></script>
+      
+    
+  </body>
+</html>
