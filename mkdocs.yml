@@ -13,6 +13,8 @@ nav:
   - Directory of Published Versions: version-directory.md
   - HealthIT.gov: https://www.healthit.gov/
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
+copyright: >
+  <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
 theme:
   name: material
   custom_dir: overrides
