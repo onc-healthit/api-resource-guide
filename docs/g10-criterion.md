@@ -295,14 +295,37 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
 	- No additional clarifications.
 
-<!-- ## Test Procedures
-### Paragraph (g)(10)(iii) – Application registration
-**Application Registration**
+## Test Procedure
+**Select Standards**:
 
-1. The health IT developer demonstrates the Health IT Module supports application registration with an authorization server for the purposes of Electronic Health Information (EHI) access for single patients, including support for application registration functions to enable authentication and authorization in § 170.315(g)(10)(v).
-1. The health IT developer demonstrates the Health IT Module supports application registration with an authorization server for the purposes of EHI access for multiple patients including support for application registration functions to enable authentication and authorization in § 170.315(g)(10)(v).
+<form>
+	<p>US Core:</p>
+	<input type="radio" name="usCore" value="us-core-3.1.1">
+	<label>US Core STU V3.1.1 + USCDI V1</label><br>
+	<input type="radio" name="usCore" value="us-core-4.0.0">
+	<label>US Core STU V4.0.0 + USCDI V1</label><br>
+	<input type="radio" name="usCore" value="us-core-5.0.1">
+	<label>US Core STU V5.0.1 + USCDI V2</label><br>
 
-### Paragraph (g)(10)(iv) – Secure connection
-**Secure connection** -->
+	<br>
+
+	<p>SMART App Launch:</p>
+	<input type="radio" name="smartAppLaunch" value="smart-app-launch-1.0.0">
+	<label>SMART App Launch V1.0.0</label><br>
+	<input type="radio" name="smartAppLaunch" value="smart-app-launch-2.0.0">
+	<label>SMART App Launch V2.0.0</label><br>
+
+	<br>
+	
+	<p>Bulk Data:</p>
+	<input type="radio" name="bulkData" value="bulk-data-1.0.0">
+	<label>Bulk Data Access V1.0.0:STU 1</label><br>
+	<input type="radio" name="bulkData" value="bulk-data-2.0.0">
+	<label>Bulk Data Access V2.0.0:STU 2</label><br>
+
+	<br>
+
+	<button class = "md-button md-button--primary" type="button" style = "cursor: pointer;" onclick="testProcedureGenerate(this.form)">View Test Procedure</button>
+</form>
 
 --8<-- "includes/abbreviations.md"
