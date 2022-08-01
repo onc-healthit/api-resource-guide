@@ -32,6 +32,6 @@ window.testProcedureGenerate = function (form) {
     }
 
     if (testProcedureFile !== "") {
-        window.open(testProcedureFile, '_blank').focus();
+        window.location.href = testProcedureFile;
     }
 }
