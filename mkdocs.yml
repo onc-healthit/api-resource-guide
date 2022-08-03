@@ -43,7 +43,11 @@ markdown_extensions:
   - pymdownx.snippets
   - pymdownx.details
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+    custom_fences:
+      - name: mermaid
+        class: mermaid
+        format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - toc:
       permalink: true

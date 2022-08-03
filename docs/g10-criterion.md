@@ -244,7 +244,21 @@ new period of no less than three months.
 
 	First, according to <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3468">§170.315(g)(10)(v)(B)</a>, Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “<a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/authorization/index.html">SMART Backend Services: Authorization Guide</a>” section of the Bulk Data implementation guide.
 	
-	![Sequence diagram for initial backend services authentication and authorization flow](images/backend-services-initial.png)
+	``` mermaid
+	sequenceDiagram
+	Backend Service->>FHIR Authorization Server: Client Registration (may be out of band)
+	Backend Service ->> FHIR Resource Server: Discovery request
+	FHIR Resource Server -->> Backend Service: Discovery response
+	Backend Service ->> FHIR Authorization Server: Access token request
+	note over FHIR Authorization Server: On approval
+	FHIR Authorization Server -->> Backend Service: Access token response
+	Backend Service->>FHIR Resource Server: Bulk data kick-off request (including access token)
+	note over FHIR Resource Server: On success
+	FHIR Resource Server -->> Backend Service: URL of an endpoint for subsequent status requests
+	Backend Service ->>FHIR Resource Server: Bulk data status request
+	note over FHIR Resource Server: On export generation completion
+	FHIR Resource Server -->> Backend Service: Link(s) to the generated bulk data files (output manifest)
+	```
 
 	*Note that generated Bulk Data files <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/export/index.html#response---complete-status">may</a> be served by file servers other than a FHIR-specific server.*
 
@@ -252,11 +266,21 @@ new period of no less than three months.
 
 	If `reqiresAccessToken = true`
 
-	![Sequence diagram for retrieving bulk data files using an access token](images/bulk-data-access-token-true.png)
+	```mermaid
+	sequenceDiagram
+	Backend Service->>File Server: Request files (using access token)
+	note over File Server: On success
+	File Server-->>Backend Service: Recieve files
+	```
 
 	If `reqiresAccessToken = false`	
 
-	![Sequence diagram for retrieving bulk data files without an access token](images/bulk-data-access-token-false.png)
+	```mermaid
+	sequenceDiagram
+	Backend Service->>File Server: Request files
+	note over File Server: On success
+	File Server-->>Backend Service: Recieve files
+	```
 
 	It is critical that server developers follow the HL7 guidance on  <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a> when choosing to generate output manifests with `requiresAccessToken = false`.
 
