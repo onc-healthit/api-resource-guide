@@ -94,6 +94,8 @@ healthcare providers to implement Health IT Modules certified to requirements in
     `US Core Practitioner Profile, US Core Patient Profile, US Core Organization Profile`
     A Health IT Module must support at least one of these References via the (g)(10) standardized API.
 
+	Additionally, a guided walk through of "must support" in FHIR and US Core 3.1.1 can be found on YouTube <a target = "_blank" href = "https://youtu.be/CRsR4pViS4c">here</a>.
+
 ### Data Response (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
     (B) Respond to requests for multiple patients' data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
