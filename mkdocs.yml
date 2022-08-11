@@ -17,7 +17,6 @@ copyright: >
   <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
 theme:
   name: material
-  custom_dir: overrides
   scheme: default
   palette:
     primary: indigo
