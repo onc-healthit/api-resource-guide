@@ -33,7 +33,7 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 
 	 **Inferno Walkthroughs/Documentation**
 
-	  - <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/wiki/Walkthrough">Inferno Walkthrough</a> (GitHub Wiki)
+	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
 	 
 	 **Previously Recorded Presentations**
 
