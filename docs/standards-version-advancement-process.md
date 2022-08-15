@@ -6,7 +6,7 @@ Using SVAP, Certified Health IT Developers are permitted to voluntarily use a mo
 
 {==
 
-<a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/whats-new-in-the-2022-approved-standards-via-standards-version-advancement-process">ONC Buzz Blog: What’s New in the 2022 Approved Standards via Standards Version Advancement Process</a>
+<p style="text-align: center;"><a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/whats-new-in-the-2022-approved-standards-via-standards-version-advancement-process">ONC Buzz Blog: What’s New in the 2022 Approved Standards via Standards Version Advancement Process</a></p>
 
 ==}
 
