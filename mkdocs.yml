@@ -42,6 +42,7 @@ extra:
 markdown_extensions:
   - abbr
   - attr_list
+  - pymdownx.critic
   - pymdownx.snippets
   - pymdownx.details
   - admonition
