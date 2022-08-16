@@ -29,6 +29,8 @@ theme:
     - navigation.top
   favicon: images/logo.png
   logo: images/logo.png
+  icon:
+    repo: fontawesome/brands/github
 extra:
   analytics:
     provider: google
@@ -55,3 +57,5 @@ markdown_extensions:
   - toc:
       permalink: true
 repo_url: https://github.com/onc-healthit/api-resource-guide
+repo_name: onc-healthit/api-resource-guide
+edit_uri: edit/main/docs/
