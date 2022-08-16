@@ -34,7 +34,7 @@ theme:
 extra:
   analytics:
     provider: google
-    property: G-9FHYY7H053
+    property: UA-65372500-1
   version:
     provider: mike
   social:
