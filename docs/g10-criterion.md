@@ -9,7 +9,8 @@ This section considers the standardized API for patient and population services 
 
 The API certification criterion finalized in § 170.315(g)(10) was included as part of the EHR Base Definition at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3216">§ 170.102</a>. While developers of health information technology are not required by the ONC to meet certification requirements, including certification requirements that are included as part of the EHR Base Definition, several federal, state and tribal entities, including <a target = "_blank" href = "https://www.cms.gov/">Centers for Medicare & Medicaid Services</a>, <a target = "_blank" href = "https://www.cdc.gov/">Centers for Disease Control and Prevention</a>, and other programs reference the ONC Health IT Certification Program and require the use of certified health IT for program participation.
 
-## Inferno Testing Tool for Certification
+## Testing Tools for Certification
+### Inferno Framework
 The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(g)(10) Standardized API Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (g)(10) API testing in the ONC Health IT Certification Program. The (g)(10) Standardized API Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>.
 
 !!! note ""
@@ -44,6 +45,9 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 	 - <a target = "_blank" href = "https://youtu.be/FAfS8veda1w">Steve Posnack & Robert Scanlon - Testing HL7® FHIR® Implementation Guides | DevDays 2020 June</a>
 	 - <a target = "_blank" href = "https://youtu.be/C92CoKNV3KA">Robert Scanlon - FHIR Server Certification with Inferno | DevDays Redmond 2019</a>
 	 - <a target = "_blank" href = "https://youtu.be/_i9C825GSSM ">Robert Scanlon - INFERNO | DevDays 2018 Amsterdam</a>
+
+### Drummond G10+ FHIR API powered by Touchstone
+In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
 
 ## Information and Clarifications
 
