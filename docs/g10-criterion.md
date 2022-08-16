@@ -9,7 +9,8 @@ This section considers the standardized API for patient and population services 
 
 The API certification criterion finalized in § 170.315(g)(10) was included as part of the EHR Base Definition at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3216">§ 170.102</a>. While developers of health information technology are not required by the ONC to meet certification requirements, including certification requirements that are included as part of the EHR Base Definition, several federal, state and tribal entities, including <a target = "_blank" href = "https://www.cms.gov/">Centers for Medicare & Medicaid Services</a>, <a target = "_blank" href = "https://www.cdc.gov/">Centers for Disease Control and Prevention</a>, and other programs reference the ONC Health IT Certification Program and require the use of certified health IT for program participation.
 
-## Inferno Testing Tool for Certification
+## Testing Tools for Certification
+### Inferno Framework
 The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(g)(10) Standardized API Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (g)(10) API testing in the ONC Health IT Certification Program. The (g)(10) Standardized API Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>.
 
 !!! note ""
@@ -35,7 +36,7 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 
 	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
 	 
-	 **Previously Recorded Presentations**
+	 **:material-video: Previously Recorded Presentations**
 
 	*Note that some of these may contain out-of-date information*
 
@@ -44,6 +45,9 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 	 - <a target = "_blank" href = "https://youtu.be/FAfS8veda1w">Steve Posnack & Robert Scanlon - Testing HL7® FHIR® Implementation Guides | DevDays 2020 June</a>
 	 - <a target = "_blank" href = "https://youtu.be/C92CoKNV3KA">Robert Scanlon - FHIR Server Certification with Inferno | DevDays Redmond 2019</a>
 	 - <a target = "_blank" href = "https://youtu.be/_i9C825GSSM ">Robert Scanlon - INFERNO | DevDays 2018 Amsterdam</a>
+
+### Drummond G10+ FHIR API powered by Touchstone
+In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
 
 ## Information and Clarifications
 
@@ -94,7 +98,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
     `US Core Practitioner Profile, US Core Patient Profile, US Core Organization Profile`
     A Health IT Module must support at least one of these References via the (g)(10) standardized API.
 
-	Additionally, a guided walk through of "must support" in FHIR and US Core 3.1.1 can be found on YouTube <a target = "_blank" href = "https://youtu.be/CRsR4pViS4c">here</a>.
+	:material-video: Additionally, a guided walk through of "must support" in FHIR and US Core 3.1.1 can be found on YouTube <a target = "_blank" href = "https://youtu.be/CRsR4pViS4c">here</a>.
 
 ### Data Response (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
@@ -201,7 +205,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
     As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0</a>, some `native` applications are unable to claim they are `confidential`. By definition, these non-confidential `native` applications do not have a `client_secret` to exchange during the client authentication process. However, there are additional methods that non-confidential `native` applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of application-claimed, private-use Uniform Resource Identifier (URI) schemes as redirect URIs, and utilizing on device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph in § 170.315(g)(10)(v)(A)(1)(iii) requires that Health IT Modules provide support for the issuance of an initial refresh token to `native` applications capable of securing a refresh token.
 
 !!! tip "OAuth Implementation Presentations"
-	Below is a list of presentations that can be used by Certified Health IT Developers to kick-start their OAuth implementations.
+	:material-video: Below is a list of presentations that can be used by Certified Health IT Developers to kick-start their OAuth implementations.
 
 	These presentations are best when consumed in the following order:
 

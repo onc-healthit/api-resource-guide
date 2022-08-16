@@ -29,6 +29,8 @@ theme:
     - navigation.top
   favicon: images/logo.png
   logo: images/logo.png
+  icon:
+    repo: fontawesome/brands/github
 extra:
   analytics:
     provider: google
@@ -43,6 +45,9 @@ markdown_extensions:
   - abbr
   - attr_list
   - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.details
   - admonition
@@ -54,3 +59,8 @@ markdown_extensions:
   - pymdownx.tabbed
   - toc:
       permalink: true
+repo_url: https://github.com/onc-healthit/api-resource-guide
+repo_name: onc-healthit/api-resource-guide
+edit_uri: edit/main/docs/
+plugins:
+  - git-revision-date-localized
