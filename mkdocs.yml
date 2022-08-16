@@ -54,3 +54,4 @@ markdown_extensions:
   - pymdownx.tabbed
   - toc:
       permalink: true
+repo_url: https://github.com/onc-healthit/api-resource-guide
