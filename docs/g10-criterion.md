@@ -36,7 +36,7 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 
 	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
 	 
-	 **Previously Recorded Presentations**
+	 **:material-video: Previously Recorded Presentations**
 
 	*Note that some of these may contain out-of-date information*
 
