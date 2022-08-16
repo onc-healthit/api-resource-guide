@@ -45,6 +45,9 @@ markdown_extensions:
   - abbr
   - attr_list
   - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.details
   - admonition
