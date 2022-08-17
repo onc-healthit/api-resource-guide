@@ -160,8 +160,8 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
     (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3).
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(A)"], tabbed} -->
-??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)(A)*"
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)"], tabbed} -->
+??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)*"
 	- Connections below TLS version 1.2 must be denied.
 
 ### Secure Connection (System Scopes)
