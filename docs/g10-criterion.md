@@ -156,20 +156,12 @@ healthcare providers to implement Health IT Modules certified to requirements in
 - The requirement that health IT developers must enable an application to register with the § 170.315(g)(10)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and API Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of Certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.
 - Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> established in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1665">ONC Cures Act Final Rule</a>.
 
-### Secure Connection (Patient / User Scopes)
+### Secure Connection
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
     (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3).
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)*"
-	- Connections below TLS version 1.2 must be denied.
-
-### Secure Connection (System Scopes)
-???+ quote "**Regulation text at § 170.315(g)(10)(iv)(B)**"
-    (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(a)(4).
-
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)(B)"], tabbed} -->
-??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)(B)*"
 	- Connections below TLS version 1.2 must be denied.
 
 ### First-time Authentication / Authorization for Single Patient Services
