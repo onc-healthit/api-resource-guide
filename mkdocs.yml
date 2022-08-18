@@ -17,8 +17,17 @@ copyright: >
   <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
 theme:
   name: material
-  scheme: default
   palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode 
     primary: indigo
     accemt: yellow
   features:
