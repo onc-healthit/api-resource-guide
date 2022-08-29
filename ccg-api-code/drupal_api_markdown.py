@@ -6,6 +6,7 @@ import requests
 import time
 from pathlib import Path
 from markdownify import markdownify as md
+from bs4 import BeautifulSoup
 
 def read_to_line_end(input_str, pos):
     """Builds a string from a position to the end of the line
