@@ -3,10 +3,9 @@ import os
 import re
 import sys
 import requests
-import json
 import time
 from pathlib import Path
-from bs4 import BeautifulSoup
+from markdownify import markdownify as md
 
 def read_to_line_end(input_str, pos):
     """Builds a string from a position to the end of the line
@@ -37,51 +36,6 @@ def read_to_line_end(input_str, pos):
 def strip_non_alphanumeric(data):
     p = re.compile(r'\W+')
     return p.sub('', data).strip()
-
-def resolve_li_links(md_str, links_soup):
-    for link in links_soup:
-        link["target"] = "_blank"
-        link_text = link.get_text()
-        link_html = str(link)
-        md_str = md_str.replace(link_text, link_html)
-
-    return md_str
-
-def html_list_to_markdown(input, prefix = ""):
-    li_tags = input.find("ul").contents
-
-    output = ""
-
-    for li_tag in li_tags:
-        nested_list = li_tag.find("ul")
-
-        if nested_list == -1:
-            continue
-
-        if nested_list == None:
-            links = li_tag.find_all('a')
-
-            li_tag_str = li_tag.get_text()
-
-            if links:
-                li_tag_str = resolve_li_links(li_tag_str, links)
-
-            output = output + "{}- ".format(prefix) + li_tag_str.strip() + "\n"
-        else:
-            # Hacking a  deep copy of li_tag
-            li_tag_copy = str(li_tag)
-            li_tag_copy = BeautifulSoup(li_tag_copy, 'html.parser')
-
-            li_tag_copy.find("ul").decompose()
-            text = li_tag_copy.get_text()
-
-            links = li_tag_copy.find_all('a')
-            if links:
-                text = resolve_li_links(text, links)
-
-            output = output + "{}- {}\n".format(prefix, text.strip()) + html_list_to_markdown(li_tag, prefix + "\t")       
-
-    return output
 
 def gather_data_from_web(criterion):
     web_data = {}
@@ -168,13 +122,12 @@ def process_template(onc_template_str, file_path):
 
         referenced_paragraph_data = web_data[referenced_paragraph_key]
 
-        soup = BeautifulSoup(referenced_paragraph_data, 'html.parser')
-
         clarifications_list = ""
+        clarifications_list = md(referenced_paragraph_data)
         if tabbed:
-            clarifications_list = html_list_to_markdown(soup, "\t")
-        else:
-            clarifications_list = html_list_to_markdown(soup)
+            clarifications_list_by_line = md(referenced_paragraph_data).split("\n")
+            clarifications_list_by_line = list(map(lambda x: "\t" + x, clarifications_list_by_line)) # Add tabs to each line
+            clarifications_list = '\n'.join(clarifications_list_by_line)
 
         _, pointer = read_to_line_end(onc_template_str, onc_template_str.find(tag))
 
