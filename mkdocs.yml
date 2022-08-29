@@ -17,9 +17,17 @@ copyright: >
   <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
 theme:
   name: material
-  custom_dir: overrides
-  scheme: default
   palette:
+  - media: "(prefers-color-scheme: light)"
+    scheme: default
+    toggle:
+      icon: material/brightness-7
+      name: Switch to dark mode
+  - media: "(prefers-color-scheme: dark)"
+    scheme: slate
+    toggle:
+      icon: material/brightness-4
+      name: Switch to light mode 
     primary: indigo
     accemt: yellow
   features:
@@ -30,6 +38,8 @@ theme:
     - navigation.top
   favicon: images/logo.png
   logo: images/logo.png
+  icon:
+    repo: fontawesome/brands/github
 extra:
   version:
     provider: mike
@@ -42,10 +52,24 @@ extra_javascript:
 markdown_extensions:
   - abbr
   - attr_list
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.details
   - admonition
-  - pymdownx.superfences
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
   - pymdownx.tabbed
   - toc:
       permalink: true
+repo_url: https://github.com/onc-healthit/api-resource-guide
+repo_name: onc-healthit/api-resource-guide
+edit_uri: edit/main/docs/
+plugins:
+  - git-revision-date-localized
+  - search

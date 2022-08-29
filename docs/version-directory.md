@@ -1,9 +1,3 @@
-| Version #| Description of Change | Version Date |
-| ---------| ----------------------|--------------|
-| 1        | API Resource Guide PDF (deprecated)     | November 30, 2020 |
-| 2        | Migrate API Resource Guide PDF content into makrdown website     | November 5, 2021 |
-| 2.1        | Added additional clarifiation on why API Service Base URL publication is only required for patient-facing APIs (Git commit: <a target = "_blank" href = "https://github.com/onc-healthit/api-resource-guide/commit/bad0ad306f840874373d63d4c19cceedc250e049">bad0ad3</a>)  | March 28, 2022 |
-
 ## Viewing line item differentials in GitHub
 The code and content for this resource is publicly <a href = "https://github.com/onc-healthit/api-resource-guide" target = "_blank">available on GitHub</a>. On of the key features of GitHub is the ability to easily view line item differentials (diffs) between versions:
 
