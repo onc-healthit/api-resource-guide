@@ -47,6 +47,8 @@ extra:
     - icon: fontawesome/regular/bookmark
       link: https://www.healthit.gov/
       name: HealthIT.gov
+extra_javascript:
+  - javascripts/g10-dynamic-tp.js
 markdown_extensions:
   - abbr
   - attr_list
