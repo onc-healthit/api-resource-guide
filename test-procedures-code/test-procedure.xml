@@ -234,19 +234,19 @@ Additionally, the following “capabilities” must be supported if using US Cor
 </AUT-PAT-27>
 
 <AUT-PAT-28 standards="SMART 2.0.0">
-    [Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
+[Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
 
-    - `openid` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
-    - `FHIR®User` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
-    - `need_patient_banner` (to support `context-banner` “SMART on FHIR® Capability” for EHR-Launch mode only);
-    - `smart_style_url` (to support `context-style` “SMART on FHIR® Capability” for EHR-Launch mode only);
-    - `launch/patient` (to support `context-standalone-patient` “SMART on FHIR® Capability” for Standalone-Launch mode only);
-    - `launch` (for EHR-Launch mode only);
-    - `offline_access` (to support `permission-offline` “SMART on FHIR® Capability”);
-    - Patient-level scopes (to support `permission-patient` and “SMART on FHIR® Capability”); and
-    - User-level scopes (to support `permission-user` “SMART on FHIR® Capability”).
-    - SMARTv1 scope syntax for patient-level and user-level scopes (to support `permission-v1` “SMART on FHIR® Capability”)
-    - SMARTv2 scope syntax for patient-level and user-level scopes (to support `permission-v2` “SMART on FHIR® Capability”)
+- `openid` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
+- `FHIR®User` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
+- `need_patient_banner` (to support `context-banner` “SMART on FHIR® Capability” for EHR-Launch mode only);
+- `smart_style_url` (to support `context-style` “SMART on FHIR® Capability” for EHR-Launch mode only);
+- `launch/patient` (to support `context-standalone-patient` “SMART on FHIR® Capability” for Standalone-Launch mode only);
+- `launch` (for EHR-Launch mode only);
+- `offline_access` (to support `permission-offline` “SMART on FHIR® Capability”);
+- Patient-level scopes (to support `permission-patient` and “SMART on FHIR® Capability”); and
+- User-level scopes (to support `permission-user` “SMART on FHIR® Capability”).
+- SMARTv1 scope syntax for patient-level and user-level scopes (to support `permission-v1` “SMART on FHIR® Capability”)
+- SMARTv2 scope syntax for patient-level and user-level scopes (to support `permission-v2` “SMART on FHIR® Capability”)
 </AUT-PAT-28>
 
 <AUT-PAT-29 standards="SMART 2.0.0">
