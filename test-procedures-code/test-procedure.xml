@@ -250,14 +250,10 @@ Additionally, the following “capabilities” must be supported if using US Cor
 </AUT-PAT-28>
 
 <AUT-PAT-29 standards="SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to support for the purposes of backwards compatibility the use of SMART Application Launch Framework Implementation Guide Release 1.0.0 scopes as detailed in the implementation specification adopted in § 170.215(a)(3).
+[EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to establish a patient in context if an application requests a clinical scope which is restricted to a single patient as detailed in the implementation specification adopted in § 170.215(a)(3).
 </AUT-PAT-29>
 
 <AUT-PAT-30 standards="SMART 2.0.0">
-[EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to establish a patient in context if an application requests a clinical scope which is restricted to a single patient as detailed in the implementation specification adopted in § 170.215(a)(3).
-</AUT-PAT-30>
-
-<AUT-PAT-31 standards="SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive the following access token request parameters from an application according to the implementation specification adopted in § 170.215(a)(3): 
 
 - `grant_type`; 
@@ -266,15 +262,15 @@ Additionally, the following “capabilities” must be supported if using US Cor
 - `code_verifier`; 
 - `client_id`; and 
 - Authorization header including `client_id` and `client_secret`.
+</AUT-PAT-30>
+
+<AUT-PAT-31 standards="SMART 2.0.0">
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if an invalid `code_verifier` value is supplied with an access token request according to the implementation specification adopted in § 170.215(a)(3).
 </AUT-PAT-31>
 
-<AUT-PAT-32 standards="SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if an invalid `code_verifier` value is supplied with an access token request according to the implementation specification adopted in § 170.215(a)(3).
-</AUT-PAT-32>
-
-<AUT-PAT-33 standards="SMART 1.0.0, SMART 2.0.0, US Core 5.0.1">
+<AUT-PAT-32 standards="SMART 1.0.0, SMART 2.0.0, US Core 5.0.1">
 [EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an `Encounter` FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
-</AUT-PAT-33>
+</AUT-PAT-32>
 </paragraph_g_10_v_A>
 
 <paragraph_g_10_vi name="Paragraph (g)(10)(vi) – Patient authorization revocation">
@@ -536,7 +532,7 @@ SEC-CNN-1
 
 <SMART_1_0_0 standards="SMART 1.0.0">
 <Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Authentication and Authorization for Patient and User Scopes" standards="SMART 1.0.0">
-AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-5, AUT-PAT-6, AUT-PAT-7, AUT-PAT-8, AUT-PAT-9, AUT-PAT-10, AUT-PAT-11, AUT-PAT-12, AUT-PAT-13, AUT-PAT-14, AUT-PAT-15, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-33, AUT-PAT-20, AUT-PAT-21
+AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-5, AUT-PAT-6, AUT-PAT-7, AUT-PAT-8, AUT-PAT-9, AUT-PAT-10, AUT-PAT-11, AUT-PAT-12, AUT-PAT-13, AUT-PAT-14, AUT-PAT-15, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-32, AUT-PAT-20, AUT-PAT-21
 </Authentication_and_Authorization_for_Patient_and_User_Scopes>
 <Subsequent_Connections_Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Subsequent Connections: Authentication and Authorization for Patient and User Scopes" standards="SMART 1.0.0">
 AUT-PAT-22, AUT-PAT-23
@@ -545,7 +541,7 @@ AUT-PAT-22, AUT-PAT-23
 
 <SMART_2_0_0 standards="SMART 2.0.0">
 <Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Authentication and Authorization for Patient and User Scopes" standards="SMART 2.0.0">
-AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-24, AUT-PAT-25, AUT-PAT-26, AUT-PAT-28, AUT-PAT-10, AUT-PAT-29, AUT-PAT-11, AUT-PAT-12, AUT-PAT-30, AUT-PAT-13, AUT-PAT-14, AUT-PAT-31, AUT-PAT-32, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-33, AUT-PAT-20, AUT-PAT-21 
+AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-24, AUT-PAT-25, AUT-PAT-26, AUT-PAT-28, AUT-PAT-10, AUT-PAT-11, AUT-PAT-12, AUT-PAT-29, AUT-PAT-13, AUT-PAT-14, AUT-PAT-30, AUT-PAT-31, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-32, AUT-PAT-20, AUT-PAT-21 
 </Authentication_and_Authorization_for_Patient_and_User_Scopes>
 <Subsequent_Connections_Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Subsequent Connections: Authentication and Authorization for Patient and User Scopes" standards="SMART 2.0.0">
 AUT-PAT-22, AUT-PAT-23
