@@ -13,23 +13,25 @@ The health IT developer demonstrates the Health IT Module supports application r
 <paragraph_g_10_iv name="Paragraph (g)(10)(iv) – Secure connection">
 <SEC-CNN-1>
 For all transmissions between the Health IT Module and the application, the health IT developer demonstrates the use of a secure and trusted connection in accordance with the implementation specifications adopted in § 170.215(a)(2) and § 170.215(a)(3), including:
-	- Using TLS version 1.2 or higher; and
-	- Conformance to FHIR® Communications Security requirements.
-</SEC-CNN-1>	
+
+- Using TLS version 1.2 or higher; and
+- Conformance to FHIR® Communications Security requirements.
+</SEC-CNN-1>    
 </paragraph_g_10_iv>
 
 <paragraph_g_10_v_A name="Paragraph (g)(10)(v)(A) – Authentication and authorization for patient and user scopes">
 <AUT-PAT-1 standards="SMART 1.0.0, SMART 2.0.0">
-The health IT developer demonstrates the ability of the Health IT Module to support the following for “EHR-Launch,” “Standalone-Launch,” and “Both” (“EHR-Launch” and “Standalone-Launch”) as specified in the implementation specification adopted in § 170.215(a)(3).
+The health IT developer demonstrates the ability of the Health IT Module to support the following for `EHR-Launch`, `Standalone-Launch`, and “Both” (`EHR-Launch` and `Standalone-Launch`) as specified in the implementation specification adopted in § 170.215(a)(3).
 </AUT-PAT-1>
 
 <AUT-PAT-2 standards="SMART 1.0.0, SMART 2.0.0">
-[EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to initiate a “launch sequence” using the “launch-ehr" “SMART on FHIR® Core Capability” SMART EHR Launch mode detailed in the implementation specification adopted in § 170.215(a)(3), including:
-	- Launching the registered launch URL of the application; and
-	- Passing the parameters: “iss” and “launch”. 
+[EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to initiate a “launch sequence” using the `launch-ehr` “SMART on FHIR® Core Capability” SMART EHR Launch mode detailed in the implementation specification adopted in § 170.215(a)(3), including:
+
+- Launching the registered launch URL of the application; and
+- Passing the parameters: `iss` and `launch`. 
 </AUT-PAT-2>
 
-<AUT-PAT-3 standards="SMART 1.0.0, SMART 2.0.0"> [Standalone-Launch] The health IT developer demonstrates the ability of the Health IT Module to launch using the “launch-standalone" “SMART on FHIR® Core Capability” SMART Standalone Launch mode detailed in the implementation specification adopted in § 170.215(a)(3).
+<AUT-PAT-3 standards="SMART 1.0.0, SMART 2.0.0"> [Standalone-Launch] The health IT developer demonstrates the ability of the Health IT Module to launch using the `launch-standalone` “SMART on FHIR® Core Capability” SMART Standalone Launch mode detailed in the implementation specification adopted in § 170.215(a)(3).
 </AUT-PAT-3>
 
 <AUT-PAT-4 standards="SMART 1.0.0, SMART 2.0.0">
@@ -38,77 +40,84 @@ The health IT developer demonstrates the ability of the Health IT Module to supp
 
 <AUT-PAT-5 standards="SMART 1.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to support the following as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1):
-	- The “.well-known/smart-configuration.json” path; and
-	- A FHIR® “CapabilityStatement”.
+
+- The `.well-known/smart-configuration.json` path; and
+- A FHIR® `CapabilityStatement`.
 </AUT-PAT-5>
 
 <AUT-PAT-6 standards="SMART 1.0.0">
-[Both] The health IT developer demonstrates the ability of the “.well-known/smart-configuration.json” path to support at least the following as detailed in the implementation specification adopted in § 170.215(a)(3): 
-	- “authorization_endpoint”;
-	- “token_endpoint”; and
-	- “capabilities” (including support for all the “SMART on FHIR® Core Capabilities”).
+[Both] The health IT developer demonstrates the ability of the `.well-known/smart-configuration.json` path to support at least the following as detailed in the implementation specification adopted in § 170.215(a)(3): 
+
+- `authorization_endpoint`;
+- `token_endpoint`; and
+- `capabilities` (including support for all the “SMART on FHIR® Core Capabilities”).
 </AUT-PAT-6>
 
 <AUT-PAT-7 standards="SMART 1.0.0">
-[Both] The health IT developer demonstrates the ability of the FHIR® “CapabilityStatement” to support at least the following components as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1), including:
-	-“authorize”; and
-	-“token”. 
+[Both] The health IT developer demonstrates the ability of the FHIR® `CapabilityStatement` to support at least the following components as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1), including:
+
+-`authorize`; and
+-`token`. 
 </AUT-PAT-7>
 
 <AUT-PAT-8 standards="SMART 1.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive an authorization request according to the implementation specification adopted in § 170.215(a)(3), including support for the following parameters:
-	- “response_type”;
-	- “client_id”;
-	- “redirect_uri”;
-	- “launch” (for EHR-Launch mode only);
-	- “scope”;
-	- “state”; and
-	- “aud”.
+
+- `response_type`;
+- `client_id`;
+- `redirect_uri`;
+- `launch` (for EHR-Launch mode only);
+- `scope`;
+- `state`; and
+- `aud`.
 </AUT-PAT-8>
 
 <AUT-PAT-9  standards="SMART 1.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
-	- “openid” (to support “sso-openid-connect” “SMART on FHIR® Core Capability”);
-	- “FHIR®User” (to support “sso-openid-connect” “SMART on FHIR® Core Capability”);
-	- “need_patient_banner” (to support “context-banner” “SMART on FHIR® Core Capability” for EHR-Launch mode only);
-	- “smart_style_url” (to support “context-style” “SMART on FHIR® Core Capability” for EHR-Launch mode only);
-	- “launch/patient” (to support “context-standalone-patient” “SMART on FHIR® Core Capability” for Standalone-Launch mode only);
-	- “launch” (for EHR-Launch mode only);
-	- “offline_access” (to support “permission-offline” “SMART on FHIR® Core Capability”);
-	- Patient-level scopes (to support “permission-patient” “SMART on FHIR® Core Capability”); and
-	- User-level scopes (to support “permission-user” “SMART on FHIR® Core Capability”).
+
+- `openid` (to support `sso-openid-connect` “SMART on FHIR® Core Capability”);
+- `FHIR®User` (to support `sso-openid-connect` “SMART on FHIR® Core Capability”);
+- `need_patient_banner` (to support `context-banner` “SMART on FHIR® Core Capability” for EHR-Launch mode only);
+- `smart_style_url` (to support `context-style` “SMART on FHIR® Core Capability” for EHR-Launch mode only);
+- `launch/patient` (to support `context-standalone-patient` “SMART on FHIR® Core Capability” for Standalone-Launch mode only);
+- `launch` (for EHR-Launch mode only);
+- `offline_access` (to support `permission-offline` “SMART on FHIR® Core Capability”);
+- Patient-level scopes (to support `permission-patient` “SMART on FHIR® Core Capability”); and
+- User-level scopes (to support `permission-user` “SMART on FHIR® Core Capability”).
 </AUT-PAT-9>
 
 <AUT-PAT-10 standards="SMART 1.0.0, SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including the ability for the end-user to authorize an application to receive EHI based on FHIR® resource-level scopes for all of the FHIR® resources associated with the profiles specified in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).
 <div standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1"> 
 If using US Core 3.1.1, 4.0.0, or 5.0.1, these resources include:
-    - “AllergyIntolerance”;
-    - “CarePlan”;
-    - “CareTeam”;
-    - “Condition”;
-    - “Device”;
-    - “DiagnosticReport”;
-    - “DocumentReference”;
-    - “Goal”;
-    - “Immunization”;
-    - “Medication” (if supported);
-    - “MedicationRequest”;
-    - “Observation”;
-    - “Patient”;
-    - “Procedure”; and
-    - “Provenance”.
+
+- `AllergyIntolerance`;
+- `CarePlan`;
+- `CareTeam`;
+- `Condition`;
+- `Device`;
+- `DiagnosticReport`;
+- `DocumentReference`;
+- `Goal`;
+- `Immunization`;
+- `Medication` (if supported);
+- `MedicationRequest`;
+- `Observation`;
+- `Patient`;
+- `Procedure`; and
+- `Provenance`.
 </div>
 <div standards="US Core 5.0.1">
 Additionally, the following resources must be supported if using US Core 5.0.1:
-    - “Encounter”;
-    - “RelatedPerson”; and
-    - “ServiceRequest”
+
+- `Encounter`;
+- `RelatedPerson`; and
+- `ServiceRequest`
 </div>
 </AUT-PAT-10>
 
 <AUT-PAT-11 standards="SMART 1.0.0, SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including either the ability for the end-user to explicitly enable / disable the “offline_access” scope or information communicating the application’s request for the “offline_access” scope.
+[Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including either the ability for the end-user to explicitly enable / disable the `offline_access` scope or information communicating the application’s request for the `offline_access` scope.
 </AUT-PAT-11>
 
 <AUT-PAT-12 standards="SMART 1.0.0, SMART 2.0.0">
@@ -116,46 +125,51 @@ Additionally, the following resources must be supported if using US Core 5.0.1:
 </AUT-PAT-12>
 
 <AUT-PAT-13 standards="SMART 1.0.0, SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if the "aud" parameter provided by an application to the Health IT Module in Step 8, is not a valid FHIR® resource server associated with the Health IT Module's authorization server.
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if the `aud` parameter provided by an application to the Health IT Module in Step 8, is not a valid FHIR® resource server associated with the Health IT Module's authorization server.
 </AUT-PAT-13>
 
 <AUT-PAT-14 standards="SMART 1.0.0, SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to grant an application access to EHI by returning an authorization code to the application according to the implementation specification adopted in § 170.215(a)(3), including the following parameters:
-	- “code”; and
-	- “state”.
+
+- `code`; and
+- `state`.
 </AUT-PAT-14>
 
 <AUT-PAT-15 standards="SMART 1.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive the following parameters from an application according to the implementation specification adopted in § 170.215(a)(3):
-	- “grant_type”;
-	- “code”;
-	- “redirect_uri”;
-	- “client_id”; and
-	- Authorization header including “client_id” and “client_secret”.
+
+- `grant_type`;
+- `code`;
+- `redirect_uri`;
+- `client_id`; and
+- Authorization header including `client_id` and `client_secret`.
 </AUT-PAT-15>
 
 <AUT-PAT-16 standards="SMART 1.0.0, SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return a JSON object to applications according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b), including the following:
-	- “access_token”;
-	- “token_type”;
-	- “scope”;
-	- “id_token”;
-	- “refresh_token” (valid for a period of no shorter than three months);
-	- HTTP “Cache-Control” response header field with a value of “no-store”;
-	- HTTP “Pragma” response header field with a value of “no-cache”;
-	- “patient” (to support “context-ehr-patient” and “context-standalone-patient” “SMART on FHIR® Core Capabilities”);
-	- “need_patient_banner” (to support “context-banner” “SMART on FHIR® Core Capability” for EHR-Launch mode only); and
-	- “smart_style_url” (to support “context-style” “SMART on FHIR® Core Capability” for EHR-Launch mode only).
+
+- `access_token`;
+- `token_type`;
+- `scope`;
+- `id_token`;
+- `refresh_token` (valid for a period of no shorter than three months);
+- HTTP `Cache-Control` response header field with a value of “no-store”;
+- HTTP `Pragma` response header field with a value of “no-cache”;
+- `patient` (to support `context-ehr-patient` and `context-standalone-patient` “SMART on FHIR® Core Capabilities”);
+- `need_patient_banner` (to support `context-banner` “SMART on FHIR® Core Capability” for EHR-Launch mode only); and
+- `smart_style_url` (to support `context-style` “SMART on FHIR® Core Capability” for EHR-Launch mode only).
 <div standards="US Core 5.0.1">
 Additionally, the following must be supported if using US Core 5.0.1:
-	- “encounter” (to support"context-ehr-encounter" “SMART on FHIR® Capability”)
+
+- `encounter` (to support"context-ehr-encounter" “SMART on FHIR® Capability”)
 </div>
 </AUT-PAT-16>
 
 <AUT-PAT-17 standards="SMART 1.0.0, SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to provide an OpenID Connect well-known URI in accordance with the implementation specification adopted in § 170.215(b), including:
-	- All required fields populated according to implementation specification adopted in § 170.215(b); and
-	- Valid JWKS populated according to implementation specification can be retrieved via JWKS URI.
+
+- All required fields populated according to implementation specification adopted in § 170.215(b); and
+- Valid JWKS populated according to implementation specification can be retrieved via JWKS URI.
 </AUT-PAT-17>
 
 <AUT-PAT-18 standards="SMART 1.0.0, SMART 2.0.0">
@@ -163,7 +177,7 @@ Additionally, the following must be supported if using US Core 5.0.1:
 </AUT-PAT-18>
 
 <AUT-PAT-19 standards="SMART 1.0.0, SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to return a “Patient” FHIR® resource that matches the patient context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return a `Patient` FHIR® resource that matches the patient context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 </AUT-PAT-19>
 
 <AUT-PAT-20 standards="SMART 1.0.0, SMART 2.0.0">
@@ -183,33 +197,36 @@ The health IT developer demonstrates the ability of the Health IT Module to retu
 </AUT-PAT-23>
 
 <AUT-PAT-24 standards="SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to support a “.well-known/smart-configuration.json” path as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1).
+[Both] The health IT developer demonstrates the ability of the Health IT Module to support a `.well-known/smart-configuration.json` path as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1).
 </AUT-PAT-24>
 
 <AUT-PAT-25 standards="SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the “.well-known/smart-configuration.json” path to support at least the following as detailed in the implementation specification adopted in § 170.215(a)(3):
-	- “authorization_endpoint”;
-	- “token_endpoint”;
-	- “capabilities” including support for “launch-ehr", “launch-standalone”, “client-public”, “client-confidential-symmetric", “sso-openid-connect", “context-banner”, “context-style”, “context-ehr-patient", “context-standalone-patient", “permission-offline”, “permission-patient”, “permission-user”, “authorize-post”, “permission-v1”, "permission-v2";
-	- “grant_types_supported” with support for “authorization_code” and “client_credentials”; and
-	- “code_challenge_methods_supported” with support for “S256” and shall not include support for “plain”
+[Both] The health IT developer demonstrates the ability of the `.well-known/smart-configuration.json` path to support at least the following as detailed in the implementation specification adopted in § 170.215(a)(3):
+
+- `authorization_endpoint`;
+- `token_endpoint`;
+- `capabilities` including support for `launch-ehr`, `launch-standalone`, `client-public`, `client-confidential-symmetric`, `sso-openid-connect`, `context-banner`, `context-style`, `context-ehr-patient`, `context-standalone-patient`, `permission-offline`, `permission-patient`, `permission-user`, `authorize-post`, `permission-v1`, `permission-v2`;
+- `grant_types_supported` with support for `authorization_code` and `client_credentials`; and
+- `code_challenge_methods_supported` with support for `S256` and shall not include support for `plain`
 <div standards="US Core 5.0.1">
 Additionally, the following “capabilities” must be supported if using US Core 5.0.1:
-	- "context-ehr-encounter"
+
+- `context-ehr-encounter`
 </div>
 </AUT-PAT-25>
 
 <AUT-PAT-26 standards="SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive an authorization request according to the implementation specification adopted in § 170.215(a)(3), including support for the following parameters:
-	- “response_type”;
-	- “client_id”;
-	- “redirect_uri”;
-	- “launch” (for EHR-Launch mode only);
-	- “scope”;
-	- “state”;
-	- “aud”;
-	- “code_challenge”; and
-	- “code_challenge_method”
+
+- `response_type`;
+- `client_id`;
+- `redirect_uri`;
+- `launch` (for EHR-Launch mode only);
+- `scope`;
+- `state`;
+- `aud`;
+- `code_challenge`; and
+- `code_challenge_method`
 </AUT-PAT-26>
 
 <AUT-PAT-27 standards="SMART 2.0.0">
@@ -217,18 +234,19 @@ Additionally, the following “capabilities” must be supported if using US Cor
 </AUT-PAT-27>
 
 <AUT-PAT-28 standards="SMART 2.0.0">
-	[Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
-	- “openid” (to support “sso-openid-connect” “SMART on FHIR® Capability”);
-	- “FHIR®User” (to support “sso-openid-connect” “SMART on FHIR® Capability”);
-	- “need_patient_banner” (to support “context-banner” “SMART on FHIR® Capability” for EHR-Launch mode only);
-	- “smart_style_url” (to support “context-style” “SMART on FHIR® Capability” for EHR-Launch mode only);
-	- “launch/patient” (to support “context-standalone-patient” “SMART on FHIR® Capability” for Standalone-Launch mode only);
-	- “launch” (for EHR-Launch mode only);
-	- “offline_access” (to support “permission-offline” “SMART on FHIR® Capability”);
-	- Patient-level scopes (to support “permission-patient” and “SMART on FHIR® Capability”); and
-	- User-level scopes (to support “permission-user” “SMART on FHIR® Capability”).
-	- SMARTv1 scope syntax for patient-level and user-level scopes (to support “permission-v1” “SMART on FHIR® Capability”)
-	- SMARTv2 scope syntax for patient-level and user-level scopes (to support “permission-v2” “SMART on FHIR® Capability”)
+    [Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
+
+    - `openid` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
+    - `FHIR®User` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
+    - `need_patient_banner` (to support `context-banner` “SMART on FHIR® Capability” for EHR-Launch mode only);
+    - `smart_style_url` (to support `context-style` “SMART on FHIR® Capability” for EHR-Launch mode only);
+    - `launch/patient` (to support `context-standalone-patient` “SMART on FHIR® Capability” for Standalone-Launch mode only);
+    - `launch` (for EHR-Launch mode only);
+    - `offline_access` (to support `permission-offline` “SMART on FHIR® Capability”);
+    - Patient-level scopes (to support `permission-patient` and “SMART on FHIR® Capability”); and
+    - User-level scopes (to support `permission-user` “SMART on FHIR® Capability”).
+    - SMARTv1 scope syntax for patient-level and user-level scopes (to support `permission-v1` “SMART on FHIR® Capability”)
+    - SMARTv2 scope syntax for patient-level and user-level scopes (to support `permission-v2` “SMART on FHIR® Capability”)
 </AUT-PAT-28>
 
 <AUT-PAT-29 standards="SMART 2.0.0">
@@ -241,20 +259,21 @@ Additionally, the following “capabilities” must be supported if using US Cor
 
 <AUT-PAT-31 standards="SMART 2.0.0">
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive the following access token request parameters from an application according to the implementation specification adopted in § 170.215(a)(3): 
-	- “grant_type”; 
-	- “code”; 
-	- “redirect_uri”; 
-	- “code_verifier”; 
-	- “client_id”; and 
-	- Authorization header including “client_id” and “client_secret”.
+
+- `grant_type`; 
+- `code`; 
+- `redirect_uri`; 
+- `code_verifier`; 
+- `client_id`; and 
+- Authorization header including `client_id` and `client_secret`.
 </AUT-PAT-31>
 
 <AUT-PAT-32 standards="SMART 2.0.0">
-[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if an invalid “code_verifier” value is supplied with an access token request according to the implementation specification adopted in § 170.215(a)(3).
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if an invalid `code_verifier` value is supplied with an access token request according to the implementation specification adopted in § 170.215(a)(3).
 </AUT-PAT-32>
 
 <AUT-PAT-33 standards="SMART 1.0.0, SMART 2.0.0, US Core 5.0.1">
-[EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an “Encounter” FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
+[EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an `Encounter` FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 </AUT-PAT-33>
 </paragraph_g_10_v_A>
 
@@ -272,22 +291,24 @@ The health IT developer demonstrates the ability of the Health IT Module to supp
 
 <AUT-SYS-2>
 The health IT developer demonstrates the ability of the Health IT Module to support the following parameters according to the implementation specification adopted in § 170.215(a)(4):
-	- “scope”; 
-	- “grant_type”;
-	- “client_assertion_type”; and
-	- “client_assertion”.	 
+
+- `scope`; 
+- `grant_type`;
+- `client_assertion_type`; and
+- `client_assertion`.    
 </AUT-SYS-2>
 
 <AUT-SYS-3>
 The health IT developer demonstrates the ability of the Health IT Module to support the following JSON Web Token (JWT) Headers and Claims according to the implementation specification adopted in § 170.215(a)(4):
-	- “alg” header;
-	- “kid” header;
-	- “typ” header;
-	- “iss” claim;
-	- “sub” claim;
-	- “aud” claim;
-	- “exp” claim; and
-	- “jti” claim.
+
+- `alg` header;
+- `kid` header;
+- `typ` header;
+- `iss` claim;
+- `sub` claim;
+- `aud` claim;
+- `exp` claim; and
+- `jti` claim.
 </AUT-SYS-3>
 
 <AUT-SYS-4>
@@ -295,7 +316,7 @@ The health IT developer demonstrates the ability of the Health IT Module to rece
 </AUT-SYS-4>
 
 <AUT-SYS-5>
-The health IT developer demonstrates that the Health IT Module does not cache a JWK Set received via a TLS-protected URL for longer than the “cache-control” header sent by an application indicates.
+The health IT developer demonstrates that the Health IT Module does not cache a JWK Set received via a TLS-protected URL for longer than the `cache-control` header sent by an application indicates.
 </AUT-SYS-5>
 
 <AUT-SYS-6>
@@ -303,7 +324,7 @@ The health IT developer demonstrates the ability of the Health IT Module to vali
 </AUT-SYS-6>
 
 <AUT-SYS-7>
-The health IT developer demonstrates the ability of the Health IT Module to respond with an “invalid_client” error for errors encountered during the authentication process according to the implementation specification adopted in § 170.215(a)(4).
+The health IT developer demonstrates the ability of the Health IT Module to respond with an `invalid_client` error for errors encountered during the authentication process according to the implementation specification adopted in § 170.215(a)(4).
 </AUT-SYS-7>
 
 <AUT-SYS-8>
@@ -312,17 +333,17 @@ The health IT developer demonstrates the ability of the Health IT Module to assu
 
 <AUT-SYS-9>
  The health IT developer demonstrates the ability of the Health IT Module to issue an access token to an application as a JSON object in accordance with the implementation specification adopted in § 170.215(a)(4), including the following property names:
-	- “access_token”;
-	- “token_type”;
-	- “expires_in”; and
-	- “scope”.
+
+- `access_token`;
+- `token_type`;
+- `expires_in`; and
+- `scope`.
 </AUT-SYS-9>
 
 <AUT-SYS-10>
 The health IT developer demonstrates the ability of the Health IT Module to respond to errors using the appropriate error messages as specified in the implementation specification adopted in § 170.215(a)(4).
 </AUT-SYS-10>
 </paragraph_g_10_v_B>
-
 
 <paragraph_g_10_vii name="Paragraph (g)(10)(vii) – Token introspection
 ">
@@ -333,7 +354,7 @@ The health IT developer demonstrates the ability of the Health IT Module to rece
 
 <paragraph_g_10_ii name="Paragraph (g)(10)(ii) – Supported search operations">
 <SH-PAT-1>
-The health IT developer demonstrates the ability of the Health IT Module to support the “capabilities” interaction as specified in the standard adopted in § 170.215(a)(1), including support for a “CapabilityStatement” as specified in the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2).
+The health IT developer demonstrates the ability of the Health IT Module to support the `capabilities` interaction as specified in the standard adopted in § 170.215(a)(1), including support for a `CapabilityStatement` as specified in the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2).
 </SH-PAT-1>
 
 <SH-PAT-2>
@@ -341,15 +362,15 @@ The health IT developer demonstrates the ability of the Health IT Module to resp
 </SH-PAT-2>
 
 <SH-PAT-3>
-The health IT developer demonstrates the ability of the Health IT Module to support a resource search for the provenance target “(_revIncludes: Provenance:target)” for all the FHIR® resources included in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).
+The health IT developer demonstrates the ability of the Health IT Module to support a resource search for the provenance target `(_revIncludes: Provenance:target)` for all the FHIR® resources included in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).
 </SH-PAT-3>
 
 <SH-PAT-4>
-The health IT developer demonstrates the ability of the Health IT Module to support the “capabilities” interaction as specified in the standard adopted in § 170.215(a)(1), including support for a “CapabilityStatement” as specified in the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(4). 
+The health IT developer demonstrates the ability of the Health IT Module to support the “capabilities” interaction as specified in the standard adopted in § 170.215(a)(1), including support for a `CapabilityStatement` as specified in the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(4). 
 </SH-PAT-4>
 
 <SH-PAT-5>
-The health IT developer demonstrates the ability of the Health IT Module to support requests for multiple patients’ data as a group using the “group-export” operation as detailed in the implementation specification adopted in § 170.215(a)(4).
+The health IT developer demonstrates the ability of the Health IT Module to support requests for multiple patients’ data as a group using the `group-export` operation as detailed in the implementation specification adopted in § 170.215(a)(4).
 </SH-PAT-5>
 </paragraph_g_10_ii>
 
@@ -360,30 +381,32 @@ For responses to data for single and multiple patients as described in steps 7, 
 
 <DAT-PAT-2 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
 The health IT developer demonstrates the ability of the Health IT Module to respond with data that meet the following conditions:
-	- All data elements indicated with a cardinality of one or greater and / or “must support” are included;
-	- Content is structurally correct;
-	- All invariant rules are met;
-	- All data elements with required “ValueSet” bindings contain codes within the bound “ValueSet”;
-	- All information is accurate and without omission; and
-	All references within the resources can be resolved and validated, as applicable, according to steps 2-6, of this section.
+
+- All data elements indicated with a cardinality of one or greater and / or `must support` are included;
+- Content is structurally correct;
+- All invariant rules are met;
+- All data elements with required `ValueSet` bindings contain codes within the bound `ValueSet`;
+- All information is accurate and without omission; and
+- All references within the resources can be resolved and validated, as applicable, according to steps 2-6, of this section.
 </DAT-PAT-2>
 
 <DAT-PAT-3 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
-The health IT developer demonstrates the ability of the Health IT Module to support a “Provenance” FHIR® resource for all the FHIR® resources included in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).
+The health IT developer demonstrates the ability of the Health IT Module to support a `Provenance` FHIR® resource for all the FHIR® resources included in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).
 </DAT-PAT-3>
 
 <DAT-PAT-4 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
-The health IT developer demonstrates the ability of the Health IT Module to support a “DocumentReference” and/or “DiagnosticReport” FHIR® resource for each of the “Clinical Notes” and “Diagnostic Reports” included in and according to the “Clinical Notes Guidance” section of the implementation specification adopted in § 170.215(a)(2).
+The health IT developer demonstrates the ability of the Health IT Module to support a `DocumentReference` and/or `DiagnosticReport` FHIR® resource for each of the “Clinical Notes” and “Diagnostic Reports” included in and according to the “Clinical Notes Guidance” section of the implementation specification adopted in § 170.215(a)(2).
 </DAT-PAT-4>
 
 <DAT-PAT-5 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
-If supported, and for responses to data for a single patient only, the health IT developer demonstrates the ability of the Health IT Module to support a “Medication” FHIR® resource according to the “Medication List Guidance” section of the implementation specification adopted in § 170.215(a)(2).
+If supported, and for responses to data for a single patient only, the health IT developer demonstrates the ability of the Health IT Module to support a `Medication` FHIR® resource according to the “Medication List Guidance” section of the implementation specification adopted in § 170.215(a)(2).
 </DAT-PAT-5>
 
 <DAT-PAT-6 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
 The health IT developer demonstrates the ability of the Health IT Module to support “Missing Data” according to the implementation specification adopted in § 170. 215(a)(2), including:
-	- For non-coded data elements; and
-	- For coded data elements, including support for the “DataAbsentReason” Code System.
+
+- For non-coded data elements; and
+- For coded data elements, including support for the `DataAbsentReason` Code System.
 </DAT-PAT-6>
 
 <DAT-PAT-7 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
@@ -392,25 +415,26 @@ The health IT developer demonstrates the ability of the Health IT Module to retu
 
 <DAT-PAT-8 standards="US Core 3.1.1, US Core 4.0.0">
 The health IT developer demonstrates the ability of the Health IT Module to respond to requests for multiple patients’ data according to the implementation specification adopted in § 170.215(a)(4) for all of the FHIR® resources associated with the profiles and Data Elements specified in and according to the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).:
-	- “AllergyIntolerance”;
-	- “CarePlan”;
-	- “CareTeam”;
-	- “Condition”;
-	- “Device”;
-	- “DiagnosticReport”;
-	- “DocumentReference”;
-	- “Encounter”;
-	- “Goal”;
-	- “Immunization”;
-	- "Location" (if supported);
-	- “Medication” (if supported);
-	- “MedicationRequest”;
-	- “Observation”;
-	- “Organization”;
-	- “Patient”;
-	- “Practitioner”
-	- “Procedure”; and
-	- “Provenance”.
+
+- `AllergyIntolerance`;
+- `CarePlan`;
+- `CareTeam`;
+- `Condition`;
+- `Device`;
+- `DiagnosticReport`;
+- `DocumentReference`;
+- `Encounter`;
+- `Goal`;
+- `Immunization`;
+- `Location` (if supported);
+- `Medication` (if supported);
+- `MedicationRequest`;
+- `Observation`;
+- `Organization`;
+- `Patient`;
+- `Practitioner`
+- `Procedure`; and
+- `Provenance`.
 </DAT-PAT-8>
 
 <DAT-PAT-9 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
@@ -438,48 +462,50 @@ The health IT developer demonstrates the ability of the Health IT Module to supp
 </DAT-PAT-14>
 
 <DAT-PAT-15 standards="US Core 3.1.1, US Core 4.0.0, US Core 5.0.1">
-The health IT developer demonstrates that the information provided as part of this data response includes data for patients in the group identifier provided during the “group-export” request.
+The health IT developer demonstrates that the information provided as part of this data response includes data for patients in the group identifier provided during the `group-export` request.
 </DAT-PAT-15>
 
 <DAT-PAT-16 standards="US Core 5.0.1">
 The health IT developer demonstrates the ability of the Health IT Module to respond to requests for multiple patients’ data according to the implementation specification adopted in § 170.215(a)(4) for all of the FHIR® resources associated with the profiles and Data Elements specified in and according to the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).
-	- “AllergyIntolerance”;
-	- “CarePlan”;
-	- “CareTeam”;
-	- “Condition”;
-	- “Device”;
-	- “DiagnosticReport”;
-	- “DocumentReference”;
-	- “Encounter”;
-	- “Goal”;
-	- “Immunization”;
-	- Location (if supported);
-	- “Medication” (if supported);
-	- “MedicationRequest”;
-	- “Observation”;
-	- “Organization”;
-	- “Patient”;
-	- “Practitioner”
-	- “Procedure”;
-	- “Provenance”;
-	- “PractitionerRole” (if supported);
-	- “QuestionnaireReponse” (if supported);
-	- “RelatedPerson”; and
-	- “ServiceRequest”
+
+- `AllergyIntolerance`;
+- `CarePlan`;
+- `CareTeam`;
+- `Condition`;
+- `Device`;
+- `DiagnosticReport`;
+- `DocumentReference`;
+- `Encounter`;
+- `Goal`;
+- `Immunization`;
+- `Location` (if supported);
+- `Medication` (if supported);
+- `MedicationRequest`;
+- `Observation`;
+- `Organization`;
+- `Patient`;
+- `Practitioner`
+- `Procedure`;
+- `Provenance`;
+- `PractitionerRole` (if supported);
+- `QuestionnaireReponse` (if supported);
+- `RelatedPerson`; and
+- `ServiceRequest`
 </DAT-PAT-16>
 </g_10_i>
 
 <g_10_viii name="Paragraph (g)(10)(viii) – Documentation">
 <API-DOC-1>
 The health IT developer supplies documentation describing the API(s) of the Health IT Module and includes at a minimum:
-	- API syntax;
-	- Function names;
-	- Required and optional parameters supported and their data types;
-	- Return variables and their types/structures;
-	- Exceptions and exception handling methods and their returns;
-	- Mandatory software components;
-	- Mandatory software configurations; and
-	- All technical requirements and attributes necessary for registration.
+
+- API syntax;
+- Function names;
+- Required and optional parameters supported and their data types;
+- Return variables and their types/structures;
+- Exceptions and exception handling methods and their returns;
+- Mandatory software components;
+- Mandatory software configurations; and
+- All technical requirements and attributes necessary for registration.
 </API-DOC-1>
 
 <API-DOC-2>
