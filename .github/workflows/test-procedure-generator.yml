@@ -1,0 +1,28 @@
+# This is a basic workflow that is manually triggered
+
+name: Run Test Procedure Generator Script
+
+# Controls when the action will run. Workflow runs when manually triggered using the UI
+# or API.
+on: workflow_dispatch
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  ccg-pull:
+      runs-on: ubuntu-latest
+      steps:
+        - name: checkout repo
+          uses: actions/checkout@v2
+        - name: setup python
+          uses: actions/setup-python@v4.1.0
+        - name: navigate to directory
+          run: cd test-procedures-code
+        - name: run python script
+          run: python test_procedure_generator.py
+        - name: push changes to repo
+          run : |
+            git config --global user.name "github-actions[bot]"
+            
+            git add -A
+            git commit -m "update test procedures based on test procedure xml file" || echo "no changes. no commit"
+            git push
