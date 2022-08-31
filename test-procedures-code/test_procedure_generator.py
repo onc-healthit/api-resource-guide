@@ -79,6 +79,6 @@ for c in standards_combinations:
                 #print(ID_list)
                 for ID, counter in zip(ID_list, range(1, len(ID_list)+1)):
                     #print(ID)
-                    f.write(str(counter) + ". " + str(ID)+ ": " + GetIDText(ID, all_test_IDs, c) + "\n"*2)
+                    f.write(str(counter) + "\. " + str(ID)+ ": " + GetIDText(ID, all_test_IDs, c) + "\n"*2)
                 
         f.write("\n--8<-- \"includes/abbreviations.md\"")
