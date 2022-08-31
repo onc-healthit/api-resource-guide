@@ -168,7 +168,7 @@ If using US Core 3.1.1, 4.0.0, or 5.0.1, these resources include:
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return a `Patient` FHIR® resource that matches the patient context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 
 
-20\. AUT-PAT-33: 
+20\. AUT-PAT-32: 
 [EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an `Encounter` FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 
 
