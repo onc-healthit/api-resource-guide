@@ -15,11 +15,8 @@ jobs:
           uses: actions/checkout@v2
         - name: setup python
           uses: actions/setup-python@v4.1.0
-        - name: print directory
-          run: pwd
-        - name: navigate to directory
-          run: cd test-procedures-code
         - name: run python script
+          working-directory: ./test-procedures-code
           run: python test_procedure_generator.py
         - name: push changes to repo
           run : |
