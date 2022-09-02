@@ -541,7 +541,7 @@ AUT-PAT-22, AUT-PAT-23
 
 <SMART_2_0_0 standards="SMART 2.0.0">
 <Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Authentication and Authorization for Patient and User Scopes" standards="SMART 2.0.0">
-AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-24, AUT-PAT-25, AUT-PAT-26, AUT-PAT-28, AUT-PAT-10, AUT-PAT-11, AUT-PAT-12, AUT-PAT-29, AUT-PAT-13, AUT-PAT-14, AUT-PAT-30, AUT-PAT-31, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-32, AUT-PAT-20, AUT-PAT-21 
+AUT-PAT-1, AUT-PAT-2, AUT-PAT-3, AUT-PAT-4, AUT-PAT-24, AUT-PAT-25, AUT-PAT-26, AUT-PAT-27, AUT-PAT-28, AUT-PAT-10, AUT-PAT-11, AUT-PAT-12, AUT-PAT-29, AUT-PAT-13, AUT-PAT-14, AUT-PAT-30, AUT-PAT-31, AUT-PAT-16, AUT-PAT-17, AUT-PAT-18, AUT-PAT-19, AUT-PAT-32, AUT-PAT-20, AUT-PAT-21 
 </Authentication_and_Authorization_for_Patient_and_User_Scopes>
 <Subsequent_Connections_Authentication_and_Authorization_for_Patient_and_User_Scopes name="### Subsequent Connections: Authentication and Authorization for Patient and User Scopes" standards="SMART 2.0.0">
 AUT-PAT-22, AUT-PAT-23

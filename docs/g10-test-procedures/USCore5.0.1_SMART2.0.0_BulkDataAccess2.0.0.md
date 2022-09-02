@@ -71,7 +71,11 @@ Additionally, the following “capabilities” must be supported if using US Cor
 - `code_challenge_method`
 
 
-8\. AUT-PAT-28: 
+8\. AUT-PAT-27: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module’s Authorization Server to support the use of the HTTP GET and POST methods at the Authorization Endpoint as detailed in the implementation specification adopted in § 170.215(a)(3).
+
+
+9\. AUT-PAT-28: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):
 
 - `openid` (to support `sso-openid-connect` “SMART on FHIR® Capability”);
@@ -87,7 +91,7 @@ Additionally, the following “capabilities” must be supported if using US Cor
 - SMARTv2 scope syntax for patient-level and user-level scopes (to support `permission-v2` “SMART on FHIR® Capability”)
 
 
-9\. AUT-PAT-10: 
+10\. AUT-PAT-10: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including the ability for the end-user to authorize an application to receive EHI based on FHIR® resource-level scopes for all of the FHIR® resources associated with the profiles specified in the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).
  
 If using US Core 3.1.1, 4.0.0, or 5.0.1, these resources include:
@@ -115,30 +119,30 @@ Additionally, the following resources must be supported if using US Core 5.0.1:
 - `ServiceRequest`
 
 
-10\. AUT-PAT-11: 
+11\. AUT-PAT-11: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including either the ability for the end-user to explicitly enable / disable the `offline_access` scope or information communicating the application’s request for the `offline_access` scope.
 
 
-11\. AUT-PAT-12: 
+12\. AUT-PAT-12: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to deny an application’s authorization request according to a patient’s preferences selected in steps 10, and 11, of this section in accordance with the implementation specification adopted in § 170.215(a)(3).
 
 
-12\. AUT-PAT-29: 
+13\. AUT-PAT-29: 
 [EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to establish a patient in context if an application requests a clinical scope which is restricted to a single patient as detailed in the implementation specification adopted in § 170.215(a)(3).
 
 
-13\. AUT-PAT-13: 
+14\. AUT-PAT-13: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if the `aud` parameter provided by an application to the Health IT Module in Step 8, is not a valid FHIR® resource server associated with the Health IT Module's authorization server.
 
 
-14\. AUT-PAT-14: 
+15\. AUT-PAT-14: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to grant an application access to EHI by returning an authorization code to the application according to the implementation specification adopted in § 170.215(a)(3), including the following parameters:
 
 - `code`; and
 - `state`.
 
 
-15\. AUT-PAT-30: 
+16\. AUT-PAT-30: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to receive the following access token request parameters from an application according to the implementation specification adopted in § 170.215(a)(3): 
 
 - `grant_type`; 
@@ -149,11 +153,11 @@ Additionally, the following resources must be supported if using US Core 5.0.1:
 - Authorization header including `client_id` and `client_secret`.
 
 
-16\. AUT-PAT-31: 
+17\. AUT-PAT-31: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if an invalid `code_verifier` value is supplied with an access token request according to the implementation specification adopted in § 170.215(a)(3).
 
 
-17\. AUT-PAT-16: 
+18\. AUT-PAT-16: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return a JSON object to applications according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b), including the following:
 
 - `access_token`;
@@ -172,32 +176,32 @@ Additionally, the following must be supported if using US Core 5.0.1:
 - `encounter` (to support"context-ehr-encounter" “SMART on FHIR® Capability”)
 
 
-18\. AUT-PAT-17: 
+19\. AUT-PAT-17: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to provide an OpenID Connect well-known URI in accordance with the implementation specification adopted in § 170.215(b), including:
 
 - All required fields populated according to implementation specification adopted in § 170.215(b); and
 - Valid JWKS populated according to implementation specification can be retrieved via JWKS URI.
 
 
-19\. AUT-PAT-18: 
+20\. AUT-PAT-18: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to deny an application’s authorization request in accordance with the implementation specification adopted in § 170.215(a)(3).
 
 
-20\. AUT-PAT-19: 
+21\. AUT-PAT-19: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to return a `Patient` FHIR® resource that matches the patient context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 
 
-21\. AUT-PAT-32: 
+22\. AUT-PAT-32: 
 [EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an `Encounter` FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 
 [EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an `Encounter` FHIR® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).
 
 
-22\. AUT-PAT-20: 
+23\. AUT-PAT-20: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to grant an access token when a refresh token is supplied according to the implementation specification adopted in § 170.215(a)(2).
 
 
-23\. AUT-PAT-21: 
+24\. AUT-PAT-21: 
 [Both] The health IT developer demonstrates the ability of the Health IT Module to grant a refresh token valid for a period of no less than three months to native applications capable of securing a refresh token.
 
 
