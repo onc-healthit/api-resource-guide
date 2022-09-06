@@ -56,8 +56,8 @@ The health IT developer demonstrates the ability of the Health IT Module to supp
 <AUT-PAT-7 standards="SMART 1.0.0">
 [Both] The health IT developer demonstrates the ability of the FHIR® `CapabilityStatement` to support at least the following components as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1), including:
 
--`authorize`; and
--`token`. 
+- `authorize`; and
+- `token`. 
 </AUT-PAT-7>
 
 <AUT-PAT-8 standards="SMART 1.0.0">
