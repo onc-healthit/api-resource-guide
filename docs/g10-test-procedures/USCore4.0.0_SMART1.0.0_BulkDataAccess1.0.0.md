@@ -57,8 +57,8 @@ The health IT developer demonstrates the ability of the Health IT Module to supp
 7\. AUT-PAT-7: 
 [Both] The health IT developer demonstrates the ability of the FHIR® `CapabilityStatement` to support at least the following components as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(a)(1), including:
 
--`authorize`; and
--`token`. 
+- `authorize`; and
+- `token`. 
 
 
 8\. AUT-PAT-8: 
