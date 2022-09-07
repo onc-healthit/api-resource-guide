@@ -50,7 +50,7 @@ Any missing information made available via the (g)(10) standardized API should b
 
 The ONC Certification criteria for eCQMs does not require any FHIR standards. For additional information on CMS regulations, please reference CMS sources or contact CMS if you have questions about specific requirements. The CMS.gov website is a great place to start for information about the requirements of any particular CMS program that may be of interest to health care providers and those who support them with health IT solutions. For one example, the Quality Payment Program overview page (https://qpp.cms.gov/about/qpp-overview) offers links to educational resources and information how to contact CMS. Similarly, the CMS.gov Promoting Interoperability Programs page (https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms) currently indicates that Medicare and dually eligible hospitals participating in the Medicare and Medicaid Promoting Interoperability Programs may contact the QualityNet help desk for assistance.
 
-## Paragraph (g)(10)(i)(A)
+## Paragraph (g)(10)(i)(A): Data Response (Single Patient)
 ### December 2021
 **Stakeholder Inquiry**: US Core 3.1.1 requires Procedure.performed. For (g)(10) certification how are we expected to accommodate cancelled or not done procedures where a date or period does not exist? 
 
@@ -85,7 +85,7 @@ However, for purposes of testing and certification for the ONC Health IT Certifi
 
 We will issue a clarification on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">§ 170.315(g)(10) Standardized API for patient and population services Certification Companion Guide</a> regarding this issue, and the Inferno testing tool will be updated in the next regular release, which occurs at least monthly, to accommodate this clarification.
 
-## Paragraph (g)(10)(i)(B)
+## Paragraph (g)(10)(i)(B): Data Response (Multiple Patients)
 ### June 2022
 **Stakeholder Inquiry**: ONC (g)(10) Certification requirements and the Inferno Test Tool indicate that we are to demonstrate support for bulk FHIR requests with Group IDs (e.g. “[base url]/Group/[id]/$export”). Is there any minimum requirement in the upcoming 2022 (g)(10) certification for EHRs on how many different types of groups should be supported by the EHR? Can you give more guidance on what groups we need?
 
@@ -123,7 +123,7 @@ Regarding “Organization” HL7 FHIR resources, we provided the following clari
 
 Health IT developers must include all the resources necessary via the multiple patient services API responses to fully resolve references contained in HL7 FHIR resources, including “Organization” resources.
 
-## Paragraph (g)(10)(iii)
+## Paragraph (g)(10)(iii): Application Registration
 ### March 2021
 **Stakeholder Inquiry**: Can you clarify how we are expected to scope US Core IG resources that do not exists in USCDI or the FHIR Patient Compartment?
 
@@ -133,7 +133,7 @@ Health IT developers must include all the resources necessary via the multiple p
 
 The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certification">Inferno testing tool ONC Health IT Certification Program tests for § 170.315(g)(10)</a> will be updated to accommodate this change in the coming weeks.
 
-## Paragraph (g)(10)(iv)
+## Paragraph (g)(10)(iv): Secure Connection
 ### July 2022
 **Stakeholder Inquiry**: We are failing the Inferno (g)(10) Standardized API Test Kit test “5.3.01 Bulk Data Server is secured by transport layer security Server did not permit/deny the connections with the correct TLS versions.” Our implementation enforces TLS connections at the application layer and not the network layer. Is this allowable for certification to (g)(10)?
 
@@ -143,7 +143,7 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certifi
 
 The Inferno testing tool will be updated to align with this clarification. However, until the Inferno testing tool is updated, ONC grants an exception for the ONC Certification (g)(10) Standardized API Test Kit test 5.3.01 "Bulk Data Server is secured by transport layer security", wherein for the purposes of certification and testing it is sufficient for the health IT developer to document how the Health IT Module enforces TLS version 1.2 or above for the Bulk Data file server.
 
-## Paragraph (g)(10)(v)(A)(1)
+## Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients
 ### February 2022
 **Stakeholder Inquiry**: Can you provide some more clarification on what is required in (g)(10)(v)(A)(1) where systems are expected to support refresh tokens for “no less than 3 months.”
 
@@ -183,7 +183,7 @@ and for subsequent connections:
 - A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. 
 Beyond the certification criteria requirements, health IT developers are not required to support all methods that third-party application developers seek to use. Additional information and clarifications regarding this criterion can be found on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">September</a>.
 
-## Paragraph (g)(10)(v)(B)
+## Paragraph (g)(10)(v)(B): Authentication / Authorization for Multiple Patient Services
 ### October 2021
 **Stakeholder Inquiry**: There is a requirement that clients downloading the bulk data use the same access token as they did to make the original request. Does it permit other equivalently secure means of authorization as well?
 
@@ -201,7 +201,7 @@ According to the requirements in § 170.315(g)(10)(v)(B), Health IT Modules must
 
 At a minimum for the ONC Health IT Certification Program, Health IT Modules certified to the § 170.315(g)(10) criterion must support the issuance of a valid access token to an application during authentication and authorization as per the “SMART Backend Services: Authorization Guide” section of the Bulk FHIR IG. However, if the minimum requirements are met, health IT developers may support additional access-control schemes beyond OAuth 2.0 bearer tokens.
 
-## Paragraph (g)(10)(vi)
+## Paragraph (g)(10)(vi): Patient Auhtorization Revocation
 ### October 2021
 **Stakeholder Inquiry**: To satisfy the “Patient authorization revocation” requirements can short-lived access tokens be allowed to expire in lieu of immediate access token revocation?
 
