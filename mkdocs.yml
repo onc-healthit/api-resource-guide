@@ -3,10 +3,9 @@ nav:
   - Home: index.md
   - About: about.md
   - Helpful Links: helpful-links.md
-  - HL7&#174 FHIR&#174 API criterion - (g)(10): g10-criterion.md
+  - HL7&#174 FHIR&#174 API criterion at § 170.315(g)(10): g10-criterion.md
   - API Conditions and Maintenance of Certification requirements at § 170.404: 404-conditions-maintenance.md
-  - Real World Testing Condition and Maintenance of Certification: real-world-testing-conditions-maintenance.md
-  - Standards Version Advancement Process: standards-version-advancement-process.md
+  - Certification Testing: certification-testing.md
   - Directory of Published Versions: version-directory.md
   - HealthIT.gov: https://www.healthit.gov/
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
