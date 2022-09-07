@@ -183,4 +183,22 @@ and for subsequent connections:
 - A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. 
 Beyond the certification criteria requirements, health IT developers are not required to support all methods that third-party application developers seek to use. Additional information and clarifications regarding this criterion can be found on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">September</a>.
 
+## Paragraph (g)(10)(v)(B)
+### October 2021
+**Stakeholder Inquiry**: There is a requirement that clients downloading the bulk data use the same access token as they did to make the original request. Does it permit other equivalently secure means of authorization as well?
+
+The  FHIR specification says that there should be alternatives: https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status
+
+*[requiresAccessToken] Value SHALL be true if both the file server and the FHIR API server control access using OAuth 2.0 bearer tokens. Value MAY be false for file servers that use access-control schemes other than OAuth 2.0, such as downloads from Amazon S3 bucket URLs or verifiable file servers within an organization's firewall.*
+
+**ONC Response**: We recently provided a clarification to a question we received via the Centralized Feedback System regarding this topic, and are planning to publish the clarification to the § 170.315(g)(10) Certification Companion Guide shortly.
+
+The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion regulation text states in paragraph <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C#p-170.315(g)(10)(v)(B)">§ 170.315(g)(10)(v)(B)</a>:
+
+*Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token.*
+
+According to the requirements in § 170.315(g)(10)(v)(B), Health IT Modules must issue an application a valid access token during authentication and authorization as per the “SMART Backend Services: Authorization Guide” section of the "FHIR Bulk Data Access (Flat FHIR) (v1.0.1: STU 1)" implementation guide (Bulk FHIR IG). In order for the aforementioned access token to be valid, the application must also be able to access patient data via the access token. The “SMART Backend Services: Authorization Guide” section of the Bulk FHIR IG requires the use of OAuth 2.0 bearer tokens for access control. According to <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status">section 5.3.4</a> of the Bulk FHIR IG, the “requiresAccessToken” element be set to “true” if “both the file server and the FHIR API server control access using OAuth 2.0 bearer tokens.” Therefore, the Inferno testing tool requires the "requiresAccessToken" parameter be set to "true" as part of the test to check if the granted access token is valid for accessing patient data.
+
+At a minimum for the ONC Health IT Certification Program, Health IT Modules certified to the § 170.315(g)(10) criterion must support the issuance of a valid access token to an application during authentication and authorization as per the “SMART Backend Services: Authorization Guide” section of the Bulk FHIR IG. However, if the minimum requirements are met, health IT developers may support additional access-control schemes beyond OAuth 2.0 bearer tokens.
+
 --8<-- "includes/abbreviations.md"
