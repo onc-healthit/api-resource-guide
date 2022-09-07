@@ -26,5 +26,55 @@ We are not able to provide individualized advice on whether a specific fact patt
 
 Anyone who believes they may have experienced or observed information blocking by <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/InformationBlockingActors.pdf">any health care provider, health IT developer of Certified Health IT, or health information network or health information exchange</a> is encouraged to share their concerns with us through the <a target = "_blank" href = "https://healthit.gov/report-info-blocking">Information Blocking Portal</a> on ONC’s website, HealthIT.gov.
 
+## Paragraph (b)(3): Rollout of (g)(10)-Certified APIs
+### May 2022
+**Stakeholder Inquiry**: According to the 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program Final Rule (ONC Cures Act Final Rule) timeline, ONC Cures Update Certification Criteria must be made available by 12/31/2022. Can you clarify what made available means?
+
+**ONC Response**: The API Maintenance of Certification requirement at 45 CFR 170.404(b)(3) requires that a Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must deploy to all of their API Information Sources (e.g., customers) API technology certified to the criterion in § 170.315(g)(10) no later than December 31, 2022.
+
+The Maintenance of Certification requirement also includes the deadline of December 31, 2022 for Certified Health IT Developers to upgrade and certify API technology to § 170.315(g)(10) and to deploy to production.
+
+Additional context and background discussion of this Maintenance of Certification requirement is also available in the ONC Cures Act Proposed Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2019-02224/p-969">84 FR 7495</a>), Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1406">85 FR 25765</a>), and Interim Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-101">85 FR 70072</a>), as well as the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
+
+We encourage all Certified Health IT Developers to work with their ONC-ACBs and customers to develop a certification and roll-out strategy to meet ONC Health IT Certification Program requirements by the required regulatory deadlines.
+
+### April 2022
+**Stakeholder Inquiry**: If an EHR system that is currently certified to (g)(7)-(g)(9) is unable to get certified to (g)(10) by January 1, 2023, what is the outcome with respect to their certification? 
+
+- If they then certify to (g)(10) at some point in CY 2023 how is their CHPL entry effected? 
+- If they are not certified to (g)(10) by April 2023, for bi-annual ONC attestations, how do they answer the attestation of APIs now that they are not certified on (g)(10)? 
+- Finally, to comply with the ONC attestations, if an EHR is certified to (g)(10), must this (g)(10) functionality be deployed into ALL customer production sites by December 31, 2022 to meet the ONC attestation compliance for API, or is acceptable (i.e., can mark “Yes” on the attestation) to have it certified by December 31, 2022 but with an incomplete installation into production setting for all customers until later in CY 2023?
+
+**ONC Response**: The API Maintenance of Certification requirement at <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-D/section-170.404#p-170.404(b)(3)">45 CFR 170.404(b)(3)</a> requires that a Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must deploy to all of their API Information Sources (e.g., customers) API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022.
+
+The Maintenance of Certification requirement also includes the deadline of December 31, 2022 for Certified Health IT Developers to upgrade and certify API technology to § 170.315(g)(10) and to deploy to production.
+
+Additional context and background discussion of the Maintenance of Certification requirement is available in the ONC Cures Act Proposed Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2019-02224/p-969">84 FR 7495</a>), Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1406">85 FR 25765</a>), and Interim Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-101">85 FR 70072</a>), as well as the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
+
+Certified Health IT Modules must meet Cures Update compliance (i.e., certified to all eligible and applicable Cures Update criteria) in order to receive the “2015 Edition Cures Update” designation on their CHPL listings. All Certified Health IT Modules with an active certification status must meet this designation by the compliance date of December 31, 2022. Please see our <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2022-03/Cures-Update-Fact-Sheet.pdf">Cures Update Fact Sheet</a>, <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2020-11/Cures_Update_Quick_Reference_2020.pdf">2015 Edition Cures Update Reference</a>, and <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2020-11/Key_Dates_2020.pdf">2015 Edition Cures Update Key Dates</a> resources for additional information on the 2015 Edition Cures Update and the compliance deadlines.
+
+Additionally, if a Certified Health IT Developer does not comply with the Conditions and Maintenance of Certification requirements, ONC may initiate the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2022-03/Draft_Review_Factsheet.pdf">Direct Review</a> process to ensure Certified Health IT Developers remedy the issue and regain compliance with Certification Program requirements in a timely manner. ONC could take the more serious step of terminating the affected certification(s) and/or issuing a certification ban to the Certified Health IT Developer if identified issues are not corrected.
+
+We encourage all Certified Health IT Developers to work with their ONC-ACBs and customers to develop a certification and roll-out strategy to meet all ONC Health IT Certification Program requirements by the required regulatory deadlines.
+
+### February 2022
+**Stakeholder Inquiry**: Can you provide some more information on what the requirement below entails?
+
+*A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology deployed with certified API technology certified to the certification criterion in § 170.315(g)(10) by no later than December 31, 2022.*
+
+**ONC Response**: The API Maintenance of Certification requirement at 45 CFR 170.404(b)(3) requires that "A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology with certified API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022."
+
+If a health IT developer currently has Health IT Modules certified to 45 CFR 170.315(g)(8) under the ONC Health IT Certification Program, it must meet this Maintenance of Certification requirement no later than December 31, 2022, to continue participating in the ONC Health IT Certification Program. Failure to comply with a Condition and Maintenance of Certification requirement could result in a Certified Health IT Module being non-compliant, and ONC could initiate Direct Review (<a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-E/section-170.580#p-170.580(a)(2)(iii)">45 CFR 170.580(a)(2)(iii)</a>) and pursue corrective actions to enforce the requirement. ONC’s goal is to work with Certified Health IT Developers to remedy any non-conformities in a timely manner, but failure to conform with requirements of the ONC Health IT Certification Program can ultimately result in terminating the affected Health IT Modules and/or issuing a certification ban to the Certified Health IT Developer. For more information on Direct Review, please visit http://www.healthit.gov/Direct-Review and our <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2022-03/Draft_Review_Factsheet.pdf">Direct Review fact sheet</a>.
+
+We encourage health IT developers to work with their ONC-ACB and customers to develop a certification and roll-out strategy to meet ONC Health IT Certification Program requirements by the required regulatory deadlines.
+
+### October 2021
+**Stakeholder Inquiry**: Do all products have to be HL7® FHIR capable by Dec 31, 2022, or just the certified products?
+
+**ONC Response**: The API compliance requirement for certified products is contained in 45 CFR 170.404: API Conditions and Maintenance of Certification requirements. According to 170.404(b)(3):
+
+*“A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology deployed with certified API technology certified to the certification criterion in § 170.315(g)(10) by no later than December 31, 2022.”*
+
+According to these requirements, if a health IT developer had technology that was previously certified to § 170.315(g)(8), it must be upgraded and certified to the requirements in § 170.315(g)(10) by the compliance deadline of December 31, 2022. Please consider reviewing the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">Certification Companion Guide for § 170.404</a> for more information.
 
 --8<-- "includes/abbreviations.md"
