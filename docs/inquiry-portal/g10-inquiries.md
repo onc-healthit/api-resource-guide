@@ -85,4 +85,42 @@ However, for purposes of testing and certification for the ONC Health IT Certifi
 
 We will issue a clarification on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">§ 170.315(g)(10) Standardized API for patient and population services Certification Companion Guide</a> regarding this issue, and the Inferno testing tool will be updated in the next regular release, which occurs at least monthly, to accommodate this clarification.
 
+## Paragraph (g)(10)(i)(B)
+### June 2022
+**Stakeholder Inquiry**: ONC (g)(10) Certification requirements and the Inferno Test Tool indicate that we are to demonstrate support for bulk FHIR requests with Group IDs (e.g. “[base url]/Group/[id]/$export”). Is there any minimum requirement in the upcoming 2022 (g)(10) certification for EHRs on how many different types of groups should be supported by the EHR? Can you give more guidance on what groups we need?
+
+**ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion requires the Health IT Module support requests for multiple patients’ data as a group using the “group-export” operation as detailed in the Bulk Data Access 1.0.1 implementation guide. The § 170.315(g)(10) criterion does not specify how the health IT developer creates groups nor how many groups must be supported. The health IT developer is expected to work with its customers to define the appropriate groups for export via the Health IT Module.
+ 
+Bulk Data Access 1.0.1 section 5.1.2 Endpoint - Group of Patients includes the following note regarding group definitions:
+
+*How these Groups are defined is specific to each FHIR system’s implementation. For example, a payer may send a healthcare institution a roster file that can be imported into their EHR to create or update a FHIR group. Group membership could be based upon explicit attributes of the patient, such as age, sex or a particular condition such as PTSD or Chronic Opioid use, or on more complex attributes, such as a recent inpatient discharge or membership in the population used to calculate a quality measure. FHIR-based group management is out of scope for the current version of this implementation guide.*
+
+### February 2022
+**Stakeholder Inquiry**: We are seeking some further confirmation in relation to the [1] new clarification published to the (g)(10) Certification Companion Guide (CCG) on the use of capability URLs. Can our Health IT Module require clients to re-direct to a capability URL with an authorization header?
+
+[1] Health IT Modules may use access control schemes other than OAuth 2.0 for controlling access to the file server, such as capability URLs. The HL7 FHIR-I Work Group has documented expectations for the use of capability URLs with the Bulk Data Access IG on the HL7 confluence website. For purposes of Certification testing, Health IT Modules will be tested for the ability to share bulk data files either using OAuth 2.0 bearer tokens or via capability URLs accessible without preconditions or additional steps.
+
+**ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion requires (§ 170.315(g)(10)(i)(B)) that a Health IT Module respond to requests for multiple patients’ data as a group in a standardized manner. One of the standards for this requirement is the FHIR Bulk Data Access (Flat FHIR) (v1.0.1: STU 1) implementation guide, which specifies how bulk patient data is exported to a bulk data client.
+
+As specified in Bulk Data Access 1.0.1 <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU1.0.1/export/index.html#response---complete-status">"5.3.4 Response - Complete Status"</a>, the Health IT Module provides a manifest to the client containing URLs to access the bulk data files. The Bulk Data Access 1.0.1 implementation guide provides flexibility to the server in implementing how these URLs eventually provide access to the bulk data files. Given this flexibility, Health IT Modules may require clients to re-direct to a capability URL without an authorization header when resolving the file URLs provided in the manifest. To address this flexibility, the Inferno testing tool was updated in the April release (4/11/2022).
+
+Requirements imposed on clients to access multiple patients' data using this flexibility must be completely and appropriately documented as per the documentation requirements at § 170.315(g)(10)(viii).
+
+### September 2021
+**Stakeholder Inquiry**: For the Inferno Multi-Patient API tests, there is mention of the server providing the resources that are referenced as must support elements in other required resources. Also in this test, the location resource is called out as optional.
+
+Can you clarify the intent here?
+
+**ONC Response**: Regarding the “Location” HL7 FHIR resource, we provided the following clarification in the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">Certification Companion Guide (CCG) for § 170.315(g)(10)</a>:
+
+*“Health IT Modules must demonstrate support for “Location” FHIR resources by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.”*
+
+Thus, “Location” FHIR resources do not need to be presented as independent FHIR resources but can be *contained within* other applicable FHIR resources.
+
+Regarding “Organization” HL7 FHIR resources, we provided the following clarification in the CCG for § 170.315(g)(10):
+
+*“During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core IG FHIR Profiles.”*
+
+Health IT developers must include all the resources necessary via the multiple patient services API responses to fully resolve references contained in HL7 FHIR resources, including “Organization” resources.
+
 --8<-- "includes/abbreviations.md"
