@@ -4,9 +4,6 @@ nav:
   - About: about.md
   - Helpful Links: helpful-links.md
   - HL7&#174 FHIR&#174 API criterion - (g)(10): g10-criterion.md
-  - HL7&#174 C-CDA API criterion - (g)(9): g9-criterion.md
-  - Non-standarized data request API criterion - (g)(8): g8-criterion.md
-  - Non-standardized patient selection API criterion - (g)(7): g7-criterion.md
   - API Conditions and Maintenance of Certification requirements at § 170.404: 404-conditions-maintenance.md
   - Real World Testing Condition and Maintenance of Certification: real-world-testing-conditions-maintenance.md
   - Standards Version Advancement Process: standards-version-advancement-process.md
