@@ -209,4 +209,58 @@ At a minimum for the ONC Health IT Certification Program, Health IT Modules cert
 
 *For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART Application Launch Framework Implementation Guide Release 1.0.0.</a> For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.*
 
+## Inferno
+### June 2022
+**Stakeholder Inquiry**: We are testing our FHIR Server using the Inferno (g)(10) Standardized API Test Kit. We are failing some Pulse Oximetry Tests. Specifically, in one of our Observation resources, we use dataAbsentReason for 'Inhaled oxygen flow rate'. But Inferno is failing the test mentioning that 'component.value[x].code' is not present in the Observation. Can you provide some clarity on why this is failing?
+
+**ONC Response**: The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/wiki/FAQ#q-how-does-inferno-test-mustsupport-flag-on-an-element">ONC Certification (g)(10) Standardized API Test Kit FAQ</a> includes the following guidance regarding how Inferno tests the "MustSupport" flag on an element.
+
+*Inferno follows guidance provided by HL7 FHIR Conformance Rules and US Core IG General Guidance. Inferno checks that a server implementation SHALL demonstrate that it supports the "MustSupport" element in a meaningful way. In general, Inferno "MustSupport" tests check that each "MustSupport" element is present in at least one resource from all resources returned from the server. It is not necessary that one resource contain all MustSupport elements. Inferno does not consider using a "Data Absent Reason" (DAR) extension on a "MustSupport" element as supporting the element "in a meaningful way," so Inferno ignores elements with DAR extensions when looking for "MustSupport" elements.*
+
+For the Inferno Pulse Oximetry Tests (4.18), the Health IT Module must provide FHIR resources conforming to the US Core Pulse Oximetry Profile as specified in the US Core Implementation Guide. The US Core Pulse Oximetry Profile contains elements marked as "MustSupport". As part of the Inferno Pulse Oximetry Tests, the Health IT Module must provide each of these "MustSupport" elements at least once. If at least one cannot be found, the Health IT Module will not pass these tests. Inferno ignores elements with Data Absent Reason extensions when looking for "MustSupport" elements.
+
+***
+**Stakeholder Inquiry**: Our FHIR API returns additional resource types in search responses and Inferno ((g)(10) Standardized API Test Kit) is failing us for this. Is this intended to not be allowed? The FHIR specification provides flexibility for server search responses.
+
+**ONC Response**: The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/releases/tag/v2.2.2">ONC Certification (g)(10) Standardized API Test Kit v2.2.2</a>, released on 7/11/2022, includes the following update which should resolve the technical concern raised. If your implementation continues to experience this issue, please submit another ticket through the Health IT Feedback and Inquiry Portal.
+
+*Relaxes constraint that prevented systems from returning additional resource types in search responses. Systems may return other resource types if they believe them to be relevant, and tests now provide informational messages in this case.*
+
+### April 2022
+**Stakeholder Inquiry**: Does ONC have a published list of IP addresses we can whitelist for the (g)(10) Standardized API Test Kit hosted at https://inferno.healthit.gov/onc-certification-g10-test-kit?
+
+**ONC Response**: The IP addresses for ONC's hosted instance of Inferno are as follows:
+
+- The latest Inferno release (inferno.healthit.gov): 52.20.119.0
+- The development build of Inferno (inferno-dev.healthit.gov): 34.225.213.213
+
+### March 2022
+**Stakeholder Inquiry**: Do we need to register Inferno as EHR Practitioner App to test ONC certification criteria or we can use SMART Apps like Cardiac Risk to test the criteria? If it’s the Inferno that we need to register for EHR Practitioner App criteria testing, can you please guide me on the workflow on which the EHR practitioner app criteria works for testing in Inferno tool?
+
+**ONC Response**: Response to Question 1: *Do we need to register Inferno as EHR Practitioner App to test the specific criteria or we can use SMART APPS like Cardiac Risk to test the criteria?*
+
+Only ONC-approved test methods can be used to test products intended for certification in the Certification Program. Currently, Inferno is the only ONC-approved testing tool for testing compliance to the § 170.315(g)(10) "Standardized API for patient and population services" certification criterion. When using Inferno to test compliance to the § 170.315(g)(10) criterion, Inferno must be registered with the Health IT Module so that the "EHR Practitioner App" tests in Inferno can be completed.
+
+Response to Question 2: *If it’s the Inferno that we need to register for EHR Practitioner App criteria testing, can you please guide me on the workflow on which the EHR practitioner app criteria works for testing in Inferno tool?*
+
+The "EHR Practitioner App" tests in Inferno require the Health IT Module demonstrate the ability to perform an EHR launch to a SMART on FHIR confidential client with patient context, refresh token, and OpenID Connect identity token. After launch, Inferno performs a simple Patient resource read on the patient in context. Inferno then refreshes the access token and reads the Patient resource using the new access token to ensure that the refresh was successful. Finally, Inferno decodes and validates the authentication information provided by OpenID Connect.
+
+Additional detail regarding the "EHR Practitioner App" tests in Inferno is available in the ONC Certification (g)(10) Matrix provided with each Inferno release. The ONC Certification (g)(10) Matrix for the current version of Inferno is available via the <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">onc-certification-g10-test-kit</a> repository on GitHub.
+
+### August 2021
+**Stakeholder Inquiry**: What are the test data requirements for testing to (g)(10) using Inferno?
+
+**ONC Response**: The Inferno (g)(10) Standardized API Test Kit does not currently require a specific set of data to be entered into the system under test prior to testing. Instead, it leverages HL7 FHIR's built-in conformance rules to ensure that data returned is valid, conforms to required profiles, and contains all elements that must be supported. This allows systems to use either their own sample data or supplied sample data.
+
+If needed, Inferno supplies multiple synthetic data sets suitable for testing. These data sets are ideal for testing because they provide coverage of all HL7 US Core IG profiles and support for all "Must Support" data elements without requiring a large set of patients or sacrificing realism. These synthetic data can be generated using the <a target = "_blank" href = "https://github.com/inferno-framework/uscore-data-script">uscore-data-script on GitHub</a>.
+
+Otherwise, a health IT developer can supply their own sample data loaded into the system under test for certification, but the sample data must be able to demonstrate all the conformance requirements for certification according to the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">Test Procedure for 170.315(g)(10)</a>. We also encourage health IT developers read the clarifications provided on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">Certification Companion Guide for 170.315(g)(10)</a>.
+
+### April 2021
+**Stakeholder Inquiry**: Can Inferno be used for Provider Directory testing? We have been able to use this tool for Patient Access API testing.
+
+**ONC Response**: The Inferno (g)(10) Standardized API Test Kit is designed to support the Standardized API for Patient and Population Services certification criterion (§ 170.315(g)(10)) for the ONC Health IT Certification Program. Since a provider directory is not part of the § 170.315(g)(10) certification criterion, the Inferno (g)(10) Standardized API Test Kit does not support provider directory testing.
+
+However, the <a target = "_blank" href = "https://inferno.healthit.gov/validator/">Inferno FHIR Validator</a> tool can be used to validate FHIR resources against implementation guides, including provider directory FHIR implementation guides, like the <a target = "_blank" href = "http://hl7.org/fhir/uv/vhdir/2018Jan/index.html">HL7 FHIR® Validated Healthcare Directory Implementation Guide STU 1</a>. Additionally, Inferno is currently being updated to allow for greater extensibility and testing capabilities with a broad array of implementation guides. Support for fully-featured provider directory implementation guide testing may also be added in the future.
+
 --8<-- "includes/abbreviations.md"
