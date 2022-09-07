@@ -168,4 +168,19 @@ Or, does the requirement mean the server MUST allow the user to choose which of 
 
 In the example you provided, it would be acceptable “for the FHIR Server to have the user accept the list as a whole … or reject the list as a whole” as long as the patient has the ability to authorize the application based on resource-level scopes, if requested by the patient. For example, the patient could be presented a “request list for the user to blanket request/deny access” accompanied with a hyperlink that could direct them to choose individual resources, if they desired.
 
+### May 2021
+**Stakeholder Inquiry**: Can you clarify what is required of OAuth 2.0 in the Patient Access API?
+
+**ONC Response**: The § 170.315(g)(10) Standardized API for patient and population services certification criterion requires the following for authentication and authorization for patient and user scopes for first time connections:
+
+- Authentication and authorization must occur during the process of granting access to patient data in accordance with the HL7® SMART Application Launch Framework Implementation Guide (incorporated by reference at § 170.215(a)(3)) and OpenID Connect Core 1.0 incorporating errata set 1 (incorporated by reference at § 170.215(b)). 
+- A Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret.
+- A Health IT Module’s authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
+
+and for subsequent connections:
+
+- Access must be granted to patient data in accordance with the implementation specification adopted in the HL7® SMART Application Launch Framework Implementation Guide (incorporated by reference at § 170.215(a)(3)) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application.
+- A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. 
+Beyond the certification criteria requirements, health IT developers are not required to support all methods that third-party application developers seek to use. Additional information and clarifications regarding this criterion can be found on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">September</a>.
+
 --8<-- "includes/abbreviations.md"
