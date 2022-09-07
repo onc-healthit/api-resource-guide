@@ -4,7 +4,7 @@ This section contains anonymized feedback and inquiries, related to the standard
 
 !!! attention
 
-    The date headers provide important context as some information may have changed since the time of the inquiry and response.
+    The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
 ### July 2022
