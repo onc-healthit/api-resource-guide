@@ -1,6 +1,6 @@
 <!-- $criterion-endpoint{"condition-ccg/application-programming-interfaces"} -->
 
-# API Condition and Maintenance of Certification at § 170.404
+# API Conditions and Maintenance of Certification at § 170.404
 
 This section considers the API Condition and Maintenance of Certification requirements, including all the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule Conditions of Certification API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-98">ONC Interim Final Rule API preamble</a> and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170#p-170.404(a)">regulation paragraphs in § 170.404</a>.
 
@@ -13,6 +13,10 @@ ONC described several actors in the <a target = "_blank" href = "https://www.fed
 Certified API Developers must publish Service Base URLs for patient access.
 
 Certified API Developers are required to publish Service Base URLs (§ 170.404(b)) that can be used by patients to exercise their <a target = "_blank" href = "https://www.hhs.gov/hipaa/index.html">HIPAA Privacy Rule</a> right of access. Additionally, the Standardized API for patient and population Services can be used by entities to share <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/disclosures-treatment-payment-health-care-operations/index.html">treatment, payment, and health care operations</a> information with other authorized parties. The Office of Civil Rights created a page titled “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access-right-health-apps-apis/index.html">The access right, health apps, & APIs</a>” which explains some of these clarifications in context of APIs.
+
+## Health IT Feedback and Inquiry Portal
+
+To submit questions or comments to ONC please use our <a target = "_blank" href = "https://www.healthit.gov/feedback">Inquiry Portal</a>. Anonymized versions of the § 170.404 inquires and responses that ONC has handled through this portal can be accessed on the [Health IT Feedback and Inquiry Portal: API Conditions and Maintenance of Certification at § 170.404](inquiry-portal/404-inquiries.md) page.
 
 ## Information Clarifications
 
