@@ -20,31 +20,16 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 	<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
 
 ??? tip "Explore Inferno for (g)(10) Testing"
-	**Latest News**
+	**Inferno Walkthroughs/Documentation**
 
-	- ONC Buzz Blog: <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/inferno-redesigned-easier-faster-extensible">Inferno Redesigned: Easier, Faster, Extensible</a>
-	- ONC Buzz Blog: <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/calling-all-beta-testers-new-opportunity-to-help-onc-update-the-inferno-test-tool">Calling all Beta Testers: New Opportunity to help ONC Update the Inferno Test Tool</a>
-
+	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
+	
 	**Get Involved and Ask Questions**
 
 	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
 	 - Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org (*creating a Zulip account is free*). This stream is actively monitored by Inferno's development team.
 	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
 	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
-
-	 **Inferno Walkthroughs/Documentation**
-
-	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
-	 
-	 **:material-video: Previously Recorded Presentations**
-
-	*Note that some of these may contain out-of-date information*
-
-	 - <a target = "_blank" href = "https://youtu.be/OGzPC56gSBk">Robert Scanlon - FHIR API Testing with Inferno | DevDays June 2021 Virtual</a>
-	 - <a target = "_blank" href = "https://youtu.be/QTY1HbigsjQ?t=254 ">Online FHIR® Meetup #4: FHIR Testing</a> (starting at 4:14)
-	 - <a target = "_blank" href = "https://youtu.be/FAfS8veda1w">Steve Posnack & Robert Scanlon - Testing HL7® FHIR® Implementation Guides | DevDays 2020 June</a>
-	 - <a target = "_blank" href = "https://youtu.be/C92CoKNV3KA">Robert Scanlon - FHIR Server Certification with Inferno | DevDays Redmond 2019</a>
-	 - <a target = "_blank" href = "https://youtu.be/_i9C825GSSM ">Robert Scanlon - INFERNO | DevDays 2018 Amsterdam</a>
 
 ### Drummond G10+ FHIR API powered by Touchstone
 In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
