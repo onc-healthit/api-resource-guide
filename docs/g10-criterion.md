@@ -51,7 +51,7 @@ In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/he
 
 ## Health IT Feedback and Inquiry Portal
 
-To submit questions or comments to ONC please use our <a target = "_blank" href = "https://www.healthit.gov/feedback">Inquiry Portal</a>. Anonymized versions of the inquires and responses that ONC has handled through this portal can be accessed on the [Health IT Feedback and Inquiry Portal: Standardized API Certification Criterion at § 170.315(g)(10)](inquiry-portal/g10-inquiries.md) page.
+To submit questions or comments to ONC please use our <a target = "_blank" href = "https://www.healthit.gov/feedback">Inquiry Portal</a>. Anonymized versions of the § 170.315(g)(10) inquires and responses that ONC has handled through this portal can be accessed on the [Health IT Feedback and Inquiry Portal: Standardized API Certification Criterion at § 170.315(g)(10)](inquiry-portal/g10-inquiries.md) page.
 
 ## Information and Clarifications
 
