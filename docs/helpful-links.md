@@ -71,6 +71,14 @@
     - <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/">§ 170.215(a)(4): HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)</a>
     - <a target = "_blank" href = "https://openid.net/specs/openid-connect-core-1_0.html">§ 170.215(b): OpenID Connect Core 1.0 incorporating errata set 1</a>
 
+    **Standards Version Advancement Process (SVAP) Version(s) Approved**
+    
+    - <a target = "_blank" href = "https://www.healthit.gov/isa/sites/isa/files/2021-07/USCDI-Version-2-July-2021-Final.pdf">United States Core Data for Interoperability (USCDI), Version 2, July 2021</a>
+    - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU4/">HL7® FHIR® US Core Implementation Guide STU 4.0.0, June 2021</a>
+    - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU5.0.1/">HL7® FHIR® US Core Implementation Guide STU 5.0.1, June 2022 </a>
+    - <a target = "_blank" href = "http://hl7.org/fhir/smart-app-launch/STU2/">HL7® FHIR® SMART Application Launch Framework Implementation Guide Release 2.0.0, November 26, 2021</a>
+    -  <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU2/">HL7® FHIR® Bulk Data Access (Flat FHIR®) (v2.0.0: STU 2), November 26, 2021</a>
+
 === "§ 170.315(g)(9)"
     - <a target = "_blank" href = "https://www.healthit.gov/isa/us-core-data-interoperability-uscdi">§ 170.213: United States Core Data for Interoperability (USCDI) Version 1</a>
     - <a target = "_blank" href = "http://www.hl7.org/implement/standards/product_brief.cfm?product_id=492">§ 170.205(a)(4): Health Level 7 (HL7®) Implementation Guide for CDA Release 2 Consolidation CDA Templates for Clinical Notes (US Realm), Draft Standard for Trial Use Release 2.1 C-CDA 2.1, August 2015, June 2019 (with Errata)</a>
