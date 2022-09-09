@@ -34,6 +34,10 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 ### Drummond G10+ FHIR API powered by Touchstone
 In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
 
+## Health IT Feedback and Inquiry Portal
+
+To submit questions or comments to ONC please use our <a target = "_blank" href = "https://www.healthit.gov/feedback">Inquiry Portal</a>. Anonymized versions of the § 170.315(g)(10) inquires and responses that ONC has handled through this portal can be accessed on the [Health IT Feedback and Inquiry Portal: Standardized API Certification Criterion at § 170.315(g)(10)](inquiry-portal/g10-inquiries.md) page.
+
 ## Information and Clarifications
 
 ### Entire Criterion
@@ -78,6 +82,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 § 170.315(g)(10).
 - While there may be slight variation between each instance of a Standardized API for patient and population services Health IT Module implemented by API Information Sources, ONC believes the standards that form the basis of the § 170.315(g)(10) certification criterion will enable interoperability across implementations.
 
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Applies to Entire Criterion (g)(10)](inquiry-portal/g10-inquiries.md#applies-to-entire-criterion)
+
 ### Data Response (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(A)**" 
     (i) Data response. (A) Respond to requests for a single patient's data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
@@ -120,6 +127,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 	:material-video: Additionally, a guided walk through of "must support" in FHIR and US Core 3.1.1 can be found on YouTube <a target = "_blank" href = "https://youtu.be/CRsR4pViS4c">here</a>.
 
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(i)(A): Data Response (Single Patient))](inquiry-portal/g10-inquiries.md#paragraph-g10ia-data-response-single-patient)
+
 ### Data Response (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
     (B) Respond to requests for multiple patients' data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
@@ -140,6 +150,8 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	* Health IT Modules must demonstrate support for “Location” FHIR® resources by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.
 	* Health IT Modules must support provenance according to the “Basic Provenance Guidance” section of the US Core IG.
 	
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(i)(B): Data Response (Multiple Patients)](inquiry-portal/g10-inquiries.md#paragraph-g10ib-data-response-multiple-patients)
 
 ### Supported Search Operations (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(A)**"
@@ -221,6 +233,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 - The requirement that health IT developers must enable an application to register with the § 170.315(g)(10)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and API Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of Certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.
 - Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> established in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1665">ONC Cures Act Final Rule</a>.
 
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(iii): Application Registration](inquiry-portal/g10-inquiries.md#paragraph-g10iii-application-registration)
+
 ### Secure Connection
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
     (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3).
@@ -238,6 +253,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	* TLS version 1.2 or above must be enforced for the appropriate connections.
 	* Health IT developers are encouraged but not required to follow [TLS Best Current Practice (BCP 195)](https://www.rfc-editor.org/info/bcp195) for TLS version enforcement, referenced in [section 6.1.0.3 of the HL7 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR) Release 4, October 30, 2019](http://hl7.org/fhir/R4/security.html#http), which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet ONC Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the API documentation requirements at § 170.315(g)(10)(viii) and API Transparency Conditions at 45 CFR 170.404(a)(2).
+
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(iv): Secure Connection](inquiry-portal/g10-inquiries.md#paragraph-g10iv-secure-connection)
 	
 ### First-time Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(1)**"
@@ -325,6 +343,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	1. <a target = "_blank" href = "https://youtu.be/lFolfRSVWJE">SMART App Client Authorization Part 2</a> - Indepth look at the code used for Client Authorization in Part 1.
 
 	Video downloads and PowerPoint slides can be found here: <a target = "_blank" href = "https://github.com/onc-healthit/oauth-samples">oauth-samples</a>
+
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients](inquiry-portal/g10-inquiries.md#paragraph-g10va1-first-time-authentication-authorization-for-single-patients)
 
 ### Subsequent Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(2)**"
@@ -417,6 +438,9 @@ new period of no less than three months.
 
 	It is critical that server developers follow the HL7 guidance on  <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a> when choosing to generate output manifests with `requiresAccessToken = false`.
 
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(v)(B): Authentication / Authorization for Multiple Patient Services](inquiry-portal/g10-inquiries.md#paragraph-g10vb-authentication-authorization-for-multiple-patient-services)
+
 ### Patient Authorization Revocation
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
     (vi) Patient authorization revocation. A Health IT Module's authorization server must be able to revoke an authorized application's access at a patient's direction.
@@ -435,6 +459,9 @@ new period of no less than three months.
 	* This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.
 	* Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.
 	* For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3). For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.
+
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(vi): Patient Auhtorization Revocation](inquiry-portal/g10-inquiries.md#paragraph-g10vi-patient-auhtorization-revocation)
 	
 ### Token Introspection
 ???+ quote "**Regulation text at § 170.315(g)(10)(vii)**" 
