@@ -192,7 +192,7 @@ Beyond the certification criteria requirements, health IT developers are not req
 ### October 2021
 **Stakeholder Inquiry**: There is a requirement that clients downloading the bulk data use the same access token as they did to make the original request. Does it permit other equivalently secure means of authorization as well?
 
-The  FHIR specification says that there should be alternatives: https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status
+The  FHIR specification says that there should be alternatives: <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status">https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status</a>
 
 *[requiresAccessToken] Value SHALL be true if both the file server and the FHIR API server control access using OAuth 2.0 bearer tokens. Value MAY be false for file servers that use access-control schemes other than OAuth 2.0, such as downloads from Amazon S3 bucket URLs or verifiable file servers within an organization's firewall.*
 
