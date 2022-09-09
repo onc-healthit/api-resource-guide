@@ -22,7 +22,7 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 ??? tip "Explore Inferno for (g)(10) Testing"
 	**Inferno Walkthroughs/Documentation**
 
-	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
+	  - <a target = "_blank" href = "https://youtu.be/jSm3xsm-ehs">Inferno Walkthrough</a>
 	
 	**Get Involved and Ask Questions**
 
