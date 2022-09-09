@@ -232,7 +232,7 @@ For the Inferno Pulse Oximetry Tests (4.18), the Health IT Module must provide F
 *Relaxes constraint that prevented systems from returning additional resource types in search responses. Systems may return other resource types if they believe them to be relevant, and tests now provide informational messages in this case.*
 
 ### April 2022
-**Stakeholder Inquiry**: Does ONC have a published list of IP addresses we can whitelist for the (g)(10) Standardized API Test Kit hosted at https://inferno.healthit.gov/onc-certification-g10-test-kit?
+**Stakeholder Inquiry**: Does ONC have a published list of IP addresses we can whitelist for the (g)(10) Standardized API Test Kit hosted at <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">https://inferno.healthit.gov/onc-certification-g10-test-kit</a>?
 
 **ONC Response**: The IP addresses for ONC's hosted instance of Inferno are as follows:
 
