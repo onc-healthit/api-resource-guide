@@ -72,7 +72,7 @@ During the HL7 Connectathon, we discussed how the US Core version 3.1.1 IG does 
 ### August 2021
 **Stakeholder Inquiry**: US Core 3.1.1 requires that a server demonstrate support for the "composite OR" search for the CareTeam.status search parameter (US Core 3.1.1 CareTeam Mandatory Search Parameters). However, neither US Core, nor USCDI require that multiple CareTeam resource be supported. Can you clarify what is required here?
 
-**ONC Response**: According to the regulation text for the 170.315(g)(10) certification criterion at 45 CFR 170.315(g)(10)(i )(A), health IT developers must demonstrate the ability of Health IT Modules to:
+**ONC Response**: According to the regulation text for the 170.315(g)(10) certification criterion at 45 CFR 170.315(g)(10)(i)(A), health IT developers must demonstrate the ability of Health IT Modules to:
 
 *"Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in 'US Core Server CapabilityStatement,' for each of the data included in the standard adopted in § 170.213."*
 
