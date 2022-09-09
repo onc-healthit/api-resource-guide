@@ -23,7 +23,7 @@ In the provided example, the health IT developer could use "relied upon software
 For more information about "relied upon software", please see the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/relieduponsoftwareguidance.pdf">Relied Upon Software Program Guidance document</a>.
 
 ### December 2021
-**Stakeholder Inquiry**: If we certify to 170.315(g)(10), does that cover all of the API requirements specified in this PDF? https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf
+**Stakeholder Inquiry**: If we certify to 170.315(g)(10), does that cover all of the API requirements specified in this PDF? <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf">https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf</a>
 
 Are there any other criteria in that PDF not covered in the (g)(10) criterion?
 
