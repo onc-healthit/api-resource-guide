@@ -484,7 +484,7 @@ new period of no less than three months.
 
 <form>
 	<p>US Core:</p>
-	<input type="radio" name="usCore" value="USCore3.1.1">
+	<input type="radio" name="usCore" value="USCore3.1.1" checked="checked">
 	<label>US Core STU V3.1.1 + USCDI V1</label><br>
 	<input type="radio" name="usCore" value="USCore4.0.0">
 	<label>US Core STU V4.0.0 + USCDI V1</label><br>
@@ -494,7 +494,7 @@ new period of no less than three months.
 	<br>
 
 	<p>SMART App Launch:</p>
-	<input type="radio" name="smartAppLaunch" value="SMART1.0.0">
+	<input type="radio" name="smartAppLaunch" value="SMART1.0.0" checked="checked">
 	<label>SMART App Launch V1.0.0</label><br>
 	<input type="radio" name="smartAppLaunch" value="SMART2.0.0">
 	<label>SMART App Launch V2.0.0</label><br>
@@ -502,7 +502,7 @@ new period of no less than three months.
 	<br>
 	
 	<p>Bulk Data:</p>
-	<input type="radio" name="bulkData" value="BulkDataAccess1.0.0">
+	<input type="radio" name="bulkData" value="BulkDataAccess1.0.0" checked="checked">
 	<label>Bulk Data Access V1.0.0:STU 1</label><br>
 	<input type="radio" name="bulkData" value="BulkDataAccess2.0.0">
 	<label>Bulk Data Access V2.0.0:STU 2</label><br>
