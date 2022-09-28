@@ -69,7 +69,8 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* Certified API Developers and API Users have the ability to collaborate and form relationships, so long as these relationships do not conflict with any of the provisions of the ONC Cures Act Final Rule or other applicable federal and state laws and regulations.
 	* While the permitted fees set the boundaries for the fees Certified API Developers are permitted to charge and to whom those permitted fees can be charged, they do not prohibit who may pay the Certified API Developer’s permitted fee. In other words, these conditions limit the party from which a Certified API Developer may require payment, but they do not speak to who may pay the fee.
 	* Fees charged for “value-added services” can arise between an API Information Source and Certified API Developer or API User.
-	* Our goal with the requirement that fees be “objective and verifiable” is to require Certified API Developers to apply fee criteria that, among other things, will lead the Certified API Developer to come to the same conclusion with respect to the permitted fee’s amount each time it administers a fee to an API Information Source or API User. Accordingly, the fee cannot be based on the Certified API Developer’s subjective judgment or discretion.
+	* Fees charged must be based on objective and verifiable criteria that are uniformly applied to all similarly situated API Information Sources and API users. The requirement of objective and verifiable criteria to determine the application of fees to “similarly situated” API Information Sources and API Users is meant to prevent one customer or a specific group of customers to whom the certified API technology is supplied or for whom it is supported from bearing an unreasonably high cost compared to other customers, which could lead to “special effort” for accessing and using APIs (85 FR 25753).
+	* Discounted fees, or other fee calculation methodologies, used for the licensing or selling of certified API technology are not prohibited under the ONC Health IT Certification Program so long as they result in fees that meet all the requirements of 45 CFR 170.404(a)(3) in the context of the ONC Health IT Certification Program.
 	* Non-exhaustive examples of fees for services that Certified API Developers would be prohibited from charging:
 		+ Any fee for access to the documentation that a Certified API Developer is required to publish or make available under this Condition of Certification requirement.
 		+ Any fee for access to other types of documentation or information that a software developer may reasonably require to make effective use of certified API technology for any legally permissible purpose.
@@ -132,6 +133,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* We note that examples used to illustrate when a fee would or would not qualify as a “value-added service,” such as app store listing, are demonstrative, but not required unless otherwise noted in the regulation text.
 	* We permit fees for services associated with the listing and promotion of apps beyond basic application placement so long as the Certified API Developer ensures that basic access and listing in the app store is provided free of charge (if an application developer depended on such listing to efficiently and effectively develop and deploy production-ready apps for use with certified API technology).
 	* To the degree that a Certified Health IT Developer offers value-added services associated with certified API technology, the Condition of Certification covers its practices related to certified API technology only. Conversely, this Condition of Certification would not apply to any practices that do not involve certified API technology.
+	
 
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (a)(3)(iv): API Fees - Permitted Fee (Value-Added Services)](inquiry-portal/404-inquiries.md#paragraph-a3iv-api-fees-permitted-fee-value-added-services)
@@ -197,6 +199,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	
 	
 	* A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology with certified API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022.
+	
 
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (b)(3): Rollout of (g)(10)-Certified APIs](inquiry-portal/404-inquiries.md#paragraph-b3-rollout-of-g10-certified-apis)
