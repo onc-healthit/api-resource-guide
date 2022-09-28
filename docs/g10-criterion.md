@@ -253,6 +253,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	* TLS version 1.2 or above must be enforced for the appropriate connections.
 	* Health IT developers are encouraged but not required to follow [TLS Best Current Practice (BCP 195)](https://www.rfc-editor.org/info/bcp195) for TLS version enforcement, referenced in [section 6.1.0.3 of the HL7 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR) Release 4, October 30, 2019](http://hl7.org/fhir/R4/security.html#http), which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet ONC Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the API documentation requirements at § 170.315(g)(10)(viii) and API Transparency Conditions at 45 CFR 170.404(a)(2).
+	
 
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(iv): Secure Connection](inquiry-portal/g10-inquiries.md#paragraph-g10iv-secure-connection)
@@ -459,6 +460,7 @@ new period of no less than three months.
 	* This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.
 	* Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.
 	* For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3). For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.
+	
 
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(vi): Patient Auhtorization Revocation](inquiry-portal/g10-inquiries.md#paragraph-g10vi-patient-auhtorization-revocation)
@@ -504,7 +506,17 @@ new period of no less than three months.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(B)"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
-	- No additional clarifications.
+	Technical outcome – The documentation used to meet paragraph (g)(10)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.
+	
+	
+	***Clarifications:***
+	
+	
+	**Applies to all applicable base regulatory and SVAP standards:**
+	
+	
+	* No additional clarifications.
+	
 
 ## Test Procedure
 **Select Standards**:

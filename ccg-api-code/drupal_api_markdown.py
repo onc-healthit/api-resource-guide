@@ -48,7 +48,9 @@ def gather_data_from_web(criterion):
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
-        data_json = requests.get("{}/{}?_format=json".format(data_url, entity_id["target_id"])).json()
+        request_url = "{}/{}?_format=json".format(data_url, entity_id["target_id"])
+
+        data_json = requests.get(request_url).json()
         
         time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
@@ -61,6 +63,8 @@ def gather_data_from_web(criterion):
         data = data_json["field_technical_explanations_and"][0]["processed"]
 
         web_data[element] = data
+
+        print("\tGET {} for {}".format(request_url, element))
 
     return web_data
 
@@ -127,6 +131,7 @@ def process_template(onc_template_str, file_path):
         clarifications_list = md(referenced_paragraph_data)
         if tabbed:
             clarifications_list_by_line = md(referenced_paragraph_data).split("\n")
+            # clarifications_list_by_line = list(filter(None, clarifications_list_by_line)) # Remove empty strings (Not sure I should actually try and clean the API output here where focus is better spent cleaning the API itself)
             clarifications_list_by_line = list(map(lambda x: "\t" + x, clarifications_list_by_line)) # Add tabs to each line
             clarifications_list = '\n'.join(clarifications_list_by_line)
 
@@ -134,7 +139,7 @@ def process_template(onc_template_str, file_path):
 
         to_be_replaced_beginning, to_be_replaced_end = get_existing_clarification_text(onc_template_str, pointer + 1)
 
-        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + onc_template_str[to_be_replaced_end:]
+        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + "\n" + onc_template_str[to_be_replaced_end:]
     
     write_processed_doc(onc_template_str, file_path)
 
@@ -157,13 +162,14 @@ def main():
             print("All processing complete!")
             exit()
 
-    for subdir, dirs, files in os.walk(directory):
+    for path, subdir, files in os.walk(directory):
         for file in files:
-            ext = os.path.splitext(file)[-1].lower()
+            ext = os.path.splitext(file)[-1].lower() # grab the file extension
             if ext == ".md":
-                onc_template = open(file, 'r', encoding="utf8")
+                file_path = os.path.join(path, file)
+
+                onc_template = open(file_path, 'r', encoding="utf8")
                 onc_template_str = onc_template.read() 
-                file_path = Path(directory) / file 
                 print("Processing {}...".format(file_path))  
                 process_template(onc_template_str, file_path)
 
