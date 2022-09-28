@@ -2,7 +2,6 @@
 import os
 import re
 import sys
-from wsgiref.util import request_uri
 import requests
 import time
 from pathlib import Path
