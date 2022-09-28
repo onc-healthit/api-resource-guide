@@ -2,6 +2,7 @@
 import os
 import re
 import sys
+from wsgiref.util import request_uri
 import requests
 import time
 from pathlib import Path
@@ -48,7 +49,9 @@ def gather_data_from_web(criterion):
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
-        data_json = requests.get("{}/{}?_format=json".format(data_url, entity_id["target_id"])).json()
+        request_url = "{}/{}?_format=json".format(data_url, entity_id["target_id"])
+
+        data_json = requests.get(request_url).json()
         
         time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
@@ -61,6 +64,8 @@ def gather_data_from_web(criterion):
         data = data_json["field_technical_explanations_and"][0]["processed"]
 
         web_data[element] = data
+
+        print("\tGET {} for {}".format(request_url, element))
 
     return web_data
 
