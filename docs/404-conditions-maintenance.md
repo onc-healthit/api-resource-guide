@@ -215,7 +215,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	
 	* By no later than April 5, 2021, a Certified API Developer with Health IT Module(s) certified to the certification criteria in § 170.315(g)(7), (8), or (9) must comply with § 170.404(a), including revisions to its existing business and technical API documentation and make such documentation available via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps.
 	
-#### Definitions
+### Definitions
 ???+ quote "**Regulation text at § 170.404(C)**"
     (c) Definitions. The following definitions apply to this section: API Information Source means an organization that deploys certified API technology created by a “Certified API Developer;” API User means a person or entity that creates or uses software applications that interact with the “certified API technology” developed by a “Certified API Developer” and deployed by an “API Information Source;” Certified API Developer means a health IT developer that creates the “certified API technology” that is certified to any of the certification criteria adopted in § 170.315(g)(7) through (10); and Certified API technology means the capabilities of Health IT Modules that are certified to any of the API-focused certification criteria adopted in § 170.315(g)(7) through (10).
 
