@@ -8,8 +8,6 @@ nav:
   - Helpful Links: helpful-links.md
   - HealthIT.gov: https://www.healthit.gov/
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
-copyright: >
-  <a href="http://www.hhs.gov/Privacy.html">Privacy Policy</a>
 theme:
   name: material
   palette:
