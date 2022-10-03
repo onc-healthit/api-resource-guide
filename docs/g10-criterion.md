@@ -103,6 +103,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	* All data elements and operations indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in-scope for testing.
 	* Health IT Modules must support provenance according to the [“Basic Provenance Guidance” section of the US Core IG](https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html).
 	* For purposes of ONC Health IT Certification, health IT developers that always provide HL7® FHIR® “observation” values are not required to demonstrate Health IT Module support for “dataAbsentReason” elements. These include “dataAbsentReason” elements contained in the US Core implementation guide profiles and FHIR® Vital Sign profiles that build on the HL7® FHIR® “observation” and its derived profiles including HL7® FHIR® “observation-vitalsigns”, and HL7® FHIR® “observation-oxygensat”, including “component.dataAbsentReason” elements. However, health IT developers are still required to adhere to and demonstrate Health IT Module support for the [“Missing Data” section](http://hl7.org/fhir/us/core/STU3.1.1/general-guidance.html#missing-data) of the US Core implementation guide.
+	* For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “USCoreFetchDocumentReferences” ($docref) US Core IG operation.
 	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standard US Core 4.0.0:**
 	
@@ -110,10 +111,11 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	* For “Encounter,” “Organization,” and “Practitioner,” US Core IG profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and FHIR® resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the USCDI.
 	* Health IT Modules must support provenance according to the [“Basic Provenance Guidance” section of the US Core IG.](https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html)
 	
-	**Applies to SVAP approved standard US Core 5.0.0 and USCDI v3:**
+	**Applies to SVAP approved standard US Core 5.0.1 and USCDI v3:**
 	
 	
 	* For the “Organization” US Core IG profile, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” FHIR® resource reference as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the United States Core Data for Interoperability (USCDI).
+	* For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core IG profile.
 	
 
 !!! example "Examples of “must support” in the US Core IG 3.1.1:"
@@ -300,26 +302,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to SVAP approved standard SMART App Launch Framework 2.0.0:**
 	
 	
-	* The following “Capabilities” in § 170.215(a)(3) are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification:
-	1. launch-ehr
-	2. launch-standalone
-	3. client-public
-	4. client-confidential-symmetric
-	5. sso-openid-connect
-	6. context-banner
-	7. context-style
-	8. context-ehr-patient
-	9. context-ehr-encounter
-	10. context-standalone-patient
-	11. permission-offline
-	12. permission-patient
-	13. permission-user
-	14. permission-v1
-	15. authorize-post
-	
-	 
-	
-	
+	* The “capabilities” in AUT-PAT-25 of this criterion’s test procedure are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.
 	
 *Additional Clarifications to the (g)(10) CCG:*
 
