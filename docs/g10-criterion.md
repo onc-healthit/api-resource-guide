@@ -481,6 +481,10 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
 	- No additional clarifications.
 
+## Test Procedure
+
+The test procedure section has been moved to: [(g)(10) Test Procedure](certification-testing.md#g10-test-procedure). Please be sure to save this new link!
+
 ## Standards Version Advancement Process
 **Health IT developers are permitted to test and certify using newer versions of implementation guides that have been approved by the ONC National Coordinator.**
 
