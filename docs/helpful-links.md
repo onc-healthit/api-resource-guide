@@ -15,6 +15,7 @@
 - Inferno Program Edition (§ 170.315(g)(10))
     - <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">Inferno Framework: (g)(10) Standardized API Test Kit Online Demonstration Instance</a>
     - <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/releases">Inferno Framework: (g)(10) Standardized API Test Kit Source Code</a>
+- <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a>
 
 ## **Rules and regulations links**
 
