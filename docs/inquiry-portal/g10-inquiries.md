@@ -56,6 +56,11 @@ Any missing information made available via the (g)(10) standardized API should b
 The ONC Certification criteria for eCQMs does not require any FHIR standards. For additional information on CMS regulations, please reference CMS sources or contact CMS if you have questions about specific requirements. The CMS.gov website is a great place to start for information about the requirements of any particular CMS program that may be of interest to health care providers and those who support them with health IT solutions. For one example, the Quality Payment Program overview page (<a target = "_blank" href = "https://qpp.cms.gov/about/qpp-overview">https://qpp.cms.gov/about/qpp-overview</a>) offers links to educational resources and information how to contact CMS. Similarly, the CMS.gov Promoting Interoperability Programs page (<a target = "_blank" href = "https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms">https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms</a>) currently indicates that Medicare and dually eligible hospitals participating in the Medicare and Medicaid Promoting Interoperability Programs may contact the QualityNet help desk for assistance.
 
 ## Paragraph (g)(10)(i)(A): Data Response (Single Patient)
+### August 2022
+**Stakeholder Inquiry**: The US Core IG requires support for the $docref operation. Can you clarify what codethe (g)(10) requirements regarding the $docref operation are?
+
+**ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion does not require support for the US Core <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/OperationDefinition-docref.html">$docref operation</a>.
+
 ### December 2021
 **Stakeholder Inquiry**: US Core 3.1.1 requires Procedure.performed. For (g)(10) certification how are we expected to accommodate cancelled or not done procedures where a date or period does not exist? 
 
@@ -91,6 +96,19 @@ However, for purposes of testing and certification for the ONC Health IT Certifi
 We will issue a clarification on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">§ 170.315(g)(10) Standardized API for patient and population services Certification Companion Guide</a> regarding this issue, and the Inferno testing tool will be updated in the next regular release, which occurs at least monthly, to accommodate this clarification.
 
 ## Paragraph (g)(10)(i)(B): Data Response (Multiple Patients)
+### August 2022
+**Stakeholder Inquiry**: We are working on the Multi-Patient API Certification requirements, what are the requirements around group ids?
+
+**ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion requires the Health IT Module support requests for multiple patients’ data as a group using the “group-export” operation as detailed in the Bulk Data Access implementation guide. The `group-export` operation allows authorized clients to obtain FHIR resources pertaining to all patients in a specified Group. The client uses the Group ID to specify which Group is to be exported.
+
+The § 170.315(g)(10) criterion does not specify how the health IT developer creates groups, how many groups must be supported, nor how patients are organized into groups. The health IT developer is expected to work with its customers to define the appropriate groups for export via the Health IT Module.
+
+<a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/export/index.html#endpoint---group-of-patients">Bulk Data Access 1.0.1 section 5.1.2 Endpoint - Group of Patients</a> includes the following note regarding group definitions:
+
+*How these Groups are defined is specific to each FHIR system’s implementation. For example, a payer may send a healthcare institution a roster file that can be imported into their EHR to create or update a FHIR group. Group membership could be based upon explicit attributes of the patient, such as age, sex or a particular condition such as PTSD or Chronic Opioid use, or on more complex attributes, such as a recent inpatient discharge or membership in the population used to calculate a quality measure. FHIR-based group management is out of scope for the current version of this implementation guide.*
+
+Additionally, health IT developers may choose to implement the Standards Version Advancement Process (SVAP) approved standard of <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU2/index.html">Bulk Data Access 2.0.0</a> instead of Bulk Data Access 1.0.1. Bulk Data Access 2.0.0 defines an experimental, optional "patient" parameter for the <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU2/OperationDefinition-group-export.html#grouplevelexport">"group-export" operation</a> which restricts the returned resources to the Patient Compartments associated with the patients specified within the parameter.
+
 ### June 2022
 **Stakeholder Inquiry**: ONC (g)(10) Certification requirements and the Inferno Test Tool indicate that we are to demonstrate support for bulk FHIR requests with Group IDs (e.g. `[base url]/Group/[id]/$export`). Is there any minimum requirement in the upcoming 2022 (g)(10) certification for EHRs on how many different types of groups should be supported by the EHR? Can you give more guidance on what groups we need?
 
@@ -215,6 +233,13 @@ At a minimum for the ONC Health IT Certification Program, Health IT Modules cert
 *For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART Application Launch Framework Implementation Guide Release 1.0.0.</a> For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.*
 
 ## Inferno
+### July 2022
+**Stakeholder Inquiry**: In Inferno test 4.2.04 (and others) patient data is included in the URL of the HTTP GET request. Is this a Privacy and Security concern?
+
+**Stakeholder Inquiry**: The Inferno testing tool acts as a demanding client to test the conformance of servers to health IT standards. In particular, the ONC Certification (g)(10) Standardized API Test Kit, which uses Inferno, tests a health IT developer's APIs' conformance to the requirements of the § 170.315(g)(10) "Standardized API for patient and population services" certification criterion. The Inferno implementation provided by ONC on healthit.gov includes a banner indicating it is for demonstration purposes only and must not be used to access sensitive data or Protected Health Information (PHI).
+
+Regarding the privacy and security of the FHIR APIs certified to the § 170.315(g)(10) "Standardized API for patient and population services" certification criterion, there are numerous privacy and security requirements to protect patient data. The ONC Certification (g)(10) Standardized API Test Kit includes tests for conformance to authentication and authorization requirements, such as those detailed in the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART App Launch Framework</a> and <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU1.0.1/authorization/index.html">SMART Backend Services: Authorization Guide</a>, which require that only authorized clients can access data. Additionally, there are requirements that the connections for data responses for single and multiple patients' data are appropriately secured using Transport Layer Security (TLS) 1.2 or above. When used to secure HTTP connections via <a target = "_blank" href = "https://https.cio.gov/faq/#what-does-https-do">HTTPS</a>, TLS protects the confidentiality of the data included in the HTTP URL via encryption, including the URL path and query string parameters (e.g. name and birthdate).
+
 ### June 2022
 **Stakeholder Inquiry**: We are testing our FHIR Server using the Inferno (g)(10) Standardized API Test Kit. We are failing some Pulse Oximetry Tests. Specifically, in one of our Observation resources, we use dataAbsentReason for 'Inhaled oxygen flow rate'. But Inferno is failing the test mentioning that 'component.value[x].code' is not present in the Observation. Can you provide some clarity on why this is failing?
 
