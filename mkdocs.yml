@@ -1,9 +1,8 @@
 site_name: ONC Health IT Certification Program API Resource Guide
 nav:
   - Home: index.md
-  - HL7&#174 FHIR&#174 API criterion at § 170.315(g)(10): g10-criterion.md
-  - API Conditions and Maintenance of Certification requirements at § 170.404: 404-conditions-maintenance.md
-  - Certification Testing: certification-testing.md
+  - HL7 FHIR API criterion - 170.315(g)(10): g10-criterion.md
+  - API Conditions and Maintenance of Certification: 404-conditions-maintenance.md
   - Directory of Published Versions: version-directory.md
   - Helpful Links: helpful-links.md
   - HealthIT.gov: https://www.healthit.gov/
@@ -51,6 +50,7 @@ markdown_extensions:
       emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.snippets
   - pymdownx.details
+  - footnotes
   - admonition
   - pymdownx.superfences:
       custom_fences:
