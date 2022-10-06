@@ -18,6 +18,7 @@
 *[a)(2]: FHIR® US Core Implementation Guide STU V3.1.1
 *[a)(3]: HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0
 *[170.213]: United States Core Data for Interoperability (USCDI)
+*[USCDI]: United States Core Data for Interoperability
 
 <!-- ONC Certification Criteria -->
 *[g)(10]: Standardized HL7® FHIR-based API certification criterion

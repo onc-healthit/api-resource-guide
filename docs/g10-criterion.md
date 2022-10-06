@@ -2,37 +2,12 @@
 
 # Standardized API Certification Criterion at § 170.315(g)(10)
 
-This section considers the standardized API for patient and population services certification criterion, including all of the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136">IFC API preamble</a>, and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">regulation paragraphs in § 170.315(g)(10)</a>.
+This section considers the HL7®[^1] FHIR® standardized API for patient and population services certification criterion, including all of the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136">IFC API preamble</a>, and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">regulation paragraphs in § 170.315(g)(10)</a>.
 
 ## Applicability
 § 170.315(g)(10) is applicable to all health IT developers who are certifying to the <a target = "_blank" href = "https://www.healthit.gov/topic/certification-ehrs/2015-edition-test-method/2015-edition-cures-update-base-electronic-health-record-definition">EHR base definition</a> on or after December 31, 2022.
 
 The API certification criterion finalized in § 170.315(g)(10) was included as part of the EHR Base Definition at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3216">§ 170.102</a>. While developers of health information technology are not required by the ONC to meet certification requirements, including certification requirements that are included as part of the EHR Base Definition, several federal, state and tribal entities, including <a target = "_blank" href = "https://www.cms.gov/">Centers for Medicare & Medicaid Services</a>, <a target = "_blank" href = "https://www.cdc.gov/">Centers for Disease Control and Prevention</a>, and other programs reference the ONC Health IT Certification Program and require the use of certified health IT for program participation.
-
-## Testing Tools for Certification
-### Inferno Framework
-The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(g)(10) Standardized API Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (g)(10) API testing in the ONC Health IT Certification Program. The (g)(10) Standardized API Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>.
-
-!!! note ""
-	<p align="center">
-		![Inferno (g)(10) testing tool logo](../images/inferno-logo.PNG){: style="height:100px"}
-	</p>
-	<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
-
-??? tip "Explore Inferno for (g)(10) Testing"
-	**Inferno Walkthroughs/Documentation**
-
-	  - <a target = "_blank" href = "https://youtu.be/jSm3xsm-ehs">Inferno Walkthrough</a>
-	
-	**Get Involved and Ask Questions**
-
-	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
-	 - Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org (*creating a Zulip account is free*). This stream is actively monitored by Inferno's development team.
-	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
-	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
-
-### Drummond G10+ FHIR API powered by Touchstone
-In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
 
 ## Health IT Feedback and Inquiry Portal
 
@@ -501,7 +476,14 @@ new period of no less than three months.
 	* No additional clarifications.
 	
 
-## Test Procedure
+## Testing and Certification
+### Test Procedure
+The § 170.315(g)(10) test procedure provides the structure for evaluating conformance of a Health IT Module to the <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">(g)(10) certification criterion requirements</a>. 
+
+The ONC Approved SVAP Standards for 2022 include the advancement of four (g)(10) standards (USCDI, US Core, SMART App Launch, and Bulk Data Access). Health IT developers participating in ONC’s Health IT Certification Program can voluntarily incorporate these new versions into their Certified Health IT Modules.
+
+The form below allows for dynamic selection of standards available for (g)(10) certification. Based off the standards selected in the form, a test procedure copy can be viewed by clicking the "View Test Procedure" button. This same test procedure is also <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">contained on healthit.gov</a>.
+
 **Select Standards**:
 
 <form>
@@ -534,5 +516,55 @@ new period of no less than three months.
 
 	<button class = "md-button md-button--primary" type="button" style = "cursor: pointer;" onclick="testProcedureGenerate(this.form)">View Test Procedure</button>
 </form>
+
+### Inferno Framework
+The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(g)(10) Standardized API Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (g)(10) API testing in the ONC Health IT Certification Program. The (g)(10) Standardized API Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>.
+
+!!! note ""
+	<p align="center">
+		![Inferno (g)(10) testing tool logo](../images/inferno-logo.PNG){: style="height:100px"}
+	</p>
+	<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
+
+??? tip "Explore Inferno for (g)(10) Testing"
+	**Inferno Walkthroughs/Documentation**
+
+	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
+	
+	**Get Involved and Ask Questions**
+
+	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
+	 - Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org (*creating a Zulip account is free*). This stream is actively monitored by Inferno's development team.
+	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
+	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
+
+### Drummond G10+ FHIR API powered by Touchstone
+In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
+
+### Real World Testing Condition and Maintenance of Certification
+
+**Health IT developers are required to test the real-world use of APIs.**
+
+The § 170.315(g)(10) criterion is included under the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3580">Real World Testing Condition and Maintenance of Certification requirements of the ONC Cures Act Final Rule</a> in §170.405, which states:
+
+!!! note ""
+     “A health IT developer with Health IT Module(s) certified to any one or more 2015 Edition certification criteria in § 170.315(b), (c)(1) through (3), (e)(1), (f), (g)(7) through (10), and (h) must successfully test the real world use of those Health IT Module(s) for interoperability (as defined in 42 U.S.C.300jj(9) and § 170.102) in the type of setting in which such Health IT Module(s) would be/is marketed.” 
+ 
+ More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-02/Real-World-Testing-Fact-Sheet.pdf">Real World Testing Fact Sheet</a> and <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-08/ONC-Real%20World%20Testing%20Resource%20Guide_Aug%202021.pdf">Real World Testing Resource Guide</a>.
+
+## Standards Version Advancement Process
+**Health IT developers are permitted to test and certify using newer versions of implementation guides that have been approved by the ONC National Coordinator.**
+
+ONC has established the voluntary Standards Version Advancement Process (SVAP) to enable health IT developers to incorporate newer versions of approved standards and implementation specifications, as part of the Real World Testing Condition and Maintenance of Certification requirements (§ 170.405) of the 21st Century Cures Act. 
+
+Using SVAP, Certified Health IT Developers are permitted to voluntarily use a more advanced version of the standard(s) and implementation specification(s) approved by the National Coordinator, than is adopted in the ONC 2015 Edition Certification Criteria. Currently, this flexibility is limited to standards and implementation specifications that are adopted in the certification criteria required to meet the Real World Testing Condition of Certification, which include § 170.315(b), (c)(1) through (c)(3), (e)(1), (f), (g)(7) through (g)(10), and (h). Health IT developers must ensure that they address standards adopted under SVAP in their Real World Testing plans and results submitted to Authorized Certification Bodies. More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/isa/standards-version-advancement-process">SVAP landing page</a>.
+
+{==
+
+<p style="text-align: center;"><a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/whats-new-in-the-2022-approved-standards-via-standards-version-advancement-process">ONC Buzz Blog: What’s New in the 2022 Approved Standards via Standards Version Advancement Process</a></p>
+
+==}
+
+[^1]: HL7®, and FHIR® are the registered trademarks of Health Level Seven International and their use of these trademarks does not constitute an endorsement by HL7.
 
 --8<-- "includes/abbreviations.md"
