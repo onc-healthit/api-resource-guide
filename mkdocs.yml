@@ -7,7 +7,7 @@ nav:
   - Helpful Links: helpful-links.md
   - HealthIT.gov: https://www.healthit.gov/
   # - HealthIT.gov Drupal API: healthit-drupal-api.md
-copyright: <a href="/privacy-policy">Privacy Policy</a>
+copyright: <a href="/api-resource-guide/privacy-policy/">Privacy Policy</a>
 theme:
   name: material
   custom_dir: overrides
