@@ -10,6 +10,7 @@ nav:
 copyright: <a href="/privacy-policy">Privacy Policy</a>
 theme:
   name: material
+  custom_dir: overrides
   palette:
   - media: "(prefers-color-scheme: light)"
     scheme: default
@@ -34,6 +35,8 @@ theme:
   icon:
     repo: fontawesome/brands/github
 extra:
+  analytics:
+    provider: custom
   version:
     provider: mike
   social:
