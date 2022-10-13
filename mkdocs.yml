@@ -68,6 +68,7 @@ markdown_extensions:
 repo_url: https://github.com/onc-healthit/api-resource-guide
 repo_name: onc-healthit/api-resource-guide
 edit_uri: edit/main/docs/
+site_url: https://onc-healthit.github.io/api-resource-guide/
 plugins:
   - git-revision-date-localized
   - search
