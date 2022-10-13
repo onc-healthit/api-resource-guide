@@ -57,7 +57,7 @@ The ONC Certification criteria for eCQMs does not require any FHIR standards. Fo
 
 ## Paragraph (g)(10)(i)(A): Data Response (Single Patient)
 ### August 2022
-**Stakeholder Inquiry**: The US Core IG requires support for the $docref operation. Can you clarify what codethe (g)(10) requirements regarding the $docref operation are?
+**Stakeholder Inquiry**: The US Core IG requires support for the $docref operation. Can you clarify what the (g)(10) requirements regarding the $docref operation are?
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion does not require support for the US Core <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/OperationDefinition-docref.html">$docref operation</a>.
 
