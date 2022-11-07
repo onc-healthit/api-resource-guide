@@ -80,13 +80,18 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	* For purposes of ONC Health IT Certification, health IT developers that always provide HL7® FHIR® “observation” values are not required to demonstrate Health IT Module support for “dataAbsentReason” elements. These include “dataAbsentReason” elements contained in the US Core implementation guide profiles and FHIR® Vital Sign profiles that build on the HL7® FHIR® “observation” and its derived profiles including HL7® FHIR® “observation-vitalsigns”, and HL7® FHIR® “observation-oxygensat”, including “component.dataAbsentReason” elements. However, health IT developers are still required to adhere to and demonstrate Health IT Module support for the [“Missing Data” section](http://hl7.org/fhir/us/core/STU3.1.1/general-guidance.html#missing-data) of the US Core implementation guide.
 	* For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “USCoreFetchDocumentReferences” ($docref) US Core IG operation.
 	
+	**Applies to base regulatory standard US Core 3.1.1**
+	
+	
+	* The HL7® Cross-Group Projects work group, through the [US Core 'Patch' Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process) ticket [FHIR-28393](https://jira.hl7.org/browse/FHIR-28393), approved patching US Core 3.1.1 to remove "must support" from the "DocumentReference.custodian" data element. For the purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “custodian” data element in the “DocumentReference” US Core 3.1.1 IG Profile.
+	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standard US Core 4.0.0:**
 	
 	
 	* For “Encounter,” “Organization,” and “Practitioner,” US Core IG profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and FHIR® resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the USCDI.
 	* Health IT Modules must support provenance according to the [“Basic Provenance Guidance” section of the US Core IG.](https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html)
 	
-	**Applies to SVAP approved standard US Core 5.0.1 and USCDI v3:**
+	**Applies to SVAP approved standard US Core 5.0.1 and USCDI v2:**
 	
 	
 	* For the “Organization” US Core IG profile, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” FHIR® resource reference as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the United States Core Data for Interoperability (USCDI).
@@ -277,7 +282,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to SVAP approved standard SMART App Launch Framework 2.0.0:**
 	
 	
-	* The “capabilities” in AUT-PAT-25 of this criterion’s test procedure are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.
+	* The “capabilities” in AUT-PAT-25 of [this criterion’s test procedure](https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure) are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.
 	
 *Additional Clarifications to the (g)(10) CCG:*
 
@@ -321,7 +326,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to all applicable base regulatory and SVAP standards:**
 	
 	
-	* No additional clarifications.
+	* For subsequent connections of applications capable of storing a client secret, Health IT Modules are required to issue a refresh token valid for a new period of no shorter than three months per the API certification criterion requirement finalized in § 170.315(g)(10)(v)(A)(2)(ii).
 	
 *Additional Clarifications to the (g)(10) CCG:*
 
