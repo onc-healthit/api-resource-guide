@@ -7,6 +7,11 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### October 2022
+**Stakeholder Inquiry**: Can you confirm that the requirements of the 2015 Edition Cures Update Base EHR Definition (specifically the requirement to satisfy 170.315(g)(10)) can be met using one Certified Health IT Module or a combination of Certified Health IT Modules?
+
+**ONC Response**: You are correct that the requirements of the 2015 Edition Cures Update Base EHR Definition can be met using one Certified Health IT Module or a combination of Certified Health IT Modules.
+
 ### July 2022
 **Stakeholder Inquiry**: Are there any (g)(10) requirements around patient data retention?
 
