@@ -7,6 +7,11 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### October 2022
+**Stakeholder Inquiry**: Can you confirm that the requirements of the 2015 Edition Cures Update Base EHR Definition (specifically the requirement to satisfy 170.315(g)(10)) can be met using one Certified Health IT Module or a combination of Certified Health IT Modules?
+
+**ONC Response**: You are correct that the requirements of the <a target = "_blank" href = "https://www.healthit.gov/topic/certification-ehrs/2015-edition-test-method/2015-edition-cures-update-base-electronic-health-record-definition">2015 Edition Cures Update Base EHR Definition</a> can be met using one Certified Health IT Module or a combination of Certified Health IT Modules.
+
 ### July 2022
 **Stakeholder Inquiry**: Are there any (g)(10) requirements around patient data retention?
 
@@ -56,6 +61,17 @@ Any missing information made available via the (g)(10) standardized API should b
 The ONC Certification criteria for eCQMs does not require any FHIR standards. For additional information on CMS regulations, please reference CMS sources or contact CMS if you have questions about specific requirements. The CMS.gov website is a great place to start for information about the requirements of any particular CMS program that may be of interest to health care providers and those who support them with health IT solutions. For one example, the Quality Payment Program overview page (<a target = "_blank" href = "https://qpp.cms.gov/about/qpp-overview">https://qpp.cms.gov/about/qpp-overview</a>) offers links to educational resources and information how to contact CMS. Similarly, the CMS.gov Promoting Interoperability Programs page (<a target = "_blank" href = "https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms">https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms</a>) currently indicates that Medicare and dually eligible hospitals participating in the Medicare and Medicaid Promoting Interoperability Programs may contact the QualityNet help desk for assistance.
 
 ## Paragraph (g)(10)(i)(A): Data Response (Single Patient)
+### October 2022
+**Stakeholder Inquiry**: Two FHIR® DocumentReference resource related questions:
+
+1. The Inferno (g)(10) Standardized API Test Kit test 4.31.01 requires a system under test to demonstrate support for the Discharge Summary note type (18842-5). Are ambulatory vendors expected to demonstrate support for this note type for the purposes of (g)(10) certification?
+1. For the purposes of certification, what are the FHIR search requirements around `DocumentReference` note types?
+
+**ONC Response**: Answers to question #1 and #2 respectively:
+
+1. The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion requires the Health IT Module respond to requests for single and multiple patient's data according to the USCDI standard and the US Core implementation guide. Using the base regulatory standards for reference, the USCDI v1 standard requires support for the "<a target = "_blank" href = "https://www.healthit.gov/isa/taxonomy/term/606/uscdi-v1">Discharge Summary Note</a>" data element and its corresponding LOINC code. Similarly, the US Core 3.1.1 implementation guide section <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU3.1.1/clinical-notes-guidance.html#clinical-notes">2.2.1 Clinical Notes Guidance</a> requires support for the Discharge Summary clinical note and its corresponding LOINC code. Therefore, the Inferno testing tool tests for support for the Discharge Summary clinical note and its corresponding LOINC code.
+1. To certify to the § 170.315(g)(10) criterion, a Health IT Module must respond to requests and searches for single and multiple patient's data according to the USCDI standard and the US Core implementation guide. This includes support for the USCDI Clinical Notes data class and the corresponding SHALL and Must Support requirements in the US Core clinical notes guidance and FHIR profiles (e.g., DocumentReference). The US Core 3.1.1 implementation guide includes a shall requirement in the <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU3.1.1/StructureDefinition-us-core-documentreference.html">DocumentReference</a> profile to "support searching using the combination of the patient and type search parameters" and specifies "The DocumentReference.type binding must support at a minimum the <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU3.1.1/ValueSet-us-core-clinical-note-type.html">5 Common Clinical Notes</a> and may extend to the full US Core DocumentReference Type Value Set". Thus, while the <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU3.1.1/ValueSet-us-core-clinical-note-type.html">FHIR 4.0.1</a> specification provides flexibility to the server to determine which resources meet the search parameter criteria and provide additional search results if they are deemed relevant, the server should provide meaningful search results for searches regarding the 5 Common Clinical note types specified in the US Core implantation guide. Also, while the § 170.315(g)(10) criterion does not specify how patient data storage must be implemented, patient data should be stored in such a manner that permits the Health IT Module's single patient FHIR API to return relevant search results to FHIR searches. In the context of this inquiry, this includes providing appropriate search results to searches regarding the 5 Common Clinical note types specified in the US Core implementation guide. 
+
 ### August 2022
 **Stakeholder Inquiry**: The US Core IG requires support for the $docref operation. Can you clarify what the (g)(10) requirements regarding the $docref operation are?
 

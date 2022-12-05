@@ -26,6 +26,16 @@ We are not able to provide individualized advice on whether a specific fact patt
 
 Anyone who believes they may have experienced or observed information blocking by <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/InformationBlockingActors.pdf">any health care provider, health IT developer of Certified Health IT, or health information network or health information exchange</a> is encouraged to share their concerns with us through the <a target = "_blank" href = "https://healthit.gov/report-info-blocking">Information Blocking Portal</a> on ONC’s website, HealthIT.gov.
 
+## Paragraph (b)(2): Service base URL publiciation
+### October 2022
+**Stakeholder Inquiry**: If an EHR vendor chooses to obtain and integrate a 3rd party solution that is certified to 170.315(g)(10), who is responsible for publish the service base URLs?
+
+**ONC Response**: The API Maintenance of Certification requirement at § 170.404(b)(2) requires a Certified API Developer to publish the service base URLs for all Health IT Modules certified to § 170.315(g)(10) that can be used by patients to access their electronic health information. This includes publishing the service base URLs for all of its customers regardless of whether the Health IT Modules certified to § 170.315(g)(10) are centrally managed by the Certified API Developer or locally deployed by an API Information Source.
+
+ONC provides discussion regarding Certified API Developer publication of service base URLs in the ONC Cures Act Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/page-25765">85 FR 25765</a>): "*We believe that Certified API Developers will have adequate relationships with API Information Sources in the process of providing Health IT Modules certified to § 170.315(g)(10) and will be able to collect and publish all service base URLs that support patient access on behalf of their customers. Furthermore, we note that API Information Sources would be obligated to share such service base URLs with Certified API Developers to avoid violating the Technical Interference Information Blocking provisions ...*"
+
+The ONC Cures Act Final Rule at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1909">85 FR 25813</a> provides an example which discusses API Information Sources providing Certified API Developers service base URLs in the context of Information Blocking.
+
 ## Paragraph (b)(3): Rollout of (g)(10)-Certified APIs
 ### May 2022
 **Stakeholder Inquiry**: According to the 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program Final Rule (ONC Cures Act Final Rule) timeline, ONC Cures Update Certification Criteria must be made available by 12/31/2022. Can you clarify what "made available" means?
