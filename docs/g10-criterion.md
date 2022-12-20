@@ -293,15 +293,12 @@ healthcare providers to implement Health IT Modules certified to requirements in
 - Implementers of § 170.315(g)(10)-certified Health IT Modules should be mindful of <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> applicable to them and that requiring patients to reauthenticate and re-authorize at a high frequency could inhibit patient access and implicate information blocking.
 
 ??? info "First time Authentication / Authorization for Single Patient Services: Sequence Diagram"
-	As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, some native applications are unable to claim they are confidential. By definition, these non-confidential (i.e., "public") native applications do not have a client secret and thus cannot authenticate with the authorization server when receiving access and refresh tokens. However, there are additional methods that non-confidential native applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of application-claimed, private-use Uniform Resource Identifier (URI) schemes such as redirect URIs, and utilizing on-device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph in § 170.315(g)(10)(v)(A)(1)(iii) requires that Health IT Modules issue an initial refresh token to native applications capable of securing a refresh token.
-
 	``` mermaid
 	sequenceDiagram
-		participant app as Application
+		participant app as App
 		participant authz as Health IT Module's Authorization Server
 		participant fhir as Health IT Module's FHIR® Server
-
-		app ->> authz: Client registration
+		
 		alt EHR Launch
 			authz ->> authz: EHR user launches app
 			authz ->> app: Launch Request
@@ -329,6 +326,8 @@ healthcare providers to implement Health IT Modules certified to requirements in
 			authz -->> app: Authorization error
 		end
 	```
+	As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, some native applications are unable to claim they are confidential. By definition, these non-confidential (i.e., "public") native applications do not have a client secret and thus cannot authenticate with the authorization server when receiving access and refresh tokens. However, there are additional methods that non-confidential native applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of application-claimed, private-use Uniform Resource Identifier (URI) schemes such as redirect URIs, and utilizing on-device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph in § 170.315(g)(10)(v)(A)(1)(iii) requires that Health IT Modules issue an initial refresh token to native applications capable of securing a refresh token.
+
 	See [Subsequent Authentication / Authorization for Single Patient Services](#subsequent-authentication-authorization-for-single-patient-services) for sequence diagram once the initial access token is invalid (e.g., expiration).
 
 !!! tip "OAuth Implementation Presentations"
@@ -379,7 +378,7 @@ new period of no less than three months.
 
 	``` mermaid
 		sequenceDiagram
-			participant app as Application*
+			participant app as App capable of <br/> storing a client secret
 			participant authz as Health IT Module's Authorization Server
 			participant fhir as Health IT Module's FHIR® Server
 
@@ -398,7 +397,6 @@ new period of no less than three months.
 			end
 			end
 	```
-	<i>* Capable of storing a client secret</i>
 
 ### Authentication / Authorization for Multiple Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(v)(B)**" 
