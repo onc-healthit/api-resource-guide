@@ -314,10 +314,11 @@ healthcare providers to implement Health IT Modules certified to requirements in
 		authz -->> authz: End-user authorization
 		alt Granted
 			authz -->> app: Authorization granted
-			app ->> authz: Access token request
             alt Application is capable of storing a client secret
+			app ->> authz: Access token request
 			note over app,authz: Client secret used for client authentication
             else Application is a native application capable of securing a refresh token
+			app ->> authz: Access token request
             note over app,authz: Methods like PKCE and app-claimed redirect URIs <br/> can be used to increase security
             end
 			authz -->> app: Initial access token and initial refresh token response
@@ -328,7 +329,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 			authz -->> app: Authorization error
 		end
 	```
-	See [Subsequent Authentication / Authorization for Single Patient Services](#subsequent-authentication-authorization-for-single-patient-services) for flow diagrams once the initial access token is invalid (e.g., expiration).
+	See [Subsequent Authentication / Authorization for Single Patient Services](#subsequent-authentication-authorization-for-single-patient-services) for sequence diagram once the initial access token is invalid (e.g., expiration).
 
 !!! tip "OAuth Implementation Presentations"
 	:material-video: Below is a list of presentations that can be used by Certified Health IT Developers to kick-start their OAuth implementations.
@@ -378,7 +379,7 @@ new period of no less than three months.
 
 	``` mermaid
 		sequenceDiagram
-			participant app as Native Application*
+			participant app as Application*
 			participant authz as Health IT Module's Authorization Server
 			participant fhir as Health IT Module's FHIR® Server
 
