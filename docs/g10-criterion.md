@@ -390,7 +390,7 @@ new period of no less than three months.
 			alt Health IT Module's Authorization Server issues a new refresh token
 				authz -->> app: New access token and new refresh token response
 			else Health IT Module's Authorization Server renews existing refresh token
-				authz -->> app: Access token response
+				authz -->> app: New access token response
 				authz -->> authz: Existing refresh token renewed
 			end
 			loop while access token is valid
