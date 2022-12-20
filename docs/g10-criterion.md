@@ -393,8 +393,8 @@ new period of no less than three months.
 				authz -->> app: New access token response
 				authz -->> authz: Existing refresh token renewed
 			end
-			loop while access token is valid
-				app ->> fhir: Access token used to request resources
+			loop while new access token is valid
+				app ->> fhir: New access token used to request resources
 			end
 			end
 	```
