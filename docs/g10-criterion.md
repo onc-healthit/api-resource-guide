@@ -298,7 +298,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 		participant app as App
 		participant authz as Health IT Module's Authorization Server
 		participant fhir as Health IT Module's FHIR® Server
-		
+
 		alt EHR Launch
 			authz ->> authz: EHR user launches app
 			authz ->> app: Launch Request
@@ -385,7 +385,7 @@ new period of no less than three months.
 			loop while refresh token is valid
 			app ->> authz: Refresh token
 			note over app,authz: Client secret used for client authentication
-			note right of authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) <br/> requires that applications capable of storing a client secret have their <br/> refresh tokens renewed (i.e., made valid for a new three month period). <br/> This could include the authorization server issuing a new refresh token <br/> or renewing the initial refresh token.
+			note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) <br/> requires that applications capable of storing a client secret have their <br/> refresh tokens renewed (i.e., made valid for a new three month period). <br/> This could include the authorization server issuing a new refresh token <br/> or renewing the initial refresh token.
 			alt Health IT Module's Authorization Server issues a new refresh token
 				authz -->> app: New access token and new refresh token response
 			else Health IT Module's Authorization Server renews existing refresh token
