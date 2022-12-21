@@ -593,7 +593,8 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 ??? tip "Explore Inferno for (g)(10) Testing"
 	**Inferno Walkthroughs/Documentation**
 
-	  - <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough</a>
+	  - :material-video: <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough (Video)</a>
+	  - :material-file-document: <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/wiki/Walkthrough">Inferno Walkthrough (GitHub Wiki)</a>
 	
 	**Get Involved and Ask Questions**
 
