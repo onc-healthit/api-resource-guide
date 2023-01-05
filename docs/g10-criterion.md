@@ -293,6 +293,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 - Implementers of § 170.315(g)(10)-certified Health IT Modules should be mindful of <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> applicable to them and that requiring patients to reauthenticate and re-authorize at a high frequency could inhibit patient access and implicate information blocking.
 
 ??? info "First time Authentication / Authorization for Single Patient Services: Sequence Diagram"
+	**First time connections:**
 	``` mermaid
 	sequenceDiagram
 		participant app as App
@@ -326,7 +327,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 			authz -->> app: Authorization error
 		end
 	```
-	As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, some native applications are unable to claim they are confidential. By definition, these non-confidential (i.e., "public") native applications do not have a client secret and thus cannot authenticate with the authorization server when receiving access and refresh tokens. However, there are additional methods that non-confidential native applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of secure redirect URI schemes[^2], and utilizing on-device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph in § 170.315(g)(10)(v)(A)(1)(iii) requires that Health IT Modules issue an initial refresh token to native applications capable of securing a refresh token.
+	As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, some native applications are unable to claim they are confidential. By definition, these non-confidential (i.e., "public") native applications do not have a client secret and thus cannot authenticate with the authorization server when receiving access and refresh tokens. However, there are additional methods that non-confidential native applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of secure redirect URI schemes[^2], and utilizing on-device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph at § 170.315(g)(10)(v)(A)(1)(iii) requires that Health IT Modules issue an initial refresh token to native applications capable of securing a refresh token.
 
 	See [Subsequent Authentication / Authorization for Single Patient Services](#subsequent-authentication-authorization-for-single-patient-services) for sequence diagram once the initial access token is invalid (e.g., expiration).
 
@@ -372,29 +373,35 @@ decision left to the health IT developer, as long as the “refreshed” refresh
 new period of no less than three months.
 
 ??? info "Subsequent Authentication / Authorization for Single Patient Services: Sequence Diagram"
-    As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, authorization servers can send and receive refresh tokens to and from their clients in two different OAuth 2.0 connection flows. On [first time connections (see sequence diagram above)](#first-time-authentication-authorization-for-single-patient-services), a client requests an authorization code and is granted one after obtaining end-user authorization. A client can then exchange a valid authorization code for an initial access token and initial refresh token.
+    As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, authorization servers can send and receive refresh tokens to and from apps in two different OAuth 2.0 connection flows. On [first time connections (see sequence diagram above)](#first-time-authentication-authorization-for-single-patient-services), an app requests an authorization code and is granted one after obtaining end-user authorization. An app can then exchange a valid authorization code for an initial access token and initial refresh token.
 	
-	After an access token expires, a app can subsequently connect to an authorization server to exchange a valid refresh token for a new access token and also have its refresh token renewed without needing to obtain end-user authorization. During both exchanges, security is increased (i.e., greater protection against leaked refresh tokens) when confidential apps use their client secret for client authentication. The (g)(10) criterion paragraphs at § 170.315(g)(10)(v)(A)(1)(ii) and § 170.315(g)(10)(v)(A)(2)(ii) require that apps “capable of storing a client secret” and thus capable of authenticating themselves, must be given a refresh token upon valid first time connections and have their refresh tokens renewed upon valid subsequent connections. This enables persistent access for apps capable of storing a client secret without requiring end-user re-authorization.
+	After an access token expires, an app can subsequently connect to an authorization server to exchange a valid refresh token for a new access token and also have its refresh token renewed without needing to obtain end-user authorization. During both exchanges, security is increased (i.e., greater protection against leaked refresh tokens) when confidential apps use their client secret for client authentication. The (g)(10) criterion paragraphs at § 170.315(g)(10)(v)(A)(1)(ii) and § 170.315(g)(10)(v)(A)(2)(ii) require that apps “capable of storing a client secret” and thus capable of authenticating themselves, must be given a refresh token upon valid first time connections and have their refresh tokens renewed upon valid subsequent connections. This enables persistent access for apps capable of storing a client secret without requiring end-user re-authorization.
 
+	**Subsequent connections:**
 	``` mermaid
 		sequenceDiagram
-			participant app as App capable of <br/> storing a client secret
+			participant app as App
 			participant authz as Health IT Module's Authorization Server
 			participant fhir as Health IT Module's FHIR® Server
 
 			loop while refresh token is valid
-			app ->> authz: Refresh token
-			note over app,authz: Client secret used for authentication
-			note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) <br/> requires that apps capable of storing a client secret have their <br/> refresh tokens renewed (i.e., made valid for a new three month period). <br/> This could include the authorization server issuing a new refresh token <br/> or renewing the initial refresh token.
-			alt Health IT Module's Authorization Server issues a new refresh token
-				authz -->> app: New access token and new refresh token response
-			else Health IT Module's Authorization Server renews existing refresh token
-				authz -->> app: New access token response
-				authz -->> authz: Existing refresh token renewed
-			end
-			loop while new access token is valid
-				app ->> fhir: New access token used to request resources
-			end
+				alt App is capable of storing a client secret
+					app ->> authz: Refresh token
+					note over app,authz: Client secret used for authentication
+					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) <br/> requires that apps capable of storing a client secret have their <br/> refresh tokens renewed (i.e., made valid for a new three month period). <br/> This could include the authorization server issuing a new refresh token <br/> or renewing the initial refresh token.
+					alt Health IT Module's Authorization Server issues a new refresh token
+						authz -->> app: New access token and new refresh token response
+					else Health IT Module's Authorization Server renews existing refresh token
+						authz -->> app: New access token response
+						authz -->> authz: Existing refresh token renewed
+					end
+				else App is not capable of storing a client secret
+					app ->> authz: Refresh token
+					authz -->> app: New access token response
+				end
+				loop while new access token is valid
+					app ->> fhir: New access token used to request resources
+				end
 			end
 	```
 
