@@ -388,7 +388,7 @@ new period of no less than three months.
 				alt App is capable of storing a client secret
 					app ->> authz: Refresh token
 					note over app,authz: Client secret used for authentication
-					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) <br/> requires that apps capable of storing a client secret have their <br/> refresh tokens renewed (i.e., made valid for a new three month period). <br/> This could include the authorization server issuing a new refresh token <br/> or renewing the initial refresh token.
+					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) requires <br/> that apps capable of storing a client secret have their refresh tokens renewed <br/> (i.e., made valid for a new period of no less than three months). This could <br/> include the authorization server issuing a new refresh token or renewing the <br/> existing refresh token.
 					alt Health IT Module's Authorization Server issues a new refresh token
 						authz -->> app: New access token and new refresh token response
 					else Health IT Module's Authorization Server renews existing refresh token
