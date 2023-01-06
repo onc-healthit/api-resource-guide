@@ -7,6 +7,31 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### November 2022
+**Stakeholder Inquiry**: We have some questions regarding the consent requirements for § 170.315(g)(10) Standardized API for patient and population services.
+
+- If a patient is accessing data, are providers required to obtain a separate consent from the patient?
+- Is patient consent required for Multiple Patient Population Bulk Export?
+- Are there documented standards for consent and § 170.315(g)(10) Standardized API for patient and population services?
+
+**ONC Response**: For information on the technical requirements and standards for the § 170.315(g)(10) criterion, please see the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) Certification Companion Guide</a> (CCG). The § 170.315(g)(10) CCG includes ONC guidance including technical clarifications for the requirements regarding responding to requests for a single patient’s data and requests for multiple patients’ data.
+
+For information on ONC Certification Program requirements on actions and behaviors of Certified API Developers, please see the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 API Conditions and Maintenance of Certification</a> CCG.
+
+<a target = "_blank" href = "https://www.hhs.gov/hipaa/index.html">HIPAA</a> (specifically the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html">HIPAA Privacy Rule</a>) defines the circumstances in which a Covered Entity (individuals, organizations, and agencies that meet the definition of a Covered Entity under HIPAA) may use or disclose an individual’s Protected Health Information (PHI). HIPAA provides many pathways for permissibly exchanging PHI, which are commonly referred to as HIPAA Permitted Uses and Disclosures.
+
+Permitted Uses and Disclosures are situations in which a Covered Entity is permitted, but not required, to use and disclose PHI without first having to obtain a written authorization from the patient. The circumstances for which this information may be shared must meet specific criteria, and the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html">minimum necessary rule</a> applies. Instances when a patient’s authorization is not required would be listed in the provider’s HIPAA Notice of Privacy Practices.
+
+In general, a Covered Entity may only use or disclose PHI if either (1) the HIPAA Privacy Rule specifically permits or requires it; or (2) the individual who is the subject of the information provides a written authorization. Please see the ONC webpage “<a target = "_blank" href = "https://www.healthit.gov/topic/interoperability/how-hipaa-supports-data-sharing">How HIPAA Supports Data Sharing</a>” for more details.
+
+The ONC website HealthIT.gov provides many additional resources for learning more about patient consent, including the “<a target = "_blank" href = "https://www.healthit.gov/topic/interoperability/patient-consent-electronic-health-information-exchange-and-interoperability">Patient Consent and Interoperability</a>” topics webpage.
+
+Patients have a right under HIPAA to access their health records. Health insurers and providers who are covered entities must comply with a patient’s right to ask to see and get a copy of their health records. Except in certain circumstances, individuals have the right to review and obtain a copy of their protected health information in a covered entity's designated record set. Please see the “<a target = "_blank" href = "https://www.healthit.gov/sites/default/files/YourHealthInformationYourRights_Infographic-Web.pdf">Your Health Information, Your Rights</a>” fact sheet, and the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-individuals/guidance-materials-for-consumers/index.html">Your Rights Under HIPAA</a>” webpage for more information regarding a patient’s rights under HIPAA. Additionally, the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access-right-health-apps-apis/index.html">The access right, health apps, & APIs</a>” webpage provides guidance regarding the patient’s access right in the context of health apps and APIs.
+
+For an overview of key elements of the HIPPA Privacy Rule including who is covered, what information is protected, and how protected health information can be used and disclosed, please see the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html">Summary of the HIPAA Privacy Rule</a>” resource. Another resource is the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/faq/health-information-technology/index.html">HHS HIPAA Health Information Technology FAQ for professionals</a>, which includes responses to frequently asked questions about HIPAA regarding health IT.
+
+The Office for Civil Rights (OCR) enforces the HIPAA Privacy, Security, and Breach Notification Rules. For questions related to Health Information Privacy, please email <a target = "_blank" href = "mailto:OCRPrivacy@hhs.gov">OCRPrivacy@hhs.gov</a>.
+
 ### October 2022
 **Stakeholder Inquiry**: Can you confirm that the requirements of the 2015 Edition Cures Update Base EHR Definition (specifically the requirement to satisfy 170.315(g)(10)) can be met using one Certified Health IT Module or a combination of Certified Health IT Modules?
 
