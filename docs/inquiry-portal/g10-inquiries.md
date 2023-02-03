@@ -7,6 +7,25 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### January 2023
+**Stakeholder Inquiry**: We have a question about this text in the US Core Server CapabilityStatement:
+!!! note ""
+
+    The US Core Server SHALL:
+
+    1. Support the US Core Patient resource profile.
+    1. Support at least one additional resource profile from the list of US Core Profiles.
+    1. etc...
+
+Does this imply that we need to certify only the Patient resource, and one other resource, such as Medication? How is this tested in Inferno?
+
+**ONC Response**: Health IT Modules being certified to the § 170.315(g)(10) criterion must support US Core profiles (or FHIR core profiles if no corresponding US Core profile exists) for each of the data in the United States Core Data for Interoperability (USCDI) standard. <a target = "_blank" href = "https://www.healthit.gov/isa/united-states-core-data-interoperability-uscdi">USCDI</a> includes more data than Patient Demographics/Information, so more US Core profiles than US Core Patient must be supported for § 170.315(g)(10) certification. US Core includes <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU3.1.1/general-guidance.html#us-core-data-for-interoperability-and-2015-edition-common-clinical-data-set">guidance</a> for how USCDI data can map to FHIR Core and US Core profiles.
+
+Please see the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) Certification Companion Guide</a> for additional details and guidance regarding requirements for supporting US Core.
+
+The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">ONC Certification (g)(10) Standardized API Test Kit</a> implements tests according to the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">§ 170.315(g)(10) Test Procedure</a>. This Test Procedure defines tests to verify conformance to § 170.315(g)(10) requirements to support US Core profiles (or FHIR core profiles if no corresponding US Core profile exists) for each of the data in USCDI. Therefore, the Inferno ONC Certification (g)(10) Standardized API Test Kit includes tests for US Core profiles beyond the US Core Patient profile.
+
+
 ### November 2022
 **Stakeholder Inquiry**: We have some questions regarding the consent requirements for § 170.315(g)(10) Standardized API for patient and population services.
 
