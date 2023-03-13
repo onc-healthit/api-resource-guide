@@ -35,17 +35,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* Information originating from the (g)(10)-certified Health IT Module must conform to the requirements included in the criterion, but legacy information and information from outside systems is not required to be mapped to the USCDI “Applicable Standards” and the US Core IG terminologies and value sets. However, health IT developers are encouraged to exceed the minimum requirements described in § 170.315(g)(10) to support the mapping of legacy information to the terminologies and value sets included in the USCDI and US Core IG where possible.
 	* In order to mitigate potential interoperability errors and inconsistent implementation of the Fast Healthcare Interoperability Resources (FHIR®) Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) standard, ONC assesses, approves, and incorporates corrections (errata) as part of required certification and testing to this criterion. Compliance with the following errata is necessary because the errata implements technical corrections and clarifications to the FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) standard. There is a 90-day delay from the time the CCG has been updated with the ONC-approved errata to when compliance with the errata will be required to pass testing. Similarly, there will be an 18-month delay before a finding of an erratum’s absence in a Certified Health IT Module during surveillance would constitute a non-conformity under the Certification Program.
 		+ Version: [FHIR](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/)® [Bulk Data Access (Flat FHIR](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/)®[) (v1.0.1: STU 1)](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/). Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.
-	
-	**Applies to base regulatory standard USCDI v1 and US Core 3.1.1 or USCDI v1 and SVAP approved standard US Core 4.0.0:**
-	
-	
-	* The US Core IG Profile “StructureDefinition-us-core-patient” element “name.period” is required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” data class: “Previous Name” data element.
-	
-	**Applies to SVAP approved standard US Core 5.0.1 and USCDI v2:**
-	
-	
-	* The US Core IG Profiles “StructureDefinition-us-core-patient” elements “name.use” and “name.period” are required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” data class: “Previous Name” data element.
-	* The US Core IG Profiles “StructureDefinition-us-core-patient” element “patient.address.use” and “patient.address.period” are required for testing and certification in the ONC Certification Program to meet the USCDI requirement to support the “Patient Demographics” data class: “Previous Address” data element.
+	* The HL7® Cross-Group Projects workgroup, through the [US Core 'Patch' Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process) ticket [FHIR-40299](https://jira.hl7.org/browse/FHIR-40299), approved patching the US Core Patient Profile in US Core 3.1.1, US Core 4.0.0, and US Core 5.0.1. The USCDI data element “Patient Demographics: Previous Name” must be supported by including the capability to set the US Core Patient Profile element “Patient.name.use” to “old” or provide an end date in “Patient.name.period” element or support both. Additionally, the USCDI data element “Patient Demographics: Previous Address” must be supported by including the capability to set the US Core Patient Profile “Patient.address.use” element to “old” or provide an end date in “Patient.address.period” element or support both. Also, support for the US Core Patient Profile “Patient.address.period” element is not required for purposes of testing and certification.
 	
 *Additional clarifications that apply to the entire (g)(10) criterion:*
 
@@ -127,7 +117,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to all applicable base regulatory and SVAP standards:**
 	
 	
-	* Health IT Modules may support scopes using either the system wildcard scope syntax or a list of system resource scopes, to enable the export of multiple patients’ data as a group.
+	* Health IT Modules may support scopes using either the system wildcard scope syntax or a list of -system resource scopes- to enable the export of multiple patients’ data as a group.
 	* During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core IG FHIR® Profiles.
 	* Health IT Modules must demonstrate support for “Location” FHIR® resources by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.
 	* Health IT Modules must support provenance according to the “Basic Provenance Guidance” section of the US Core IG.
@@ -195,7 +185,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to all applicable base regulatory and SVAP standards:**
 	
 	
-	* Health IT presented for testing and certification must support app registration regardless of the scope of patient search utilized by the application (e.g. single or multiple).
+	* Health IT presented for testing and certification must support app registration regardless of the scope of patient search utilized by the application (e.g., single or multiple).
 	* This certification criterion requires a health IT developer, as finalized in the Condition of Certification requirements, to demonstrate its registration process, but does not require conformance to a standard.
 	* The third-party application registration process that a health IT developer must meet under this criterion is not a form of review or “vetting” for purposes of this criterion.
 	
