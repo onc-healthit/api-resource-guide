@@ -7,6 +7,47 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### July 2023
+**Stakeholder Inquiry**: We have been working to adopt the HL7 FHIR standard for all our external API communications. We were wondering if you can provide answers or linked resources to the following questions:
+
+ - My understanding of the 21st Century Cures Act, as it pertains to data interoperability via HL7 FHIR, is that it requires Health Insurance Plans (and other health related orgs) to have HL7 FHIR APIs by end of year 2023.  Is this correct?
+ - Does this pertain only to Medicare or Medicaid patient data?
+ - Is this required to be "certified" by the Federal Government?
+ - What is that certification?
+ - Can Health Insurance plans or other health organizations operate without that certification?
+ - If so, for how long?
+
+**ONC Response**: You may be looking for more information about the CMS Interoperability and Patient Access Final Rule, published in 2020, which includes requirements for certain payers regulated by CMS to establish FHIR APIs, for example, to allow patients to access information held by the payer. You can learn more about CMS' 2020 rule, as well as another recent CMS proposed rule that would require payers to establish FHIR APIs for additional uses here: <a target = "_blank" href = "https://www.cms.gov/regulations-and-guidance/guidance/interoperability/index">https://www.cms.gov/regulations-and-guidance/guidance/interoperability/index</a>
+
+We note that these regulations do not require that impacted payers use health IT certified under the Office of the National Coordinator for Health Information Technology (ONC) Health IT Certification Program (Certification Program), which is a voluntary certification program established by ONC to provide for the certification of health IT. For more detailed information about the ONC Certification Program, please see the "About the ONC Health IT Certification Program" webpage.
+
+Regarding the 2023 date mentioned, you may be referring to the Promoting Interoperability (PI) Programs (previously Medicare and Medicaid EHR Incentive Programs) administered by the Centers for Medicare & Medicaid Services (CMS) which focus on adoption and use of certified health IT by eligible hospitals, critical access hospitals, and eligible clinicians. This program does include requirements that the health care providers who participate in the program use certified health IT incorporating FHIR APIs during 2023. For more information about the PI program for eligible hospitals and CAHs, see <a target = "_blank" href = "https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms">https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms</a>. For more information about the Promoting Interoperability performance category of MIPS that pertains to eligible clinicians, see <a target = "_blank" href = "https://qpp.cms.gov/">https://qpp.cms.gov/</a>.
+
+### April 2023
+**Stakeholder Inquiry**: Can a 3rd party app developer approach a Certified Health IT Developer for implementing a FHIR API without any reference from a Clinic/Provider/Patient? There should be consent from provider/clinic, or patient to share the info, right?
+
+**ONC Response**: A § 170.315(g)(10)-certified Health IT Module must support the capability to enable an application to register with the Health IT Module's “authorization server”, as per the requirement at § 170.315(g)(10)(iii). This requirement only applies for the purposes of demonstrating technical conformance to the certification criterion and Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of certified Health IT Modules are not in scope for the § 170.315(g)(10) criterion nor the associated Condition and Maintenance of Certification requirements.
+
+Please see the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Condition and Maintenance of Certification Certification Companion Guide (CCG)</a>, the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) criterion CCG</a>, and the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1230">ONC Cures Act Final Rule</a> for more information.
+
+For information on the technical requirements and standards for the § 170.315(g)(10) criterion, please see the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) Certification Companion Guide</a> (CCG). The § 170.315(g)(10) CCG includes ONC guidance including technical clarifications for the requirements regarding responding to requests for a single patient’s data and requests for multiple patients’ data.
+
+For information on ONC Certification Program requirements on actions and behaviors of Certified API Developers, please see the <a target = "_blank" href = "https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 API Conditions and Maintenance of Certification</a> CCG.
+
+<a target = "_blank" href = "https://www.hhs.gov/hipaa/index.html">HIPAA</a> (specifically the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html">HIPAA Privacy Rule</a>) defines the circumstances in which a Covered Entity (individuals, organizations, and agencies that meet the definition of a Covered Entity under HIPAA) may use or disclose an individual’s Protected Health Information (PHI). HIPAA provides many pathways for permissibly exchanging PHI, which are commonly referred to as HIPAA Permitted Uses and Disclosures.
+
+Permitted Uses and Disclosures are situations in which a Covered Entity is permitted, but not required, to use and disclose PHI without first having to obtain a written authorization from the patient. The circumstances for which this information may be shared must meet specific criteria, and the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/minimum-necessary-requirement/index.html">minimum necessary rule</a> applies. Instances when a patient’s authorization is not required would be listed in the provider’s HIPAA Notice of Privacy Practices.
+
+In general, a Covered Entity may only use or disclose PHI if either (1) the HIPAA Privacy Rule specifically permits or requires it; or (2) the individual who is the subject of the information provides a written authorization. Please see the ONC webpage “<a target = "_blank" href = "https://www.healthit.gov/topic/interoperability/how-hipaa-supports-data-sharing">How HIPAA Supports Data Sharing</a>” for more details.
+
+The ONC website HealthIT.gov provides many additional resources for learning more about patient consent, including the “Patient Consent and Interoperability” topics webpage.
+
+Patients have a right under HIPAA to access their health records. Health insurers and providers who are covered entities must comply with a patient’s right to ask to see and get a copy of their health records. Except in certain circumstances, individuals have the right to review and obtain a copy of their protected health information in a covered entity's designated record set. Please see the “<a target = "_blank" href = "https://www.healthit.gov/sites/default/files/YourHealthInformationYourRights_Infographic-Web.pdf">Your Health Information, Your Rights</a>” fact sheet, and the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-individuals/guidance-materials-for-consumers/index.html">Your Rights Under HIPAA</a>” webpage for more information regarding a patient’s rights under HIPAA. Additionally, the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access-right-health-apps-apis/index.html">The access right, health apps, & APIs</a>” webpage provides guidance regarding the patient’s access right in the context of health apps and APIs.
+
+For an overview of key elements of the HIPPA Privacy Rule including who is covered, what information is protected, and how protected health information can be used and disclosed, please see the “<a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/privacy/laws-regulations/index.html">Summary of the HIPAA Privacy Rule</a>” resource. Another resource is the <a target = "_blank" href = "https://www.hhs.gov/hipaa/for-professionals/faq/health-information-technology/index.html">HHS HIPAA Health Information Technology FAQ for professionals</a>, which includes responses to frequently asked questions about HIPAA regarding health IT.
+
+The Office for Civil Rights (OCR) enforces the HIPAA Privacy, Security, and Breach Notification Rules. For questions related to Health Information Privacy, please email <a href = "mailto:OCRPrivacy@hhs.gov">OCRPrivacy@hhs.gov</a>.
+
 ### January 2023
 **Stakeholder Inquiry**: We have a question about this text in the US Core Server CapabilityStatement:
 !!! note ""
