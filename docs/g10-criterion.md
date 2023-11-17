@@ -545,42 +545,10 @@ new period of no less than three months.
 ### Test Procedure
 The § 170.315(g)(10) test procedure provides the structure for evaluating conformance of a Health IT Module to the <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">(g)(10) certification criterion requirements</a>. 
 
-The ONC Approved SVAP Standards for 2022 include the advancement of four (g)(10) standards (USCDI, US Core, SMART App Launch, and Bulk Data Access). Health IT developers participating in ONC’s Health IT Certification Program can voluntarily incorporate these new versions into their Certified Health IT Modules.
-
 The form below allows for dynamic selection of standards available for (g)(10) certification. Based off the standards selected in the form, a test procedure copy can be viewed by clicking the "View Test Procedure" button. This same test procedure is also <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">contained on healthit.gov</a>.
 
-**Select Standards**:
-
-<form>
-	<p>US Core:</p>
-	<input type="radio" name="usCore" value="USCore3.1.1" checked="checked">
-	<label>US Core STU V3.1.1 + USCDI V1</label><br>
-	<input type="radio" name="usCore" value="USCore4.0.0">
-	<label>US Core STU V4.0.0 + USCDI V1</label><br>
-	<input type="radio" name="usCore" value="USCore5.0.1">
-	<label>US Core STU V5.0.1 + USCDI V2</label><br>
-
-	<br>
-
-	<p>SMART App Launch:</p>
-	<input type="radio" name="smartAppLaunch" value="SMART1.0.0" checked="checked">
-	<label>SMART App Launch V1.0.0</label><br>
-	<input type="radio" name="smartAppLaunch" value="SMART2.0.0">
-	<label>SMART App Launch V2.0.0</label><br>
-
-	<br>
-	
-	<p>Bulk Data:</p>
-	<input type="radio" name="bulkData" value="BulkDataAccess1.0.0" checked="checked">
-	<label>Bulk Data Access V1.0.0:STU 1</label><br>
-	<input type="radio" name="bulkData" value="BulkDataAccess2.0.0">
-	<label>Bulk Data Access V2.0.0:STU 2</label><br>
-
-
-	<br>
-
-	<button class = "md-button md-button--primary" type="button" style = "cursor: pointer;" onclick="testProcedureGenerate(this.form)">View Test Procedure</button>
-</form>
+!!! info 
+	Dynamic test procedure currently under construction, in the meantime please refer to <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">the test procedure contained on healthit.gov</a>.
 
 ### Inferno Framework
 The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(g)(10) Standardized API Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (g)(10) API testing in the ONC Health IT Certification Program. The (g)(10) Standardized API Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized API for patient and population services criterion finalized at § 170.315(g)(10). It is based on the requirements in the ONC Cures Act Final Rule and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(g)(10)</a>.
