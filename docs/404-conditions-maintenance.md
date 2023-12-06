@@ -26,7 +26,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to the entire criterion*"
 	***Clarifications:***
 	
-	
 	* The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in § 170.315(g)(7) through (10).
 	
 *Additional Clarifications included to the § 170.404 Certification Companion Guide (CCG):*
@@ -42,7 +41,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(1)*"
 	***Clarifications:***
 	
-	
 	* The data required and that must be supported to demonstrate conformance to the final § 170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes “all data elements of a patient’s electronic health record to the extent permissible under applicable privacy laws.”
 	
 #### API Transparency Conditions
@@ -52,7 +50,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 <!-- $ref{404:CCG["(a) Conditions of certification requirements–(2) Transparency conditions."], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(2)*"
 	***Clarifications:***
-	
 	
 	* This provision of the Condition of Certification requirements does not prohibit additional content or limit the type of content a Certified API Developer may include in its terms and conditions. A Certified API Developer would be permitted to include consumer protections in its terms and conditions documentation.
 	* As part of the requirements at § 170.315(g)(10)(v)(A)(1)(iii), Certified Health IT Developers must publish the method(s) by which their Health IT Modules support the secure issuance of an initial refresh token to native applications according to the technical documentation requirements at § 170.315(g)(10)(viii) and transparency conditions at § 170.404(a)(2).
@@ -64,7 +61,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 <!-- $ref{404:CCG["(a) Conditions of certification requirements–(3) Fees conditions–(i) General conditions."], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(3)(I)*"
 	***Clarifications:***
-	
 	
 	* Certified API Developers and API Users have the ability to collaborate and form relationships, so long as these relationships do not conflict with any of the provisions of the ONC Cures Act Final Rule or other applicable federal and state laws and regulations.
 	* While the permitted fees set the boundaries for the fees Certified API Developers are permitted to charge and to whom those permitted fees can be charged, they do not prohibit who may pay the Certified API Developer’s permitted fee. In other words, these conditions limit the party from which a Certified API Developer may require payment, but they do not speak to who may pay the fee.
@@ -92,7 +88,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(3)(II)*"
 	***Clarifications:***
 	
-	
 	* The nature of the costs charged under § 170.404(a)(3)(ii) depends on the scope of the work to be undertaken by a Certified API Developer (i.e., how much or how little labor an API Information Source requires of the Certified API Developer to deploy and upgrade the certified API technology).
 	* Regarding the “development, deployment, and upgrades” described in § 170.404(a)(3)(ii), while we understand that there is overlap between features of the certified API technology and the “broader EHR product,” we refer specifically to development, deployment, and upgrades made to “certified API technology” as defined in § 170.404(c). Namely, development, deployment, and upgrades made to the capabilities of Certified Health IT Modules that fulfill the API-focused certification criteria adopted at § 170.315(g)(7) through (10).
 	* Regarding the use of the term “developing” in § 170.404(a)(3)(ii), fees for “developing” certified API technology comprise the Certified API Developer’s costs of designing, developing, and testing certified API technology. Fees for developing certified API technology must not include the Certified API Developer’s costs of updating the non-API related capabilities of the Certified API Developer’s existing Health IT Modules, including its databases, as part of its development of the certified API technology. These costs are typically connected to past business decisions made by the Certified API Developer and typically arise due to Health IT Modules being designed or implemented in nonstandard ways that unnecessarily increase the complexity, difficulty or burden of accessing, exchanging, or using EHI.
@@ -112,7 +107,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(3)(III)*"
 	***Clarifications:***
 	
-	
 	* “Usage-based” fees are fees imposed by a Certified API Developer to recover costs typically incurred for supporting API interactions at increasing volumes and scale within established service levels. That is, “usage-based” fees recover costs incurred by a Certified API Developer due to the actual use of the certified API technology once it has been deployed (e.g., costs to support a higher volume of traffic, data, or number of apps via the certified API technology).
 	* A Certified API Developer's “incremental costs” comprise the Certified API Developer's costs that are directly attributable to supporting API interactions at increasing volumes and scale within established service levels.
 	* A Certified API Developer should “price” its costs of supporting access to the certified API technology by reference to the additional costs that the Certified API Developer would incur in supporting certain volumes of API use.
@@ -127,7 +121,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 <!-- $ref{404:CCG["(a) Conditions of certification requirements–(3) Fees conditions–(iv) Permitted fee – value-added services."], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(3)(IV)*"
 	***Clarifications:***
-	
 	
 	* We clarify that the value-added services need to be provided in connection with and supplemental to the development, testing, and deployment of production-ready software applications that interact with certified API technology. A fee is permitted if it relates to a service that a software developer can elect to purchase from a Certified API Developer, but is not required to purchase in order to develop and deploy production-ready apps for certified API technology.
 	* We note that examples used to illustrate when a fee would or would not qualify as a “value-added service,” such as app store listing, are demonstrative, but not required unless otherwise noted in the regulation text.
@@ -146,11 +139,12 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(4)*"
 	***Clarifications:***
 	
-	
 	* For the requirement that a Certified API Developer must provide notice and a reasonable opportunity for API Information Sources and API Users to update their applications to preserve compatibility with certified API technology and to comply with applicable terms and conditions, we note that the notice could include a public notice made available on a website, but also encourage Certified API Developers to contact API Information Source customers and registered API Users (application developers) directly prior to updating business and technical documentation.
 	* For third-party applications chosen by individuals to facilitate their access to their electronic health information (EHI) held by actors, there would not be a need for a business associate agreement  as discussed in the ONC Cures Act Final Rule. There would also generally not be a need for “vetting” on security grounds and such vetting actions otherwise would be an interference.
 	* We clarify that this rule does not prohibit Certified API Developers from forming business relationships with API Users.
 	* Application developer affirmations to health IT developers regarding the ability of their applications to secure a refresh token, a client secret, or both, must be treated in a good faith manner consistent with the provisions established in the openness and pro-competitive conditions at § 170.404(a)(4).
+	* The technical requirements to support patient authorization of apps to access their data in § 170.315(g)(10)-certified API technology are described in § 170.315(g)(10)(v)(A) and require conformance to the HL7® SMART App Launch Implementation Guide using the OAuth 2.0 framework. Certified Health IT Developers must make these patient authorization capabilities available in their § 170.315(g)(10)-certified APIs according to the general access requirements at § 170.404(a)(1), and openness and pro-competitive conditions at § 170.404(a)(4). Under these collective Program requirements, any individual can authorize apps of their choice to receive their health data without any additional or out-of-band steps, or any other preconditions.
+	
 	
 ### API Maintenance Of Certification Requirements
 #### Authenticity Verification and Registration for Production Use
@@ -161,9 +155,9 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(1)*"
 	***Clarifications:***
 	
-	
 	* This requirement applies to a Certified API Developer with a Health IT Module certified to the certification criterion adopted in § 170.315(g)(10).
 	* The authenticity verification process finalized in § 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.
+	* Application registration is a technical requirement described in § 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications ("apps”) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by § 170.404(a)(4)(ii)(A)(1).
 	
 #### API Service Base URL Publication
 ???+ quote "**Regulation text at § 170.404(B)(2)**"
@@ -173,9 +167,8 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(2)*"
 	***Clarifications:***
 	
-	
 	* Certified API Developers must make available appropriately scoped service base URLs that can be used by patients to access their EHI for Health IT Modules certified to § 170.315(g)(10).
-	* As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR service base URLs they centrally manage on behalf of API Information Sources.
+	* As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR®) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR® service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR® service base URLs they centrally manage on behalf of API Information Sources.
 	* To be open and transparent to the public, developers must provide a hyperlink to the list of service base URLs to be published with the product on the ONC Certified Health IT Product List (CHPL). Certified API Developers are encouraged to use a standardized format when publishing the service base URLs for all of its customers. ONC recommends Certified API Developers leverage the [HL7 FHIR 4.0.1 “Endpoint” resource](https://www.hl7.org/fhir/endpoint.html), or profiles of this resource such as the Validated Healthcare Directory Implementation Guide STU1 [“vhdir-endpoint” profile](http://hl7.org/fhir/uv/vhdir/2018Jan/StructureDefinition-vhdir-endpoint.html), to represent service base URLs that can be used by patients to access their health information. ONC also encourages developers to provide as much information about the service base URLs as available, including the API Information Source’s organization details, such as name, location, and provider identifiers (e.g., NPI, CCN, or health system ID). These steps will help industry coalesce around standards that enable application developers to more easily and consistently provide patients access to their electronic health information.
 	
 !!! note ""
@@ -200,7 +193,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(3)*"
 	***Clarifications:***
 	
-	
 	* A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology with certified API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022.
 	
 
@@ -215,7 +207,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(4)*"
 	***Clarifications:***
 	
-	
 	* By no later than April 5, 2021, a Certified API Developer with Health IT Module(s) certified to the certification criteria in § 170.315(g)(7), (8), or (9) must comply with § 170.404(a), including revisions to its existing business and technical API documentation and make such documentation available via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps.
 	
 ### Definitions
@@ -225,7 +216,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 <!-- $ref{404:CCG["(c) Definitions."], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(C)*"
 	***Clarifications:***
-	
 	
 	* API Users can include, but are not limited to, software developers, patients, health care providers, and payers.
 	* A person or entity is permitted to serve more than one role for the terms defined in § 170.404(c).
