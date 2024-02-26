@@ -21,9 +21,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to the entire criterion*"
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* On December 31, 2022, the Application Programming Interface (API) certification criterion in § 170.315(g)(10) replaced the “Application access—data category request” certification criterion (§ 170.315(g)(8)).
 	* Health IT Modules are not required to support patient-facing API-enabled “read” services for multiple patients for the purposes of this certification criterion.
@@ -37,7 +35,6 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 		+ Version: [FHIR](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/)® [Bulk Data Access (Flat FHIR](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/)®[) (v1.0.1: STU 1)](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/). Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.
 	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standards US Core 4.0.0 and US Core 5.0.1:**
-	
 	
 	* The HL7® Cross-Group Projects workgroup, through the [US Core 'Patch' Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process) ticket [FHIR-40299](https://jira.hl7.org/browse/FHIR-40299), approved patching the US Core Patient Profile in US Core 3.1.1, US Core 4.0.0, and US Core 5.0.1. The USCDI data element “Patient Demographics: Previous Name” must be supported by including the capability to set the US Core Patient Profile element “Patient.name.use” to “old” or provide an end date in “Patient.name.period” element or support both. Additionally, the USCDI data element “Patient Demographics: Previous Address” must be supported by including the capability to set the US Core Patient Profile “Patient.address.use” element to “old” or provide an end date in “Patient.address.period” element or support both. Also, support for the US Core Patient Profile “Patient.address.period” element is not required for purposes of testing and certification.
 	
@@ -62,12 +59,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(A)*"
 	Technical outcome – Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* All data elements and operations indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in-scope for testing.
 	* Health IT Modules must support provenance according to the [“Basic Provenance Guidance” section of the US Core IG](https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html).
@@ -76,17 +70,14 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	**Applies to base regulatory standard US Core 3.1.1**
 	
-	
 	* The HL7® Cross-Group Projects work group, through the [US Core 'Patch' Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process) ticket [FHIR-28393](https://jira.hl7.org/browse/FHIR-28393), approved patching US Core 3.1.1 to remove "must support" from the "DocumentReference.custodian" data element. For the purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “custodian” data element in the “DocumentReference” US Core 3.1.1 IG Profile.
 	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standard US Core 4.0.0:**
-	
 	
 	* For “Encounter,” “Organization,” and “Practitioner,” US Core IG profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and FHIR® resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the USCDI.
 	* Health IT Modules must support provenance according to the [“Basic Provenance Guidance” section of the US Core IG.](https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html)
 	
 	**Applies to SVAP approved standards US Core 5.0.1 and USCDI v2, and US Core 6.1.0 and USCDI v3:**
-	
 	
 	* For the “Organization” US Core IG profile, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” FHIR® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” FHIR® resource reference as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core IG profiles / FHIR® resource because they are included as “must support” data elements in US Core IG profiles required by the United States Core Data for Interoperability (USCDI).
 	* For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core IG profile.
@@ -114,12 +105,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(B)*"
 	Technical outcome – Respond to requests for multiple patients’ data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Health IT Modules may support scopes using either the system wildcard scope syntax or a list of -system resource scopes- to enable the export of multiple patients’ data as a group.
 	* During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core IG FHIR® Profiles.
@@ -137,12 +125,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(A)*"
 	Technical outcome – Respond to search requests for a single patient’s data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(2), specifically the mandatory capabilities described in “US Core Server CapabilityStatement”.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in scope for testing.
 	* The § 170.315(g)(10) certification criterion requires Health IT Modules to support API-enabled “read” services for single and multiple patients. “Read” services include those that allow authenticated and authorized third-party applications to view EHI through a secure API. These services specifically exclude “write” capabilities, where authenticated and authorized third-party applications would be able to create or modify EHI through a secure API.
@@ -159,12 +144,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(B)*"
 	Technical outcome – Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(4).
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* No additional clarifications.
 	
@@ -182,12 +164,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iii)*"
 	Technical outcome – Enable an application to register with the Health IT Module’s “authorization server.”
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Health IT presented for testing and certification must support app registration regardless of the scope of patient search utilized by the application (e.g., single or multiple).
 	* This certification criterion requires a health IT developer, as finalized in the Condition of Certification requirements, to demonstrate its registration process, but does not require conformance to a standard.
@@ -195,11 +174,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standard US Core 4.0.0:**
 	
-	
 	* For demonstration of the SMART IG "Standalone Launch" steps, health IT developers are permitted to scope US Core IG resources that do not exist in either the standard adopted at § 170.213 (USCDI version 1) or the "Compartment Patient" section of the standard adopted at § 170.215(a)(1) (HL7® FHIR® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Encounter,” “Device,” “Location,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(g)(10)(viii)(A) and § 170.404(a)(2).
 	
 	**Applies to SVAP approved standards US Core 5.0.1 and USCDI v2, and US Core 6.1.0 and USCDI v3:**
-	
 	
 	* For demonstration of the SMART IG “Standalone Launch” steps, health IT developers are permitted to scope US Core IG resources that do not exist in either the standard adopted at § 170.213 (USCDI version 2) or the “Compartment Patient” section of the standard adopted at § 170.215(a)(1) (HL7® FHIR® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Location,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(g)(10)(viii)(A) and § 170.404(a)(2).
 	
@@ -220,12 +197,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)*"
 	Technical outcome - (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(a)(4).
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* TLS version 1.2 or above must be enforced for the appropriate connections.
 	* Health IT developers are encouraged but not required to follow [TLS Best Current Practice (BCP 195)](https://www.rfc-editor.org/info/bcp195) for TLS version enforcement, referenced in [section 6.1.0.3 of the HL7 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR) Release 4, October 30, 2019](http://hl7.org/fhir/R4/security.html#http), which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet ONC Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the API documentation requirements at § 170.315(g)(10)(viii) and API Transparency Conditions at 45 CFR 170.404(a)(2).
@@ -242,12 +216,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(A)(1)*"
 	Technical outcome – For first time connections, authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b). Additionally, a Health IT Module's authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret. Finally, a Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Health IT Modules will be explicitly tested for US Core IG operations using authentication and authorization tokens acquired via the process described in the implementation specification adopted in § 170.215(a)(3).
 	* Only the relevant parts of the OpenID Connect Core 1.0 including errata set 1 adopted in § 170.215(b) that are also included in the implementation specification adopted in § 170.215(a)(3) will be in-scope for testing and certification.
@@ -264,19 +235,17 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	**Applies to base regulatory standard US Core 3.1.1 and SVAP approved standard US Core 4.0.0:**
 	
-	
 	* Since "Encounter" is not a USCDI v1 data class or data element, ONC will not test Health IT Modules for support for "context-ehr-encounter" SMART on FHIR® Core Capabilities described in the standard adopted at § 170.215(a)(3).
 	
 	**Applies to base regulatory standard SMART App Launch Framework 1.0.0:**
-	
 	
 	* The “SMART on FHIR® Core Capabilities” in § 170.215(a)(3) are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.
 	* As described in the ONC Cures Act Final Rule, we encourage implementers to adhere to industry best practices to mitigate Cross-Site Request Forgery (CSRF) and other known security threats ([85 FR 25742](https://www.federalregister.gov/d/2020-07419/p-1186)). Proof Key for Code Exchange (PKCE) ([Internet Engineering Task Force Request for Comments 7636](https://datatracker.ietf.org/doc/html/rfc7636)) is an industry standard that can help mitigate CSRF and other known security threats. The ONC Health IT Certification Program will support the optional use of PKCE during authentication and authorization testing. Health IT developers that implement and require the use of PKCE should include documentation for their PKCE implementation as part of the API Documentation requirement at [45 CFR 170.315(g)(10)(viii)](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C#p-170.315(g)(10)(viii)) and API Transparency Conditions at [45 CFR 170.404(a)(2)](https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-D#p-170.404(a)(2)).
 	
 	**Applies to SVAP approved standard SMART App Launch Framework 2.0.0:**
 	
-	
 	* The “capabilities” in AUT-PAT-25 of [this criterion’s test procedure](https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure) are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.
+	* A Health IT Module may optionally support the "fhirContext" launch context parameter defined in the SMART App Launch 2.0.0 implementation guide. If the "fhirContext" parameter is supported, the Health IT Module must conform to the requirements for the parameter detailed in the SMART App Launch 2.0.0 implementation guide.
 	
 *Additional Clarifications to the (g)(10) CCG:*
 
@@ -349,12 +318,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(V)(A)(2)*"
 	Technical outcome – For subsequent connections, access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. Additionally, a Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* For subsequent connections of applications capable of storing a client secret, Health IT Modules are required to issue a refresh token valid for a new period of no shorter than three months per the API certification criterion requirement finalized in § 170.315(g)(10)(v)(A)(2)(ii).
 	
@@ -407,12 +373,9 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
 	Technical outcome – Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Health IT Modules may use access control schemes other than OAuth 2.0 for controlling access to the file server, such as capability URLs. The HL7® FHIR®-I Work Group has documented expectations for the use of capability URLs with the Bulk Data Access IG on the [HL7® confluence website](https://confluence.hl7.org/x/RGvUB). For purposes of Certification testing, Health IT Modules will be tested for the ability to share bulk data files either using OAuth 2.0 bearer tokens or via capability URLs accessible without preconditions or additional steps.
 	
@@ -473,12 +436,9 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vi)*"
 	Technical outcome – A Health IT Module’s authorization server must be able to revoke an authorized application’s access at a patient’s direction.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.
 	* Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.
@@ -496,12 +456,9 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vii)*"
 	Technical outcome – A Health IT Module’s authorization server must be able to receive and validate tokens it has issued.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Although ONC does not specify a standard for token introspection, ONC encourages industry to coalesce around using a common standard, like OAuth 2.0 Token Introspection (RFC 7662), and specifically the profile of the OAuth 2.0 Token Introspection standard included in the SMART App Launch Framework 2.0.0 implementation specification.
 	
@@ -513,12 +470,9 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(A)*"
 	Technical outcome – The API(s) must include complete accompanying documentation that contains, at a minimum: (*1*) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns; (*2*) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s); and (*3*) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module’s authorization server.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* Health IT developers are not required to re-publish documentation from the adopted standards and implementation specifications. However, health IT developers must publish documentation that goes beyond the adopted standards and implementation specifications.
 	* Health IT developers are expected to disclose any additional data their § 170.315(g)(10)-certified Health IT Module supports in the context of the adopted standards and implementation specifications.
@@ -531,12 +485,9 @@ new period of no less than three months.
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
 	Technical outcome – The documentation used to meet paragraph (g)(10)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.
 	
-	
 	***Clarifications:***
 	
-	
 	**Applies to all applicable base regulatory and SVAP standards:**
-	
 	
 	* No additional clarifications.
 	
