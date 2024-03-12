@@ -53,9 +53,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Data Response (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(A)**" 
-    (i) Data response. (A) Respond to requests for a single patient's data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
+    (i) Data response. (A) Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specifications adopted in § 170.215(a) and in § 170.215(b)(1), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(A) Data response – single patient"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(A)*"
 	Technical outcome – Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 	
@@ -99,9 +99,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Data Response (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
-    (B) Respond to requests for multiple patients' data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
+    (B) Respond to requests for multiple patients' data as a group according to the standards and implementation specifications adopted in § 170.215(a), (b)(1), and (d), for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(B) Data response – multiple patients"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(B)*"
 	Technical outcome – Respond to requests for multiple patients’ data as a group according to the standard adopted in § 170.215(a)(1), and implementation specifications adopted in § 170.215(a)(2) and (4), for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 	
@@ -119,9 +119,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Supported Search Operations (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(A)**"
-    (ii) Supported search operations. (A) Respond to search requests for a single patient's data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(2), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”
+    (ii) Supported search operations. (A) Respond to search requests for a single patient’s data consistent with the search criteria included in the implementation specifications adopted in § 170.215(b)(1), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A) Supported search operations – single patient"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(A)*"
 	Technical outcome – Respond to search requests for a single patient’s data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(2), specifically the mandatory capabilities described in “US Core Server CapabilityStatement”.
 	
@@ -138,9 +138,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Supported Search Operations (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(B)**"
-    (B) Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(4)
+    (B) Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(d).
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(B) Supported search operations  - multiple patients "], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(B)*"
 	Technical outcome – Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(a)(4).
 	
@@ -158,9 +158,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Application Registration
 ???+ quote "**Regulation text at § 170.315(g)(10)(iii)**"
-    (iii) Application registration. Enable an application to register with the Health IT Module's “authorization server.”
+    (iii) Application registration. Enable an application to register with the Health IT Module’s “authorization server.”
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(iii)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iii) Application registration"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iii)*"
 	Technical outcome – Enable an application to register with the Health IT Module’s “authorization server.”
 	
@@ -191,9 +191,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Secure Connection
 ???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
-    (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3).
+    (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(b)(1) and (c). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(d).
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv) Secure connection"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)*"
 	Technical outcome - (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(a)(2) and (3). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(a)(4).
 	
@@ -210,9 +210,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 ### First time Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(1)**"
-    (v) Authentication and authorization—(A) Authentication and authorization for patient and user scopes—(1) First time connections—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b). (ii) A Health IT Module's authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret. (iii) A Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
+    (v) Authentication and authorization—(A) Authentication and authorization for patient and user scopes—(1) First time connections—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (ii) A Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c). (iii) A Health IT Module’s authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token. 
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(1)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(1) Authentication and authorization – Authentication and authorization for patient and user scopes – First time connections"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(A)(1)*"
 	Technical outcome – For first time connections, authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b). Additionally, a Health IT Module's authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret. Finally, a Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
 	
@@ -312,9 +312,9 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Subsequent Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(2)**"
-    (2) Subsequent connections. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) without requiring reauthorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret.
+    (2) Subsequent connections. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(c) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c).
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(2)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(2) Authentication and authorization – Authentication and authorization for patient user scopes – Subsequent connections"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(V)(A)(2)*"
 	Technical outcome – For subsequent connections, access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(a)(3) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. Additionally, a Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret.
 	
@@ -367,9 +367,9 @@ new period of no less than three months.
 
 ### Authentication / Authorization for Multiple Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(v)(B)**" 
-    (B) Authentication and authorization for system scopes. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token.
+    (B) Authentication and authorization for system scopes. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(d) and the application must be issued a valid access token.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B) Authentication and authorization – Authentication and authorization for system scopes"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
 	Technical outcome – Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(a)(4) and the application must be issued a valid access token.
 	
@@ -430,9 +430,9 @@ new period of no less than three months.
 
 ### Patient Authorization Revocation
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
-    (vi) Patient authorization revocation. A Health IT Module's authorization server must be able to revoke an authorized application's access at a patient's direction.
+    (vi) Patient authorization revocation. A Health IT Module’s authorization server must be able to revoke and must revoke an authorized application’s access at a patient’s direction within 1 hour of the request.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(vi)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vi) Patient authorization revocation"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vi)*"
 	Technical outcome – A Health IT Module’s authorization server must be able to revoke an authorized application’s access at a patient’s direction.
 	
@@ -450,9 +450,9 @@ new period of no less than three months.
 	
 ### Token Introspection
 ???+ quote "**Regulation text at § 170.315(g)(10)(vii)**" 
-    (vii) Token introspection. A Health IT Module's authorization server must be able to receive and validate tokens it has issued.
+    (vii) Token introspection. A Health IT Module’s authorization server must be able to receive and validate tokens it has issued in accordance with an implementation specification in § 170.215(c).
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(vii)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vii) Token introspection"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vii)*"
 	Technical outcome – A Health IT Module’s authorization server must be able to receive and validate tokens it has issued.
 	
@@ -466,7 +466,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(viii)(A)**" 
     (viii) Documentation. (A) The API(s) must include complete accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s). (3) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module's authorization server.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(A)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(A) Documentation – minimum requirements"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(A)*"
 	Technical outcome – The API(s) must include complete accompanying documentation that contains, at a minimum: (*1*) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns; (*2*) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s); and (*3*) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module’s authorization server.
 	
@@ -481,7 +481,7 @@ new period of no less than three months.
 ???+ quote "**Regulation text at § 170.315(g)(10)(viii)(B)**"
     (B) The documentation used to meet paragraph (g)(10)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.
 
-<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(B)"], tabbed} -->
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(B) Documentation – public access"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(B)*"
 	Technical outcome – The documentation used to meet paragraph (g)(10)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.
 	
