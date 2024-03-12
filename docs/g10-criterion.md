@@ -275,7 +275,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 		authz -->> authz: End-user authorization
 		alt Granted
 			authz -->> app: Authorization granted
-            alt App is capable of storing a client secret
+            alt App is a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
 			app ->> authz: Access token request
 			note over app,authz: Client secret used for authentication
             else App is a native app capable of securing a refresh token
@@ -345,7 +345,7 @@ new period of no less than three months.
 			participant fhir as Health IT Module's FHIR® Server
 
 			loop while refresh token is valid
-				alt App is capable of storing a client secret
+				alt App is a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
 					app ->> authz: Refresh token
 					note over app,authz: Client secret used for authentication
 					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) requires <br/> that apps capable of storing a client secret have their refresh tokens renewed <br/> (i.e., made valid for a new period of no less than three months). This could <br/> include the authorization server issuing a new refresh token or renewing the <br/> existing refresh token.
@@ -355,7 +355,7 @@ new period of no less than three months.
 						authz -->> app: New access token response
 						authz -->> authz: Existing refresh token renewed
 					end
-				else App is not capable of storing a client secret
+				else App is not a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
 					app ->> authz: Refresh token
 					authz -->> app: New access token response
 				end
