@@ -53,7 +53,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Data Response (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(A)**" 
-    (i) Data response. (A) Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specifications adopted in § 170.215(a) and in § 170.215(b)(1), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
+    (i) *Data response*. (A) Respond to requests for a single patient's data according to the standards and implementation specifications adopted in § 170.215(a) and in § 170.215(b)(1), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(A) Data response – single patient"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(A)*"
@@ -99,7 +99,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Data Response (Multiple Patients)
 ???+ quote "**Regulation text at § 170.315(g)(10)(i)(B)**"
-    (B) Respond to requests for multiple patients' data as a group according to the standards and implementation specifications adopted in § 170.215(a), (b)(1), and (d), for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
+    (B) Respond to requests for multiple patients' data as a group according to the standards and implementation specifications adopted in § 170.215(a), (b)(1), and (d), for each of the data included in the standards adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(B) Data response – multiple patients"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(i)(B)*"
@@ -119,7 +119,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Supported Search Operations (Single Patient)
 ???+ quote "**Regulation text at § 170.315(g)(10)(ii)(A)**"
-    (ii) Supported search operations. (A) Respond to search requests for a single patient’s data consistent with the search criteria included in the implementation specifications adopted in § 170.215(b)(1), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”
+    (ii) *Supported search operations*. (A) Respond to search requests for a single patient's data consistent with the search criteria included in the implementation specifications adopted in § 170.215(b)(1), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A) Supported search operations – single patient"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(ii)(A)*"
@@ -153,12 +153,12 @@ healthcare providers to implement Health IT Modules certified to requirements in
 *Additional Clarifications to the (g)(10) CCG:*
 
 - The scope of data available in the data responses defined in § 170.315(g)(10)(i) must be supported for searches for multiple patients via the supported search operations finalized in § 170.315(g)(10)(ii).
-- The HL7® FHIR® Bulk Data Access (Flat FHIR®) (v1.0.0: STU 1) implementation specification adopted in § 170.215(a)(4) includes mandatory support for the “group-export” "OperationDefinition."
-- ONC has not included a requirement for Bulk FHIR® import because the standards for these features are still being developed by industry. Applications or systems seeking to import information formatting according to the <a target = "_blank" href = "http://www.hl7.org/fhir/uv/bulkdata/history.cfml">HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.0:STU 1)</a> can use several methods developed by industry, or can refer to Bulk FHIR® import methods being defined by <a target = "_blank" href = "https://github.com/HL7/bulk-data">HL7® at the HL7® FHIR® Bulk Data GitHub page</a>.
+- The HL7® FHIR® Bulk Data Access (Flat FHIR®) (v1.0.1: STU 1) implementation specification adopted in § 170.215(d) includes mandatory support for the “group-export” "OperationDefinition."
+- ONC has not included a requirement for Bulk FHIR® import because the standards for these features are still being developed by industry. Applications or systems seeking to import information formatting according to the <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/">HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)</a> can use several methods developed by industry, or can refer to Bulk FHIR® import methods being defined by <a target = "_blank" href = "https://github.com/smart-on-fhir/bulk-import/blob/master/import.md">HL7® at the HL7® FHIR® Bulk Data GitHub page</a>.
 
 ### Application Registration
 ???+ quote "**Regulation text at § 170.315(g)(10)(iii)**"
-    (iii) Application registration. Enable an application to register with the Health IT Module’s “authorization server.”
+    (iii) *Application registration*. Enable an application to register with the Health IT Module's “authorization server.”
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(iii) Application registration"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iii)*"
@@ -184,14 +184,14 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 - ONC expects that apps executed within an implementer’s clinical environment will be registered with an authorization server, but ONC does not require a health IT developer to demonstrate its registration process for these “provider-facing” apps.
 - The requirement that health IT developers must enable an application to register with the § 170.315(g)(10)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and API Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of Certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.
-- Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> established in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1665">ONC Cures Act Final Rule</a>.
+- Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a>.
 
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(iii): Application Registration](inquiry-portal/g10-inquiries.md#paragraph-g10iii-application-registration)
 
 ### Secure Connection
-???+ quote "**Regulation text at § 170.315(g)(10)(iv)(A)**" 
-    (iv) Secure connection. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(b)(1) and (c).
+???+ quote "**Regulation text at § 170.315(g)(10)(iv)**" 
+    (iv) *Secure connection*. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(b)(1) and (c). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(d).
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(iv) Secure connection"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(iv)*"
@@ -210,7 +210,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 ### First time Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(1)**"
-    (v) Authentication and authorization—(A) Authentication and authorization for patient and user scopes—(1) First time connections—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (ii) A Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c). (iii) A Health IT Module’s authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token. 
+    (v) *Authentication and authorization*—(A) *Authentication and authorization for patient and user scopes*—(1) *First time connections*—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (ii) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (iii) A Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(1) Authentication and authorization – Authentication and authorization for patient and user scopes – First time connections"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(A)(1)*"
@@ -312,7 +312,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 
 ### Subsequent Authentication / Authorization for Single Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(V)(A)(2)**"
-    (2) Subsequent connections. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(c) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c).
+    (2) *Subsequent connections*. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(c) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c).
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(2) Authentication and authorization – Authentication and authorization for patient user scopes – Subsequent connections"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(V)(A)(2)*"
@@ -335,7 +335,7 @@ new period of no less than three months.
 ??? info "Subsequent Authentication / Authorization for Single Patient Services: Sequence Diagram"
     As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">HL7® SMART Application Launch Framework Implementation Guide</a>, authorization servers can send and receive refresh tokens to and from apps in two different OAuth 2.0 connection flows. On [first time connections (see sequence diagram above)](#first-time-authentication-authorization-for-single-patient-services), an app requests an authorization code and is granted one after obtaining end-user authorization. An app can then exchange a valid authorization code for an initial access token and initial refresh token.
 	
-	After an access token expires, an app can subsequently connect to an authorization server to exchange a valid refresh token for a new access token and also have its refresh token renewed without needing to obtain end-user authorization. During both exchanges, security is increased (i.e., greater protection against leaked refresh tokens) when confidential apps use their client secret for client authentication. The (g)(10) criterion paragraphs at § 170.315(g)(10)(v)(A)(1)(ii) and § 170.315(g)(10)(v)(A)(2)(ii) require that apps “capable of storing a client secret” and thus capable of authenticating themselves, must be given a refresh token upon valid first time connections and have their refresh tokens renewed upon valid subsequent connections. This enables persistent access for apps capable of storing a client secret without requiring end-user re-authorization.
+	After an access token expires, an app can subsequently connect to an authorization server to exchange a valid refresh token for a new access token and also have its refresh token renewed without needing to obtain end-user authorization. During both exchanges, security is increased (i.e., greater protection against leaked refresh tokens) when confidential apps use their client secret for client authentication. The (g)(10) criterion paragraphs at § 170.315(g)(10)(v)(A)(1)(ii) and § 170.315(g)(10)(v)(A)(2)(ii) require that apps using the “confidential app” profile and thus capable of authenticating themselves, must be given a refresh token upon valid first time connections and have their refresh tokens renewed upon valid subsequent connections. This enables persistent access for apps using the “confidential app” profile without requiring end-user re-authorization.
 
 	**Subsequent connections:**
 	``` mermaid
@@ -348,7 +348,7 @@ new period of no less than three months.
 				alt App is a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
 					app ->> authz: Refresh token
 					note over app,authz: Client secret used for authentication
-					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) requires <br/> that apps capable of storing a client secret have their refresh tokens renewed <br/> (i.e., made valid for a new period of no less than three months). This could <br/> include the authorization server issuing a new refresh token or renewing the <br/> existing refresh token.
+					note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) requires <br/> that apps using the “confidential app” profile have their refresh tokens renewed <br/> (i.e., made valid for a new period of no less than three months). This could <br/> include the authorization server issuing a new refresh token or renewing the <br/> existing refresh token.
 					alt Health IT Module's Authorization Server issues a new refresh token
 						authz -->> app: New access token and new refresh token response
 					else Health IT Module's Authorization Server renews existing refresh token
@@ -367,7 +367,7 @@ new period of no less than three months.
 
 ### Authentication / Authorization for Multiple Patient Services
 ???+ quote "**Regulation text at § 170.315(g)(10)(v)(B)**" 
-    (B) Authentication and authorization for system scopes. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(d) and the application must be issued a valid access token.
+    (B) *Authentication and authorization for system scopes*. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(d) and the application must be issued a valid access token.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B) Authentication and authorization – Authentication and authorization for system scopes"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(v)(B)*"
@@ -430,7 +430,7 @@ new period of no less than three months.
 
 ### Patient Authorization Revocation
 ???+ quote "**Regulation text at § 170.315(g)(10)(vi)**" 
-    (vi) Patient authorization revocation. A Health IT Module’s authorization server must be able to revoke and must revoke an authorized application’s access at a patient’s direction within 1 hour of the request.
+    (vi) *Patient authorization revocation*. A Health IT Module's authorization server must be able to revoke and must revoke an authorized application's access at a patient's direction within 1 hour of the request.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(vi) Patient authorization revocation"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vi)*"
@@ -450,7 +450,7 @@ new period of no less than three months.
 	
 ### Token Introspection
 ???+ quote "**Regulation text at § 170.315(g)(10)(vii)**" 
-    (vii) Token introspection. A Health IT Module’s authorization server must be able to receive and validate tokens it has issued in accordance with an implementation specification in § 170.215(c).
+    (vii) *Token introspection*. A Health IT Module's authorization server must be able to receive and validate tokens it has issued in accordance with an implementation specification in § 170.215(c).
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(vii) Token introspection"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(vii)*"
@@ -464,7 +464,7 @@ new period of no less than three months.
 	
 ### Technical API Documentation Content
 ???+ quote "**Regulation text at § 170.315(g)(10)(viii)(A)**" 
-    (viii) Documentation. (A) The API(s) must include complete accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s). (3) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module's authorization server.
+    (viii) *Documentation*. (A) The API(s) must include complete accompanying documentation that contains, at a minimum: (1) API syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the API and process its response(s). (3) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module's authorization server.
 
 <!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(A) Documentation – minimum requirements"], tabbed} -->
 ??? quote "*Clarifications included in the (g)(10) CCG that apply to paragraph § 170.315(g)(10)(viii)(A)*"
@@ -510,30 +510,22 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 	</p>
 	<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p>
 
-??? tip "Explore Inferno for (g)(10) Testing"
-	**Inferno Walkthroughs/Documentation**
-
-	  - :material-video: <a target = "_blank" href = "https://youtu.be/FoBbbyddybA">Inferno Walkthrough (Video)</a>
-	  - :material-file-document: <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/wiki/Walkthrough">Inferno Walkthrough (GitHub Wiki)</a>
-	
+??? tip "Explore Inferno for (g)(10) Testing"	
 	**Get Involved and Ask Questions**
 
-	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
 	 - Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org (*creating a Zulip account is free*). This stream is actively monitored by Inferno's development team.
 	 - Submit inquiries to ONC via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.
 	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
-
-### Drummond G10+ FHIR API powered by Touchstone
-In July 2022, <a target = "_blank" href = "https://www.healthit.gov/buzz-blog/healthit-certification/new-testing-method-available-for-standardized-api-criterion">ONC announced</a> the approval of the Drummond Group’s <a target = "_blank" href = "https://www.drummondgroup.com/compliance/payer-and-patient-access-certification/">Drummond G10+ FHIR API powered by Touchstone</a> tool, a new alternative test method (ATM) for testing conformance to ONC’s §170.315(g)(10) Standardized API for patient and population services certification criterion. Through this new ATM, software developers will now have a new option for conformance testing in addition to the previously approved Inferno (g)(10) Standardized API Test Kit. The approval of Drummond’s testing method continues ONC’s mission to further diversify the suite of test methods used as part of the ONC Health IT Certification Program.
+	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
 
 ### Real World Testing Condition and Maintenance of Certification
 
 **Health IT developers are required to test the real-world use of APIs.**
 
-The § 170.315(g)(10) criterion is included under the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3580">Real World Testing Condition and Maintenance of Certification requirements of the ONC Cures Act Final Rule</a> in §170.405, which states:
+The § 170.315(g)(10) criterion is included under the <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/section-170.405">Real World Testing Condition and Maintenance of Certification requirements</a> in §170.405, which state:
 
 !!! note ""
-     “A health IT developer with Health IT Module(s) certified to any one or more 2015 Edition certification criteria in § 170.315(b), (c)(1) through (3), (e)(1), (f), (g)(7) through (10), and (h) must successfully test the real world use of those Health IT Module(s) for interoperability (as defined in 42 U.S.C.300jj(9) and § 170.102) in the type of setting in which such Health IT Module(s) would be/is marketed.” 
+     “A health IT developer with one or more Health IT Module(s) certified to any one or more of the ONC Certification Criteria for Health IT in § 170.315(b), (c)(1) through (3), (e)(1), (f), (g)(7) through (10), and (h) must successfully test the real world use of those Health IT Module(s) for interoperability (as defined in 42 U.S.C. 300jj(9) and § 170.102) in the type of setting in which such Health IT Module(s) would be/is marketed.” 
  
  More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-02/Real-World-Testing-Fact-Sheet.pdf">Real World Testing Fact Sheet</a> and <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-08/ONC-Real%20World%20Testing%20Resource%20Guide_Aug%202021.pdf">Real World Testing Resource Guide</a>.
 
@@ -542,7 +534,7 @@ The § 170.315(g)(10) criterion is included under the <a target = "_blank" href 
 
 ONC has established the voluntary Standards Version Advancement Process (SVAP) to enable health IT developers to incorporate newer versions of approved standards and implementation specifications, as part of the Real World Testing Condition and Maintenance of Certification requirements (§ 170.405) of the 21st Century Cures Act. 
 
-Using SVAP, Certified Health IT Developers are permitted to voluntarily use a more advanced version of the standard(s) and implementation specification(s) approved by the National Coordinator, than is adopted in the ONC 2015 Edition Certification Criteria. Currently, this flexibility is limited to standards and implementation specifications that are adopted in the certification criteria required to meet the Real World Testing Condition of Certification, which include § 170.315(b), (c)(1) through (c)(3), (e)(1), (f), (g)(7) through (g)(10), and (h). Health IT developers must ensure that they address standards adopted under SVAP in their Real World Testing plans and results submitted to Authorized Certification Bodies. More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/isa/standards-version-advancement-process">SVAP landing page</a>.
+Using SVAP, Certified Health IT Developers are permitted to voluntarily use a more advanced version of the standard(s) and implementation specification(s) approved by the National Coordinator, than is adopted in the ONC Certification Criteria. Currently, this flexibility is limited to standards and implementation specifications that are adopted in the certification criteria required to meet the Real World Testing Condition of Certification, which include § 170.315(b), (c)(1) through (3), (e)(1), (f), (g)(7) through (10), and (h). Health IT developers must ensure that they address standards adopted under SVAP in their Real World Testing plans and results submitted to Authorized Certification Bodies. More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/isa/standards-version-advancement-process">SVAP landing page</a>.
 
 {==
 
