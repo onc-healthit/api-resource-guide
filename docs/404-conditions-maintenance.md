@@ -167,9 +167,15 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(2)*"
 	***Clarifications:***
 	
-	* Certified API Developers must make available appropriately scoped service base URLs that can be used by patients to access their EHI for Health IT Modules certified to § 170.315(g)(10).
+	* Certified API Developers must publish in accordance with the requirements at § 170.404(b)(2) the service base URLs and related organization details that can be used by patients to access their EHI for Health IT Modules certified to § 170.315(g)(10) by December 31, 2024.
 	* As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR®) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR® service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR® service base URLs they centrally manage on behalf of API Information Sources.
-	* To be open and transparent to the public, developers must provide a hyperlink to the list of service base URLs to be published with the product on the ONC Certified Health IT Product List (CHPL). Certified API Developers are encouraged to use a standardized format when publishing the service base URLs for all of its customers. ONC recommends Certified API Developers leverage the [HL7 FHIR 4.0.1 “Endpoint” resource](https://www.hl7.org/fhir/endpoint.html), or profiles of this resource such as the Validated Healthcare Directory Implementation Guide STU1 [“vhdir-endpoint” profile](http://hl7.org/fhir/uv/vhdir/2018Jan/StructureDefinition-vhdir-endpoint.html), to represent service base URLs that can be used by patients to access their health information. ONC also encourages developers to provide as much information about the service base URLs as available, including the API Information Source’s organization details, such as name, location, and provider identifiers (e.g., NPI, CCN, or health system ID). These steps will help industry coalesce around standards that enable application developers to more easily and consistently provide patients access to their electronic health information.
+	* To be open and transparent to the public, developers must provide a hyperlink to the FHIR® Bundle of service base URLs and related organization details to be published with the § 170.315(g)(10)-certified product on the ONC Certified Health IT Product List (CHPL).
+	* Facility level identifiers, for the purposes of certification to these publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not, for example, required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has. [see [89 FR 1288](https://www.federalregister.gov/d/2023-28857/p-1183)]
+	* Certified API Developers have the flexibility to consider using “Organization” and “Endpoint” FHIR® resources profiles, such as the profiles in the [Patient-Access Brands and Endpoints](https://hl7.org/fhir/smart-app-launch/2024Jan/brands.html) specification or [Validated Healthcare Directory IG](https://hl7.org/fhir/uv/vhdir/2018Jan/index.html). [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
+	* For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at §170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
+	
+	 
+	
 	
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (b)(2): Service base URL publiciation](inquiry-portal/404-inquiries.md#paragraph-b2-service-base-url-publiciation)
@@ -191,7 +197,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(3)*"
 	***Clarifications:***
 	
-	* A Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must provide all API Information Sources with such certified API technology with certified API technology certified to the criterion in § 170.315(g)(10) by no later than December 31, 2022.
+	* There are no additional clarifications.
 	
 
 !!! note ""
@@ -205,7 +211,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(4)*"
 	***Clarifications:***
 	
-	* By no later than April 5, 2021, a Certified API Developer with Health IT Module(s) certified to the certification criteria in § 170.315(g)(7), (8), or (9) must comply with § 170.404(a), including revisions to its existing business and technical API documentation and make such documentation available via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps.
+	* There are no additional clarifications.
 	
 ### Definitions
 ???+ quote "**Regulation text at § 170.404(C)**"
