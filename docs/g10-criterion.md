@@ -1,6 +1,6 @@
 <!-- $criterion-endpoint{"test-method/standardized-api-patient-and-population-services"} -->
 
-# Standardized API Certification Criterion at § 170.315(g)(10)
+# HL7 FHIR API Criterion at § 170.315(g)(10)
 
 This section considers the HL7®[^1] FHIR® standardized API for patient and population services certification criterion, including all of the content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162">ONC Cures Act Final Rule API preamble</a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136">IFC API preamble</a>, <a target = "_blank" href = "https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and">HTI-1 API preamble</a>, and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">regulation paragraphs in § 170.315(g)(10)</a>.
 
