@@ -8,6 +8,7 @@
 *[IFC]: interim final rule with comment period
 *[API criteria]: Certification criteria at § 170.315(g)(7) - (10)
 *[SVAP]: Standards Version Advancement Process
+*[USCDI]: United States Core Data for Interoperability
 
 
 <!-- Standards Referenced -->
@@ -15,16 +16,18 @@
 *[FHIR]: HL7® Fast Healthcare Interoperability Resources
 
 *[a)(1]: Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019
-*[a)(2]: FHIR® US Core Implementation Guide STU V3.1.1
-*[a)(3]: HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0
+*[b)(1]: FHIR® US Core Implementation Guide STU V3.1.1
+*[b)(2]: FHIR® US Core Implementation Guide STU V6.1.0
+*[c)(1]: HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0
+*[c)(2]: HL7® SMART Application Launch Framework Implementation Guide Release 2.0.0
+*[d)(1]: HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)
+*[e)(1]: OpenID Connect Core 1.0 incorporating errata set 1
 *[170.213]: United States Core Data for Interoperability (USCDI)
-*[USCDI]: United States Core Data for Interoperability
 
 <!-- ONC Certification Criteria -->
 *[g)(10]: Standardized HL7® FHIR-based API certification criterion
 *[170.404]: API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)
 *[g)(7]: Non-standardized API certification criterion (patient selection)
-*[g)(8]: Non-standardized API certification criterion (data category request)
 *[g)(9]: Non-standardized API certification criterion (all data request)
 *[170.405]: Real World Testing Condition and Maintenance of Certification requirements
 
