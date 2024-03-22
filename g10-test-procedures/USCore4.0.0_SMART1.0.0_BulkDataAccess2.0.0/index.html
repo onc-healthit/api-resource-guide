@@ -1,0 +1,1073 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://onc-healthit.github.io/api-resource-guide/g10-test-procedures/USCore4.0.0_SMART1.0.0_BulkDataAccess2.0.0/">
+      
+      
+      
+      
+      <link rel="icon" href="../../images/logo.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.14">
+    
+    
+      
+        <title>(g)(10) Test Procedure using: US Core 4.0.0, SMART 1.0.0, Bulk Data Access 2.0.0 - ONC Health IT Certification Program API Resource Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.10ba22f1.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function n(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],n("js",new Date),n("config","G-9FHYY7H053"),document.addEventListener("DOMContentLoaded",function(){document.forms.search&&document.forms.search.query.addEventListener("blur",function(){this.value&&n("event","search",{search_term:this.value})}),document$.subscribe(function(){var a=document.forms.feedback;if(void 0!==a)for(var e of a.querySelectorAll("[type=submit]"))e.addEventListener("click",function(e){e.preventDefault();var t=document.location.pathname,e=this.getAttribute("data-md-value");n("event","feedback",{page:t,data:e}),a.firstElementChild.disabled=!0;e=a.querySelector(".md-feedback__note [data-md-value='"+e+"']");e&&(e.hidden=!1)}),a.hidden=!1}),location$.subscribe(function(e){n("config","G-9FHYY7H053",{page_path:e.pathname})})});var e=document.createElement("script");e.async=!0,e.src="https://www.googletagmanager.com/gtag/js?id=G-9FHYY7H053",document.getElementById("__analytics").insertAdjacentElement("afterEnd",e)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#g10-test-procedure-using-us-core-400-smart-100-bulk-data-access-200" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="ONC Health IT Certification Program API Resource Guide" class="md-header__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ONC Health IT Certification Program API Resource Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              (g)(10) Test Procedure using: US Core 4.0.0, SMART 1.0.0, Bulk Data Access 2.0.0
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/onc-healthit/api-resource-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    onc-healthit/api-resource-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="ONC Health IT Certification Program API Resource Guide" class="md-nav__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../../images/logo.png" alt="logo">
+
+    </a>
+    ONC Health IT Certification Program API Resource Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/onc-healthit/api-resource-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    onc-healthit/api-resource-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../g10-criterion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HL7 FHIR API Criterion - § 170.315(g)(10)
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../404-conditions-maintenance/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    API Conditions and Maintenance of Certification - § 170.404
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../version-directory/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Directory of Published Versions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../helpful-links/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Helpful Links
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.healthit.gov/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HealthIT.gov
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10iii-application-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(iii) – Application registration
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(iii) – Application registration">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#application-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      Application Registration
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10iv-secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(iv) – Secure connection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(iv) – Secure connection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Secure Connection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10va-authentication-and-authorization-for-patient-and-user-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(v)(A) – Authentication and authorization for patient and user scopes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(v)(A) – Authentication and authorization for patient and user scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-and-authorization-for-patient-and-user-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication and Authorization for Patient and User Scopes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequent-connections-authentication-and-authorization-for-patient-and-user-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Subsequent Connections: Authentication and Authorization for Patient and User Scopes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10vi-patient-authorization-revocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(vi) – Patient authorization revocation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(vi) – Patient authorization revocation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patient-authorization-revocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patient Authorization Revocation
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10vb-authentication-and-authorization-for-system-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(v)(B) – Authentication and authorization for system scopes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(v)(B) – Authentication and authorization for system scopes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#authentication-and-authorization-for-system-scopes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Authentication and Authorization for System Scopes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10vii-token-introspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(vii) – Token introspection
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(vii) – Token introspection">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#token-introspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      Token Introspection
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10ii-supported-search-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(ii) – Supported search operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(ii) – Supported search operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-for-a-single-patients-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Search Operations for a Single Patient’s Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-for-multiple-patients-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Supported Search Operations for Multiple Patients’ Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10i-data-response" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(i) – Data response
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(i) – Data response">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-response-checks-for-single-and-multiple-patients" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Response Checks for Single and Multiple Patients
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-to-requests-for-a-single-patients-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response to Requests for a Single Patient’s Data
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#response-to-requests-for-multiple-patients-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Response to Requests for Multiple Patients' Data
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#paragraph-g10viii-documentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Paragraph (g)(10)(viii) – Documentation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Paragraph (g)(10)(viii) – Documentation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#api-documentation-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      API Documentation Requirements
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="g10-test-procedure-using-us-core-400-smart-100-bulk-data-access-200">(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) Test Procedure using: US Core 4.0.0, SMART 1.0.0, Bulk Data Access 2.0.0<a class="headerlink" href="#g10-test-procedure-using-us-core-400-smart-100-bulk-data-access-200" title="Permanent link">&para;</a></h1>
+<h2 id="paragraph-g10iii-application-registration">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iii) – Application registration<a class="headerlink" href="#paragraph-g10iii-application-registration" title="Permanent link">&para;</a></h2>
+<h3 id="application-registration">Application Registration<a class="headerlink" href="#application-registration" title="Permanent link">&para;</a></h3>
+<p>1. APP-REG-1: 
+The health IT developer demonstrates the Health IT Module supports application registration with an authorization server for the purposes of Electronic Health Information (EHI) access for single patients, including support for application registration functions to enable authentication and authorization in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v). </p>
+<p>2. APP-REG-2: 
+The health IT developer demonstrates the Health IT Module supports application registration with an authorization server for the purposes of EHI access for multiple patients including support for application registration functions to enable authentication and authorization in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v). </p>
+<h2 id="paragraph-g10iv-secure-connection">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iv) – Secure connection<a class="headerlink" href="#paragraph-g10iv-secure-connection" title="Permanent link">&para;</a></h2>
+<h3 id="secure-connection">Secure Connection<a class="headerlink" href="#secure-connection" title="Permanent link">&para;</a></h3>
+<p>1. SEC-CNN-1: 
+For all transmissions between the Health IT Module and the application, the health IT developer demonstrates the use of a secure and trusted connection in accordance with the implementation specifications adopted in § 170.215(a)(2) and § 170.215(a)(3), including:</p>
+<ul>
+<li>Using TLS version 1.2 or higher; and</li>
+<li>Conformance to <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Communications Security requirements.</li>
+</ul>
+<h2 id="paragraph-g10va-authentication-and-authorization-for-patient-and-user-scopes">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A) – Authentication and authorization for patient and user scopes<a class="headerlink" href="#paragraph-g10va-authentication-and-authorization-for-patient-and-user-scopes" title="Permanent link">&para;</a></h2>
+<h3 id="authentication-and-authorization-for-patient-and-user-scopes">Authentication and Authorization for Patient and User Scopes<a class="headerlink" href="#authentication-and-authorization-for-patient-and-user-scopes" title="Permanent link">&para;</a></h3>
+<p>1. AUT-PAT-1: 
+The health IT developer demonstrates the ability of the Health IT Module to support the following for <code>EHR-Launch</code>, <code>Standalone-Launch</code>, and “Both” (<code>EHR-Launch</code> and <code>Standalone-Launch</code>) as specified in the implementation specification adopted in § 170.215(a)(3).</p>
+<p>2. AUT-PAT-2: 
+[EHR-Launch] The health IT developer demonstrates the ability of the Health IT Module to initiate a “launch sequence” using the <code>launch-ehr</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” SMART EHR Launch mode detailed in the implementation specification adopted in § 170.215(a)(3), including:</p>
+<ul>
+<li>Launching the registered launch URL of the application; and</li>
+<li>Passing the parameters: <code>iss</code> and <code>launch</code>. </li>
+</ul>
+<p>3. AUT-PAT-3:  [Standalone-Launch] The health IT developer demonstrates the ability of the Health IT Module to launch using the <code>launch-standalone</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” SMART Standalone Launch mode detailed in the implementation specification adopted in § 170.215(a)(3).</p>
+<p>4. AUT-PAT-4: 
+[Standalone-Launch] The health IT developer demonstrates the ability of the Health IT Module to support SMART’s public client profile.</p>
+<p>5. AUT-PAT-5: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to support the following as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>):</p>
+<ul>
+<li>The <code>.well-known/smart-configuration.json</code> path; and</li>
+<li>A <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® <code>CapabilityStatement</code>.</li>
+</ul>
+<p>6. AUT-PAT-6: 
+[Both] The health IT developer demonstrates the ability of the <code>.well-known/smart-configuration.json</code> path to support at least the following as detailed in the implementation specification adopted in § 170.215(a)(3): </p>
+<ul>
+<li><code>authorization_endpoint</code>;</li>
+<li><code>token_endpoint</code>; and</li>
+<li><code>capabilities</code> (including support for all the “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capabilities”).</li>
+</ul>
+<p>7. AUT-PAT-7: 
+[Both] The health IT developer demonstrates the ability of the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® <code>CapabilityStatement</code> to support at least the following components as detailed in the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>), including:</p>
+<ul>
+<li><code>authorize</code>; and</li>
+<li><code>token</code>. </li>
+</ul>
+<p>8. AUT-PAT-8: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to receive an authorization request according to the implementation specification adopted in § 170.215(a)(3), including support for the following parameters:</p>
+<ul>
+<li><code>response_type</code>;</li>
+<li><code>client_id</code>;</li>
+<li><code>redirect_uri</code>;</li>
+<li><code>launch</code> (for EHR-Launch mode only);</li>
+<li><code>scope</code>;</li>
+<li><code>state</code>; and</li>
+<li><code>aud</code>.</li>
+</ul>
+<p>9. AUT-PAT-9: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to support the receipt of the following scopes and capabilities according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b):</p>
+<ul>
+<li><code>openid</code> (to support <code>sso-openid-connect</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability”);</li>
+<li><code>FHIR®User</code> (to support <code>sso-openid-connect</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability”);</li>
+<li><code>need_patient_banner</code> (to support <code>context-banner</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” for EHR-Launch mode only);</li>
+<li><code>smart_style_url</code> (to support <code>context-style</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” for EHR-Launch mode only);</li>
+<li><code>launch/patient</code> (to support <code>context-standalone-patient</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” for Standalone-Launch mode only);</li>
+<li><code>launch</code> (for EHR-Launch mode only);</li>
+<li><code>offline_access</code> (to support <code>permission-offline</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability”);</li>
+<li>Patient-level scopes (to support <code>permission-patient</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability”); and</li>
+<li>User-level scopes (to support <code>permission-user</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability”).</li>
+</ul>
+<p>10. AUT-PAT-10: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including the ability for the end-user to authorize an application to receive EHI based on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource-level scopes for all of the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources associated with the profiles specified in the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> and implementation specification adopted in § 170.215(a)(2).</p>
+<p>If using US Core 3.1.1, 4.0.0, or 5.0.1, these resources include:</p>
+<ul>
+<li><code>AllergyIntolerance</code>;</li>
+<li><code>CarePlan</code>;</li>
+<li><code>CareTeam</code>;</li>
+<li><code>Condition</code>;</li>
+<li><code>Device</code>;</li>
+<li><code>DiagnosticReport</code>;</li>
+<li><code>DocumentReference</code>;</li>
+<li><code>Goal</code>;</li>
+<li><code>Immunization</code>;</li>
+<li><code>Medication</code> (if supported);</li>
+<li><code>MedicationRequest</code>;</li>
+<li><code>Observation</code>;</li>
+<li><code>Patient</code>;</li>
+<li><code>Procedure</code>; and</li>
+<li><code>Provenance</code>.</li>
+</ul>
+<p>11. AUT-PAT-11: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to evaluate the authorization request and request end-user input, if applicable (required for patient-facing applications), including either the ability for the end-user to explicitly enable / disable the <code>offline_access</code> scope or information communicating the application’s request for the <code>offline_access</code> scope.</p>
+<p>12. AUT-PAT-12: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to deny an application’s authorization request according to a patient’s preferences selected in steps 10, and 11, of this section in accordance with the implementation specification adopted in § 170.215(a)(3).</p>
+<p>13. AUT-PAT-13: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return an error response if the <code>aud</code> parameter provided by an application to the Health IT Module in Step 8, is not a valid <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource server associated with the Health IT Module's authorization server.</p>
+<p>14. AUT-PAT-14: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to grant an application access to EHI by returning an authorization code to the application according to the implementation specification adopted in § 170.215(a)(3), including the following parameters:</p>
+<ul>
+<li><code>code</code>; and</li>
+<li><code>state</code>.</li>
+</ul>
+<p>15. AUT-PAT-15: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to receive the following parameters from an application according to the implementation specification adopted in § 170.215(a)(3):</p>
+<ul>
+<li><code>grant_type</code>;</li>
+<li><code>code</code>;</li>
+<li><code>redirect_uri</code>;</li>
+<li><code>client_id</code>; and</li>
+<li>Authorization header including <code>client_id</code> and <code>client_secret</code>.</li>
+</ul>
+<p>16. AUT-PAT-16: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return a JSON object to applications according to the implementation specification adopted in § 170.215(a)(3) and standard adopted in § 170.215(b), including the following:</p>
+<ul>
+<li><code>access_token</code>;</li>
+<li><code>token_type</code>;</li>
+<li><code>scope</code>;</li>
+<li><code>id_token</code>;</li>
+<li><code>refresh_token</code> (valid for a period of no shorter than three months);</li>
+<li>HTTP <code>Cache-Control</code> response header field with a value of “no-store”;</li>
+<li>HTTP <code>Pragma</code> response header field with a value of “no-cache”;</li>
+<li><code>patient</code> (to support <code>context-ehr-patient</code> and <code>context-standalone-patient</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capabilities”);</li>
+<li><code>need_patient_banner</code> (to support <code>context-banner</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” for EHR-Launch mode only); and</li>
+<li><code>smart_style_url</code> (to support <code>context-style</code> “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” for EHR-Launch mode only).</li>
+</ul>
+<p>17. AUT-PAT-17: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to provide an OpenID Connect well-known URI in accordance with the implementation specification adopted in § 170.215(b), including:</p>
+<ul>
+<li>All required fields populated according to implementation specification adopted in § 170.215(b); and</li>
+<li>Valid JWKS populated according to implementation specification can be retrieved via JWKS URI.</li>
+</ul>
+<p>18. AUT-PAT-18: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to deny an application’s authorization request in accordance with the implementation specification adopted in § 170.215(a)(3).</p>
+<p>19. AUT-PAT-19: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to return a <code>Patient</code> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource that matches the patient context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).</p>
+<p>20. AUT-PAT-32: 
+[EHR-Launch] The following must be supported if using US Core 5.0.1: The health IT developer demonstrates the ability of the Health IT Module to return an <code>Encounter</code> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource that matches the encounter context provided in step AUT-PAT-9 of this section according to the implementation specification adopted in § 170.215(a)(2).</p>
+<p>21. AUT-PAT-20: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to grant an access token when a refresh token is supplied according to the implementation specification adopted in § 170.215(a)(2).</p>
+<p>22. AUT-PAT-21: 
+[Both] The health IT developer demonstrates the ability of the Health IT Module to grant a refresh token valid for a period of no less than three months to native applications capable of securing a refresh token.</p>
+<h3 id="subsequent-connections-authentication-and-authorization-for-patient-and-user-scopes">Subsequent Connections: Authentication and Authorization for Patient and User Scopes<a class="headerlink" href="#subsequent-connections-authentication-and-authorization-for-patient-and-user-scopes" title="Permanent link">&para;</a></h3>
+<p>1. AUT-PAT-22: 
+The health IT developer demonstrates the ability of the Health IT Module to issue a refresh token valid for a new period of no shorter than three months without requiring re-authentication and re-authorization when a valid refresh token is supplied by the application according to the implementation specification adopted in § 170.215(a)(3).</p>
+<p>2. AUT-PAT-23: 
+The health IT developer demonstrates the ability of the Health IT Module to return an error response when supplied an invalid refresh token as specified in the implementation specification adopted in § 170.215(a)(3).</p>
+<h2 id="paragraph-g10vi-patient-authorization-revocation">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vi) – Patient authorization revocation<a class="headerlink" href="#paragraph-g10vi-patient-authorization-revocation" title="Permanent link">&para;</a></h2>
+<h3 id="patient-authorization-revocation">Patient Authorization Revocation<a class="headerlink" href="#patient-authorization-revocation" title="Permanent link">&para;</a></h3>
+<p>1. PAR-1: 
+The health IT developer demonstrates the ability of the Health IT Module to revoke access to an authorized application at a patient’s direction, including a demonstration of the inability of the application with revoked access to receive patient EHI.</p>
+<h2 id="paragraph-g10vb-authentication-and-authorization-for-system-scopes">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B) – Authentication and authorization for system scopes<a class="headerlink" href="#paragraph-g10vb-authentication-and-authorization-for-system-scopes" title="Permanent link">&para;</a></h2>
+<h3 id="authentication-and-authorization-for-system-scopes">Authentication and Authorization for System Scopes<a class="headerlink" href="#authentication-and-authorization-for-system-scopes" title="Permanent link">&para;</a></h3>
+<p>1. AUT-SYS-1: 
+The health IT developer demonstrates the ability of the Health IT Module to support OAuth 2.0 client credentials grant flow in accordance with the implementation specification adopted in § 170.215(a)(4).</p>
+<p>2. AUT-SYS-2: 
+The health IT developer demonstrates the ability of the Health IT Module to support the following parameters according to the implementation specification adopted in § 170.215(a)(4):</p>
+<ul>
+<li><code>scope</code>; </li>
+<li><code>grant_type</code>;</li>
+<li><code>client_assertion_type</code>; and</li>
+<li><code>client_assertion</code>.    </li>
+</ul>
+<p>3. AUT-SYS-3: 
+The health IT developer demonstrates the ability of the Health IT Module to support the following JSON Web Token (JWT) Headers and Claims according to the implementation specification adopted in § 170.215(a)(4):</p>
+<ul>
+<li><code>alg</code> header;</li>
+<li><code>kid</code> header;</li>
+<li><code>typ</code> header;</li>
+<li><code>iss</code> claim;</li>
+<li><code>sub</code> claim;</li>
+<li><code>aud</code> claim;</li>
+<li><code>exp</code> claim; and</li>
+<li><code>jti</code> claim.</li>
+</ul>
+<p>4. AUT-SYS-4: 
+The health IT developer demonstrates the ability of the Health IT Module to receive and process the JSON Web Key (JWK) Set via a TLS-protected URL to support authorization for system scopes in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B).</p>
+<p>5. AUT-SYS-5: 
+The health IT developer demonstrates that the Health IT Module does not cache a JWK Set received via a TLS-protected URL for longer than the <code>cache-control</code> header sent by an application indicates.</p>
+<p>6. AUT-SYS-6: 
+The health IT developer demonstrates the ability of the Health IT Module to validate an application’s JWT, including its JSON Web Signatures, according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>7. AUT-SYS-7: 
+The health IT developer demonstrates the ability of the Health IT Module to respond with an <code>invalid_client</code> error for errors encountered during the authentication process according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>8. AUT-SYS-8: 
+The health IT developer demonstrates the ability of the Health IT Module to assure the scope granted based on the scope requested by an application is no greater than the pre-authorized scope for multiple patients according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>9. AUT-SYS-9: 
+ The health IT developer demonstrates the ability of the Health IT Module to issue an access token to an application as a JSON object in accordance with the implementation specification adopted in § 170.215(a)(4), including the following property names:</p>
+<ul>
+<li><code>access_token</code>;</li>
+<li><code>token_type</code>;</li>
+<li><code>expires_in</code>; and</li>
+<li><code>scope</code>.</li>
+</ul>
+<p>10. AUT-SYS-10: 
+The health IT developer demonstrates the ability of the Health IT Module to respond to errors using the appropriate error messages as specified in the implementation specification adopted in § 170.215(a)(4).</p>
+<h2 id="paragraph-g10vii-token-introspection">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vii) – Token introspection<a class="headerlink" href="#paragraph-g10vii-token-introspection" title="Permanent link">&para;</a></h2>
+<h3 id="token-introspection">Token Introspection<a class="headerlink" href="#token-introspection" title="Permanent link">&para;</a></h3>
+<p>1. TOK-INTRO-1: 
+The health IT developer demonstrates the ability of the Health IT Module to receive and validate a token it has issued.</p>
+<h2 id="paragraph-g10ii-supported-search-operations">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii) – Supported search operations<a class="headerlink" href="#paragraph-g10ii-supported-search-operations" title="Permanent link">&para;</a></h2>
+<h3 id="supported-search-operations-for-a-single-patients-data">Supported Search Operations for a Single Patient’s Data<a class="headerlink" href="#supported-search-operations-for-a-single-patients-data" title="Permanent link">&para;</a></h3>
+<p>1. SH-PAT-1: 
+The health IT developer demonstrates the ability of the Health IT Module to support the <code>capabilities</code> interaction as specified in the standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>), including support for a <code>CapabilityStatement</code> as specified in the standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) and implementation specification adopted in § 170.215(a)(2).</p>
+<p>2. SH-PAT-2: 
+The health IT developer demonstrates the ability of the Health IT Module to respond to requests for a single patient’s data consistent with the search criteria detailed in the “US Core Server CapabilityStatement” section of the implementation specification adopted in § 170.215(a)(2), including demonstrating search support for “SHALL” operations and parameters for all the data included in the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>.</p>
+<p>3. SH-PAT-3: 
+The health IT developer demonstrates the ability of the Health IT Module to support a resource search for the provenance target <code>(_revIncludes: Provenance:target)</code> for all the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources included in the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).</p>
+<h3 id="supported-search-operations-for-multiple-patients-data">Supported Search Operations for Multiple Patients’ Data<a class="headerlink" href="#supported-search-operations-for-multiple-patients-data" title="Permanent link">&para;</a></h3>
+<p>1. SH-PAT-4: 
+The health IT developer demonstrates the ability of the Health IT Module to support the “capabilities” interaction as specified in the standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>), including support for a <code>CapabilityStatement</code> as specified in the standard adopted in § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) and implementation specification adopted in § 170.215(a)(4). </p>
+<p>2. SH-PAT-5: 
+The health IT developer demonstrates the ability of the Health IT Module to support requests for multiple patients’ data as a group using the <code>group-export</code> operation as detailed in the implementation specification adopted in § 170.215(a)(4).</p>
+<h2 id="paragraph-g10i-data-response">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i) – Data response<a class="headerlink" href="#paragraph-g10i-data-response" title="Permanent link">&para;</a></h2>
+<h3 id="data-response-checks-for-single-and-multiple-patients">Data Response Checks for Single and Multiple Patients<a class="headerlink" href="#data-response-checks-for-single-and-multiple-patients" title="Permanent link">&para;</a></h3>
+<p>1. DAT-PAT-1: 
+For responses to data for single and multiple patients as described in steps 7, and 8, of this section respectively, the health IT developer demonstrates the ability of the Health IT Module to respond to requests for data according to the implementation specification adopted in § 170.215(a)(2), including the following steps.</p>
+<p>2. DAT-PAT-2: 
+The health IT developer demonstrates the ability of the Health IT Module to respond with data that meet the following conditions:</p>
+<ul>
+<li>All data elements indicated with a cardinality of one or greater and / or <code>must support</code> are included;</li>
+<li>Content is structurally correct;</li>
+<li>All invariant rules are met;</li>
+<li>All data elements with required <code>ValueSet</code> bindings contain codes within the bound <code>ValueSet</code>;</li>
+<li>All information is accurate and without omission; and</li>
+<li>All references within the resources can be resolved and validated, as applicable, according to steps 2-6, of this section.</li>
+</ul>
+<p>3. DAT-PAT-3: 
+The health IT developer demonstrates the ability of the Health IT Module to support a <code>Provenance</code> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource for all the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources included in the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> and implementation specification adopted in § 170.215(a)(2) according to the “Basic Provenance Guidance” section of the implementation specification adopted in § 170.215(a)(2).</p>
+<p>4. DAT-PAT-4: 
+The health IT developer demonstrates the ability of the Health IT Module to support a <code>DocumentReference</code> and/or <code>DiagnosticReport</code> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource for each of the “Clinical Notes” and “Diagnostic Reports” included in and according to the “Clinical Notes Guidance” section of the implementation specification adopted in § 170.215(a)(2).</p>
+<p>5. DAT-PAT-5: 
+If supported, and for responses to data for a single patient only, the health IT developer demonstrates the ability of the Health IT Module to support a <code>Medication</code> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource according to the “Medication List Guidance” section of the implementation specification adopted in § 170.215(a)(2).</p>
+<p>6. DAT-PAT-6: 
+The health IT developer demonstrates the ability of the Health IT Module to support “Missing Data” according to the implementation specification adopted in § 170. 215(a)(2), including:</p>
+<ul>
+<li>For non-coded data elements; and</li>
+<li>For coded data elements, including support for the <code>DataAbsentReason</code> Code System.</li>
+</ul>
+<h3 id="response-to-requests-for-a-single-patients-data">Response to Requests for a Single Patient’s Data<a class="headerlink" href="#response-to-requests-for-a-single-patients-data" title="Permanent link">&para;</a></h3>
+<p>1. DAT-PAT-7: 
+The health IT developer demonstrates the ability of the Health IT Module to return all of the data associated with requests for a single patient’s data according to the “US Core Server CapabilityStatement” section of the implementation specification adopted in § 170.215(a)(2) for all the data included in the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>.</p>
+<h3 id="response-to-requests-for-multiple-patients-data">Response to Requests for Multiple Patients' Data<a class="headerlink" href="#response-to-requests-for-multiple-patients-data" title="Permanent link">&para;</a></h3>
+<p>1. DAT-PAT-8: 
+The health IT developer demonstrates the ability of the Health IT Module to respond to requests for multiple patients’ data according to the implementation specification adopted in § 170.215(a)(4) for all of the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources associated with the profiles and Data Elements specified in and according to the standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> and implementation specification adopted in § 170.215(a)(2).:</p>
+<ul>
+<li><code>AllergyIntolerance</code>;</li>
+<li><code>CarePlan</code>;</li>
+<li><code>CareTeam</code>;</li>
+<li><code>Condition</code>;</li>
+<li><code>Device</code>;</li>
+<li><code>DiagnosticReport</code>;</li>
+<li><code>DocumentReference</code>;</li>
+<li><code>Encounter</code>;</li>
+<li><code>Goal</code>;</li>
+<li><code>Immunization</code>;</li>
+<li><code>Location</code> (if supported);</li>
+<li><code>Medication</code> (if supported);</li>
+<li><code>MedicationRequest</code>;</li>
+<li><code>Observation</code>;</li>
+<li><code>Organization</code>;</li>
+<li><code>Patient</code>;</li>
+<li><code>Practitioner</code></li>
+<li><code>Procedure</code>; and</li>
+<li><code>Provenance</code>.</li>
+</ul>
+<p>2. DAT-PAT-9: 
+The health IT developer demonstrates the ability of the Health IT Module to limit the data returned to only those <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources for which the client is authorized according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>3. DAT-PAT-10: 
+The health IT developer demonstrates the ability of the Health IT Module to support a successful data response according to the implementation adopted in § 170.215(a)(4).</p>
+<p>4. DAT-PAT-11: 
+The health IT developer demonstrates the ability of the Health IT Module to support a data response error according to the implementation adopted in § 170.215(a)(4).</p>
+<p>5. DAT-PAT-12: 
+The health IT developer demonstrates the ability of the Health IT Module to support a bulk data delete request according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>6. DAT-PAT-13: 
+The health IT developer demonstrates the ability of the Health IT Module to support a bulk data status request according to the implementation specification adopted in § 170.215(a)(4).</p>
+<p>7. DAT-PAT-14: 
+The health IT developer demonstrates the ability of the Health IT Module to support a file request according to the implementation specification adopted in § 170.215(a)(4), including support for the “ndjson” format for files provided.</p>
+<p>8. DAT-PAT-15: 
+The health IT developer demonstrates that the information provided as part of this data response includes data for patients in the group identifier provided during the <code>group-export</code> request.</p>
+<h2 id="paragraph-g10viii-documentation">Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii) – Documentation<a class="headerlink" href="#paragraph-g10viii-documentation" title="Permanent link">&para;</a></h2>
+<h3 id="api-documentation-requirements"><abbr title="Application Programming Interface">API</abbr> Documentation Requirements<a class="headerlink" href="#api-documentation-requirements" title="Permanent link">&para;</a></h3>
+<p>1. <abbr title="Application Programming Interface">API</abbr>-DOC-1: 
+The health IT developer supplies documentation describing the <abbr title="Application Programming Interface">API</abbr>(s) of the Health IT Module and includes at a minimum:</p>
+<ul>
+<li><abbr title="Application Programming Interface">API</abbr> syntax;</li>
+<li>Function names;</li>
+<li>Required and optional parameters supported and their data types;</li>
+<li>Return variables and their types/structures;</li>
+<li>Exceptions and exception handling methods and their returns;</li>
+<li>Mandatory software components;</li>
+<li>Mandatory software configurations; and</li>
+<li>All technical requirements and attributes necessary for registration.</li>
+</ul>
+<p>2. <abbr title="Application Programming Interface">API</abbr>-DOC-2: 
+The health IT developer demonstrates that the documentation described in step 1, of this section is available via a publicly accessible hyperlink that does not require preconditions or additional steps to access.</p>
+<p>3. <abbr title="Application Programming Interface">API</abbr>-DOC-3: 
+To fulfill the <abbr title="Application Programming Interface">API</abbr> Maintenance of Certification requirement at § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(b)(2), the health IT developer demonstrates the public location of its certified <abbr title="Application Programming Interface">API</abbr> technology service base URLs.</p>
+<!-- Standards Referenced -->
+<!-- ONC Certification Criteria -->
+<!-- ONC Rules -->
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1-2.1-2M12.5 7v5.2l4 2.4-1 1L11 13V7h1.5M11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2v1.8Z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 22, 2024</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="/api-resource-guide/privacy-policy/">Privacy Policy</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.healthit.gov/" target="_blank" rel="noopener" title="HealthIT.gov" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 48C0 21.5 21.5 0 48 0v441.4l130.1-92.9c8.3-6 19.6-6 27.9 0l130 92.9V48H48V0h288c26.5 0 48 21.5 48 48v440c0 9-5 17.2-13 21.3s-17.6 3.4-24.9-1.8L192 397.5l-154.1 110c-7.3 5.2-16.9 5.9-24.9 1.8S0 497 0 488V48z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.bd41221c.min.js"></script>
+      
+        <script src="../../javascripts/g10-dynamic-tp.js"></script>
+      
+    
+  </body>
+</html>
