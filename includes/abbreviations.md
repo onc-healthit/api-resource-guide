@@ -19,7 +19,7 @@
 *[b)(1)(i]: FHIR® US Core Implementation Guide STU V3.1.1
 *[b)(1)(ii]: FHIR® US Core Implementation Guide STU V6.1.0
 *[c)(1]: HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0
-*[c)(2]: HL7® SMART Application Launch Framework Implementation Guide Release 2.0.0
+*[c)(2]: HL7® SMART App Launch Implementation Guide Release 2.0.0
 *[d)(1]: HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)
 *[e)(1]: OpenID Connect Core 1.0 incorporating errata set 1
 *[170.213]: United States Core Data for Interoperability (USCDI)
