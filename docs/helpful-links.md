@@ -50,8 +50,8 @@
 === "§ 170.315(g)(10)"
     - <a target = "_blank" href = "https://www.healthit.gov/isa/us-core-data-interoperability-uscdi">§ 170.213: United States Core Data for Interoperability (USCDI)</a>
     - <a target = "_blank" href = "http://hl7.org/fhir/directory.html">§ 170.215(a)(1): Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019</a>
-    - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/">§ 170.215(b)(1): HL7® FHIR® US Core Implementation Guide STU 3.1.1.</a> The adoption of this standard expires on January 1, 2026.
-    - <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU6.1/">§ 170.215(b)(2): HL7® FHIR® US Core Implementation Guide STU 6.1.0</a>
+    - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/">§ 170.215(b)(1)(i): HL7® FHIR® US Core Implementation Guide STU 3.1.1.</a> The adoption of this standard expires on January 1, 2026.
+    - <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU6.1/">§ 170.215(b)(1)(ii): HL7® FHIR® US Core Implementation Guide STU 6.1.0</a>
     - <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">§ 170.215(c)(1): HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0</a>. The adoption of this standard expires on January 1, 2026.
     - <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/STU2/">§ 170.215(c)(2): HL7® SMART Application Launch Framework Implementation Guide Release 2.0.0</a>
     - <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/">§ 170.215(d)(1): HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)</a>

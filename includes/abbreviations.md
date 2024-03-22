@@ -16,8 +16,8 @@
 *[FHIR]: HL7® Fast Healthcare Interoperability Resources
 
 *[a)(1]: Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019
-*[b)(1]: FHIR® US Core Implementation Guide STU V3.1.1
-*[b)(2]: FHIR® US Core Implementation Guide STU V6.1.0
+*[b)(1)(i]: FHIR® US Core Implementation Guide STU V3.1.1
+*[b)(1)(ii]: FHIR® US Core Implementation Guide STU V6.1.0
 *[c)(1]: HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0
 *[c)(2]: HL7® SMART Application Launch Framework Implementation Guide Release 2.0.0
 *[d)(1]: HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)
