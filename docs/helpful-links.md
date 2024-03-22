@@ -53,7 +53,7 @@
     - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/">§ 170.215(b)(1)(i): HL7® FHIR® US Core Implementation Guide STU 3.1.1.</a> The adoption of this standard expires on January 1, 2026.
     - <a target = "_blank" href = "https://hl7.org/fhir/us/core/STU6.1/">§ 170.215(b)(1)(ii): HL7® FHIR® US Core Implementation Guide STU 6.1.0</a>
     - <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">§ 170.215(c)(1): HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0</a>. The adoption of this standard expires on January 1, 2026.
-    - <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/STU2/">§ 170.215(c)(2): HL7® SMART Application Launch Framework Implementation Guide Release 2.0.0</a>
+    - <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/STU2/">§ 170.215(c)(2): HL7® SMART App Launch Implementation Guide Release 2.0.0</a>
     - <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/">§ 170.215(d)(1): HL7® FHIR® Bulk Data Access (Flat FHIR®) (V1.0.1:STU 1)</a>
     - <a target = "_blank" href = "https://openid.net/specs/openid-connect-core-1_0.html">§ 170.215(e)(1): OpenID Connect Core 1.0 incorporating errata set 1</a>
 
