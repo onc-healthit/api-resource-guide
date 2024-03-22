@@ -7,7 +7,7 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
-### July 2023
+### July 2023 Inquiries
 **Stakeholder Inquiry**: We have been working to adopt the HL7 FHIR standard for all our external API communications. We were wondering if you can provide answers or linked resources to the following questions:
 
  - My understanding of the 21st Century Cures Act, as it pertains to data interoperability via HL7 FHIR, is that it requires Health Insurance Plans (and other health related orgs) to have HL7 FHIR APIs by end of year 2023.  Is this correct?
@@ -23,9 +23,7 @@ We note that these regulations do not require that impacted payers use health IT
 
 Regarding the 2023 date mentioned, you may be referring to the Promoting Interoperability (PI) Programs (previously Medicare and Medicaid EHR Incentive Programs) administered by the Centers for Medicare & Medicaid Services (CMS) which focus on adoption and use of certified health IT by eligible hospitals, critical access hospitals, and eligible clinicians. This program does include requirements that the health care providers who participate in the program use certified health IT incorporating FHIR APIs during 2023. For more information about the PI program for eligible hospitals and CAHs, see <a target = "_blank" href = "https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms">https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms</a>. For more information about the Promoting Interoperability performance category of MIPS that pertains to eligible clinicians, see <a target = "_blank" href = "https://qpp.cms.gov/">https://qpp.cms.gov/</a>.
 
-***
-
-### April 2023
+### April 2023 Inquiries
 **Stakeholder Inquiry**: Can a 3rd party app developer approach a Certified Health IT Developer for implementing a FHIR API without any reference from a Clinic/Provider/Patient? There should be consent from provider/clinic, or patient to share the info, right?
 
 **ONC Response**: A § 170.315(g)(10)-certified Health IT Module must support the capability to enable an application to register with the Health IT Module's “authorization server”, as per the requirement at § 170.315(g)(10)(iii). This requirement only applies for the purposes of demonstrating technical conformance to the certification criterion and Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of certified Health IT Modules are not in scope for the § 170.315(g)(10) criterion nor the associated Condition and Maintenance of Certification requirements.
@@ -50,9 +48,7 @@ For an overview of key elements of the HIPPA Privacy Rule including who is cover
 
 The Office for Civil Rights (OCR) enforces the HIPAA Privacy, Security, and Breach Notification Rules. For questions related to Health Information Privacy, please email <a href = "mailto:OCRPrivacy@hhs.gov">OCRPrivacy@hhs.gov</a>.
 
-***
-
-### January 2023
+### January 2023 Inquiries
 **Stakeholder Inquiry**: We have a question about this text in the US Core Server CapabilityStatement:
 !!! note ""
 
@@ -70,9 +66,7 @@ Please see the <a target = "_blank" href = "https://www.healthit.gov/test-method
 
 The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">ONC Certification (g)(10) Standardized API Test Kit</a> implements tests according to the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">§ 170.315(g)(10) Test Procedure</a>. This Test Procedure defines tests to verify conformance to § 170.315(g)(10) requirements to support US Core profiles (or FHIR core profiles if no corresponding US Core profile exists) for each of the data in USCDI. Therefore, the Inferno ONC Certification (g)(10) Standardized API Test Kit includes tests for US Core profiles beyond the US Core Patient profile.
 
-***
-
-### Older (Pre 2023)
+### 2022 Inquiries
 **Stakeholder Inquiry**: We have some questions regarding the consent requirements for § 170.315(g)(10) Standardized API for patient and population services.
 
 - If a patient is accessing data, are providers required to obtain a separate consent from the patient?
@@ -120,8 +114,7 @@ A developer must present its own health IT for certification, and  may also use 
 In the provided example, the health IT developer could use "relied upon software" in the form of an authorization server to fulfill authentication and authorization requirements in the § 170.315(g)(10) "Standardized API for patient and population services" criterion. However, a Health IT Module cannot be certified to the § 170.315(g)(10) "Standardized API for patient and population services" criterion without fulfilling all of its specified requirements, including authentication and authorization requirements.
 For more information about "relied upon software", please see the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/relieduponsoftwareguidance.pdf">Relied Upon Software Program Guidance document</a>.
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: If we certify to 170.315(g)(10), does that cover all of the API requirements specified in this PDF? <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf">https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf</a>
 
 Are there any other criteria in that PDF not covered in the (g)(10) criterion?
@@ -156,10 +149,8 @@ Any missing information made available via the (g)(10) standardized API should b
 
 The ONC Certification criteria for eCQMs does not require any FHIR standards. For additional information on CMS regulations, please reference CMS sources or contact CMS if you have questions about specific requirements. The CMS.gov website is a great place to start for information about the requirements of any particular CMS program that may be of interest to health care providers and those who support them with health IT solutions. For one example, the Quality Payment Program overview page (<a target = "_blank" href = "https://qpp.cms.gov/about/qpp-overview">https://qpp.cms.gov/about/qpp-overview</a>) offers links to educational resources and information how to contact CMS. Similarly, the CMS.gov Promoting Interoperability Programs page (<a target = "_blank" href = "https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms">https://www.cms.gov/Regulations-and-Guidance/Legislation/EHRIncentivePrograms</a>) currently indicates that Medicare and dually eligible hospitals participating in the Medicare and Medicaid Promoting Interoperability Programs may contact the QualityNet help desk for assistance.
 
-***
-
 ## Paragraph (g)(10)(i)(A): Data Response (Single Patient)
-### Pre 2023
+### 2022 Inquiries
 **Stakeholder Inquiry**: Two FHIR® DocumentReference resource related questions:
 
 1. The Inferno (g)(10) Standardized API Test Kit test 4.31.01 requires a system under test to demonstrate support for the Discharge Summary note type (18842-5). Are ambulatory vendors expected to demonstrate support for this note type for the purposes of (g)(10) certification?
@@ -176,8 +167,7 @@ The ONC Certification criteria for eCQMs does not require any FHIR standards. Fo
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion does not require support for the US Core <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/OperationDefinition-docref.html">$docref operation</a>.
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: US Core 3.1.1 requires Procedure.performed. For (g)(10) certification how are we expected to accommodate cancelled or not done procedures where a date or period does not exist? 
 
 **ONC Response**: Health IT modules certified to the Standardized API for patient and population services (45 CFR 170.315(g)(10)) must "Respond to requests for a single patient’s data according to the standard adopted in § 170.215(a)(1) and implementation specification adopted in § 170.215(a)(2), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standard adopted in § 170.213. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported."
@@ -212,10 +202,8 @@ However, for purposes of testing and certification for the ONC Health IT Certifi
 
 We will issue a clarification on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">§ 170.315(g)(10) Standardized API for patient and population services Certification Companion Guide</a> regarding this issue, and the Inferno testing tool will be updated in the next regular release, which occurs at least monthly, to accommodate this clarification.
 
-***
-
 ## Paragraph (g)(10)(i)(B): Data Response (Multiple Patients)
-### Pre 2023
+### 2022 Inquiries
 **Stakeholder Inquiry**: We are working on the Multi-Patient API Certification requirements, what are the requirements around group ids?
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion requires the Health IT Module support requests for multiple patients’ data as a group using the “group-export” operation as detailed in the Bulk Data Access implementation guide. The `group-export` operation allows authorized clients to obtain FHIR resources pertaining to all patients in a specified Group. The client uses the Group ID to specify which Group is to be exported.
@@ -250,8 +238,7 @@ As specified in Bulk Data Access 1.0.1 <a target = "_blank" href = "http://hl7.o
 
 Requirements imposed on clients to access multiple patients' data using this flexibility must be completely and appropriately documented as per the documentation requirements at § 170.315(g)(10)(viii).
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: For the Inferno Multi-Patient API tests, there is mention of the server providing the resources that are referenced as must support elements in other required resources. Also in this test, the location resource is called out as optional.
 
 Can you clarify the intent here?
@@ -268,10 +255,8 @@ Regarding “Organization” HL7 FHIR resources, we provided the following clari
 
 Health IT developers must include all the resources necessary via the multiple patient services API responses to fully resolve references contained in HL7 FHIR resources, including “Organization” resources.
 
-***
-
 ## Paragraph (g)(10)(iii): Application Registration
-### Pre 2023
+### 2021 Inquiries
 **Stakeholder Inquiry**: Can you clarify how we are expected to scope US Core IG resources that do not exists in USCDI or the FHIR Patient Compartment?
 
 **ONC Response**: We have provided a clarification in the Certification Companion Guide for § 170.315(g)(10) to address this ambiguity:
@@ -280,10 +265,8 @@ Health IT developers must include all the resources necessary via the multiple p
 
 The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certification">Inferno testing tool ONC Health IT Certification Program tests for § 170.315(g)(10)</a> will be updated to accommodate this change in the coming weeks.
 
-***
-
 ## Paragraph (g)(10)(iv): Secure Connection
-### Pre 2023
+### 2022 Inquiries
 **Stakeholder Inquiry**: We are failing the Inferno (g)(10) Standardized API Test Kit test “5.3.01 Bulk Data Server is secured by transport layer security Server did not permit/deny the connections with the correct TLS versions.” Our implementation enforces TLS connections at the application layer and not the network layer. Is this allowable for certification to (g)(10)?
 
 **ONC Response**: ONC has issued the following clarification in the § 170.315(g)(10) "Standardized API for patient and population services" Certification Companion Guide regarding the requirements at § 170.315(g)(10)(iv) “Secure connection”.
@@ -292,10 +275,8 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certifi
 
 The Inferno testing tool will be updated to align with this clarification. However, until the Inferno testing tool is updated, ONC grants an exception for the ONC Certification (g)(10) Standardized API Test Kit test 5.3.01 "Bulk Data Server is secured by transport layer security", wherein for the purposes of certification and testing it is sufficient for the health IT developer to document how the Health IT Module enforces TLS version 1.2 or above for the Bulk Data file server.
 
-***
-
 ## Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients
-### February 2023
+### February 2023 Inquiries
 **Stakeholder Inquiry**: Can ONC please clarify requirements around patient ability to authorize an application to receive their EHI based on FHIR resource level scopes? Is it required that the patient be given the ability to select or deselect individual FHIR resources? We’ve seen examples of other deployed systems not providing the ability for a patient to select or deselect individual FHIR resources.
 
 **ONC Response**: As part of the “permission-patient” “SMART on FHIR® Core Capability” in § 170.215(a)(3), Health IT Modules presented for § 170.315(g)(10) testing and certification must include the ability for patients to authorize an application to receive their electronic health information (EHI) based on FHIR® resource-level scopes. Specifically, this means patients would need to have the ability to authorize access to their EHI at the individual FHIR resource level, from one specific FHIR resource (e.g., “Immunization”) up to all FHIR resources necessary to implement the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).
@@ -304,17 +285,14 @@ Although Health IT Modules presented for testing and certification must include 
 
 Please note that the information above is specific and limited in scope to the requirements and potential limitations of certification criteria. A Certified Health IT Developer and their Certified Health IT Modules must comply with all applicable requirements of the ONC Certification program. For Health IT Modules certified to the § 170.315(g)(10) criterion, this includes the aforementioned capability for patients to authorize an application to receive their EHI based on FHIR resource-level scopes. Choices made by users of certified health IT as to if, when, or how they may deploy particular functionalities of the health IT are outside the scope of the Certification Program, although other regulations may apply, such as <a target = "_blank" href = "https://www.healthit.gov/topic/information-blocking">information blocking regulations</a> or requirements for successful participation in CMS programs such as the <a target = "_blank" href = "https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms">Promoting Interoperability Program</a>.
 
-***
-
-### Older (Pre 2023)
+### 2022 Inquiries
 **Stakeholder Inquiry**: Can you provide some more clarification on what is required in (g)(10)(v)(A)(1) where systems are expected to support refresh tokens for “no less than 3 months.”
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion includes requirements for first time connections at § 170.315(g)(10)(v)(A)(1) that a Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret and native applications capable of securing a refresh token. A requirement for subsequent connections is also included under § 170.315(g)(10)(v)(A)(2) that a Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. These refresh token requirements are intended to enable a patient's persistent access to their electronic health information without special effort.
 
 In fulfillment of the aforementioned § 170.315(g)(10) requirements, health IT developers are not prohibited from allowing patients to express their persistent access preferences and from configuring the duration of persistent access according to patient preferences. When patients are presented with options for the duration of persistent access, an option of at least three months must be included.
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: What is a permissible method of allowing patients to authorize access to individual FHIR resources, and if this means that the FHIR server must be able to support requests from client applications for one to all USCDI resources; or if it means the FHIR server must allow the user at the time of authorization to pick/choose which resources are granted access?
 
 Client applications are often designed to request access for their full list and then be granted/denied for the full list and don’t necessarily support this individual selection option at the authorization level. Meaning, they say they need all requested items, and the user can accept that or deny it.
@@ -347,10 +325,8 @@ and for subsequent connections:
 - A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. 
 Beyond the certification criteria requirements, health IT developers are not required to support all methods that third-party application developers seek to use. Additional information and clarifications regarding this criterion can be found on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">Certification Companion Guide for § 170.315(g)(10)</a>.
 
-***
-
 ## Paragraph (g)(10)(v)(B): Authentication / Authorization for Multiple Patient Services
-### Pre 2023
+### 2021 Inquiries
 **Stakeholder Inquiry**: There is a requirement that clients downloading the bulk data use the same access token as they did to make the original request. Does it permit other equivalently secure means of authorization as well?
 
 The  FHIR specification says that there should be alternatives: <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status">https://hl7.org/fhir/uv/bulkdata/export/index.html#response---complete-status</a>
@@ -367,20 +343,16 @@ According to the requirements in § 170.315(g)(10)(v)(B), Health IT Modules must
 
 At a minimum for the ONC Health IT Certification Program, Health IT Modules certified to the § 170.315(g)(10) criterion must support the issuance of a valid access token to an application during authentication and authorization as per the “SMART Backend Services: Authorization Guide” section of the Bulk FHIR IG. However, if the minimum requirements are met, health IT developers may support additional access-control schemes beyond OAuth 2.0 bearer tokens.
 
-***
-
 ## Paragraph (g)(10)(vi): Patient Auhtorization Revocation
-### Pre 2023
+### 2021 Inquiries
 **Stakeholder Inquiry**: To satisfy the “Patient authorization revocation” requirements can short-lived access tokens be allowed to expire in lieu of immediate access token revocation?
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" Certification Companion Guide will be updated with the following clarification:
 
 *For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART Application Launch Framework Implementation Guide Release 1.0.0.</a> For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.*
 
-***
-
 ## Inferno
-### Pre 2023
+### 2022 Inquiries
 **Stakeholder Inquiry**: In Inferno test 4.2.04 (and others) patient data is included in the URL of the HTTP GET request. Is this a Privacy and Security concern?
 
 **Stakeholder Inquiry**: The Inferno testing tool acts as a demanding client to test the conformance of servers to health IT standards. In particular, the ONC Certification (g)(10) Standardized API Test Kit, which uses Inferno, tests a health IT developer's APIs' conformance to the requirements of the § 170.315(g)(10) "Standardized API for patient and population services" certification criterion. The Inferno implementation provided by ONC on healthit.gov includes a banner indicating it is for demonstration purposes only and must not be used to access sensitive data or Protected Health Information (PHI).
@@ -427,8 +399,7 @@ The "EHR Practitioner App" tests in Inferno require the Health IT Module demonst
 
 Additional detail regarding the "EHR Practitioner App" tests in Inferno is available in the ONC Certification (g)(10) Matrix provided with each Inferno release. The ONC Certification (g)(10) Matrix for the current version of Inferno is available via the <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">onc-certification-g10-test-kit</a> repository on GitHub.
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: What are the test data requirements for testing to (g)(10) using Inferno?
 
 **ONC Response**: The Inferno (g)(10) Standardized API Test Kit does not currently require a specific set of data to be entered into the system under test prior to testing. Instead, it leverages HL7 FHIR's built-in conformance rules to ensure that data returned is valid, conforms to required profiles, and contains all elements that must be supported. This allows systems to use either their own sample data or supplied sample data.

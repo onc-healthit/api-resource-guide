@@ -7,7 +7,7 @@ This section contains anonymized feedback and inquiries, related to the API Cond
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Paragraph (a)(3)(iv): API Fees - Permitted Fee (Value-Added Services)
-### Pre 2023
+### 2021 Inquiries
 **Stakeholder Inquiry**: If an EHR developer’s API includes both certified and non-certified capabilities, does the entire API fall within the requirements of § 170.404?
 
 - Can an API be certified if it also contains non-certified capabilities so long as it also meets the certification criteria?  
@@ -27,7 +27,7 @@ We are not able to provide individualized advice on whether a specific fact patt
 Anyone who believes they may have experienced or observed information blocking by <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/InformationBlockingActors.pdf">any health care provider, health IT developer of Certified Health IT, or health information network or health information exchange</a> is encouraged to share their concerns with us through the <a target = "_blank" href = "https://healthit.gov/report-info-blocking">Information Blocking Portal</a> on ONC’s website, HealthIT.gov.
 
 ## Paragraph (b)(2): Service base URL publiciation
-### June 2023
+### June 2023 Inquiries
 **Stakeholder Inquiry**: I have questions about the regulatory text in the ONC Cures Act Final Rule found here: <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1405">https://www.federalregister.gov/d/2020-07419/p-1405</a>.
 
 Should this list be published on CHPL? We see the "place" for the information on CHPL, but we are seeing that many EHRs have very little to no information published and most don't have their customer list. Is this a violation of the requirements? Are there any exceptions to publishing this information?
@@ -42,7 +42,7 @@ To be open and transparent to the public, developers must provide a hyperlink to
 
 There are no exceptions to the requirement that Certified API Developers must publish service base URLs for all Health IT Modules certified to § 170.315(g)(10) that can be used by patients to access their EHI.
 
-### Older (Pre 2023)
+### 2022 Inquiries
 **Stakeholder Inquiry**: If an EHR vendor chooses to obtain and integrate a 3rd party solution that is certified to 170.315(g)(10), who is responsible for publish the service base URLs?
 
 **ONC Response**: The API Maintenance of Certification requirement at § 170.404(b)(2) requires a Certified API Developer to publish the service base URLs for all Health IT Modules certified to § 170.315(g)(10) that can be used by patients to access their electronic health information. This includes publishing the service base URLs for all of its customers regardless of whether the Health IT Modules certified to § 170.315(g)(10) are centrally managed by the Certified API Developer or locally deployed by an API Information Source.
@@ -52,7 +52,7 @@ ONC provides discussion regarding Certified API Developer publication of service
 The ONC Cures Act Final Rule at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1909">85 FR 25813</a> provides an example which discusses API Information Sources providing Certified API Developers service base URLs in the context of Information Blocking.
 
 ## Paragraph (b)(3): Rollout of (g)(10)-Certified APIs
-### Pre 2023
+### 2022 Inquiries
 **Stakeholder Inquiry**: According to the 21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program Final Rule (ONC Cures Act Final Rule) timeline, ONC Cures Update Certification Criteria must be made available by 12/31/2022. Can you clarify what "made available" means?
 
 **ONC Response**: The API Maintenance of Certification requirement at 45 CFR 170.404(b)(3) requires that a Certified API Developer with certified API technology previously certified to the certification criterion in § 170.315(g)(8) must deploy to all of their API Information Sources (e.g., customers) API technology certified to the criterion in § 170.315(g)(10) no later than December 31, 2022.
@@ -63,7 +63,8 @@ Additional context and background discussion of this Maintenance of Certificatio
 
 We encourage all Certified Health IT Developers to work with their ONC-ACBs and customers to develop a certification and roll-out strategy to meet ONC Health IT Certification Program requirements by the required regulatory deadlines.
 
-### Older (Pre 2023)
+***
+
 **Stakeholder Inquiry**: If an EHR system that is currently certified to (g)(7)-(g)(9) is unable to get certified to (g)(10) by January 1, 2023, what is the outcome with respect to their certification? 
 
 - If they then certify to (g)(10) at some point in CY 2023 how is their CHPL entry effected? 
@@ -94,8 +95,7 @@ If a health IT developer currently has Health IT Modules certified to 45 CFR 170
 
 We encourage health IT developers to work with their ONC-ACB and customers to develop a certification and roll-out strategy to meet ONC Health IT Certification Program requirements by the required regulatory deadlines.
 
-***
-
+### 2021 Inquiries
 **Stakeholder Inquiry**: Do all products have to be HL7® FHIR capable by Dec 31, 2022, or just the certified products?
 
 **ONC Response**: The API compliance requirement for certified products is contained in 45 CFR 170.404: API Conditions and Maintenance of Certification requirements. According to 170.404(b)(3):
