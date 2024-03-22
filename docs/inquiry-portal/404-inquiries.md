@@ -29,7 +29,7 @@ Anyone who believes they may have experienced or observed information blocking b
 ***
 
 ## Paragraph (b)(2): Service base URL publiciation
-### June 2023 Inquiries
+### 2023 Inquiries
 **Stakeholder Inquiry**: I have questions about the regulatory text in the ONC Cures Act Final Rule found here: <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1405">https://www.federalregister.gov/d/2020-07419/p-1405</a>.
 
 Should this list be published on CHPL? We see the "place" for the information on CHPL, but we are seeing that many EHRs have very little to no information published and most don't have their customer list. Is this a violation of the requirements? Are there any exceptions to publishing this information?

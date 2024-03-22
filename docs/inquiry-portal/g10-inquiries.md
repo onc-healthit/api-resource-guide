@@ -7,7 +7,7 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
-### July 2023 Inquiries
+### 2023 Inquiries
 **Stakeholder Inquiry**: We have been working to adopt the HL7 FHIR standard for all our external API communications. We were wondering if you can provide answers or linked resources to the following questions:
 
  - My understanding of the 21st Century Cures Act, as it pertains to data interoperability via HL7 FHIR, is that it requires Health Insurance Plans (and other health related orgs) to have HL7 FHIR APIs by end of year 2023.  Is this correct?
@@ -25,7 +25,6 @@ Regarding the 2023 date mentioned, you may be referring to the Promoting Interop
 
 ***
 
-### April 2023 Inquiries
 **Stakeholder Inquiry**: Can a 3rd party app developer approach a Certified Health IT Developer for implementing a FHIR API without any reference from a Clinic/Provider/Patient? There should be consent from provider/clinic, or patient to share the info, right?
 
 **ONC Response**: A § 170.315(g)(10)-certified Health IT Module must support the capability to enable an application to register with the Health IT Module's “authorization server”, as per the requirement at § 170.315(g)(10)(iii). This requirement only applies for the purposes of demonstrating technical conformance to the certification criterion and Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of certified Health IT Modules are not in scope for the § 170.315(g)(10) criterion nor the associated Condition and Maintenance of Certification requirements.
@@ -52,7 +51,6 @@ The Office for Civil Rights (OCR) enforces the HIPAA Privacy, Security, and Brea
 
 ***
 
-### January 2023 Inquiries
 **Stakeholder Inquiry**: We have a question about this text in the US Core Server CapabilityStatement:
 !!! note ""
 
@@ -294,7 +292,7 @@ The Inferno testing tool will be updated to align with this clarification. Howev
 ***
 
 ## Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients
-### February 2023 Inquiries
+### 2023 Inquiries
 **Stakeholder Inquiry**: Can ONC please clarify requirements around patient ability to authorize an application to receive their EHI based on FHIR resource level scopes? Is it required that the patient be given the ability to select or deselect individual FHIR resources? We’ve seen examples of other deployed systems not providing the ability for a patient to select or deselect individual FHIR resources.
 
 **ONC Response**: As part of the “permission-patient” “SMART on FHIR® Core Capability” in § 170.215(a)(3), Health IT Modules presented for § 170.315(g)(10) testing and certification must include the ability for patients to authorize an application to receive their electronic health information (EHI) based on FHIR® resource-level scopes. Specifically, this means patients would need to have the ability to authorize access to their EHI at the individual FHIR resource level, from one specific FHIR resource (e.g., “Immunization”) up to all FHIR resources necessary to implement the standard adopted in § 170.213 and implementation specification adopted in § 170.215(a)(2).
