@@ -59,7 +59,6 @@
 
     **Standards Version Advancement Process (SVAP) Version(s) Approved**
     
-    - <a target = "_blank" href = "https://www.healthit.gov/isa/sites/isa/files/2022-10/USCDI-Version-3-October-2022-Errata-Final.pdf">United States Core Data for Interoperability (USCDI), Version 3, October 2022 Errata</a>
     - <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU4/">HL7® FHIR® US Core Implementation Guide STU 4.0.0, June 2021</a>
     -  <a target = "_blank" href = "http://hl7.org/fhir/uv/bulkdata/STU2/">HL7® FHIR® Bulk Data Access (Flat FHIR®) (v2.0.0: STU 2), November 26, 2021</a>
 
