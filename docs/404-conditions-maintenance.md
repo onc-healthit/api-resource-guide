@@ -174,8 +174,9 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* Certified API Developers have the flexibility to consider using “Organization” and “Endpoint” FHIR® resources profiles, such as the profiles in the [Patient-Access Brands and Endpoints](https://hl7.org/fhir/smart-app-launch/2024Jan/brands.html) specification or [Validated Healthcare Directory IG](https://hl7.org/fhir/uv/vhdir/2018Jan/index.html). [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
 	* For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at §170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
 	
-	 
-	
+*Additional Clarifications included to the § 170.404 Certification Companion Guide (CCG):*
+
+ - Certified API Developers are encouraged to standardize service base URL publication using FHIR specifications such as <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html">SMART App Launch User-access Brands and Endpoints</a> (Brands specification). The Brands specification provides guidance for implementing interoperable API discovery and app user experience enhancements, and it is compatible with Certification Program service base URL publication requirements. Certified API Developers that choose to publish their customers’ service base URLs in <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html#brand-bundle-profile">Brand Bundle</a> format, including the additional organization details required to meet <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(b)(2)(ii)(B)">§ 170.404(b)(2)(ii)(B)</a> (i.e., organization name, location and facility identifier) within Organization resources in the Brand Bundle, would meet the publication format requirements at § 170.404(b)(2). 
 	
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (b)(2): Service base URL publiciation](inquiry-portal/404-inquiries.md#paragraph-b2-service-base-url-publiciation)
