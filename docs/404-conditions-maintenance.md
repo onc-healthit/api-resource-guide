@@ -20,7 +20,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 
 ## Information and Clarifications
 
-### Entire Criterion
+### Applies to Entire Criterion
 
 <!-- $ref{404:CCG["Applies to Conditions and Maintenance of Certification Requirements"], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to the entire criterion*"
@@ -31,6 +31,9 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 *Additional Clarifications included to the § 170.404 Certification Companion Guide (CCG):*
 
  - Regarding the recommendation by commenters that the scope of “all data elements” include the data elements of the standard adopted in § 170.213 and FHIR® resources referenced by the implementation specification adopted in § 170.215(b), ONC notes that both the standard and implementation specification are included in the interpretation of “all data elements of a patient's electronic health record to the extent permissible under applicable privacy laws” above. We note that this specific interpretation does not extend beyond the API Condition and Maintenance of Certification requirements finalized in § 170.404 and cannot be inferred to reduce the scope or applicability of other Cures Act Conditions of Certification or the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> which include a larger scope of data.
+
+ !!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Applies to Entire Criterion 170.404](inquiry-portal/404-inquiries.md#applies-to-entire-criterion)
 
 ### API Condition Of Certification Requirements
 #### API Condition Of Certification General Requirements
@@ -79,6 +82,9 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 - A requirement in § 170.404(a)(3)(i)(A) states that permitted fees in paragraphs § 170.404(a)(3)(ii) and § 170.404(a)(3)(iv) may include fees that result in a reasonable profit margin in accordance with the information blocking fees exception finalized in § 171.302.
 - Any fee that is not covered by an exception would be suspect under the <a target = "blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> and would equally not be permitted by this API Condition of Certification requirement.
 - Health IT developers are permitted to offer discounts to customers, as long as the discounted fees do not constitute information blocking and otherwise conform to applicable ONC certification requirements as well as all other applicable laws.
+
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (a)(3)(i): API Fees - General Conditions](inquiry-portal/404-inquiries.md#api-fees-general-conditions)
 
 #### API Fees – Permitted Fee (Development, Deployment, Upgrades)
 ???+ quote "**Regulation text at § 170.404(A)(3)(II)**"

@@ -6,7 +6,34 @@ This section contains anonymized feedback and inquiries, related to the API Cond
 
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
+## Applies to Entire Criterion
+### 2023 Inquiries
+**Stakeholder Inquiry**: We have been contacted by a developer asking for our FHIR documentation and access to our API. This developer does not currently have any business partnership or share any mutual customers with us. Are we obligated to work with them to provide documentation and access to our FHIR API? Can we ask them to engage with us on their FHIR development only when both companies have mutual customers?
+
+**ONC Response**: Certified API Developers (i.e., health IT developers with Health IT Modules certified to any of the § 170.315(g)(7) through (10) certification criteria) must conform to the <a target = "_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Condition and Maintenance of Certification requirements</a>. Such requirements include:
+
+- publishing complete business and technical documentation via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps
+- granting certain rights, as detailed in <a target = "_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(a)(4)(ii)(A)">45 CFR 170.404(a)(4)(ii)(A)</a>, to API Users, including access and use of certified API technology in a production environment
+- for § 170.315(g)(10)-certified Health IT Modules, registering and enabling all applications for production use within five business days of completing verification of an API User’s authenticity
+
+More information about the API Condition and Maintenance of Certification requirements is available in the <a target = "_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
+
+## Paragraph (a)(3)(i): API Fees - General Conditions
+### 2024 Inquiries
+**Stakeholder Inquiry**: For applications that fall outside the SMART App Launch and FHIR Bulk Data Access IG scopes, such as third-party data aggregators accessing data without direct app interaction by a patient or provider, is there an obligation to support such integrations? If not, can fees for such integrations be levied at the discretion of the Certified API Developer without the constraints defined under the API Conditions of Certification (§ 170.404)?
+
+**ONC Response**: Health IT Modules certified to the § 170.315(g)(10) criterion must support the single patient API capabilities and multiple patient API capabilities specified in the requirements in the § 170.315(g)(10) criterion. Additionally, the API Conditions and Maintenance of Certification requirements at § 170.404 describe behavioral requirements for Certified API Developers regarding support and maintenance of health IT certified to certain API criteria, including the § 170.315(g)(10) criterion. Certified API Developers must without exception conform to the API Conditions and Maintenance of Certification requirements, including the fees conditions specified in § 170.404(a)(3).
+
 ## Paragraph (a)(3)(iv): API Fees - Permitted Fee (Value-Added Services)
+### 2024 Inquiries
+**Stakeholder Inquiry**: We are inquiring about requirements and expectations for offering value-added services for certified API technology as defined in the API Condition and Maintenance of Certification requirements (170.404).
+
+Can we offer value-added services to only app developers that meet particular criteria that we define? 
+
+**ONC Response**: The API Condition of certification requirements at § 170.404(a)(3)(iv) permit Certified API Developers to charge fees to an API User for value-added services related to certified API technology, so long as such services are not necessary to efficiently and effectively develop and deploy production-ready software that interacts with certified API technology. For fees for value-added services, the Certified API Developer must comply with the requirements at § 170.404(a)(3)(i)(B), including that such fees are based on objective and verifiable criteria that are uniformly applied to all similarly situated API Information Sources and API Users.
+
+Additional information and related examples are available in the ONC Cures Act Final Rule (<a target = "_blank" href="https://www.federalregister.gov/d/2020-07419/p-1362">85 FR 25760</a>).
+
 ### 2021 Inquiries
 **Stakeholder Inquiry**: If an EHR developer’s API includes both certified and non-certified capabilities, does the entire API fall within the requirements of § 170.404?
 
