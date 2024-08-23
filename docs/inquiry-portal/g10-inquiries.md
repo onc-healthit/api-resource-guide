@@ -7,6 +7,11 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### 2024 Inquiries
+**Stakeholder Inquiry**: For certification to the (g)(10) criterion, which SMART App Launch IG capability sets must be supported?
+
+**ONC Response**: For purposes of certification and testing to the § 170.315(g)(10) criterion, Health IT Modules are required to support the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" capability sets described in a version of the SMART App Launch implementation guide adopted at § 170.215(c). SMART App Launch v1.0.0 is specified at § 170.215(c)(1) and SMART App Launch v2.0.0 is specified at § 170.215(c)(2). Health IT Modules are not required to support "Patient Access for EHR Launch" nor "Clinician Access for Standalone" capability sets.
+
 ### 2023 Inquiries
 **Stakeholder Inquiry**: We have been working to adopt the HL7 FHIR standard for all our external API communications. We were wondering if you can provide answers or linked resources to the following questions:
 
@@ -68,8 +73,6 @@ Please see the <a target = "_blank" href = "https://www.healthit.gov/test-method
 
 The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">ONC Certification (g)(10) Standardized API Test Kit</a> implements tests according to the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">§ 170.315(g)(10) Test Procedure</a>. This Test Procedure defines tests to verify conformance to § 170.315(g)(10) requirements to support US Core profiles (or FHIR core profiles if no corresponding US Core profile exists) for each of the data in USCDI. Therefore, the Inferno ONC Certification (g)(10) Standardized API Test Kit includes tests for US Core profiles beyond the US Core Patient profile.
 
-***
-
 ### 2022 Inquiries
 **Stakeholder Inquiry**: We have some questions regarding the consent requirements for § 170.315(g)(10) Standardized API for patient and population services.
 
@@ -117,8 +120,6 @@ A developer must present its own health IT for certification, and  may also use 
 
 In the provided example, the health IT developer could use "relied upon software" in the form of an authorization server to fulfill authentication and authorization requirements in the § 170.315(g)(10) "Standardized API for patient and population services" criterion. However, a Health IT Module cannot be certified to the § 170.315(g)(10) "Standardized API for patient and population services" criterion without fulfilling all of its specified requirements, including authentication and authorization requirements.
 For more information about "relied upon software", please see the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/relieduponsoftwareguidance.pdf">Relied Upon Software Program Guidance document</a>.
-
-***
 
 ### 2021 Inquiries
 **Stakeholder Inquiry**: If we certify to 170.315(g)(10), does that cover all of the API requirements specified in this PDF? <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf">https://www.healthit.gov/cures/sites/default/files/cures/2020-03/APICertificationCriterion.pdf</a>
@@ -172,8 +173,6 @@ The ONC Certification criteria for eCQMs does not require any FHIR standards. Fo
 **Stakeholder Inquiry**: The US Core IG requires support for the $docref operation. Can you clarify what the (g)(10) requirements regarding the $docref operation are?
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion does not require support for the US Core <a target = "_blank" href = "http://hl7.org/fhir/us/core/STU3.1.1/OperationDefinition-docref.html">$docref operation</a>.
-
-***
 
 ### 2021 Inquiries
 **Stakeholder Inquiry**: US Core 3.1.1 requires Procedure.performed. For (g)(10) certification how are we expected to accommodate cancelled or not done procedures where a date or period does not exist? 
@@ -246,8 +245,6 @@ As specified in Bulk Data Access 1.0.1 <a target = "_blank" href = "http://hl7.o
 
 Requirements imposed on clients to access multiple patients' data using this flexibility must be completely and appropriately documented as per the documentation requirements at § 170.315(g)(10)(viii).
 
-***
-
 ### 2021 Inquiries
 **Stakeholder Inquiry**: For the Inferno Multi-Patient API tests, there is mention of the server providing the resources that are referenced as must support elements in other required resources. Also in this test, the location resource is called out as optional.
 
@@ -265,8 +262,6 @@ Regarding “Organization” HL7 FHIR resources, we provided the following clari
 
 Health IT developers must include all the resources necessary via the multiple patient services API responses to fully resolve references contained in HL7 FHIR resources, including “Organization” resources.
 
-***
-
 ## Paragraph (g)(10)(iii): Application Registration
 ### 2021 Inquiries
 **Stakeholder Inquiry**: Can you clarify how we are expected to scope US Core IG resources that do not exists in USCDI or the FHIR Patient Compartment?
@@ -276,8 +271,6 @@ Health IT developers must include all the resources necessary via the multiple p
 *"For demonstration of the SMART IG "Standalone Launch" steps, health IT developers are permitted to scope US Core IG resources that do not exist in either the standard adopted at § 170.213 (USCDI version 1) or the "Compartment Patient" section of the standard adopted at § 170.215(a)(1) (HL7 FHIR Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Encounter,” “Device,” “Location,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(g)(10)(viii)(A) and § 170.404(a)(2)."*
 
 The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certification">Inferno testing tool ONC Health IT Certification Program tests for § 170.315(g)(10)</a> will be updated to accommodate this change in the coming weeks.
-
-***
 
 ## Paragraph (g)(10)(iv): Secure Connection
 ### 2022 Inquiries
@@ -289,9 +282,75 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/suites/g10_certifi
 
 The Inferno testing tool will be updated to align with this clarification. However, until the Inferno testing tool is updated, ONC grants an exception for the ONC Certification (g)(10) Standardized API Test Kit test 5.3.01 "Bulk Data Server is secured by transport layer security", wherein for the purposes of certification and testing it is sufficient for the health IT developer to document how the Health IT Module enforces TLS version 1.2 or above for the Bulk Data file server.
 
+## Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients
+### 2024 Inquiries
+**Stakeholder Inquiry**: Background Preamble from HTI-1 Final Rule [89 FR 1294]: “Additionally, regarding independently supporting SMART v2 and SMART v1 scopes, we note that this proposal requires the “permission-v1” and “permission-v2” capabilities as defined in the SMART v2 Guide, which define how such scopes must be supported. We clarify that the SMART v2 Guide scopes must be supported independently of the SMART v1 Guide scopes as per the “permission-v2” capability in the SMART v2 Guide, and that the SMART v1 Guide scopes must be supported as per the “permission-v1” capability in the SMART v2 Guide. Support for scopes in this manner enables the updated SMART v2 Guide scope syntax to be used by applications while also maintaining backwards compatibility with the SMART v1 Guide scopes for legacy applications.”
+
+Question: We are seeking confirmation of our understanding on the requirement for support of both "permission-v1" capability encompassing SMART v1 scopes and "permission-v2" capability encompassing SMART v2 scopes. We understand the intent of this requirement to be that the API server support the ability for an app to use both SMART v1 and SMART v2 scopes to maintain compatibility for apps that are not yet advanced to v2 scopes, but that this would not require that servers somehow support the ability for the same app to utilize both scope sets simultaneously (e.g., using both as part of the same request operation). Is this a correct understanding?
+
+**ONC Response**: For certification purposes, a Health IT Module is not required to support authorization requests nor responses including a combination of SMART v1 and SMART v2 scopes. For example, an authorization request including simultaneously the SMART v1 scope of “patient/Observation.read” and the SMART v2 scope of “patient/Condition.rs” is not required to be supported.
+
 ***
 
-## Paragraph (g)(10)(v)(A)(1): First Time Authentication / Authorization for Single Patients
+**Stakeholder Inquiry**: For the HTI-1 Final Rule requirement to support SMART v2 granular scopes, are we required to enable a user to authorize apps to receive patient data at (1) exclusively the FHIR resource level or (2) at the FHIR resource level plus the more finely grained FHIR sub-resource level for the specified resources and sub-resource parameters (i.e., Condition sub-resources Encounter Diagnosis, Problem List, and Health Concern and the Observation resource with Observation sub-resources Clinical Test, Laboratory, Social History, SDOH, Survey, and Vital Signs).
+
+If we are required to support app authorization at the FHIR resource level plus the more finely grained FHIR sub-resource level for the specified resources and sub-resource parameters, are we required to support this (1) for exclusively patient user scenarios or (2) for both patient and clinician user scenarios?
+
+**ONC Response**: For certification and testing purposes the Health IT Module must demonstrate support for patients and users to authorize an app to receive patient data using scopes with “Finer-grained resource constraints using search parameters” for the sub-resources specified in the HTI-1 Final Rule. We require a Health IT Module to support a patient’s ability to provide authorization at the individual sub-resource scope level.
+
+Although Health IT Modules presented for testing and certification must include the ability for patients to authorize an application to receive their EHI based on individual FHIR resource level and individual sub-resource level scopes, Health IT Modules are not prohibited from presenting authorization scopes in a more user-friendly format (e.g. grouping scopes under categories, renaming the scopes for easier comprehension by the end-user), as long as the ability for patients to authorize applications based on individual resource level and individual sub-resource level scopes is available, if requested by the patient.
+
+As part of supporting the SMART App Launch “permission-v2” capability for the purposes of certification, if an app requests authorization for a resource level scope for the “Condition” or “Observation” resources, then for patient authorization purposes a Health IT Module must support presentation of the required sub-resource scopes to the patient for authorization. Specifically, sub-resource scopes must be presented for patient authorization as follows:
+
+- “Condition” sub-resource scopes “Encounter Diagnosis”, “Problem List”, and “Health Concern” if a “Condition” resource level scope is requested 
+- “Observation” sub-resource scopes “Clinical Test”, “Laboratory”, “Social History”, “SDOH”, “Survey”, and “Vital Signs” if an “Observation” resource level scope is requested 
+
+***
+
+**Stakeholder Inquiry**: In the context of HTI-1 Final Rule (g)(10) criterion requirements for SMART v2 granular scopes:
+
+Question 1: In a scenario where an app requests access to retrieve data for the full Condition or Observation resource (i.e., not utilizing a more granular sub-resource scope), is it acceptable for developers to only allow patients ability to approve or deny access at that full FHIR resource level. Or, is there an expectation to still provide the ability to approve or deny for the more granular individual sub-resources or a grouped set of sub-resources?
+
+Question 2: The second question relates to supporting the granular scopes control for clinician launch scenarios. Are Health IT Modules required to support presenting scopes in an authorization UI to users for the clinician access for EHR launch SMART capability workflow? Instead, is the option available to provide authorization during the clinician access for EHR launch workflow using granular scopes coordinated during the app registration process?
+
+**ONC Response**: To respond to the first question: For the purposes of certification to the § 170.315(g)(10) criterion, a Health IT Module must support patient authorization at the individual sub-resource scope level for the sub-resource scopes specified in the HTI-1 Final Rule. Given an app requests a resource level scope for which sub-resource scopes must be supported, the Health IT Module must support a patient’s ability to provide authorization at the individual sub-resource scope level for the sub-resource scopes under that resource level scope. For example, given a “Condition” resource level scope is requested by an app, the Health IT Module must support patient authorization of individual “Encounter Diagnosis”, “Problem List”, and “Health Concern” sub-resource scopes.
+
+To respond to the second question: For purposes of certification to the § 170.315(g)(10) criterion, a Health IT Module is not required to support for authorization purposes presentation of sub-resource scopes to the user during clinician access for EHR launch.
+
+***
+
+**Stakeholder Inquiry**: We have three questions:
+
+1. In the HTI-1 final rule preamble there is discussion clarifying that support for wildcard scopes is not mandatory. However, it is referenced in context of the permission-patient capability, which caused some confusion. Permission-patient, as we understand it, is simply the ability to authorize a user to access to a single patient’s record instead of all the patients the user in context has access to (which is what permission-user capability is). So, it is not necessarily specific to a patient access scenario but could be applicable for both patient and clinician access scenarios as evidenced by inclusion in all four capability sets defined at 8.1.1 in the SMART v2 IG.  Our assumption is that the intent was actually to clarify that wildcard scopes do not have to be supported for any patient access scenario, whereas they would need to be supported for clinician access scenarios. Is this a correct understanding of the intent?
+
+2. The SMART v2 specification was adopted as standard at 170.215(c)(2) specifically citing several optional capabilities, including all “Capabilities” as defined in “8.1.2 Capabilities,” excepting the “permission-online” capability. What is unclear from this is whether all of those capabilities are required to be supported for every persona, or if they are limited to specific relevant ones based on the capability sets defined at 8.1.1.
+
+    - For example, the context-standalone-patient capability is included as a requirement at 8.1.2 but it is exclusively included in the Patient Access for Standalone Apps capability set at 8.1.1.1. Does the 8.1.2 capabilities requirement compel developers to support context-standalone-patient for both clinician and patient persona launches, or only patient since the equivalent Clinician Access for Standalone capability set at 8.1.1.3 does not include it (even though that capability set is not even required as adopted)?
+    - Similarly, context-ehr-patient and context-ehr-encounter are required as part of the 8.1.2 capabilities, but they are only included in the Clinician Access for EHR Launch capability set at 8.1.1.4 with context-ehr-patient alone included in the Patient Access for EHR Launch (i.e. from Portal) capability set at 8.1.1.2. If either/both of these were required for the patient persona this would indicate that developers must support Patient Access for EHR Launch (i.e. from Portal) even though this capability set was specifically excluded from the requirements (i.e., only “Patient Access for Standalone Apps” and “Clinician Access for EHR Launch” capability sets are cited in the standard adopted at 170.215(c)(2)).
+    - For one more example, context-standalone-encounter is required as part of the 8.1.2 capabilities but is not included in any capability sets defined at 8.1.1. It’s unclear whether this would need to be supported for both (or either) personas.
+    - Overall, it seems that the way the SMART v2 requirements were adopted citing certain capability sets at 8.1.1 and then citing all capabilities at 8.1.2 is conflicting. We would recommend ONC consider clarifying that only the 8.1.2 capabilities aligned with the relevant required capability sets are truly required for developers to support.
+
+3. We’re hoping for some clarification on the HTI-1 requirement for support of “3.0.2.3 Finer-grained resource constraints using search parameters” as part of the SMART v2 standard. The preamble specifically identifies that this requirement was adopted as proposed, which was to require support for more granular resource constraints specifically for “the “category” parameter for (1) the Condition resource with Condition sub-resources Encounter Diagnosis, Problem List, and Health Concern and (2) the Observation resource with Observation sub-resources Clinical Test, Laboratory, Social History, SDOH, Survey, and Vital Signs.” The sub-resources identified for the Condition resource are accurate but we believe there may be an issue with those identified for the Observation resource. From reviewing the latest FHIR US Core 6.1.0 IG it appears that the Clinical Test and SDOH options are no longer valid. Accordingly, it would seem that there is a need to instead point to the Observation Category value set as the scope of categories that must be supported as sub-resources.
+
+**ONC Response**:
+
+1. For § 170.315(g)(10) criterion requirements at § 170.315(g)(10)(v)(A) regarding authorization for patient and user scopes, we clarify wildcard scopes as defined in the implementation specifications at § 170.215(c) are not required to be supported.
+
+2. We clarify the following SMART App Launch v2.0.0 capabilities must be supported as part of fulfilling the authentication and authorization requirements at § 170.315(g)(10)(v)(A) when certifying using the implementation specification at § 170.215(c)(2):
+
+    - To support patient access for standalone apps, the Health IT Module must support:
+        - the capabilities of "launch-standalone" and "context-standalone-patient"; and
+        - the capabilities in subsections "Authorization Methods", "Client Types", "Single Sign-on", and "Permissions" except the "permission-online" and "permission-user" capabilities
+
+    - To support clinician access for EHR launch, the Health IT Module must support:
+        - the capabilities of "launch-ehr", "context-banner", "context-style", "context-ehr-patient", and "context-ehr-encounter" (if supporting USCDI v2 or v3); and
+        - the capabilities in subsections "Authorization Methods", "Client Types", "Single Sign-on", and "Permissions" except the "permission-online" capability
+
+3. As finalized in the HTI-1 Final Rule (<a target="_blank" href="https://www.federalregister.gov/d/2023-28857/p-1250">89 FR 1294</a>), Health IT Modules are required to support SMART App Launch v2.0.0 "Finer-grained resource constraints using search parameters" for the “category” parameter for the Condition resource with Condition sub-resources Encounter Diagnosis, Problem List, and Health Concern, and the Observation resource with Observation sub-resources Clinical Test, Laboratory, Social History, SDOH, Survey, and Vital Signs. We defer to the implementation guides referenced at § 170.215(b)(1) and § 170.215(c) for specific implementation guidance for this requirement. In the context of the US Core 6.1.0 implementation guide, the Observation sub-resources of Clinical Test and SDOH may have scopes supported as follows:
+
+    - support for scopes for the Observation sub-resource Clinical Test using the "procedure" code from the <a target="_blank" href="https://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html">US Core Clinical Result Observation Category value set</a>.
+    - support for scopes for the Observation sub-resource SDOH using the "sdoh" code from the <a target="_blank" href="https://hl7.org/fhir/us/core/STU6.1/CodeSystem-us-core-category.html">US Core Category code system</a>.
+
 ### 2023 Inquiries
 **Stakeholder Inquiry**: Can ONC please clarify requirements around patient ability to authorize an application to receive their EHI based on FHIR resource level scopes? Is it required that the patient be given the ability to select or deselect individual FHIR resources? We’ve seen examples of other deployed systems not providing the ability for a patient to select or deselect individual FHIR resources.
 
@@ -301,16 +360,12 @@ Although Health IT Modules presented for testing and certification must include 
 
 Please note that the information above is specific and limited in scope to the requirements and potential limitations of certification criteria. A Certified Health IT Developer and their Certified Health IT Modules must comply with all applicable requirements of the ONC Certification program. For Health IT Modules certified to the § 170.315(g)(10) criterion, this includes the aforementioned capability for patients to authorize an application to receive their EHI based on FHIR resource-level scopes. Choices made by users of certified health IT as to if, when, or how they may deploy particular functionalities of the health IT are outside the scope of the Certification Program, although other regulations may apply, such as <a target = "_blank" href = "https://www.healthit.gov/topic/information-blocking">information blocking regulations</a> or requirements for successful participation in CMS programs such as the <a target = "_blank" href = "https://www.cms.gov/regulations-and-guidance/legislation/ehrincentiveprograms">Promoting Interoperability Program</a>.
 
-***
-
 ### 2022 Inquiries
 **Stakeholder Inquiry**: Can you provide some more clarification on what is required in (g)(10)(v)(A)(1) where systems are expected to support refresh tokens for “no less than 3 months.”
 
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" certification criterion includes requirements for first time connections at § 170.315(g)(10)(v)(A)(1) that a Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications capable of storing a client secret and native applications capable of securing a refresh token. A requirement for subsequent connections is also included under § 170.315(g)(10)(v)(A)(2) that a Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. These refresh token requirements are intended to enable a patient's persistent access to their electronic health information without special effort.
 
 In fulfillment of the aforementioned § 170.315(g)(10) requirements, health IT developers are not prohibited from allowing patients to express their persistent access preferences and from configuring the duration of persistent access according to patient preferences. When patients are presented with options for the duration of persistent access, an option of at least three months must be included.
-
-***
 
 ### 2021 Inquiries
 **Stakeholder Inquiry**: What is a permissible method of allowing patients to authorize access to individual FHIR resources, and if this means that the FHIR server must be able to support requests from client applications for one to all USCDI resources; or if it means the FHIR server must allow the user at the time of authorization to pick/choose which resources are granted access?
@@ -345,8 +400,6 @@ and for subsequent connections:
 - A Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications capable of storing a client secret. 
 Beyond the certification criteria requirements, health IT developers are not required to support all methods that third-party application developers seek to use. Additional information and clarifications regarding this criterion can be found on the <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#ccg">Certification Companion Guide for § 170.315(g)(10)</a>.
 
-***
-
 ## Paragraph (g)(10)(v)(B): Authentication / Authorization for Multiple Patient Services
 ### 2021 Inquiries
 **Stakeholder Inquiry**: There is a requirement that clients downloading the bulk data use the same access token as they did to make the original request. Does it permit other equivalently secure means of authorization as well?
@@ -365,8 +418,6 @@ According to the requirements in § 170.315(g)(10)(v)(B), Health IT Modules must
 
 At a minimum for the ONC Health IT Certification Program, Health IT Modules certified to the § 170.315(g)(10) criterion must support the issuance of a valid access token to an application during authentication and authorization as per the “SMART Backend Services: Authorization Guide” section of the Bulk FHIR IG. However, if the minimum requirements are met, health IT developers may support additional access-control schemes beyond OAuth 2.0 bearer tokens.
 
-***
-
 ## Paragraph (g)(10)(vi): Patient Auhtorization Revocation
 ### 2021 Inquiries
 **Stakeholder Inquiry**: To satisfy the “Patient authorization revocation” requirements can short-lived access tokens be allowed to expire in lieu of immediate access token revocation?
@@ -374,8 +425,6 @@ At a minimum for the ONC Health IT Certification Program, Health IT Modules cert
 **ONC Response**: The § 170.315(g)(10) "Standardized API for patient and population services" Certification Companion Guide will be updated with the following clarification:
 
 *For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART Application Launch Framework Implementation Guide Release 1.0.0.</a> For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.*
-
-***
 
 ## Inferno
 ### 2022 Inquiries
@@ -396,6 +445,7 @@ Regarding the privacy and security of the FHIR APIs certified to the § 170.315(
 For the Inferno Pulse Oximetry Tests (4.18), the Health IT Module must provide FHIR resources conforming to the US Core Pulse Oximetry Profile as specified in the US Core Implementation Guide. The US Core Pulse Oximetry Profile contains elements marked as "MustSupport". As part of the Inferno Pulse Oximetry Tests, the Health IT Module must provide each of these "MustSupport" elements at least once. If at least one cannot be found, the Health IT Module will not pass these tests. Inferno ignores elements with Data Absent Reason extensions when looking for "MustSupport" elements.
 
 ***
+
 **Stakeholder Inquiry**: Our FHIR API returns additional resource types in search responses and Inferno ((g)(10) Standardized API Test Kit) is failing us for this. Is this intended to not be allowed? The FHIR specification provides flexibility for server search responses.
 
 **ONC Response**: The Inferno <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit/releases/tag/v2.2.2">ONC Certification (g)(10) Standardized API Test Kit v2.2.2</a>, released on 7/11/2022, includes the following update which should resolve the technical concern raised. If your implementation continues to experience this issue, please submit another ticket through the Health IT Feedback and Inquiry Portal.
@@ -424,8 +474,6 @@ Response to Question 2: *If it’s the Inferno that we need to register for EHR 
 The "EHR Practitioner App" tests in Inferno require the Health IT Module demonstrate the ability to perform an EHR launch to a SMART on FHIR confidential client with patient context, refresh token, and OpenID Connect identity token. After launch, Inferno performs a simple Patient resource read on the patient in context. Inferno then refreshes the access token and reads the Patient resource using the new access token to ensure that the refresh was successful. Finally, Inferno decodes and validates the authentication information provided by OpenID Connect.
 
 Additional detail regarding the "EHR Practitioner App" tests in Inferno is available in the ONC Certification (g)(10) Matrix provided with each Inferno release. The ONC Certification (g)(10) Matrix for the current version of Inferno is available via the <a target = "_blank" href = "https://github.com/onc-healthit/onc-certification-g10-test-kit">onc-certification-g10-test-kit</a> repository on GitHub.
-
-***
 
 ### 2021 Inquiries
 **Stakeholder Inquiry**: What are the test data requirements for testing to (g)(10) using Inferno?

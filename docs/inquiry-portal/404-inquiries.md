@@ -6,7 +6,34 @@ This section contains anonymized feedback and inquiries, related to the API Cond
 
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
+## Applies to Entire Criterion
+### 2023 Inquiries
+**Stakeholder Inquiry**: We have been contacted by a developer asking for our FHIR documentation and access to our API. This developer does not currently have any business partnership or share any mutual customers with us. Are we obligated to work with them to provide documentation and access to our FHIR API? Can we ask them to engage with us on their FHIR development only when both companies have mutual customers?
+
+**ONC Response**: Certified API Developers (i.e., health IT developers with Health IT Modules certified to any of the § 170.315(g)(7) through (10) certification criteria) must conform to the <a target = "_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Condition and Maintenance of Certification requirements</a>. Such requirements include:
+
+- publishing complete business and technical documentation via a publicly accessible hyperlink that allows any person to directly access the information without any preconditions or additional steps
+- granting certain rights, as detailed in <a target = "_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(a)(4)(ii)(A)">45 CFR 170.404(a)(4)(ii)(A)</a>, to API Users, including access and use of certified API technology in a production environment
+- for § 170.315(g)(10)-certified Health IT Modules, registering and enabling all applications for production use within five business days of completing verification of an API User’s authenticity
+
+More information about the API Condition and Maintenance of Certification requirements is available in the <a target = "_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
+
+## Paragraph (a)(3)(i): API Fees - General Conditions
+### 2024 Inquiries
+**Stakeholder Inquiry**: For applications that fall outside the SMART App Launch and FHIR Bulk Data Access IG scopes, such as third-party data aggregators accessing data without direct app interaction by a patient or provider, is there an obligation to support such integrations? If not, can fees for such integrations be levied at the discretion of the Certified API Developer without the constraints defined under the API Conditions of Certification (§ 170.404)?
+
+**ONC Response**: Health IT Modules certified to the § 170.315(g)(10) criterion must support the single patient API capabilities and multiple patient API capabilities specified in the requirements in the § 170.315(g)(10) criterion. Additionally, the API Conditions and Maintenance of Certification requirements at § 170.404 describe behavioral requirements for Certified API Developers regarding support and maintenance of health IT certified to certain API criteria, including the § 170.315(g)(10) criterion. Certified API Developers must without exception conform to the API Conditions and Maintenance of Certification requirements, including the fees conditions specified in § 170.404(a)(3).
+
 ## Paragraph (a)(3)(iv): API Fees - Permitted Fee (Value-Added Services)
+### 2024 Inquiries
+**Stakeholder Inquiry**: We are inquiring about requirements and expectations for offering value-added services for certified API technology as defined in the API Condition and Maintenance of Certification requirements (170.404).
+
+Can we offer value-added services to only app developers that meet particular criteria that we define? 
+
+**ONC Response**: The API Condition of certification requirements at § 170.404(a)(3)(iv) permit Certified API Developers to charge fees to an API User for value-added services related to certified API technology, so long as such services are not necessary to efficiently and effectively develop and deploy production-ready software that interacts with certified API technology. For fees for value-added services, the Certified API Developer must comply with the requirements at § 170.404(a)(3)(i)(B), including that such fees are based on objective and verifiable criteria that are uniformly applied to all similarly situated API Information Sources and API Users.
+
+Additional information and related examples are available in the ONC Cures Act Final Rule (<a target = "_blank" href="https://www.federalregister.gov/d/2020-07419/p-1362">85 FR 25760</a>).
+
 ### 2021 Inquiries
 **Stakeholder Inquiry**: If an EHR developer’s API includes both certified and non-certified capabilities, does the entire API fall within the requirements of § 170.404?
 
@@ -26,9 +53,51 @@ We are not able to provide individualized advice on whether a specific fact patt
 
 Anyone who believes they may have experienced or observed information blocking by <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/InformationBlockingActors.pdf">any health care provider, health IT developer of Certified Health IT, or health information network or health information exchange</a> is encouraged to share their concerns with us through the <a target = "_blank" href = "https://healthit.gov/report-info-blocking">Information Blocking Portal</a> on ONC’s website, HealthIT.gov.
 
-***
+## Paragraph (a)(4): API Openness And Pro-Competitive Conditions
+### 2024 Inquiries
+**Stakeholder Inquiry**: In situations where a third-party developer using 'Clinician Access for EHR Launch' requests API access, but no mutual clients are found between them and the practice (API Information Sources) during the vendor verification process: Is there an obligation to accommodate the registration request under the g.10 certification, or is it permissible to deny such requests based on the absence of mutual clients?
+
+**ONC Response**: As specified in the API Conditions of Certification at § 170.404(a)(4), a Certified API Developer must grant an API Information Source the independent ability to permit an API User to interact with the certified API technology deployed by the API Information Source. This requirement supports API Information Sources having the sole authority and autonomy to permit API Users to interact with the API technology deployed by the API Information Source in a non-discriminatory manner.
+
+In general, ONC does not prescribe the registration paradigm that Certified API Developers create for themselves and their customers. Apps supporting the "Clinician Access for EHR Launch" capability set are tightly integrated with the Health IT Modules deployed by API Information Sources. Accordingly, registration for these apps could more often fall to the API Information Source.
+
+Additional background information and guidance for the API Conditions of Certification requirement at § 170.404(a)(4) and application registration for apps focusing on the "Clinician Access for EHR Launch" capability set is available in the ONC Cures Act Final Rule (<a target="_blank" href="https://www.federalregister.gov/d/2020-07419/p-1378">85 FR 25762</a>) and <a target="_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Conditions and Maintenance of Certification Certification Companion Guide</a>.
 
 ## Paragraph (b)(2): Service base URL publiciation
+### 2024 Inquiries
+**Stakeholder Inquiry**: Regarding the updated service base URL publication requirements adopted with HTI-1, we are seeking further clarification on the granularity that is expected for publishing “facility or organization level identifiers” as referred to in the final rule preamble (https://www.federalregister.gov/d/2023-28857/p-1183).
+
+We understand through the above referenced clarification that there is not a need or expectation to publish endpoints at an individual provider level, but are still a bit unclear on the level of granularity expected for a “facility or organization” level. For example, this could theoretically be interpreted as either an integrated delivery network (IDN) organizational level which would likely consist of many different individual hospitals and other facilities, or as an individual physical facility (e.g., hospital or clinic) level.
+
+Is there a more specific definition for this that ONC can provide to guide developers, or is this determination left up to the developer provided that all endpoints serviced by the developer that are used for patient access purposes are published?
+
+**ONC Response**: The Maintenance of Certification requirements for service base URL publication at <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(b)(2)">45 CFR 170.404(b)(2)</a> require that, at a minimum, the service base URLs and related organization details are published at the Certified API Developer customer level.
+
+If, for example, a Certified API Developer licenses their § 170.315(g)(10)-certified Health IT Module to an integrated delivery network (IDN) that deploys that module across many different individual facilities, it would be minimally expected that the IDN's name, location and a related facility identifier be published alongside the patient access service base URLs(s) for this customer to meet the publication requirements at <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(b)(2)">§ 170.404(b)(2)</a>.
+
+Similarly if, for example, a Certified API Developer licenses their § 170.315(g)(10)-certified Health IT Module to an individual provider who deploys that module across their practice, it would be minimally expected that the provider's practice name, location and a related facility identifier for that practice be published alongside the patient access service base URLs(s) for this customer to meet the publication requirements at  § 170.404(b)(2).
+
+More information on the § 170.404(b)(2) requirements can be found in the <a target="_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">Application Programming Interfaces Certification Companion Guide</a> and the <a target="_blank" href="https://onc-healthit.github.io/api-resource-guide/404-conditions-maintenance/#api-service-base-url-publication">API Resource Guide</a>.
+
+We encourage Certified API Developers to consider options beyond the minimum requirements when possible, and to publish organization details at a level of granularity that best supports <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(c)(API%20User)">API Users</a> (e.g., third party application developers) in presenting details that patients can easily recognize and connect to. As an example in the case of a large IDN with many different individual hospitals and facilities that a patient might visit, Certified API Developers can consider leveraging additional Organization resource features in the FHIR® specification like the `Organization.partOf` element in the FHIR Organization resource to represent the different IDN sub-organizations to provide more granular information.
+
+Finally, we also encourage Certified API Developers to considering following related FHIR community work in the endpoint discovery space, such as the recently published <a target="_blank" href="https://hl7.org/fhir/smart-app-launch/brands.html">User-access Brands and Endpoints FHIR specification</a> which provides guidance for ensuring "a consistent and recognizable user experience when connecting users to health records across various platforms and services."
+
+***
+
+**Stakeholder Inquiry**: Regarding your Service Base URL Publication requirements:
+
+- What are the options for a provider practice level identifier? 
+- The ONC references a facility identifier. Typically, each hospital has its own CMS Certification Number (CCN). The ONC mentions a health system ID number. What is that number?
+
+**ONC Response**: ONC does not specify a particular facility, provider, or health system identifier that is required to meet our updated Service Base URL publication requirements at 45 CFR 170.404(b)(2) finalized in the <a target="_blank" href="https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and">HTI-1 rule</a>. Certified API Developers have flexibility to choose any facility level identifier for each of the organizations (i.e., <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170#p-170.404(c)(API%20Information%20Source)">API Information Sources</a>) deploying their 170.315(g)(10)-certified Health IT Modules.
+
+To your first question, if you choose to meet a facility level identifier requirement by publishing a collection of individual provider identifiers for a particular API Information Source, a widely used provider level identifier is the National Provider Identifier (NPI). To support interoperability, we encourage Certified API Developers choosing to publish individual provider identifiers to use the most relevant and widely usable individual identifiers such as NPIs. Another example of a provider level identifier would be a provider's state license number.
+
+To your second question, our mention of "health system ID" number is meant to be a generic reference. A CMS Certification Number (CCN) counts as a health system or API Information Source facility identifier to meet our requirement at 170.404(b)(2)(ii)(B). Another example of a health system or API Information Source facility identifier would be an organization level NPI.
+
+As we indicated in HTI-1 at <a target="_blank" href="https://www.federalregister.gov/d/2023-28857/p-1183">89 FR 1288</a>, "[f]acility level identifiers, for the purposes of certification to our Endpoint publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has." ONC does not specifically define "other health system ID" but instead provides flexibility to developers as to which identifier is used.
+
 ### 2023 Inquiries
 **Stakeholder Inquiry**: I have questions about the regulatory text in the ONC Cures Act Final Rule found here: <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1405">https://www.federalregister.gov/d/2020-07419/p-1405</a>.
 
@@ -44,8 +113,6 @@ To be open and transparent to the public, developers must provide a hyperlink to
 
 There are no exceptions to the requirement that Certified API Developers must publish service base URLs for all Health IT Modules certified to § 170.315(g)(10) that can be used by patients to access their EHI.
 
-***
-
 ### 2022 Inquiries
 **Stakeholder Inquiry**: If an EHR vendor chooses to obtain and integrate a 3rd party solution that is certified to 170.315(g)(10), who is responsible for publish the service base URLs?
 
@@ -54,8 +121,6 @@ There are no exceptions to the requirement that Certified API Developers must pu
 ONC provides discussion regarding Certified API Developer publication of service base URLs in the ONC Cures Act Final Rule (<a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/page-25765">85 FR 25765</a>): "*We believe that Certified API Developers will have adequate relationships with API Information Sources in the process of providing Health IT Modules certified to § 170.315(g)(10) and will be able to collect and publish all service base URLs that support patient access on behalf of their customers. Furthermore, we note that API Information Sources would be obligated to share such service base URLs with Certified API Developers to avoid violating the Technical Interference Information Blocking provisions ...*"
 
 The ONC Cures Act Final Rule at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1909">85 FR 25813</a> provides an example which discusses API Information Sources providing Certified API Developers service base URLs in the context of Information Blocking.
-
-***
 
 ## Paragraph (b)(3): Rollout of (g)(10)-Certified APIs
 ### 2022 Inquiries
@@ -100,8 +165,6 @@ We encourage all Certified Health IT Developers to work with their ONC-ACBs and 
 If a health IT developer currently has Health IT Modules certified to 45 CFR 170.315(g)(8) under the ONC Health IT Certification Program, it must meet this Maintenance of Certification requirement no later than December 31, 2022, to continue participating in the ONC Health IT Certification Program. Failure to comply with a Condition and Maintenance of Certification requirement could result in a Certified Health IT Module being non-compliant, and ONC could initiate Direct Review (<a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-E/section-170.580#p-170.580(a)(2)(iii)">45 CFR 170.580(a)(2)(iii)</a>) and pursue corrective actions to enforce the requirement. ONC’s goal is to work with Certified Health IT Developers to remedy any non-conformities in a timely manner, but failure to conform with requirements of the ONC Health IT Certification Program can ultimately result in terminating the affected Health IT Modules and/or issuing a certification ban to the Certified Health IT Developer. For more information on Direct Review, please visit <a target = "_blank" href = "http://www.healthit.gov/Direct-Review">http://www.healthit.gov/Direct-Review</a> and our <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2022-03/Draft_Review_Factsheet.pdf">Direct Review fact sheet</a>.
 
 We encourage health IT developers to work with their ONC-ACB and customers to develop a certification and roll-out strategy to meet ONC Health IT Certification Program requirements by the required regulatory deadlines.
-
-***
 
 ### 2021 Inquiries
 **Stakeholder Inquiry**: Do all products have to be HL7® FHIR capable by Dec 31, 2022, or just the certified products?
