@@ -20,7 +20,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 
 ## Information and Clarifications
 
-### Applies to Entire Criterion
+### Entire Criterion
 
 <!-- $ref{404:CCG["Applies to Conditions and Maintenance of Certification Requirements"], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to the entire criterion*"
@@ -32,7 +32,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 
  - Regarding the recommendation by commenters that the scope of “all data elements” include the data elements of the standard adopted in § 170.213 and FHIR® resources referenced by the implementation specification adopted in § 170.215(b), ONC notes that both the standard and implementation specification are included in the interpretation of “all data elements of a patient's electronic health record to the extent permissible under applicable privacy laws” above. We note that this specific interpretation does not extend beyond the API Condition and Maintenance of Certification requirements finalized in § 170.404 and cannot be inferred to reduce the scope or applicability of other Cures Act Conditions of Certification or the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> which include a larger scope of data.
 
- !!! note ""
+!!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Applies to Entire Criterion 170.404](inquiry-portal/404-inquiries.md#applies-to-entire-criterion)
 
 ### API Condition Of Certification Requirements
@@ -84,7 +84,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 - Health IT developers are permitted to offer discounts to customers, as long as the discounted fees do not constitute information blocking and otherwise conform to applicable ONC certification requirements as well as all other applicable laws.
 
 !!! note ""
-	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (a)(3)(i): API Fees - General Conditions](inquiry-portal/404-inquiries.md#api-fees-general-conditions)
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (a)(3)(i): API Fees - General Conditions](inquiry-portal/404-inquiries.md#paragraph-a3i-api-fees-general-conditions)
 
 #### API Fees – Permitted Fee (Development, Deployment, Upgrades)
 ???+ quote "**Regulation text at § 170.404(A)(3)(II)**"
@@ -151,6 +151,8 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* Application developer affirmations to health IT developers regarding the ability of their applications to secure a refresh token, a client secret, or both, must be treated in a good faith manner consistent with the provisions established in the openness and pro-competitive conditions at § 170.404(a)(4).
 	* The technical requirements to support patient authorization of apps to access their data in § 170.315(g)(10)-certified API technology are described in § 170.315(g)(10)(v)(A) and require conformance to the HL7® SMART App Launch Implementation Guide using the OAuth 2.0 framework. Certified Health IT Developers must make these patient authorization capabilities available in their § 170.315(g)(10)-certified APIs according to the general access requirements at § 170.404(a)(1), and openness and pro-competitive conditions at § 170.404(a)(4). Under these collective Program requirements, any individual can authorize apps of their choice to receive their health data without any additional or out-of-band steps, or any other preconditions.
 	
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (a)(4): API Openness And Pro-Competitive Conditions](inquiry-portal/404-inquiries.md#paragraph-a4-api-openness-and-pro-competitive-conditions)
 	
 ### API Maintenance Of Certification Requirements
 #### Authenticity Verification and Registration for Production Use
