@@ -8,6 +8,46 @@ This section contains anonymized feedback and inquiries, related to the standard
 
 ## Applies to Entire Criterion
 ### 2024 Inquiries
+**Stakeholder Inquiry**: Is it permitted for Certified Health IT to limit access to certain FHIR resource endpoints depending on the authentication method? We are integrating with a Certified Health IT FHIR implementation and have noticed that for patient/provider login apps, they allow access to all FHIR resource endpoints. However, when we try to authenticate as a backend service using our own app credentials, they only allow access to Patient and Encounter. Is this allowed according to the certification?
+
+**ONC Response**: A Health IT Module certified to the § 170.315(g)(10) criterion must support the capabilities described in the data response requirements at § 170.315(g)(10)(i), including:
+
+- the capability to respond to requests for to a single patient's data according to the FHIR standard and US Core implementation guide for each of the data included in the USCDI standard
+- the capability to respond to requests for multiple patients' data as a group according to the FHIR standard, US Core implementation guide, and Bulk Data Access implementation guide for each of the data included in the USCDI standard
+
+Furthermore, the Health IT Module must support authentication and authorization during the process of granting an application access to patient data in accordance with the requirements at § 170.315(g)(10)(v), including:
+
+- support for authentication and authorization for patient and user scopes in accordance with the SMART App Launch implementation guide and the OpenID Connect Core 1.0, incorporating errata set 1 standard
+- support for authentication and authorization for system scopes in accordance with the “SMART Backend Services: Authorization" section of the Bulk Data Access implementation guide
+
+Regarding API interactions with deployed certified API technology, the API Condition of Certification requirements at § 170.404(a)(4) require a Certified API Developer must grant an API Information Source the independent ability to permit an API User to interact with the certified API technology deployed by the API Information Source.
+Specifically for the ONC Certification Program, the following are defined:
+
+- API Information Source means an organization that deploys certified API technology created by a “Certified API Developer”
+- API User means a person or entity that creates or uses software applications that interact with the “certified API technology” developed by a “Certified API Developer” and deployed by an “API Information Source”
+- Certified API Developer means a health IT developer that creates the “certified API technology” that is certified to any of the certification criteria adopted in § 170.315(g)(7) through (10)
+- Certified API technology means the capabilities of Health IT Modules that are certified to any of the API-focused certification criteria adopted in § 170.315(g)(7) through (10)
+
+Additional information is available in the <a target="_blank" href="https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) Certification Companion Guide</a> and <a target="_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Condition and Maintenance of Certification Certification Companion Guide</a>.
+
+***
+
+**Stakeholder Inquiry**: When certified for the 170.315(g)(10) FHIR API criterion, are were required to return LOINC codes with lab results, and not just our own codes? Once a FHIR API is in production, it must also return LOINC codes with lab results. Is that correct?
+
+**ONC Response**: The data response requirements at § 170.315(g)(10)(i) require a Health IT Module to respond to requests for a single patient’s data and multiple patients' data according to the FHIR standard and the US Core implementation guide for each of the data included in USCDI. This includes the capability to support Logical Observation Identifiers Names and Codes (LOINC®) for USCDI data elements as applicable. For example for USCDI v1, the "Tests" data element under the "Laboratory" data class has an applicable standard of LOINC which must be supported according to the ONC Certification Program's <a target="_blank" href="https://www.federalregister.gov/d/2023-28857/p-479">minimum standards code sets policy</a> and the relevant § 170.315(g)(10) criterion requirements.
+
+Additionally, according to the API Conditions and Maintenance of Certification requirements at § 170.404(a)(4)(iii), a Certified API Developer must provide all support and other services reasonably necessary to enable the effective development, deployment, and use of certified API technology by API Information Sources and API Users in production environments.
+
+In the context of the ONC Certification Program:
+
+- API Information Source means an organization that deploys certified API technology created by a “Certified API Developer”
+- API User means a person or entity that creates or uses software applications that interact with the “certified API technology” developed by a “Certified API Developer” and deployed by an “API Information Source”
+- Certified API Developer means a health IT developer that creates the “certified API technology” that is certified to any of the certification criteria adopted in § 170.315(g)(7) through (10).
+
+More information about the API Conditions and Maintenance of Certification requirements is available in the <a target="_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">API Conditions and Maintenance of Certification Certification Companion Guide</a>.
+
+***
+
 **Stakeholder Inquiry**: For certification to the (g)(10) criterion, which SMART App Launch IG capability sets must be supported?
 
 **ONC Response**: For purposes of certification and testing to the § 170.315(g)(10) criterion, Health IT Modules are required to support the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" capability sets described in a version of the SMART App Launch implementation guide adopted at § 170.215(c). SMART App Launch v1.0.0 is specified at § 170.215(c)(1) and SMART App Launch v2.0.0 is specified at § 170.215(c)(2). Health IT Modules are not required to support "Patient Access for EHR Launch" nor "Clinician Access for Standalone" capability sets.
