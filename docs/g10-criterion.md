@@ -550,6 +550,9 @@ The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-
 	 - Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.
 	 - Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (*Google account required, join by clicking "joining the group"*). Here you will also find information on the **Inferno Monthly Tech Talk** meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.
 
+!!! note ""
+	[Health IT Feedback and Inquiry Portal Q&A: Inferno](inquiry-portal/g10-inquiries.md#inferno)
+
 ### Real World Testing Condition and Maintenance of Certification
 
 **Health IT developers are required to test the real-world use of APIs.**

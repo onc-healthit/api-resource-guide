@@ -18,6 +18,12 @@ This section contains anonymized feedback and inquiries, related to the API Cond
 
 More information about the API Condition and Maintenance of Certification requirements is available in the <a target = "_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
 
+## Paragraph (a)(1): API Condition Of Certification General Requirements
+### 2024 Inquiries
+**Stakeholder Inquiry**: Can you provide details on the practical meaning of “without special effort?”
+
+**ASTP Response**: As described in the condition of certification requirement at <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(a)(1)">45 CFR 170.404(a)(1)</a>, a Certified API Developer must publish APIs and allow electronic health information from such technology to be accessed, exchanged, and used without special effort through the use of APIs. API access without special effort requires the APIs and the health care ecosystem in which they are deployed to be standardized, transparent, and pro-competitive (<a target="_blank" href="https://www.federalregister.gov/d/2020-07419/p-1165">85 FR 25739</a>). The § 170.315(g)(10) criterion as well as the API condition and maintenance of certification requirements facilitate Health IT Modules to enable API access without special effort by requiring the attributes of standardization, transparency, and pro-competitiveness.
+
 ## Paragraph (a)(3)(i): API Fees - General Conditions
 ### 2024 Inquiries
 **Stakeholder Inquiry**: For applications that fall outside the SMART App Launch and FHIR Bulk Data Access IG scopes, such as third-party data aggregators accessing data without direct app interaction by a patient or provider, is there an obligation to support such integrations? If not, can fees for such integrations be levied at the discretion of the Certified API Developer without the constraints defined under the API Conditions of Certification (§ 170.404)?
@@ -65,6 +71,15 @@ Additional background information and guidance for the API Conditions of Certifi
 
 ## Paragraph (b)(2): Service base URL publiciation
 ### 2024 Inquiries
+**Stakeholder Inquiry**: My question is regarding the Service Base URL requirements from HTI-1 due by 12/31/24. We currently have multiple certified health IT modules. Data is sent to our (g)(10) certified API from both of these modules. One of our products is being withdrawn from the CHPL at the end of 2024, but we do have some clients who may still be using that product into 2025.
+
+Are we required to publish service base URLs and Organization details for ALL customers, including customers whose data is coming from a non-certified Health IT module, or does this requirement only apply to customers with certified health IT?
+
+**ASTP Response**: The API Maintenance of Certification requirement at <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(b)(2)">45 CFR 170.404(b)(2)</a> requires that for all Health IT Modules certified to § 170.315(g)(10), a Certified API Developer must publish, at no charge, the service base URLs and related organization details that can be used by patients to access their electronic health information, by December 31, 2024. This includes all customers regardless of whether the Health IT Modules certified to § 170.315(g)(10) are centrally managed by the Certified API Developer or locally deployed by an API Information Source.
+
+The scope of this requirement includes the Certified API Developer and its customers of Health IT Modules certified to § 170.315(g)(10). The scope of this requirement does not include a Certified API Developer's customer if the Health IT Modules provided to that customer are not certified to § 170.315(g)(10). For the situation described in this inquiry, if a Certified API Developer withdrawals their certification of a Health IT Module certified to § 170.315(g)(10) then the Certified API Developer is not required to publish service base URLs according to § 170.404(b)(2) for that Health IT Module.
+
+***
 
 **Stakeholder Inquiry**: Can ASTP clarify how the requirements at 45 CFR 170.404(b)(2) apply for parent/child Organization relationships using Orgnaization.partOf? In the User Access Brands spec, you can have the endpoint on the parent Organziation, and omit it for the child Organization. The endpoint for the child org can be determined by following the .partOf reference to the Parent.
 

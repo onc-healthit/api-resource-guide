@@ -8,6 +8,13 @@ This section contains anonymized feedback and inquiries, related to the standard
 
 ## Applies to Entire Criterion
 ### 2024 Inquiries
+
+**Stakeholder Inquiry**: I have a question regarding the storage of patient information for certified APIs, specifically how long a certified health IT module must store information for a former customer. If a customer (let’s say a hospital facility) chooses to go to another EHR company how long must we store information associated with that hospital facility in order to make that data available via (g)(10) API?
+
+**ASTP Response**: Through the ONC Health IT Certification Program (Program), ONC implements required standards and functionalities that must be supported by certified products. In general, the Program requires the electronic standards in which available data is stored and/or shared by certified health IT but not how much data or when specific data must be recorded or shared.
+
+Furthermore, neither the § 170.315(g)(10) criterion nor the API Condition and Maintenance of Certification requirements specify a requirement for the storage duration of data of former customers.
+
 **Stakeholder Inquiry**: Is it permitted for Certified Health IT to limit access to certain FHIR resource endpoints depending on the authentication method? We are integrating with a Certified Health IT FHIR implementation and have noticed that for patient/provider login apps, they allow access to all FHIR resource endpoints. However, when we try to authenticate as a backend service using our own app credentials, they only allow access to Patient and Encounter. Is this allowed according to the certification?
 
 **ASTP Response**: A Health IT Module certified to the § 170.315(g)(10) criterion must support the capabilities described in the data response requirements at § 170.315(g)(10)(i), including:
@@ -303,6 +310,11 @@ Regarding “Organization” HL7 FHIR resources, we provided the following clari
 Health IT developers must include all the resources necessary via the multiple patient services API responses to fully resolve references contained in HL7 FHIR resources, including “Organization” resources.
 
 ## Paragraph (g)(10)(iii): Application Registration
+### 2024 Inquiries
+**Stakeholder Inquiry**: Can an app developer request registration with a Certified API Developer's deployment of a Health IT Module certified to § 170.315(g)(10) without any reference from a patient/provider?
+
+**ASTP Response**: A § 170.315(g)(10)-certified Health IT Module must support the capability to enable an application to register with the Health IT Module's “authorization server”, as per the requirement at § 170.315(g)(10)(iii). Furthermore, the API maintenance of certification requirement at § 170.404(b)(1)(ii) requires Certified API Developers to register and enable all applications for production use within five business days of completing the optional verification of an API User's authenticity as described in § 170.404(b)(1)(i). As such and in accordance with the API maintenance of certification requirements, Certified API Developers shall not pre-condition registration of API Users with their deployments of § 170.315(g)(10)-certified Health IT Modules on having patient users or provider customers with the Certified API Developer.
+
 ### 2021 Inquiries
 **Stakeholder Inquiry**: Can you clarify how we are expected to scope US Core IG resources that do not exists in USCDI or the FHIR Patient Compartment?
 
@@ -467,6 +479,17 @@ At a minimum for the ONC Health IT Certification Program, Health IT Modules cert
 *For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. ONC recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the standard adopted at § 170.215(a)(3), HL7® <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/">SMART Application Launch Framework Implementation Guide Release 1.0.0.</a> For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.*
 
 ## Inferno
+### 2024 Inquiries
+**Stakeholder Inquiry**: We have been using the Inferno FHIR Service Base URL Test Kit to validate our FHIR Service Base URLs Bundle however we've found that large bundles cause Inferno Test Framework issues. If the bundle is ~100mb, the browser crashes.
+
+For this scenario would it be possible to attest to a passing Inferno Test run on a subset of our FHIR Service Base URL Bundle JSON? Since the primary goal of the test is to validate data formatting our hope is that a subset of the data would be sufficient for attesting to a passing Inferno Test.
+
+Can ASTP provide any insight or recommendation for vendors running into this problem?
+
+**Stakeholder Inquiry**: The Inferno Service Base URL Test Kit is a voluntary, self-assessment testing tool. Health IT developers may use this testing tool to assist with implementing publishing of service base URLs in a FHIR Bundle according to the requirements at § 170.404(b)(2). Testing with the Inferno Service Base URL Test Kit is not a requirement for certification nor maintenance of certification. Incomplete and failed test results from this Test Kit do not necessarily indicate non-conformance to the API maintenance of certification requirements.
+
+As indicated in the <a target="_blank" href="https://github.com/inferno-framework/service-base-url-test-kit/issues/22">GitHub issue thread</a>, the Service Base URL Test Kit has received an update which may address the concerns raised. If there are additional questions or feedback regarding this Test Kit, further input may be provided via <a target="_blank" href="https://github.com/inferno-framework/service-base-url-test-kit/issues">GitHub issues</a> in the Test Kit repository or the <a target="_blank" href="https://www.healthit.gov/feedback">Health IT Feedback and Inquiry Portal</a>.
+
 ### 2022 Inquiries
 **Stakeholder Inquiry**: In Inferno test 4.2.04 (and others) patient data is included in the URL of the HTTP GET request. Is this a Privacy and Security concern?
 
