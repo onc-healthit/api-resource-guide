@@ -43,14 +43,15 @@ def gather_data_from_web(criterion):
 
     base_url = "https://healthit.gov"
 
-    entity_ids_json = entity_ids_json = requests.get("{}/{}?_format=json".format(base_url, criterion)).json()["field_clarification_table"]
+    headers = {'User-Agent': os.environ.get('MY_USER_AGENT')}
+    entity_ids_json = requests.get(f"{base_url}/{criterion}?_format=json", headers=headers).json()["field_clarification_table"]
 
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
         request_url = "{}/{}?_format=json".format(data_url, entity_id["target_id"])
 
-        data_json = requests.get(request_url).json()
+        data_json = requests.get(request_url, headers=headers).json()
         
         time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
