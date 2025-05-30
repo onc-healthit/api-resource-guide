@@ -34,6 +34,15 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 		+ Version: [FHIR® Bulk Data Access (Flat FHIR®) (v1.0.1: STU 1)](https://hl7.org/fhir/uv/bulkdata/STU1.0.1/). Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.
 	* Through the [US Core Patch Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process), the HL7® Cross-Group Projects Work Group (CGP WG) approves US Core “patches”, which are corrections for issues with the US Core implementation guide (US Core IG). US Core “patches” include corrections for issues such as ambiguous requirements and requirements incompatible with real world deployment. Similar to US Core “patches” are US Core “additional guidance”. US Core “additional guidance” approved by the CGP WG indicates guidance included in a newer version of the US Core IG as being relevant to a previous version of the US Core IG. Though US Core “patches” and “additional guidance” are not required for certification purposes (unless indicated in the Certification Companion Guide), health IT developers may optionally implement US Core “additional guidance” in their Health IT Module and still be conformant with § 170.315(g)(10) criterion requirements.
 	* More information regarding the US Core Patch Process and US Core “patches” and “additional guidance” approved by the CGP WG is available on the HL7® Confluence pages of [US Core 'Patch' Process](https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process) and [Approved Patches and Additional Guidance](https://confluence.hl7.org/display/CGP/Approved+Patches+and+Additional+Guidance).
+	* Consistent with Executive Order (EO) 14168 and OPM guidance, Health IT Modules certifying and/or currently certified to certification criteria that cross-reference the USCDI standard at 45 CFR 170.213 are only required to demonstrate the capability to categorize data on individuals for the sex data element in accordance with the following SNOMED CT® codes:
+		+ 248152002 |Female (finding)| and
+		+ 248153007 |Male (finding)|
+	* Further, these Health IT Modules are no longer required to support the following USCDI data elements for purposes of certification:
+		+ Sexual orientation in USCDI version 4;
+		+ Gender identity in USCDI version 4;
+		+ Sex parameter for clinical use in USCDI version 5;
+		+ Name to use in USCDI version 5;
+		+ Pronouns in USCDI version 5.
 	
 	**Applies to USCDI v1 and US Core 3.1.1 and SVAP approved standards US Core 4.0.0 (expires on January 1, 2026):**
 	
