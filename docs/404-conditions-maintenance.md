@@ -187,9 +187,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 	* Certified API Developers have the flexibility to consider using “Organization” and “Endpoint” FHIR® resources profiles, such as the profiles in the [User-access Brands and Endpoints](https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html) specification or [Validated Healthcare Directory IG](https://hl7.org/fhir/uv/vhdir/2018Jan/index.html). [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
 	* Certified API Developers can utilize the "Organization.partOf" data element in the FHIR "Organization" resource to represent parent/child organization relationships that make up organization hierarchies. A child organization may use the same service base URL (i.e., FHIR endpoint) as its parent organization. For the purposes of Certification Program service base URL publication requirements, it is not required that a child "Organization" resource include an "Organization.endpoint" element if its parent "Organization" resource, referenced through the "Organization.partOf" element, already contains the applicable endpoint information in its own "Organization.endpoint" element.
 	* For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at §170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see [89 FR 1287](https://www.federalregister.gov/d/2023-28857/p-1176)]
-	
-	 
-	
+		
 	
 *Additional Clarifications included to the § 170.404 Certification Companion Guide (CCG):*
 
