@@ -130,8 +130,10 @@ def process_template(onc_template_str, file_path):
 
         clarifications_list = ""
         clarifications_list = md(referenced_paragraph_data)
+        clarifications_list = clarifications_list.lstrip('\n') # Remove leading new lines
+        
         if tabbed:
-            clarifications_list_by_line = md(referenced_paragraph_data).split("\n")
+            clarifications_list_by_line = md(referenced_paragraph_data).lstrip('\n').split("\n")
             # clarifications_list_by_line = list(filter(None, clarifications_list_by_line)) # Remove empty strings (Not sure I should actually try and clean the API output here where focus is better spent cleaning the API itself)
             clarifications_list_by_line = list(map(lambda x: "\t" + x, clarifications_list_by_line)) # Add tabs to each line
             clarifications_list = '\n'.join(clarifications_list_by_line)
