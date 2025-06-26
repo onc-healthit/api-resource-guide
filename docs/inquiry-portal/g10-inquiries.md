@@ -7,8 +7,28 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
-### 2024 Inquiries
+### 2025 Inquiries
+**Stakeholder Inquiry**: What is the expectation for the use of the new US Core QuestionnaireResponse Profile, given that there are no Inferno tests for it, and how and where should it be included in the documents?
 
+**ASTP Response**: For purposes of certification to the § 170.315(g)(10) "Standardized API for patient and population services" criterion, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core IG profile. However, if the Health IT Module optionally supports group export of "QuestionnaireResponse" resources then those exported "QuestionnaireResponse" resources will be checked for conformance to the “QuestionnaireResponse” US Core IG profile as part of the conformance tests for the § 170.315(g)(10)(i)(B) requirements.
+
+**Stakeholder Inquiry**: How can we address the requirement to support and populate the abatementDateTime field for Condition Encounter Diagnoses, given that our current products do not allow encounter diagnoses to be marked as resolved or in remission?
+
+**ASTP Response**: Generally for the purposes of certification to the § 170.315(g)(10) criterion, ASTP requires conformance to “shall” and “must support” requirements from referenced standards and implementation specifications such as US Core v6.1. This includes conformance to "must support" requirements for the "US Core Condition Encounter Diagnosis Profile".
+
+However, if there are concerns regarding the appropriateness of US Core requirements, such as ambiguity or incompatibility with real world implementation, we suggest submitting a 'patch' ticket with the <a target="_blank" href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">HL7 Cross Group Projects Work Group US Core 'Patch' Process</a>. The processing and resolution of such a ticket may provide additional information for us to consider regarding this topic.
+
+**Stakeholder Inquiry**: Could you clarify the requirements for supporting sub-resource-level scopes in the context of HTI-1 and HTI-2?
+
+**ASTP Response**: For the purposes of certification to the § 170.315(g)(10) criterion, a Health IT Module must support the capability to present sub-resource scopes to the patient for authorization as clarified in the <a target="_blank" href="https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10) Certification Companion Guide</a>. This includes support for patient authorization of certain scopes at the sub-resource level even if the authorization request from the app is made at the resource level.
+
+However, while the aforementioned capability must be supported for the purposes of certification, a Certified API Developer may adapt their certified API technology deployment in production to suit the particular needs, circumstances, and workflows of their customers. This could include revisions to the patient authorization workflow to accommodate customer needs, assuming such revisions are compliant with the <a target="_blank" href="https://www.healthit.gov/topic/certification-ehrs/conditions-maintenance-certification">Conditions and Maintenance of Certification requirements</a>.
+
+**Stakeholder Inquiry**: Are we required to allow connected 3rd party Provider facing apps the ability to have write capabilities, for example enabling the provider app to “write” new data back to an EHR?
+
+**ASTP Response**: The § 170.315(g)(10) standardized API for patient and population services certification criterion requires Health IT Modules to support API-enabled “read” services for single and multiple patients. “Read” services include those that allow authenticated and authorized third-party applications to view EHI through a secure API. These services specifically exclude “write” capabilities, where authenticated and authorized third-party applications would be able to create or modify EHI through a secure API. (<a target="_blank" href="https://www.federalregister.gov/d/2020-07419/p-1210">85 FR 25743</a>)
+
+### 2024 Inquiries
 **Stakeholder Inquiry**: I have a question regarding the storage of patient information for certified APIs, specifically how long a certified health IT module must store information for a former customer. If a customer (let’s say a hospital facility) chooses to go to another EHR company how long must we store information associated with that hospital facility in order to make that data available via (g)(10) API?
 
 **ASTP Response**: Through the ONC Health IT Certification Program (Program), ONC implements required standards and functionalities that must be supported by certified products. In general, the Program requires the electronic standards in which available data is stored and/or shared by certified health IT but not how much data or when specific data must be recorded or shared.

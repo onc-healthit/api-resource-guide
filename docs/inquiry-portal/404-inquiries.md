@@ -60,6 +60,15 @@ We are not able to provide individualized advice on whether a specific fact patt
 Anyone who believes they may have experienced or observed information blocking by <a target = "_blank" href = "https://www.healthit.gov/cures/sites/default/files/cures/2020-03/InformationBlockingActors.pdf">any health care provider, health IT developer of Certified Health IT, or health information network or health information exchange</a> is encouraged to share their concerns with us through the <a target = "_blank" href = "https://healthit.gov/report-info-blocking">Information Blocking Portal</a> on ONC’s website, HealthIT.gov.
 
 ## Paragraph (a)(4): API Openness And Pro-Competitive Conditions
+### 2025 Inquiries
+**Stakeholder Inquiry**: As a provider of a (g)(10) certified API, are we required to allow any/all requesting 3rd party Provider facing applications connectivity and access? Do we have discretion to reject a 3rd party Provider facing apps request for connection and access from a business perspective?
+
+**ASTP Response**: The ONC Health IT Certification Program does not require that <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(c)(Certified%20API%20Developer)">Certified API Developers</a> approve all app registration requests from third-party provider-facing app developers. However, Certified API Developers must comply with the API Condition of Certification requirements, including those at § 170.404(a)(4) which require a Certified API Developer to grant <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(c)(API%20Information%20Source)">API Information Sources</a> the independent ability to permit <a target="_blank" href="https://www.ecfr.gov/current/title-45/part-170/section-170.404#p-170.404(c)(API%20User)">API Users</a> to interact with the certified API technology deployed by the API Information Source.
+
+As specified in the ONC Cures Act Final Rule, API Information Sources have the ability to conduct whatever “vetting” they deem necessary of entities (e.g., app developers) that would be their business associates under the HIPAA Rules before granting access and use of electronic health information (EHI) to the entities. Additional discussion about this topic is available in the ONC Cures Act Final Rule (<a target="_blank" href="https://www.federalregister.gov/d/2020-07419/p-1380">85 FR 25762</a>).
+
+Additionally, Certified API Developer processing of app registration requests must comply with the openness and pro-competitive requirements at § 170.404(a)(4), including non-discrimination at § 170.404(a)(4)(i).
+
 ### 2024 Inquiries
 **Stakeholder Inquiry**: In situations where a third-party developer using 'Clinician Access for EHR Launch' requests API access, but no mutual clients are found between them and the practice (API Information Sources) during the vendor verification process: Is there an obligation to accommodate the registration request under the g.10 certification, or is it permissible to deny such requests based on the absence of mutual clients?
 
