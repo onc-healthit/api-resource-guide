@@ -4,6 +4,7 @@ import re
 import sys
 import requests
 import time
+import json
 from pathlib import Path
 from markdownify import markdownify as md
 from bs4 import BeautifulSoup
@@ -38,24 +39,70 @@ def strip_non_alphanumeric(data):
     p = re.compile(r'\W+')
     return p.sub('', data).strip()
 
+# Cache management
+CACHE_FILE = os.path.join(os.path.dirname(__file__), "api_cache.json")
+use_cache = False
+
+def save_to_cache(criterion, web_data):
+    """Save web data to cache file"""
+    cache_data = {}
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            cache_data = json.load(f)
+    
+    cache_data[criterion] = web_data
+    
+    with open(CACHE_FILE, 'w') as f:
+        json.dump(cache_data, f, indent=2)
+    print(f"Cached data for {criterion}")
+
+def load_from_cache(criterion):
+    """Load web data from cache file"""
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            cache_data = json.load(f)
+        if criterion in cache_data:
+            print(f"Using cached data for {criterion}")
+            return cache_data[criterion]
+    return None
+
 def gather_data_from_web(criterion):
     web_data = {}
 
     base_url = "https://healthit.gov"
 
     headers = {'User-Agent': os.environ.get('MY_USER_AGENT')}
-    entity_ids_json = requests.get(f"{base_url}/{criterion}?_format=json", headers=headers).json()["field_clarification_table"]
+    
+    if use_cache:
+        cached_responses = load_from_cache(criterion)
+        if cached_responses:
+            entity_ids_json = cached_responses["entity_ids"]
+            raw_responses = cached_responses["responses"]
+        else:
+            return {}
+    else:
+        entity_ids_json = requests.get(f"{base_url}/{criterion}?_format=json", headers=headers).json()["field_clarification_table"]
+        raw_responses = {}
 
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
         request_url = "{}/{}?_format=json".format(data_url, entity_id["target_id"])
 
-        data_json = requests.get(request_url, headers=headers).json()
-        
-        time.sleep(1.2) # Buffer between API calls for 50 calls / minute
+        if use_cache:
+            data_json = raw_responses[str(entity_id["target_id"])]
+        else:
+            data_json = requests.get(request_url, headers=headers).json()
+            raw_responses[str(entity_id["target_id"])] = data_json
+            time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
         element = data_json["field_standard_s_referenced"][0]["processed"]
+        
+        if not use_cache:
+            soup_temp = BeautifulSoup(element, 'html.parser')
+            element_temp = soup_temp.get_text()
+            element_temp = strip_non_alphanumeric(element_temp)
+            print("\tGET {} for {}".format(request_url, element_temp))
         
         soup = BeautifulSoup(element, 'html.parser')
         element = soup.get_text()
@@ -65,8 +112,10 @@ def gather_data_from_web(criterion):
 
         web_data[element] = data
 
-        print("\tGET {} for {}".format(request_url, element))
-
+    # Save raw API responses to cache
+    if not use_cache:
+        save_to_cache(criterion, {"entity_ids": entity_ids_json, "responses": raw_responses})
+    
     return web_data
 
 def write_processed_doc(output, file_path):
@@ -83,7 +132,7 @@ def get_existing_clarification_text(onc_template_str, pointer):
 
     beginning_pointer = pointer
 
-    while onc_template_str[pointer] == "\t":
+    while pointer < len(onc_template_str) and onc_template_str[pointer] == "\t":
         _, pointer = read_to_line_end(onc_template_str, pointer)
         pointer = pointer + 1 # Move past new line
 
@@ -147,8 +196,16 @@ def process_template(onc_template_str, file_path):
     write_processed_doc(onc_template_str, file_path)
 
 def main():
+    global use_cache
+    
     opts = [opt for opt in sys.argv[1:] if opt.startswith("-")]
     args = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
+    
+    # Check for cache flag
+    if "--cache" in opts:
+        use_cache = True
+        opts.remove("--cache")
+        print("Using cached data")
 
     params = zip(opts, args)
 
