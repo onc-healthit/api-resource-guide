@@ -142,7 +142,7 @@ def process_template(onc_template_str, file_path):
 
         to_be_replaced_beginning, to_be_replaced_end = get_existing_clarification_text(onc_template_str, pointer + 1)
 
-        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + "\n" + onc_template_str[to_be_replaced_end:]
+        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + onc_template_str[to_be_replaced_end:]
     
     write_processed_doc(onc_template_str, file_path)
 
