@@ -138,6 +138,67 @@ def get_existing_clarification_text(onc_template_str, pointer):
 
     return beginning_pointer, pointer
 
+def normalize_content_for_comparison(content):
+    """
+    Normalize content for comparison by stripping whitespace and standardizing formatting,
+    but preserving the essential text content for meaningful comparison.
+    """
+    # Normalize line endings
+    content = content.replace('\r\n', '\n').replace('\r', '\n')
+    
+    # Split into lines and process each
+    lines = content.split('\n')
+    normalized_lines = []
+    
+    for line in lines:
+        # Strip leading/trailing whitespace but preserve the structure
+        stripped = line.strip()
+        if stripped:  # Only keep non-empty lines for comparison
+            normalized_lines.append(stripped)
+    
+    return '\n'.join(normalized_lines)
+
+def preserve_existing_formatting(existing_content, new_content, tabbed):
+    """
+    If content is essentially the same, return existing content to preserve formatting.
+    If content has changed, return new content but preserve exact trailing whitespace.
+    """
+    # Normalize both for comparison
+    existing_normalized = normalize_content_for_comparison(existing_content)
+    new_normalized = normalize_content_for_comparison(new_content)
+    
+    # If content is the same, keep existing formatting exactly as is
+    if existing_normalized == new_normalized:
+        return existing_content
+    
+    # Content has changed, so we need to return the new content
+    # But preserve exact trailing whitespace from existing content
+    
+    # Find the position of the last non-whitespace character in existing content
+    last_nonwhite_pos = -1
+    for i in range(len(existing_content) - 1, -1, -1):
+        if existing_content[i] not in ' \t\n\r':
+            last_nonwhite_pos = i
+            break
+    
+    if last_nonwhite_pos >= 0:
+        # Extract exact trailing whitespace after last meaningful character
+        trailing_whitespace = existing_content[last_nonwhite_pos + 1:]
+        
+        # Find the position of the last non-whitespace character in new content
+        new_last_nonwhite_pos = -1
+        for i in range(len(new_content) - 1, -1, -1):
+            if new_content[i] not in ' \t\n\r':
+                new_last_nonwhite_pos = i
+                break
+        
+        if new_last_nonwhite_pos >= 0:
+            # Replace new content's trailing whitespace with preserved whitespace
+            new_content_meaningful = new_content[:new_last_nonwhite_pos + 1]
+            return new_content_meaningful + trailing_whitespace
+    
+    return new_content
+
 def process_template(onc_template_str, file_path):
     # Search for the criterion endpoint path
     criterion_endpoint_tag = re.findall(r'\$criterion-endpoint\{\"(.*?)\"\}', onc_template_str)
@@ -191,7 +252,13 @@ def process_template(onc_template_str, file_path):
 
         to_be_replaced_beginning, to_be_replaced_end = get_existing_clarification_text(onc_template_str, pointer + 1)
 
-        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + onc_template_str[to_be_replaced_end:]
+        # Get existing content
+        existing_content = onc_template_str[to_be_replaced_beginning:to_be_replaced_end]
+        
+        # Preserve formatting if content hasn't actually changed
+        final_content = preserve_existing_formatting(existing_content, clarifications_list, tabbed)
+        
+        onc_template_str = onc_template_str[:to_be_replaced_beginning] + final_content + onc_template_str[to_be_replaced_end:]
     
     write_processed_doc(onc_template_str, file_path)
 
