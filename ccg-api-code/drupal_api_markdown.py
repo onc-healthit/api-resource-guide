@@ -4,6 +4,7 @@ import re
 import sys
 import requests
 import time
+import json
 from pathlib import Path
 from markdownify import markdownify as md
 from bs4 import BeautifulSoup
@@ -38,24 +39,70 @@ def strip_non_alphanumeric(data):
     p = re.compile(r'\W+')
     return p.sub('', data).strip()
 
+# Cache management
+CACHE_FILE = os.path.join(os.path.dirname(__file__), "api_cache.json")
+use_cache = False
+
+def save_to_cache(criterion, web_data):
+    """Save web data to cache file"""
+    cache_data = {}
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            cache_data = json.load(f)
+    
+    cache_data[criterion] = web_data
+    
+    with open(CACHE_FILE, 'w') as f:
+        json.dump(cache_data, f, indent=2)
+    print(f"Cached data for {criterion}")
+
+def load_from_cache(criterion):
+    """Load web data from cache file"""
+    if os.path.exists(CACHE_FILE):
+        with open(CACHE_FILE, 'r') as f:
+            cache_data = json.load(f)
+        if criterion in cache_data:
+            print(f"Using cached data for {criterion}")
+            return cache_data[criterion]
+    return None
+
 def gather_data_from_web(criterion):
     web_data = {}
 
     base_url = "https://healthit.gov"
 
     headers = {'User-Agent': os.environ.get('MY_USER_AGENT')}
-    entity_ids_json = requests.get(f"{base_url}/{criterion}?_format=json", headers=headers).json()["field_clarification_table"]
+    
+    if use_cache:
+        cached_responses = load_from_cache(criterion)
+        if cached_responses:
+            entity_ids_json = cached_responses["entity_ids"]
+            raw_responses = cached_responses["responses"]
+        else:
+            return {}
+    else:
+        entity_ids_json = requests.get(f"{base_url}/{criterion}?_format=json", headers=headers).json()["field_clarification_table"]
+        raw_responses = {}
 
     data_url = "https://healthit.gov/entity/paragraph"
 
     for entity_id in entity_ids_json:
         request_url = "{}/{}?_format=json".format(data_url, entity_id["target_id"])
 
-        data_json = requests.get(request_url, headers=headers).json()
-        
-        time.sleep(1.2) # Buffer between API calls for 50 calls / minute
+        if use_cache:
+            data_json = raw_responses[str(entity_id["target_id"])]
+        else:
+            data_json = requests.get(request_url, headers=headers).json()
+            raw_responses[str(entity_id["target_id"])] = data_json
+            time.sleep(1.2) # Buffer between API calls for 50 calls / minute
 
         element = data_json["field_standard_s_referenced"][0]["processed"]
+        
+        if not use_cache:
+            soup_temp = BeautifulSoup(element, 'html.parser')
+            element_temp = soup_temp.get_text()
+            element_temp = strip_non_alphanumeric(element_temp)
+            print("\tGET {} for {}".format(request_url, element_temp))
         
         soup = BeautifulSoup(element, 'html.parser')
         element = soup.get_text()
@@ -65,8 +112,10 @@ def gather_data_from_web(criterion):
 
         web_data[element] = data
 
-        print("\tGET {} for {}".format(request_url, element))
-
+    # Save raw API responses to cache
+    if not use_cache:
+        save_to_cache(criterion, {"entity_ids": entity_ids_json, "responses": raw_responses})
+    
     return web_data
 
 def write_processed_doc(output, file_path):
@@ -83,11 +132,72 @@ def get_existing_clarification_text(onc_template_str, pointer):
 
     beginning_pointer = pointer
 
-    while onc_template_str[pointer] == "\t":
+    while pointer < len(onc_template_str) and onc_template_str[pointer] == "\t":
         _, pointer = read_to_line_end(onc_template_str, pointer)
         pointer = pointer + 1 # Move past new line
 
     return beginning_pointer, pointer
+
+def normalize_content_for_comparison(content):
+    """
+    Normalize content for comparison by stripping whitespace and standardizing formatting,
+    but preserving the essential text content for meaningful comparison.
+    """
+    # Normalize line endings
+    content = content.replace('\r\n', '\n').replace('\r', '\n')
+    
+    # Split into lines and process each
+    lines = content.split('\n')
+    normalized_lines = []
+    
+    for line in lines:
+        # Strip leading/trailing whitespace but preserve the structure
+        stripped = line.strip()
+        if stripped:  # Only keep non-empty lines for comparison
+            normalized_lines.append(stripped)
+    
+    return '\n'.join(normalized_lines)
+
+def preserve_existing_formatting(existing_content, new_content, tabbed):
+    """
+    If content is essentially the same, return existing content to preserve formatting.
+    If content has changed, return new content but preserve exact trailing whitespace.
+    """
+    # Normalize both for comparison
+    existing_normalized = normalize_content_for_comparison(existing_content)
+    new_normalized = normalize_content_for_comparison(new_content)
+    
+    # If content is the same, keep existing formatting exactly as is
+    if existing_normalized == new_normalized:
+        return existing_content
+    
+    # Content has changed, so we need to return the new content
+    # But preserve exact trailing whitespace from existing content
+    
+    # Find the position of the last non-whitespace character in existing content
+    last_nonwhite_pos = -1
+    for i in range(len(existing_content) - 1, -1, -1):
+        if existing_content[i] not in ' \t\n\r':
+            last_nonwhite_pos = i
+            break
+    
+    if last_nonwhite_pos >= 0:
+        # Extract exact trailing whitespace after last meaningful character
+        trailing_whitespace = existing_content[last_nonwhite_pos + 1:]
+        
+        # Find the position of the last non-whitespace character in new content
+        new_last_nonwhite_pos = -1
+        for i in range(len(new_content) - 1, -1, -1):
+            if new_content[i] not in ' \t\n\r':
+                new_last_nonwhite_pos = i
+                break
+        
+        if new_last_nonwhite_pos >= 0:
+            # Replace new content's trailing whitespace with preserved whitespace
+            new_content_meaningful = new_content[:new_last_nonwhite_pos + 1]
+            return new_content_meaningful + trailing_whitespace
+    
+    return new_content
 
 def process_template(onc_template_str, file_path):
     # Search for the criterion endpoint path
@@ -142,13 +252,27 @@ def process_template(onc_template_str, file_path):
 
         to_be_replaced_beginning, to_be_replaced_end = get_existing_clarification_text(onc_template_str, pointer + 1)
 
-        onc_template_str = onc_template_str[:to_be_replaced_beginning] + clarifications_list + "\n" + onc_template_str[to_be_replaced_end:]
+        # Get existing content
+        existing_content = onc_template_str[to_be_replaced_beginning:to_be_replaced_end]
+        
+        # Preserve formatting if content hasn't actually changed
+        final_content = preserve_existing_formatting(existing_content, clarifications_list, tabbed)
+        
+        onc_template_str = onc_template_str[:to_be_replaced_beginning] + final_content + onc_template_str[to_be_replaced_end:]
     
     write_processed_doc(onc_template_str, file_path)
 
 def main():
+    global use_cache
+    
     opts = [opt for opt in sys.argv[1:] if opt.startswith("-")]
     args = [arg for arg in sys.argv[1:] if not arg.startswith("-")]
+    
+    # Check for cache flag
+    if "--cache" in opts:
+        use_cache = True
+        opts.remove("--cache")
+        print("Using cached data")
 
     params = zip(opts, args)
 

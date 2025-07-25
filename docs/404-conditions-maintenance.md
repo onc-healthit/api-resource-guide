@@ -22,7 +22,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 
 ### Entire Criterion
 
-<!-- $ref{404:CCG["Applies to Conditions and Maintenance of Certification Requirements"], tabbed} -->
+<!-- $ref{404:CCG["Applies to Entire Condition of Certification"], tabbed} -->
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to the entire criterion*"
 	***Clarifications:***
 	
