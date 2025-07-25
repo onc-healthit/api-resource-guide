@@ -3,7 +3,7 @@
     "entity_ids": [
       {
         "target_id": 46576,
-        "target_revision_id": 697714,
+        "target_revision_id": 704987,
         "target_type": "paragraph",
         "target_uuid": "7fcc37e2-af57-4d1d-8c74-5191222ebded"
       },
@@ -94,7 +94,7 @@
         ],
         "revision_id": [
           {
-            "value": 697714
+            "value": 704987
           }
         ],
         "langcode": [
@@ -145,13 +145,17 @@
             "value": true
           }
         ],
-        "revision_translation_affected": [],
+        "revision_translation_affected": [
+          {
+            "value": true
+          }
+        ],
         "field_criterion_subparagraph": [],
         "field_standard_s_referenced": [
           {
-            "value": "<h3><span>Applies to Conditions and Maintenance of Certification Requirements</span></h3>",
+            "value": "<h3><span>Applies to Entire Condition of Certification</span></h3>",
             "format": "basic_html",
-            "processed": "<h3><span>Applies to Conditions and Maintenance of Certification Requirements</span></h3>"
+            "processed": "<h3><span>Applies to Entire Condition of Certification</span></h3>"
           }
         ],
         "field_technical_explanations_and": [
@@ -1144,85 +1148,85 @@
     "entity_ids": [
       {
         "target_id": 45956,
-        "target_revision_id": 704530,
+        "target_revision_id": 705525,
         "target_type": "paragraph",
         "target_uuid": "165c438e-d4bd-4448-b771-b4273bc843b9"
       },
       {
         "target_id": 46286,
-        "target_revision_id": 704531,
+        "target_revision_id": 705526,
         "target_type": "paragraph",
         "target_uuid": "2d13d3e4-2b32-44e4-bbb2-b4e9a55308dd"
       },
       {
         "target_id": 46291,
-        "target_revision_id": 704532,
+        "target_revision_id": 705527,
         "target_type": "paragraph",
         "target_uuid": "c15167c7-a40b-407b-98e5-7043a04707aa"
       },
       {
         "target_id": 46296,
-        "target_revision_id": 704533,
+        "target_revision_id": 705528,
         "target_type": "paragraph",
         "target_uuid": "5a9a095c-688e-42d6-aa26-547cb1fd35f8"
       },
       {
         "target_id": 46301,
-        "target_revision_id": 704534,
+        "target_revision_id": 705529,
         "target_type": "paragraph",
         "target_uuid": "95d6ad26-c1f9-4b06-9cd2-b8da07d128b2"
       },
       {
         "target_id": 46306,
-        "target_revision_id": 704535,
+        "target_revision_id": 705530,
         "target_type": "paragraph",
         "target_uuid": "4928c353-b895-4e8c-8606-3acaeae936c0"
       },
       {
         "target_id": 46311,
-        "target_revision_id": 704536,
+        "target_revision_id": 705531,
         "target_type": "paragraph",
         "target_uuid": "3474d04e-8f85-4019-8a45-cae982549557"
       },
       {
         "target_id": 46321,
-        "target_revision_id": 704537,
+        "target_revision_id": 705532,
         "target_type": "paragraph",
         "target_uuid": "0df0823e-f60d-45f9-b66a-2c7e13a23b24"
       },
       {
         "target_id": 46326,
-        "target_revision_id": 704538,
+        "target_revision_id": 705533,
         "target_type": "paragraph",
         "target_uuid": "a003682f-6c26-4bdc-aff5-9f1877b212f9"
       },
       {
         "target_id": 46331,
-        "target_revision_id": 704539,
+        "target_revision_id": 705534,
         "target_type": "paragraph",
         "target_uuid": "89d17200-e648-4608-bb53-d27ff98dede8"
       },
       {
         "target_id": 46336,
-        "target_revision_id": 704540,
+        "target_revision_id": 705535,
         "target_type": "paragraph",
         "target_uuid": "5b108fdb-bbff-4143-8ad9-5d464820c0cc"
       },
       {
         "target_id": 46341,
-        "target_revision_id": 704541,
+        "target_revision_id": 705536,
         "target_type": "paragraph",
         "target_uuid": "6dfcabea-521b-473e-801a-7cf2559d9f59"
       },
       {
         "target_id": 46346,
-        "target_revision_id": 704542,
+        "target_revision_id": 705537,
         "target_type": "paragraph",
         "target_uuid": "caedf4a5-b576-45d1-ad53-f0ecb55969fa"
       },
       {
         "target_id": 46351,
-        "target_revision_id": 704543,
+        "target_revision_id": 705538,
         "target_type": "paragraph",
         "target_uuid": "fe15a1ec-811d-4696-adc3-e99a4111cfd3"
       }
@@ -1241,7 +1245,7 @@
         ],
         "revision_id": [
           {
-            "value": 704530
+            "value": 705525
           }
         ],
         "langcode": [
@@ -1322,7 +1326,7 @@
         ],
         "revision_id": [
           {
-            "value": 704531
+            "value": 705526
           }
         ],
         "langcode": [
@@ -1373,11 +1377,7 @@
             "value": true
           }
         ],
-        "revision_translation_affected": [
-          {
-            "value": true
-          }
-        ],
+        "revision_translation_affected": [],
         "field_criterion_subparagraph": [],
         "field_standard_s_referenced": [
           {
@@ -1407,7 +1407,7 @@
         ],
         "revision_id": [
           {
-            "value": 704532
+            "value": 705527
           }
         ],
         "langcode": [
@@ -1488,7 +1488,7 @@
         ],
         "revision_id": [
           {
-            "value": 704533
+            "value": 705528
           }
         ],
         "langcode": [
@@ -1569,7 +1569,7 @@
         ],
         "revision_id": [
           {
-            "value": 704534
+            "value": 705529
           }
         ],
         "langcode": [
@@ -1650,7 +1650,7 @@
         ],
         "revision_id": [
           {
-            "value": 704535
+            "value": 705530
           }
         ],
         "langcode": [
@@ -1731,7 +1731,7 @@
         ],
         "revision_id": [
           {
-            "value": 704536
+            "value": 705531
           }
         ],
         "langcode": [
@@ -1812,7 +1812,7 @@
         ],
         "revision_id": [
           {
-            "value": 704537
+            "value": 705532
           }
         ],
         "langcode": [
@@ -1893,7 +1893,7 @@
         ],
         "revision_id": [
           {
-            "value": 704538
+            "value": 705533
           }
         ],
         "langcode": [
@@ -1974,7 +1974,7 @@
         ],
         "revision_id": [
           {
-            "value": 704539
+            "value": 705534
           }
         ],
         "langcode": [
@@ -2055,7 +2055,7 @@
         ],
         "revision_id": [
           {
-            "value": 704540
+            "value": 705535
           }
         ],
         "langcode": [
@@ -2136,7 +2136,7 @@
         ],
         "revision_id": [
           {
-            "value": 704541
+            "value": 705536
           }
         ],
         "langcode": [
@@ -2217,7 +2217,7 @@
         ],
         "revision_id": [
           {
-            "value": 704542
+            "value": 705537
           }
         ],
         "langcode": [
@@ -2298,7 +2298,7 @@
         ],
         "revision_id": [
           {
-            "value": 704543
+            "value": 705538
           }
         ],
         "langcode": [
