@@ -8,6 +8,10 @@ This section contains anonymized feedback and inquiries, related to the standard
 
 ## Applies to Entire Criterion
 ### 2025 Inquiries
+**Stakeholder Inquiry**: Is Pregnancy Intent required?
+
+**ASTP Response**: For certification to the § 170.315(g)(10) "Standardized API for patient and population services" criterion using USCDI v3 / <a target="_blank" href="https://hl7.org/fhir/us/core/STU6.1/">US Core v6.1</a> or USCDI v4 / <a target="_blank" href="https://hl7.org/fhir/us/core/STU7/index.html">US Core v7</a>, support for the "US Core Observation Pregnancy Intent" profile is required to be supported.
+
 **Stakeholder Inquiry**: What is the expectation for the use of the new US Core QuestionnaireResponse Profile, given that there are no Inferno tests for it, and how and where should it be included in the documents?
 
 **ASTP Response**: For purposes of certification to the § 170.315(g)(10) "Standardized API for patient and population services" criterion, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core IG profile. However, if the Health IT Module optionally supports group export of "QuestionnaireResponse" resources then those exported "QuestionnaireResponse" resources will be checked for conformance to the “QuestionnaireResponse” US Core IG profile as part of the conformance tests for the § 170.315(g)(10)(i)(B) requirements.
