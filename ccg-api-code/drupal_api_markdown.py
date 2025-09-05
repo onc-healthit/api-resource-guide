@@ -140,63 +140,93 @@ def get_existing_clarification_text(onc_template_str, pointer):
 
 def normalize_content_for_comparison(content):
     """
-    Normalize content for comparison by stripping whitespace and standardizing formatting,
-    but preserving the essential text content for meaningful comparison.
+    Normalize content for comparison by stripping indentation, canonicalizing bullets,
+    and standardizing whitespace so formatting-only changes are ignored.
     """
-    # Normalize line endings
-    content = content.replace('\r\n', '\n').replace('\r', '\n')
-    
-    # Split into lines and process each
+    # Normalize line endings and non-breaking spaces
+    content = content.replace('\r\n', '\n').replace('\r', '\n').replace('\xa0', ' ')
+
     lines = content.split('\n')
     normalized_lines = []
-    
+
     for line in lines:
-        # Strip leading/trailing whitespace but preserve the structure
-        stripped = line.strip()
-        if stripped:  # Only keep non-empty lines for comparison
-            normalized_lines.append(stripped)
-    
+        # Remove leading indentation (tabs/spaces)
+        s = line.lstrip(' \t')
+
+        # Canonicalize leading markdown bullet markers to "- "
+        # e.g., "* foo", "+ foo", "-    foo" -> "- foo"
+        s = re.sub(r'^([*+\-])\s+', '- ', s)
+
+        # Collapse internal whitespace to a single space for comparison
+        s = re.sub(r'\s+', ' ', s).strip()
+
+        if s:
+            normalized_lines.append(s)
+
     return '\n'.join(normalized_lines)
 
 def preserve_existing_formatting(existing_content, new_content, tabbed):
     """
     If content is essentially the same, return existing content to preserve formatting.
-    If content has changed, return new content but preserve exact trailing whitespace.
+    If content has changed, try to preserve formatting line-by-line using a
+    normalized diff; otherwise fall back to returning new content with preserved
+    trailing whitespace from existing content.
     """
     # Normalize both for comparison
     existing_normalized = normalize_content_for_comparison(existing_content)
     new_normalized = normalize_content_for_comparison(new_content)
-    
+
     # If content is the same, keep existing formatting exactly as is
     if existing_normalized == new_normalized:
         return existing_content
-    
-    # Content has changed, so we need to return the new content
-    # But preserve exact trailing whitespace from existing content
-    
-    # Find the position of the last non-whitespace character in existing content
+
+    # Attempt line-wise preservation using normalized alignment
+    import difflib
+
+    def norm_line(s):
+        s = s.replace('\r\n', '\n').replace('\r', '\n').replace('\xa0', ' ')
+        s = s.lstrip(' \t')
+        s = re.sub(r'^([*+\-])\s+', '- ', s)
+        s = re.sub(r'\s+', ' ', s).strip()
+        return s
+
+    existing_lines = existing_content.splitlines(keepends=True)
+    new_lines = new_content.splitlines(keepends=True)
+    existing_norm = [norm_line(l) for l in existing_lines]
+    new_norm = [norm_line(l) for l in new_lines]
+
+    sm = difflib.SequenceMatcher(a=existing_norm, b=new_norm)
+    merged_lines = []
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag == 'equal':
+            merged_lines.extend(existing_lines[i1:i2])
+        else:
+            merged_lines.extend(new_lines[j1:j2])
+
+    merged = ''.join(merged_lines)
+
+    # Final safety: if merged normalized equals new normalized, return merged
+    if normalize_content_for_comparison(merged) == new_normalized:
+        return merged
+
+    # Fallback: preserve exact trailing whitespace from existing content
     last_nonwhite_pos = -1
     for i in range(len(existing_content) - 1, -1, -1):
         if existing_content[i] not in ' \t\n\r':
             last_nonwhite_pos = i
             break
-    
+
     if last_nonwhite_pos >= 0:
-        # Extract exact trailing whitespace after last meaningful character
         trailing_whitespace = existing_content[last_nonwhite_pos + 1:]
-        
-        # Find the position of the last non-whitespace character in new content
         new_last_nonwhite_pos = -1
         for i in range(len(new_content) - 1, -1, -1):
             if new_content[i] not in ' \t\n\r':
                 new_last_nonwhite_pos = i
                 break
-        
         if new_last_nonwhite_pos >= 0:
-            # Replace new content's trailing whitespace with preserved whitespace
             new_content_meaningful = new_content[:new_last_nonwhite_pos + 1]
             return new_content_meaningful + trailing_whitespace
-    
+
     return new_content
 
 def process_template(onc_template_str, file_path):
