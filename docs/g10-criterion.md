@@ -599,7 +599,7 @@ Using SVAP, Certified Health IT Developers are permitted to voluntarily use a mo
 
 {==
 
-<p style="text-align: center;"><a target = "_blank" href = "https://www.healthit.gov/buzz-blog/health-it/advancements-in-health-it-oncs-approved-svap-standards-for-2024">Advancements in Health IT: ONC’s Approved SVAP Standards for 2024</a></p>
+<p style="text-align: center;"><a target = "_blank" href = "https://www.healthit.gov/buzz-blog/health-it/advancements-in-health-it-astp-oncs-approved-svap-standards-for-2025">Advancements in Health IT: ASTP/ONC’s Approved SVAP Standards for 2025</a></p>
 
 ==}
 
