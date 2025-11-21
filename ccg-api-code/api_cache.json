@@ -3,79 +3,79 @@
     "entity_ids": [
       {
         "target_id": 46576,
-        "target_revision_id": 704987,
+        "target_revision_id": 707251,
         "target_type": "paragraph",
         "target_uuid": "7fcc37e2-af57-4d1d-8c74-5191222ebded"
       },
       {
         "target_id": 46581,
-        "target_revision_id": 697715,
+        "target_revision_id": 707252,
         "target_type": "paragraph",
         "target_uuid": "13d590c8-cf93-42b0-a3d9-72c7bf330359"
       },
       {
         "target_id": 46586,
-        "target_revision_id": 697716,
+        "target_revision_id": 707253,
         "target_type": "paragraph",
         "target_uuid": "932ce8ea-bd07-419e-ad9d-e9a64047f8bf"
       },
       {
         "target_id": 46591,
-        "target_revision_id": 697717,
+        "target_revision_id": 707254,
         "target_type": "paragraph",
         "target_uuid": "fdc38d83-ec3e-45f8-9728-c188c7f62c07"
       },
       {
         "target_id": 46596,
-        "target_revision_id": 697718,
+        "target_revision_id": 707255,
         "target_type": "paragraph",
         "target_uuid": "59e035c6-c990-4ea7-ab3d-f6d7f11e31a4"
       },
       {
         "target_id": 46601,
-        "target_revision_id": 697719,
+        "target_revision_id": 707256,
         "target_type": "paragraph",
         "target_uuid": "3f4440be-7135-484f-95d5-d139f0bcab24"
       },
       {
         "target_id": 46606,
-        "target_revision_id": 697720,
+        "target_revision_id": 707257,
         "target_type": "paragraph",
         "target_uuid": "cec82baa-04b1-4abd-a31f-c2512d8fd563"
       },
       {
         "target_id": 46611,
-        "target_revision_id": 697721,
+        "target_revision_id": 707258,
         "target_type": "paragraph",
         "target_uuid": "818a8bc6-431a-4acc-ad9f-5eaba1ea2074"
       },
       {
         "target_id": 46616,
-        "target_revision_id": 697722,
+        "target_revision_id": 707259,
         "target_type": "paragraph",
         "target_uuid": "92a64c3b-093f-4b94-a652-24b88904d4b3"
       },
       {
         "target_id": 46621,
-        "target_revision_id": 697723,
+        "target_revision_id": 707260,
         "target_type": "paragraph",
         "target_uuid": "9e6d743a-fd7c-45ea-88c4-dedcc5655bbb"
       },
       {
         "target_id": 46626,
-        "target_revision_id": 697724,
+        "target_revision_id": 707261,
         "target_type": "paragraph",
         "target_uuid": "5e154a04-5ee8-47e8-9c61-66c4205e4191"
       },
       {
         "target_id": 46631,
-        "target_revision_id": 697725,
+        "target_revision_id": 707262,
         "target_type": "paragraph",
         "target_uuid": "a4bc690d-b603-449d-8616-3714ef3258cb"
       },
       {
         "target_id": 46636,
-        "target_revision_id": 697726,
+        "target_revision_id": 707263,
         "target_type": "paragraph",
         "target_uuid": "d0dff89c-d243-447c-bf56-a06db88d451a"
       }
@@ -94,7 +94,7 @@
         ],
         "revision_id": [
           {
-            "value": 704987
+            "value": 707251
           }
         ],
         "langcode": [
@@ -160,9 +160,9 @@
         ],
         "field_technical_explanations_and": [
           {
-            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in \u00a7 170.315(g)(7) through (10).</li></ul>",
+            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in \u00a7 170.315(g)(7) through (10), and (31) through (g)(33) unless otherwise specified.</li></ul>",
             "format": "full_html",
-            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in \u00a7 170.315(g)(7) through (10).</li></ul>"
+            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in \u00a7 170.315(g)(7) through (10), and (31) through (g)(33) unless otherwise specified.</li></ul>"
           }
         ]
       },
@@ -179,7 +179,7 @@
         ],
         "revision_id": [
           {
-            "value": 697715
+            "value": 707252
           }
         ],
         "langcode": [
@@ -230,7 +230,11 @@
             "value": true
           }
         ],
-        "revision_translation_affected": [],
+        "revision_translation_affected": [
+          {
+            "value": true
+          }
+        ],
         "field_criterion_subparagraph": [],
         "field_standard_s_referenced": [
           {
@@ -241,9 +245,9 @@
         ],
         "field_technical_explanations_and": [
           {
-            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>The data required and that must be supported to demonstrate conformance to the final \u00a7\u2009170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes \u201call data elements of a patient\u2019s electronic health record to the extent permissible under applicable privacy laws.\u201d</span></li></ul>",
+            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The regulation text at 45 CFR 170.404 includes the phrase \u201cunless otherwise specified in this section\u201d to enable the Certification Program to specify requirements in different subparagraphs pertain to different API-based certification criteria. Not all requirements in 45 CFR 170.404 are relevant or would be appropriate for all API-based certification criteria. For example, the service base URL publication requirement at 45 CFR 170.404(b)(2) is not implicated by certification to 45 CFR 170.315(g)(31), (g)(32), and (g)(33). [<a href=\"https://www.federalregister.gov/d/2025-14681/p-5391\">90 FR 37178</a>]</li><li><span>The data required and that must be supported to demonstrate conformance to the final \u00a7\u2009170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes \u201call data elements of a patient\u2019s electronic health record to the extent permissible under applicable privacy laws.\u201d</span></li></ul>",
             "format": "full_html",
-            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>The data required and that must be supported to demonstrate conformance to the final \u00a7\u2009170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes \u201call data elements of a patient\u2019s electronic health record to the extent permissible under applicable privacy laws.\u201d</span></li></ul>"
+            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li>The regulation text at 45 CFR 170.404 includes the phrase \u201cunless otherwise specified in this section\u201d to enable the Certification Program to specify requirements in different subparagraphs pertain to different API-based certification criteria. Not all requirements in 45 CFR 170.404 are relevant or would be appropriate for all API-based certification criteria. For example, the service base URL publication requirement at 45 CFR 170.404(b)(2) is not implicated by certification to 45 CFR 170.315(g)(31), (g)(32), and (g)(33). [<a href=\"https://www.federalregister.gov/d/2025-14681/p-5391\">90 FR 37178</a>]</li><li><span>The data required and that must be supported to demonstrate conformance to the final \u00a7\u2009170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes \u201call data elements of a patient\u2019s electronic health record to the extent permissible under applicable privacy laws.\u201d</span></li></ul>"
           }
         ]
       },
@@ -260,7 +264,7 @@
         ],
         "revision_id": [
           {
-            "value": 697716
+            "value": 707253
           }
         ],
         "langcode": [
@@ -341,7 +345,7 @@
         ],
         "revision_id": [
           {
-            "value": 697717
+            "value": 707254
           }
         ],
         "langcode": [
@@ -422,7 +426,7 @@
         ],
         "revision_id": [
           {
-            "value": 697718
+            "value": 707255
           }
         ],
         "langcode": [
@@ -503,7 +507,7 @@
         ],
         "revision_id": [
           {
-            "value": 697719
+            "value": 707256
           }
         ],
         "langcode": [
@@ -584,7 +588,7 @@
         ],
         "revision_id": [
           {
-            "value": 697720
+            "value": 707257
           }
         ],
         "langcode": [
@@ -665,7 +669,7 @@
         ],
         "revision_id": [
           {
-            "value": 697721
+            "value": 707258
           }
         ],
         "langcode": [
@@ -746,7 +750,7 @@
         ],
         "revision_id": [
           {
-            "value": 697722
+            "value": 707259
           }
         ],
         "langcode": [
@@ -797,7 +801,11 @@
             "value": true
           }
         ],
-        "revision_translation_affected": [],
+        "revision_translation_affected": [
+          {
+            "value": true
+          }
+        ],
         "field_criterion_subparagraph": [],
         "field_standard_s_referenced": [
           {
@@ -808,9 +816,9 @@
         ],
         "field_technical_explanations_and": [
           {
-            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>This requirement applies to a Certified API Developer with a Health IT Module certified to the certification criterion adopted in \u00a7 170.315(g)(10).</span></li><li><span>The authenticity verification process finalized in \u00a7 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.</span></li><li>Application registration is a technical requirement described in \u00a7 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications (\"apps\u201d) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by \u00a7 170.404(a)(4)(ii)(A)(1).</li></ul>",
+            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>This requirement applies to a Certified API Developer with a Health IT Module certified to one or more of the certification criteria adopted in \u00a7 170.315(g)(10), (31), and (33).</span></li><li><span>The authenticity verification process finalized in \u00a7 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.</span></li><li>Application registration is a technical requirement described in \u00a7 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications (\"apps\u201d) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by \u00a7 170.404(a)(4)(ii)(A)(1).</li></ul>",
             "format": "full_html",
-            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>This requirement applies to a Certified API Developer with a Health IT Module certified to the certification criterion adopted in \u00a7 170.315(g)(10).</span></li><li><span>The authenticity verification process finalized in \u00a7 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.</span></li><li>Application registration is a technical requirement described in \u00a7 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications (\"apps\u201d) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by \u00a7 170.404(a)(4)(ii)(A)(1).</li></ul>"
+            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>This requirement applies to a Certified API Developer with a Health IT Module certified to one or more of the certification criteria adopted in \u00a7 170.315(g)(10), (31), and (33).</span></li><li><span>The authenticity verification process finalized in \u00a7 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.</span></li><li>Application registration is a technical requirement described in \u00a7 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications (\"apps\u201d) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by \u00a7 170.404(a)(4)(ii)(A)(1).</li></ul>"
           }
         ]
       },
@@ -827,7 +835,7 @@
         ],
         "revision_id": [
           {
-            "value": 697723
+            "value": 707260
           }
         ],
         "langcode": [
@@ -893,9 +901,9 @@
         ],
         "field_technical_explanations_and": [
           {
-            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>Certified API Developers must publish in accordance with the requirements at \u00a7 170.404(b)(2) the service base URLs and related organization details that can be used by patients to access their EHI for Health IT Modules certified to \u00a7 170.315(g)(10) by December 31, 2024.</span></li><li><span>As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR</span><sup>\u00ae</sup><span>) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR</span><sup>\u00ae</sup><span> service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR</span><sup>\u00ae</sup><span> service base URLs they centrally manage on behalf of API Information Sources.&nbsp;</span></li><li>To be open and transparent to the public, developers must provide a hyperlink to the FHIR<sup>\u00ae</sup> Bundle of service base URLs and related organization details to be published with the \u00a7 170.315(g)(10)-certified product on the ONC Certified Health IT Product List (CHPL).&nbsp;</li><li>Facility level identifiers, for the purposes of certification to these publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not, for example, required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1183\">89 FR 1288</a>]</li><li>Certified API Developers have the flexibility to consider using \u201cOrganization\u201d and \u201cEndpoint\u201d FHIR<sup>\u00ae</sup> resources profiles, such as the profiles in the <a href=\"https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html\">User-access Brands and Endpoints</a> specification or <a href=\"https://hl7.org/fhir/uv/vhdir/2018Jan/index.html\">Validated Healthcare Directory IG</a>. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li><li>Certified API Developers can utilize the \"Organization.partOf\" data element in the FHIR \"Organization\" resource to represent parent/child organization relationships that make up organization hierarchies. A child organization may use the same service base URL (i.e., FHIR endpoint) as its parent organization. For the purposes of Certification Program service base URL publication requirements, it is not required that a child \"Organization\" resource include an \"Organization.endpoint\" element if its parent \"Organization\" resource, referenced through the \"Organization.partOf\" element, already contains the applicable endpoint information in its own \"Organization.endpoint\" element.</li><li>For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at \u00a7170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li></ul><div><div><div id=\"_com_3\" language=\"JavaScript\" onmouseover=\"msoCommentShow(&apos;_anchor_3&apos;,&apos;_com_3&apos;)\" onmouseout=\"msoCommentHide(&apos;_com_3&apos;)\"><p>&nbsp;</p></div></div></div>",
+            "value": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>Certified API Developers must publish in accordance with the requirements at \u00a7 170.404(b)(2) the service base URLs and related organization details that can be used by patients to access their EHI for Health IT Modules certified to \u00a7 170.315(g)(10) by December 31, 2024.</span></li><li><span>As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR</span><sup>\u00ae</sup><span>) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR</span><sup>\u00ae</sup><span> service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR</span><sup>\u00ae</sup><span> service base URLs they centrally manage on behalf of API Information Sources.</span></li><li>To be open and transparent to the public, developers must provide a hyperlink to the FHIR<sup>\u00ae</sup> Bundle of service base URLs and related organization details to be published with the \u00a7 170.315(g)(10)-certified product on the ONC Certified Health IT Product List (CHPL).</li><li>Facility level identifiers, for the purposes of certification to these publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not, for example, required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1183\">89 FR 1288</a>]</li><li>Certified API Developers have the flexibility to consider using \u201cOrganization\u201d and \u201cEndpoint\u201d FHIR<sup>\u00ae</sup> resources profiles, such as the profiles in the <a href=\"https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html\">User-access Brands and Endpoints</a> specification or <a href=\"https://hl7.org/fhir/uv/vhdir/2018Jan/index.html\">Validated Healthcare Directory IG</a>. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li><li>Certified API Developers can utilize the \"Organization.partOf\" data element in the FHIR \"Organization\" resource to represent parent/child organization relationships that make up organization hierarchies. A child organization may use the same service base URL (i.e., FHIR endpoint) as its parent organization. For the purposes of Certification Program service base URL publication requirements, it is not required that a child \"Organization\" resource include an \"Organization.endpoint\" element if its parent \"Organization\" resource, referenced through the \"Organization.partOf\" element, already contains the applicable endpoint information in its own \"Organization.endpoint\" element.</li><li>For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at \u00a7170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li></ul><div><div><div id=\"_com_3\" language=\"JavaScript\" onmouseover=\"msoCommentShow(&apos;_anchor_3&apos;,&apos;_com_3&apos;)\" onmouseout=\"msoCommentHide(&apos;_com_3&apos;)\"><p>&nbsp;</p></div></div></div>",
             "format": "full_html",
-            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>Certified API Developers must publish in accordance with the requirements at \u00a7 170.404(b)(2) the service base URLs and related organization details that can be used by patients to access their EHI for Health IT Modules certified to \u00a7 170.315(g)(10) by December 31, 2024.</span></li><li><span>As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR</span><sup>\u00ae</sup><span>) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR</span><sup>\u00ae</sup><span> service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR</span><sup>\u00ae</sup><span> service base URLs they centrally manage on behalf of API Information Sources.&nbsp;</span></li><li>To be open and transparent to the public, developers must provide a hyperlink to the FHIR<sup>\u00ae</sup> Bundle of service base URLs and related organization details to be published with the \u00a7 170.315(g)(10)-certified product on the ONC Certified Health IT Product List (CHPL).&nbsp;</li><li>Facility level identifiers, for the purposes of certification to these publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not, for example, required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1183\">89 FR 1288</a>]</li><li>Certified API Developers have the flexibility to consider using \u201cOrganization\u201d and \u201cEndpoint\u201d FHIR<sup>\u00ae</sup> resources profiles, such as the profiles in the <a href=\"https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html\">User-access Brands and Endpoints</a> specification or <a href=\"https://hl7.org/fhir/uv/vhdir/2018Jan/index.html\">Validated Healthcare Directory IG</a>. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li><li>Certified API Developers can utilize the \"Organization.partOf\" data element in the FHIR \"Organization\" resource to represent parent/child organization relationships that make up organization hierarchies. A child organization may use the same service base URL (i.e., FHIR endpoint) as its parent organization. For the purposes of Certification Program service base URL publication requirements, it is not required that a child \"Organization\" resource include an \"Organization.endpoint\" element if its parent \"Organization\" resource, referenced through the \"Organization.partOf\" element, already contains the applicable endpoint information in its own \"Organization.endpoint\" element.</li><li>For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at \u00a7170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li></ul><div><div><div id=\"_com_3\" language=\"JavaScript\" onmouseover=\"msoCommentShow(&apos;_anchor_3&apos;,&apos;_com_3&apos;)\" onmouseout=\"msoCommentHide(&apos;_com_3&apos;)\"><p>&nbsp;</p></div></div></div>"
+            "processed": "<p><em><strong>Clarifications:</strong></em></p><ul><li><span>Certified API Developers must publish in accordance with the requirements at \u00a7 170.404(b)(2) the service base URLs and related organization details that can be used by patients to access their EHI for Health IT Modules certified to \u00a7 170.315(g)(10) by December 31, 2024.</span></li><li><span>As discussed in section VIII.C.6.c of the ONC Cures Act Final Rule, API Information Sources who locally manage their Fast Healthcare Interoperability Resources (FHIR</span><sup>\u00ae</sup><span>) servers without Certified API Developer assistance cannot refuse to provide to Certified API Developers the FHIR</span><sup>\u00ae</sup><span> service base URL(s) that is/are necessary for patients to use to access their EHI. Equally, pursuant to this Maintenance of Certification requirement, they would be required to publish the FHIR</span><sup>\u00ae</sup><span> service base URLs they centrally manage on behalf of API Information Sources.</span></li><li>To be open and transparent to the public, developers must provide a hyperlink to the FHIR<sup>\u00ae</sup> Bundle of service base URLs and related organization details to be published with the \u00a7 170.315(g)(10)-certified product on the ONC Certified Health IT Product List (CHPL).</li><li>Facility level identifiers, for the purposes of certification to these publication requirements, include identifiers such as: a National Provider Identifier (NPI), Clinical Laboratory Improvement Amendments (CLIA) number, CMS Certification Number (CCN), or other health system ID. Support for one of these identifier types is sufficient, meaning Certified API Developers are not, for example, required to publish individual NPIs as a floor for certification. Different identifiers may be used depending on the customers a Certified API Developer has. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1183\">89 FR 1288</a>]</li><li>Certified API Developers have the flexibility to consider using \u201cOrganization\u201d and \u201cEndpoint\u201d FHIR<sup>\u00ae</sup> resources profiles, such as the profiles in the <a href=\"https://hl7.org/fhir/smart-app-launch/STU2.2/brands.html\">User-access Brands and Endpoints</a> specification or <a href=\"https://hl7.org/fhir/uv/vhdir/2018Jan/index.html\">Validated Healthcare Directory IG</a>. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li><li>Certified API Developers can utilize the \"Organization.partOf\" data element in the FHIR \"Organization\" resource to represent parent/child organization relationships that make up organization hierarchies. A child organization may use the same service base URL (i.e., FHIR endpoint) as its parent organization. For the purposes of Certification Program service base URL publication requirements, it is not required that a child \"Organization\" resource include an \"Organization.endpoint\" element if its parent \"Organization\" resource, referenced through the \"Organization.partOf\" element, already contains the applicable endpoint information in its own \"Organization.endpoint\" element.</li><li>For the time period between when the HTI-1 final rule is effective and December 31, 2024, Certified API Developers may fulfill their obligations at \u00a7170.404(b)(2) by publicly publishing the service base URLs for all customers in a machine-readable format at no charge. [see <a href=\"https://www.federalregister.gov/d/2023-28857/p-1176\">89 FR 1287</a>]</li></ul><div><div><div id=\"_com_3\" language=\"JavaScript\" onmouseover=\"msoCommentShow(&apos;_anchor_3&apos;,&apos;_com_3&apos;)\" onmouseout=\"msoCommentHide(&apos;_com_3&apos;)\"><p>&nbsp;</p></div></div></div>"
           }
         ]
       },
@@ -912,7 +920,7 @@
         ],
         "revision_id": [
           {
-            "value": 697724
+            "value": 707261
           }
         ],
         "langcode": [
@@ -993,7 +1001,7 @@
         ],
         "revision_id": [
           {
-            "value": 697725
+            "value": 707262
           }
         ],
         "langcode": [
@@ -1074,7 +1082,7 @@
         ],
         "revision_id": [
           {
-            "value": 697726
+            "value": 707263
           }
         ],
         "langcode": [

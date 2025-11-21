@@ -26,7 +26,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to the entire criterion*"
 	***Clarifications:***
 	
-	* The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in § 170.315(g)(7) through (10).
+	* The Conditions and Maintenance of Certification requirements only apply to practices of Certified API Developers with respect to the capabilities included in § 170.315(g)(7) through (10), and (31) through (g)(33) unless otherwise specified.
 	
 *Additional Clarifications included to the § 170.404 Certification Companion Guide (CCG):*
 
@@ -44,6 +44,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(A)(1)*"
 	***Clarifications:***
 	
+	* The regulation text at 45 CFR 170.404 includes the phrase “unless otherwise specified in this section” to enable the Certification Program to specify requirements in different subparagraphs pertain to different API-based certification criteria. Not all requirements in 45 CFR 170.404 are relevant or would be appropriate for all API-based certification criteria. For example, the service base URL publication requirement at 45 CFR 170.404(b)(2) is not implicated by certification to 45 CFR 170.315(g)(31), (g)(32), and (g)(33). [[90 FR 37178](https://www.federalregister.gov/d/2025-14681/p-5391)]
 	* The data required and that must be supported to demonstrate conformance to the final § 170.315(g)(10) certification criterion (including all of its associated standards and implementation specifications) constitutes “all data elements of a patient’s electronic health record to the extent permissible under applicable privacy laws.”
 	
 
@@ -168,7 +169,7 @@ To submit questions or comments to ONC please use our <a target = "_blank" href 
 ??? quote "*Clarifications included in the § 170.404 Certification Companion Guide (CCG) that apply to paragraph § 170.404(B)(1)*"
 	***Clarifications:***
 	
-	* This requirement applies to a Certified API Developer with a Health IT Module certified to the certification criterion adopted in § 170.315(g)(10).
+	* This requirement applies to a Certified API Developer with a Health IT Module certified to one or more of the certification criteria adopted in § 170.315(g)(10), (31), and (33).
 	* The authenticity verification process finalized in § 170.404(b)(1)(i) is optional, but if instituted, the authenticity verification process must be completed within 10 business days.
 	* Application registration is a technical requirement described in § 170.404(b)(1) that includes requirements for authenticity verification and registration for production use, which are necessary for third-party applications ("apps”) to be able to connect to certified API technology. While Certified API Developers are permitted to institute a process to verify the authenticity of a third-party app developer, this process must be completed within 10 business days of receipt of a registration request. Subsequently, registration for production use must be completed within 5 business days after completing the aforementioned verification process. After registration is completed, a Certified API Developer must grant access and use of its certified API technology to the app in a production environment as required by § 170.404(a)(4)(ii)(A)(1).
 	
