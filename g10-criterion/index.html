@@ -1,0 +1,1743 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://onc-healthit.github.io/api-resource-guide/g10-criterion/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../404-conditions-maintenance/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../images/logo.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>HL7 FHIR API Criterion - § 170.315(g)(10) - ONC Health IT Certification Program API Resource Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-9FHYY7H053"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-9FHYY7H053",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-9FHYY7H053",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#hl7-fhir-api-criterion-at-170315g10" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="ONC Health IT Certification Program API Resource Guide" class="md-header__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            ONC Health IT Certification Program API Resource Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              HL7 FHIR API Criterion - § 170.315(g)(10)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/onc-healthit/api-resource-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    onc-healthit/api-resource-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="ONC Health IT Certification Program API Resource Guide" class="md-nav__button md-logo" aria-label="ONC Health IT Certification Program API Resource Guide" data-md-component="logo">
+      
+  <img src="../images/logo.png" alt="logo">
+
+    </a>
+    ONC Health IT Certification Program API Resource Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/onc-healthit/api-resource-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    onc-healthit/api-resource-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HL7 FHIR API Criterion - § 170.315(g)(10)
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HL7 FHIR API Criterion - § 170.315(g)(10)
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applicability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-it-feedback-and-inquiry-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health IT Feedback and Inquiry Portal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-and-clarifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information and Clarifications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information and Clarifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entire-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entire Criterion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-response-single-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Response (Single Patient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-response-multiple-patients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Response (Multiple Patients)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-single-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Search Operations (Single Patient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-multiple-patients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Search Operations (Multiple Patients)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Registration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-time-authentication-authorization-for-single-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First time Authentication / Authorization for Single Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequent-authentication-authorization-for-single-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subsequent Authentication / Authorization for Single Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization-for-multiple-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication / Authorization for Multiple Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patient-authorization-revocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patient Authorization Revocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-introspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token Introspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-api-documentation-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical API Documentation Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-api-documentation-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical API Documentation Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-certification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Certification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing and Certification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inferno-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inferno Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-testing-condition-and-maintenance-of-certification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real World Testing Condition and Maintenance of Certification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standards-version-advancement-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standards Version Advancement Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../404-conditions-maintenance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API Conditions and Maintenance of Certification - § 170.404
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../version-directory/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Directory of Published Versions
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../helpful-links/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Helpful Links
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="https://www.healthit.gov/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    HealthIT.gov
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#applicability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applicability
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#health-it-feedback-and-inquiry-portal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Health IT Feedback and Inquiry Portal
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#information-and-clarifications" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Information and Clarifications
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Information and Clarifications">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entire-criterion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entire Criterion
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-response-single-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Response (Single Patient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#data-response-multiple-patients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Response (Multiple Patients)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-single-patient" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Search Operations (Single Patient)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#supported-search-operations-multiple-patients" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Supported Search Operations (Multiple Patients)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#application-registration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Application Registration
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#secure-connection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Secure Connection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#first-time-authentication-authorization-for-single-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        First time Authentication / Authorization for Single Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#subsequent-authentication-authorization-for-single-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Subsequent Authentication / Authorization for Single Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#authentication-authorization-for-multiple-patient-services" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Authentication / Authorization for Multiple Patient Services
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#patient-authorization-revocation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Patient Authorization Revocation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#token-introspection" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Token Introspection
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-api-documentation-content" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical API Documentation Content
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#technical-api-documentation-availability" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Technical API Documentation Availability
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#testing-and-certification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Testing and Certification
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Testing and Certification">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#test-procedure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Test Procedure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inferno-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Inferno Framework
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#real-world-testing-condition-and-maintenance-of-certification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Real World Testing Condition and Maintenance of Certification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#standards-version-advancement-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Standards Version Advancement Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<!-- $criterion-endpoint{"test-method/standardized-api-patient-and-population-services"} -->
+
+<h1 id="hl7-fhir-api-criterion-at-170315g10"><abbr title="Health Level 7">HL7</abbr> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr> <abbr title="Application Programming Interface">API</abbr> Criterion at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)<a class="headerlink" href="#hl7-fhir-api-criterion-at-170315g10" title="Permanent link">&para;</a></h1>
+<p>This section considers the <abbr title="Health Level 7">HL7</abbr>®<sup id="fnref:1"><a class="footnote-ref" href="#fn:1">1</a></sup> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® standardized <abbr title="Application Programming Interface">API</abbr> for patient and population services certification criterion, including all of the relevant content contained in the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-1162"><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> <abbr title="21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program">Cures Act Final Rule</abbr></a>, the <a target = "_blank" href = "https://www.federalregister.gov/d/2020-24376/p-136"><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> <abbr title="Information Blocking and the ONC Health IT Certification Program: Extension of Compliance Dates and Timeframes in Response to the COVID-19 Public Health Emergency">Interim Final Rule</abbr></a>, <a target = "_blank" href = "https://www.federalregister.gov/documents/2024/01/09/2023-28857/health-data-technology-and-interoperability-certification-program-updates-algorithm-transparency-and#h-105"><abbr title="Health Data, Technology, and Interoperability: Certification Program Updates, Algorithm Transparency, and Information Sharing">HTI-1</abbr></a>, and the <a target = "_blank" href = "https://ecfr.federalregister.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">regulation paragraphs in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)</a>.</p>
+<h2 id="applicability">Applicability<a class="headerlink" href="#applicability" title="Permanent link">&para;</a></h2>
+<p>§ 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) is applicable to all health IT developers who are certifying to the <a target = "_blank" href = "https://www.healthit.gov/topic/certification-ehrs/2015-edition-test-method/2015-edition-cures-update-base-electronic-health-record-definition">Base EHR definition</a>.</p>
+<p>The <abbr title="Application Programming Interface">API</abbr> certification criterion finalized in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) was included as part of the Base EHR Definition at <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3216">§ 170.102</a>. While developers of health information technology are not required by the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> to meet certification requirements, including certification requirements that are included as part of the Base EHR Definition, several federal, state and tribal entities, including <a target = "_blank" href = "https://www.cms.gov/">Centers for Medicare &amp; Medicaid Services</a>, <a target = "_blank" href = "https://www.cdc.gov/">Centers for Disease Control and Prevention</a>, and other programs reference the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Health IT Certification Program and require the use of certified health IT for program participation.</p>
+<h2 id="health-it-feedback-and-inquiry-portal">Health IT Feedback and Inquiry Portal<a class="headerlink" href="#health-it-feedback-and-inquiry-portal" title="Permanent link">&para;</a></h2>
+<p>To submit questions or comments to <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> please use our <a target = "_blank" href = "https://www.healthit.gov/feedback">Inquiry Portal</a>. Anonymized versions of the § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) inquires and responses that <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> has handled through this portal can be accessed on the <a href="../inquiry-portal/g10-inquiries/">Health IT Feedback and Inquiry Portal: Standardized <abbr title="Application Programming Interface">API</abbr> Certification Criterion at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)</a> page.</p>
+<h2 id="information-and-clarifications">Information and Clarifications<a class="headerlink" href="#information-and-clarifications" title="Permanent link">&para;</a></h2>
+<h3 id="entire-criterion">Entire Criterion<a class="headerlink" href="#entire-criterion" title="Permanent link">&para;</a></h3>
+<!-- $ref{g-10:CCG["Applies to Entire Criterion"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to the entire criterion</em></summary>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT Modules are not required to support patient-facing <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for multiple patients for the purposes of this certification criterion.</li>
+<li>The clinical note text included in any of the notes described in the “Clinical Notes Guidance” section of a US Core Implementation Guide (<abbr title="Implementation guide">IG</abbr>) adopted in § 170.215(b)(1) must be represented in a “plain text” form, and it would be unacceptable for the note text to be converted to another file or format (e.g., .docx, PDF) when it is provided as part of an <abbr title="Application Programming Interface">API</abbr> response. The intent of this policy is to prohibit Health IT Modules from converting clinical notes from a “machine readable” format to a non-“machine readable” format (e.g., PDF). Clinical note text that originates from outside Health IT Modules should be exchanged using its original format. Additionally, “plain text” does not necessarily mean the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® “contentType” “text/plain.”</li>
+<li>The US Core <abbr title="Implementation guide">IG</abbr> Profile “StructureDefinition-us-core-patient” element “name.suffix” is required for testing and certification in the Certification Program to meet the <abbr title="United States Core Data for Interoperability">USCDI</abbr> requirement to support the “Patient Demographics” Data Class: “Suffix” Data Element.</li>
+<li>A Health IT Module must support at least one Choice or Reference for US Core <abbr title="Implementation guide">IG</abbr> “must support” elements with multiple Choices or References, respectively.</li>
+<li>A Health IT Module must be conformant to the US Core <abbr title="Implementation guide">IG</abbr> for all Choices and References included in its standardized <abbr title="Application Programming Interface">API</abbr>, and cannot misrepresent Choices via the standardized <abbr title="Application Programming Interface">API</abbr> (e.g. a Health IT Module cannot transform “integer” values to “string” values).</li>
+<li>A health IT developer must document which US Core <abbr title="Implementation guide">IG</abbr> Choices and References are supported by their Health IT Module via public technical documentation to meet the requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii) and the transparency conditions at § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+<li>Information originating from the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Module must conform to the requirements included in the criterion, but legacy information and information from outside systems is not required to be mapped to the <abbr title="United States Core Data for Interoperability">USCDI</abbr> “Applicable Standards” and the US Core <abbr title="Implementation guide">IG</abbr> terminologies and value sets. However, health IT developers are encouraged to exceed the minimum requirements described in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) to support the mapping of legacy information to the terminologies and value sets included in the <abbr title="United States Core Data for Interoperability">USCDI</abbr> and US Core <abbr title="Implementation guide">IG</abbr> where possible.</li>
+<li>In order to mitigate potential interoperability errors and inconsistent implementation of the Fast Healthcare Interoperability Resources (<abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) Bulk Data Access (Flat <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) (v1.0.0: STU 1) standard, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> assesses, approves, and incorporates corrections (errata) as part of required certification and testing to this criterion. Compliance with the following errata is necessary because the errata implements technical corrections and clarifications to the <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Bulk Data Access (Flat <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) (v1.0.0: STU 1) standard. There is a 90-day delay from the time the <abbr title="Certification Companion Guide">CCG</abbr> has been updated with the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr>-approved errata to when compliance with the errata will be required to pass testing. Similarly, there will be an 18-month delay before a finding of an erratum’s absence in a Certified Health IT Module during surveillance would constitute a non-conformity under the Certification Program.<ul>
+<li>Version: <a href="https://hl7.org/fhir/uv/bulkdata/STU1.0.1/"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Bulk Data Access (Flat <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) (v1.0.1: STU 1)</a>. Effective for testing on October 25, 2021. Surveillance compliance date on January 27, 2023.</li>
+</ul>
+</li>
+<li>Through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core Patch Process</a>, the <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects Work Group (CGP WG) approves US Core “patches”, which are corrections for issues with the US Core implementation guide (US Core <abbr title="Implementation guide">IG</abbr>). US Core “patches” include corrections for issues such as ambiguous requirements and requirements incompatible with real world deployment. Similar to US Core “patches” are US Core “additional guidance”. US Core “additional guidance” approved by the CGP WG indicates guidance included in a newer version of the US Core <abbr title="Implementation guide">IG</abbr> as being relevant to a previous version of the US Core <abbr title="Implementation guide">IG</abbr>. Though US Core “patches” and “additional guidance” are not required for certification purposes (unless indicated in the Certification Companion Guide), health IT developers may optionally implement US Core “additional guidance” in their Health IT Module and still be conformant with § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion requirements.</li>
+<li>More information regarding the US Core Patch Process and US Core “patches” and “additional guidance” approved by the CGP WG is available on the <abbr title="Health Level 7">HL7</abbr>® Confluence pages of <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> and <a href="https://confluence.hl7.org/display/CGP/Approved+Patches+and+Additional+Guidance">Approved Patches and Additional Guidance</a>.</li>
+<li>Consistent with Executive Order (EO) 14168 and OPM guidance, Health IT Modules certifying and/or currently certified to certification criteria that cross-reference the <abbr title="United States Core Data for Interoperability">USCDI</abbr> standard at 45 <abbr title="Code of Federal Regulations">CFR</abbr> <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> are only required to demonstrate the capability to categorize data on individuals for the sex data element in accordance with the following SNOMED CT® codes:<ul>
+<li>248152002 |Female (finding)| and</li>
+<li>248153007 |Male (finding)|</li>
+</ul>
+</li>
+<li>Further, these Health IT Modules are no longer required to support the following <abbr title="United States Core Data for Interoperability">USCDI</abbr> data elements for purposes of certification:<ul>
+<li>Sexual orientation in <abbr title="United States Core Data for Interoperability">USCDI</abbr> version 4;</li>
+<li>Gender identity in <abbr title="United States Core Data for Interoperability">USCDI</abbr> version 4;</li>
+<li>Sex parameter for clinical use in <abbr title="United States Core Data for Interoperability">USCDI</abbr> version 5;</li>
+<li>Name to use in <abbr title="United States Core Data for Interoperability">USCDI</abbr> version 5;</li>
+<li>Pronouns in <abbr title="United States Core Data for Interoperability">USCDI</abbr> version 5.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards US Core 4.0.0 (expires on January 1, 2026):</strong></p>
+<ul>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-40299"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-40299</a>, approved patching the US Core Patient Profile in US Core 3.1.1 and US Core 4.0.0. The <abbr title="United States Core Data for Interoperability">USCDI</abbr> data element “Patient Demographics: Previous Name” must be supported by including the capability to set the US Core Patient Profile element “Patient.name.use” to “old” or provide an end date in “Patient.name.period” element or support both. Additionally, the <abbr title="United States Core Data for Interoperability">USCDI</abbr> data element “Patient Demographics: Previous Address” must be supported by including the capability to set the US Core Patient Profile “Patient.address.use” element to “old” or provide an end date in “Patient.address.period” element or support both. Also, support for the US Core Patient Profile “Patient.address.period” element is not required for purposes of testing and certification.</li>
+</ul>
+</details>
+<p><em>Additional clarifications that apply to the entire (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion:</em></p>
+<ul>
+<li>The <abbr title="Application Programming Interface">API</abbr> certification criterion in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) replaces the “application access—data category request” certification criterion (§ 170.315(g)(8)) and supports <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for single and multiple patients.</li>
+<li>The term “services” includes all § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-related technical capabilities included in a Health IT Module presented for testing and certification. The <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for single patients is intended to support EHI requests and responses for individual patient records and the <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for multiple patients is intended to support EHI requests and responses for multiple patients’ records.</li>
+<li>The scope of patient cohorts for “population services” can include various groups defined at the discretion of the user of the <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for multiple patients, including, for example, a group of patients that meet certain disease criteria or fall under a certain insurance plan.</li>
+<li>The <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking policies</a> do not compel
+healthcare providers to implement Health IT Modules certified to requirements in
+§ 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>).</li>
+<li>While there may be slight variation between each instance of a Standardized <abbr title="Application Programming Interface">API</abbr> for patient and population services Health IT Module implemented by <abbr title="Application Programming Interface">API</abbr> Information Sources, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> believes the standards that form the basis of the § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) certification criterion will enable interoperability across implementations.</li>
+</ul>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#applies-to-entire-criterion">Health IT Feedback and Inquiry Portal Q&amp;A: Applies to Entire Criterion (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)</a></p>
+</div>
+<h3 id="data-response-single-patient">Data Response (Single Patient)<a class="headerlink" href="#data-response-single-patient" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(A)</strong></summary>
+<p>(i) <em>Data response</em>. (A) Respond to requests for a single patient's data according to the standards and implementation specifications adopted in § 170.215(a) and in § 170.215(b)(1), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the standards adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(A) Data response – single patient"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(A)</em></summary>
+<p>Technical outcome – Respond to requests for a single patient’s data according to the standards and implementation specifications adopted in § 170.215(a) and (b)(1), including the mandatory capabilities described in “US Core Server CapabilityStatement,” for each of the data included in the corresponding standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>All data elements and operations indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in-scope for testing.</li>
+<li>Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html">“Basic Provenance Guidance” section of the US Core <abbr title="Implementation guide">IG</abbr></a>.</li>
+<li>For purposes of <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Health IT Certification, health IT developers that always provide <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® “observation” values are not required to demonstrate Health IT Module support for “dataAbsentReason” elements. These include “dataAbsentReason” elements contained in the US Core implementation guide profiles and <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Vital Sign profiles that build on the <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® “observation” and its derived profiles including <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® “observation-vitalsigns”, and <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® “observation-oxygensat”, including “component.dataAbsentReason” elements. However, health IT developers are still required to adhere to and demonstrate Health IT Module support for the <a href="http://hl7.org/fhir/us/core/STU3.1.1/general-guidance.html#missing-data">“Missing Data” section</a> of the US Core implementation guide.</li>
+<li>For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “USCoreFetchDocumentReferences” ($docref) US Core <abbr title="Implementation guide">IG</abbr> operation.</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 (expires on January 1, 2026)</strong></p>
+<ul>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects work group, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-28393"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-28393</a>, approved patching US Core 3.1.1 to remove "must support" from the "DocumentReference.custodian" data element. For the purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “custodian” data element in the “DocumentReference” US Core 3.1.1 <abbr title="Implementation guide">IG</abbr> Profile.</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standard US Core 4.0.0 (expires on January 1, 2026):</strong></p>
+<ul>
+<li>For “Encounter,” “Organization,” and “Practitioner,” US Core <abbr title="Implementation guide">IG</abbr> profiles, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” and <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource references as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core <abbr title="Implementation guide">IG</abbr> profiles / <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource because they are included as “must support” data elements in US Core <abbr title="Implementation guide">IG</abbr> profiles required by the United States Core Data for Interoperability (<abbr title="United States Core Data for Interoperability">USCDI</abbr>).</li>
+<li>Health IT Modules must support provenance according to the <a href="https://www.hl7.org/fhir/us/core/STU3.1.1/basic-provenance.html">“Basic Provenance Guidance” section of the US Core <abbr title="Implementation guide">IG</abbr>.</a></li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v3 and US Core 6.1.0 (required by December 31, 2025):</strong></p>
+<ul>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup approved the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-45319"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-45319</a> for US Core 6.1.0. In alignment with that issued guidance, the Health IT Module must support all four codes from the US Core Screening Assessment Observation Category ValueSet for the US Core Observation Screening Assessment Profile for “Observation.category:screening-assessment”. Additionally, the Health IT Module must support the “sdoh” code from the US Core Screening Assessment Condition Category ValueSet for the US Core Condition Problems and Health Concerns Profile for “Condition.category:screening-assessment”.</li>
+<li>For the “Organization” and "Practitioner" US Core <abbr title="Implementation guide">IG</abbr> profile, only the “read” type interaction must be supported and will be included in testing and certification. For the “Location” <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource, Health IT Modules must either demonstrate support for the “read” type interaction or demonstrate support for providing the “Location” <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource reference as a contained resource. The “search” type interactions for these profiles and resource are not in scope for testing and certification. Health IT Modules must support these US Core <abbr title="Implementation guide">IG</abbr> profiles / <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource because they are included as “must support” data elements in US Core <abbr title="Implementation guide">IG</abbr> profiles required by the United States Core Data for Interoperability (<abbr title="United States Core Data for Interoperability">USCDI</abbr>).</li>
+<li>For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core <abbr title="Implementation guide">IG</abbr> profile.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-43355"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-43355</a>, approved patching the US Core Smoking Status Observation Profile in US Core 6.1.0. For purposes of certification, the clinically relevant time/time-period for observation for the US Core Smoking Status Observation Profile may be supported using either Observation.effectiveDateTime or Observation.effectivePeriod data elements, where Observation.effectivePeriod has the <a href="https://hl7.org/fhir/R4/datatypes.html#Period">“Period”</a> type.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-44693"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-44693</a>, approved patching the US Core Practitioner Profile in US Core 6.1.0. For purposes of certification, Practitioner.address from the US Core Practitioner Profile is not required to be supported if the Health IT Module supports the US Core PractitionerRole Profile.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-46240"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-46240</a>, approved patching the US Core DiagnosticReport Profile for Report and Note Exchange in US Core 6.1.0. For purposes of certification, DiagnosticReport.media and DiagnosticReport.media.link from the US Core DiagnosticReport Profile for Report and Note Exchange are not required to be supported.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50283"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50283</a>, approved patching the US Core Coverage Profile in US Core 6.1.0. For purposes of certification for the US Core Coverage Profile:<ul>
+<li>Coverage.class:group.name is not required to be supported</li>
+<li>Coverage.class:group.value should represent “Group Identifier”</li>
+</ul>
+</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50239"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50239</a>, approved patching the US Core MedicationDispense Profile in US Core 6.1.0. For purposes of certification, references to US Core Practitioner Profile are not required to be supported for the MedicationDispense.performer.actor for the US Core MedicationDispense Profile.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50288"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50288</a>, approved patching the US Core Condition Encounter Diagnosis Profile in US Core 6.1.0. For purposes of certification, Condition.extension:assertedDate, Condition.onset[x],  Condition.abatement[x], Condition.clinicalStatus, and Condition.verificationStatus from the US Core Condition Encounter Diagnosis Profile are not required to be supported.</li>
+</ul>
+<p><strong>Applies to <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards <abbr title="United States Core Data for Interoperability">USCDI</abbr> v4 and US Core 7.0.0:</strong></p>
+<ul>
+<li>For the “Organization” and “Practitioner” US Core <abbr title="Implementation guide">IG</abbr> profiles, only the “read” type interaction must be supported and will be included in testing and certification. The “search” type interactions for these profiles are not in scope for testing and certification. Health IT Modules must support these US Core <abbr title="Implementation guide">IG</abbr> profiles because they are included as “must support” data elements in US Core <abbr title="Implementation guide">IG</abbr> profiles required by the United States Core Data for Interoperability (<abbr title="United States Core Data for Interoperability">USCDI</abbr>).</li>
+<li>For purposes of testing and certification, health IT developers are not required to demonstrate Health IT Module support for the “QuestionnaireResponse” US Core <abbr title="Implementation guide">IG</abbr> profile.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50283"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50283</a>, approved patching the US Core Coverage Profile in US Core 7.0.0. For purposes of certification for the US Core Coverage Profile:</li>
+<li>Coverage.class:group.name is not required to be supported</li>
+<li>Coverage.class:group.value should represent “Group Identifier”</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50239"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50239</a>, approved patching the US Core MedicationDispense Profile in US Core 7.0.0. For purposes of certification, references to US Core Practitioner Profile are not required to be supported for the MedicationDispense.performer.actor for the US Core MedicationDispense Profile.</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® Cross-Group Projects workgroup, through the <a href="https://confluence.hl7.org/display/CGP/US+Core+%27Patch%27+Process">US Core 'Patch' Process</a> ticket <a href="https://jira.hl7.org/browse/FHIR-50288"><abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-50288</a>, approved patching the US Core Condition Encounter Diagnosis Profile in US Core 7.0.0. For purposes of certification, Condition.extension:assertedDate, Condition.onset[x],  Condition.abatement[x], Condition.clinicalStatus, and Condition.verificationStatus from the US Core Condition Encounter Diagnosis Profile are not required to be supported.</li>
+</ul>
+<p><strong>Applies to <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards <abbr title="United States Core Data for Interoperability">USCDI</abbr> v5 and US Core 8.0.0:</strong></p>
+<ul>
+<li>For the “Organization” and “Practitioner” US Core <abbr title="Implementation guide">IG</abbr> profiles, only the “read” type interaction must be supported and will be included in testing and certification. The “search” type interactions for these profiles are not in scope for testing and certification. Health IT Modules must support these US Core <abbr title="Implementation guide">IG</abbr> profiles because they are included as “must support” data elements in US Core <abbr title="Implementation guide">IG</abbr> profiles required by the United States Core Data for Interoperability (<abbr title="United States Core Data for Interoperability">USCDI</abbr>).</li>
+</ul>
+</details>
+<div class="admonition example">
+<p class="admonition-title">Examples of “must support” in the US Core <abbr title="Implementation guide">IG</abbr> 3.1.1:</p>
+<p>In US Core 3.1.1, the profile element Observation.value[x] contains the following Choices:
+<code>Quantity, CodeableConcept, string, boolean, integer, Range, Ratio, SampledData, time, dateTime, Period</code>
+A Health IT Module must support at least one of these Choices via the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) standardized <abbr title="Application Programming Interface">API</abbr>.</p>
+<p>In US Core 3.1.1, the profile element Provenance.agent.who contains the following References:
+<code>US Core Practitioner Profile, US Core Patient Profile, US Core Organization Profile</code>
+A Health IT Module must support at least one of these References via the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) standardized <abbr title="Application Programming Interface">API</abbr>.</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"/></svg></span> Additionally, a guided walk through of "must support" in <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr> and US Core 3.1.1 can be found on YouTube <a target = "_blank" href = "https://youtu.be/CRsR4pViS4c">here</a>.</p>
+</div>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10ia-data-response-single-patient">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(A): Data Response (Single Patient))</a></p>
+</div>
+<h3 id="data-response-multiple-patients">Data Response (Multiple Patients)<a class="headerlink" href="#data-response-multiple-patients" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(B)</strong></summary>
+<p>(B) Respond to requests for multiple patients' data as a group according to the standards and implementation specifications adopted in § 170.215(a), (b)(1), and (d), for each of the data included in the standards adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(i)(B) Data response – multiple patients"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(B)</em></summary>
+<p>Technical outcome – Respond to requests for multiple patients’ data as a group according to the standards and implementation specifications adopted in § 170.215(a), (b)(1) and (d), for each of the data included in the corresponding standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>. All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT Modules may support scopes using either the system wildcard scope syntax or a list of -system resource scopes- to enable the export of multiple patients’ data as a group.</li>
+<li>During testing and certification for multiple patient services, Health IT Modules must demonstrate support for “Encounter,” “Organization,” and “Practitioner” US Core <abbr title="Implementation guide">IG</abbr> <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Profiles.</li>
+<li>Health IT Modules must support provenance according to the “Basic Provenance Guidance” section of the US Core <abbr title="Implementation guide">IG</abbr>.</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards US Core 4.0.0 (expires on January 1, 2026) and <abbr title="United States Core Data for Interoperability">USCDI</abbr> v3 and US Core 6.1.0 (required by December 31, 2025):</strong></p>
+<ul>
+<li>Health IT Modules must demonstrate support for the “Location” <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource by either by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.</li>
+</ul>
+</details>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10ib-data-response-multiple-patients">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i)(B): Data Response (Multiple Patients)</a></p>
+</div>
+<h3 id="supported-search-operations-single-patient">Supported Search Operations (Single Patient)<a class="headerlink" href="#supported-search-operations-single-patient" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii)(A)</strong></summary>
+<p>(ii) <em>Supported search operations</em>. (A) Respond to search requests for a single patient's data consistent with the search criteria included in the implementation specifications adopted in § 170.215(b)(1), specifically the mandatory capabilities described in “US Core Server CapabilityStatement.”</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(A) Supported search operations – single patient"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii)(A)</em></summary>
+<p>Technical outcome – Respond to search requests for a single patient’s data consistent with the search criteria included in the implementation specification adopted in § 170.215(b)(1), specifically the mandatory capabilities described in “US Core Server CapabilityStatement”.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>All data elements indicated as “mandatory” and “must support” by the standards and implementation specifications must be supported and are in scope for testing.</li>
+<li>The § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) certification criterion requires Health IT Modules to support <abbr title="Application Programming Interface">API</abbr>-enabled “read” services for single and multiple patients. “Read” services include those that allow authenticated and authorized third-party applications to view EHI through a secure <abbr title="Application Programming Interface">API</abbr>. These services specifically exclude “write” capabilities, where authenticated and authorized third-party applications would be able to create or modify EHI through a secure <abbr title="Application Programming Interface">API</abbr>.</li>
+</ul>
+</details>
+<p><em>Additional Clarifications to the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr>:</em></p>
+<ul>
+<li>The scope of data available in the data responses defined in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i) must be supported for searches for multiple patients via the supported search operations finalized in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii).</li>
+</ul>
+<h3 id="supported-search-operations-multiple-patients">Supported Search Operations (Multiple Patients)<a class="headerlink" href="#supported-search-operations-multiple-patients" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii)(B)</strong></summary>
+<p>(B) Respond to search requests for multiple patients' data consistent with the search criteria included in the implementation specification adopted in § 170.215(d).</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(ii)(B) Supported search operations  - multiple patients "], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii)(B)</em></summary>
+<p>Technical outcome – Respond to search requests for multiple patients' data consistent with the search criteria included in an implementation specification adopted in § 170.215(d).</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>No additional clarifications.</li>
+</ul>
+</details>
+<p><em>Additional Clarifications to the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr>:</em></p>
+<ul>
+<li>The scope of data available in the data responses defined in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(i) must be supported for searches for multiple patients via the supported search operations finalized in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(ii).</li>
+<li>The <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Bulk Data Access (Flat <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) (v1.0.1: STU 1) implementation specification adopted in § 170.215(d) includes mandatory support for the “group-export” "OperationDefinition."</li>
+<li><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> has not included a requirement for Bulk <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® import because the standards for these features are still being developed by industry. Applications or systems seeking to import information formatting according to the <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/"><abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Bulk Data Access (Flat <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) (V1.0.1:STU 1)</a> can use several methods developed by industry, or can refer to Bulk <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® import methods being defined by <a target = "_blank" href = "https://github.com/smart-on-fhir/bulk-import/blob/master/import.md"><abbr title="Health Level 7">HL7</abbr>® at the <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Bulk Data GitHub page</a>.</li>
+</ul>
+<h3 id="application-registration">Application Registration<a class="headerlink" href="#application-registration" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iii)</strong></summary>
+<p>(iii) <em>Application registration</em>. Enable an application to register with the Health IT Module's “authorization server.”</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iii) Application registration"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iii)</em></summary>
+<p>Technical outcome – Enable an application to register with the Health IT Module’s “authorization server.”</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT presented for testing and certification must support app registration regardless of the scope of patient search utilized by the application (e.g., single or multiple).</li>
+<li>This certification criterion requires a health IT developer, as finalized in the Condition of Certification requirements, to demonstrate its registration process, but does not require conformance to a standard.</li>
+<li>The third-party application registration process that a health IT developer must meet under this criterion is not a form of review or “vetting” for purposes of this criterion.</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standard US Core 4.0.0 (expires on January 1, 2026):</strong></p>
+<ul>
+<li>For demonstration of the <abbr title="SMART Application Launch Framework Implementation Guide Release 1.0.0">SMART IG</abbr> "Standalone Launch" steps, health IT developers are permitted to scope US Core <abbr title="Implementation guide">IG</abbr> resources that do not exist in either the standard adopted at § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>(a) (<abbr title="United States Core Data for Interoperability">USCDI</abbr> v1) or the "Compartment Patient" section of the standard adopted at § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) (<abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Encounter,” “Device,” “Location,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) and § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v3 and US Core 6.1.0 (required by December 31, 2025):</strong></p>
+<ul>
+<li>For demonstration of the <abbr title="SMART Application Launch Framework Implementation Guide Release 1.0.0">SMART IG</abbr> “Standalone Launch” steps, health IT developers are permitted to scope US Core <abbr title="Implementation guide">IG</abbr> resources that do not exist in either the standard adopted at § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr>(b) (<abbr title="United States Core Data for Interoperability">USCDI</abbr> v3) or the “Compartment Patient” section of the standard adopted at § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) (<abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Location,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) and § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+</ul>
+<p><strong>Applies to <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards <abbr title="United States Core Data for Interoperability">USCDI</abbr> v4 and US Core 7.0.0:</strong></p>
+<ul>
+<li>For demonstration of the <abbr title="SMART Application Launch Framework Implementation Guide Release 1.0.0">SMART IG</abbr> “Standalone Launch” steps, health IT developers are permitted to scope US Core <abbr title="Implementation guide">IG</abbr> resources that do not exist in either <abbr title="United States Core Data for Interoperability">USCDI</abbr> v4 or the “Compartment Patient” section of the standard adopted at § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) (<abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) and § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+</ul>
+<p><strong>Applies to <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standards <abbr title="United States Core Data for Interoperability">USCDI</abbr> v5 and US Core 8.0.0:</strong></p>
+<ul>
+<li>For demonstration of the <abbr title="SMART Application Launch Framework Implementation Guide Release 1.0.0">SMART IG</abbr> “Standalone Launch” steps, health IT developers are permitted to scope US Core <abbr title="Implementation guide">IG</abbr> resources that do not exist in either <abbr title="United States Core Data for Interoperability">USCDI</abbr> v5 or the “Compartment Patient” section of the standard adopted at § 170.215(<abbr title="Health Level 7 (HL7®) Version 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019">a)(1</abbr>) (<abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) and § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+</ul>
+</details>
+<p><em>Additional Clarifications to the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr>:</em></p>
+<ul>
+<li><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> expects that apps executed within an implementer’s clinical environment will be registered with an authorization server, but <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> does not require a health IT developer to demonstrate its registration process for these “provider-facing” apps.</li>
+<li>The requirement that health IT developers must enable an application to register with the § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Module’s authorization server only applies for the purposes of demonstrating technical conformance to the finalized certification criterion and <abbr title="Application Programming Interface">API</abbr> Condition and Maintenance of Certification requirements. The practices by all parties (including implementers of Health IT Modules) other than developers of Certified Health IT Modules are not in scope for this certification criterion nor the associated Condition and Maintenance of Certification requirements.</li>
+<li>Any practices associated with third-party application review or “vetting” by implementers must not violate the <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a>.</li>
+</ul>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10iii-application-registration">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iii): Application Registration</a></p>
+</div>
+<h3 id="secure-connection">Secure Connection<a class="headerlink" href="#secure-connection" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iv)</strong></summary>
+<p>(iv) <em>Secure connection</em>. (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(b)(1) and (c). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with the implementation specification adopted in § 170.215(d).</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(iv) Secure connection"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iv)</em></summary>
+<p>Technical outcome - (A) Establish a secure and trusted connection with an application that requests data for patient and user scopes in accordance with the implementation specifications adopted in § 170.215(b)(1) and (c). (B) Establish a secure and trusted connection with an application that requests data for system scopes in accordance with an implementation specification adopted in § 170.215(d).</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>TLS version 1.2 or above must be enforced for the appropriate connections.</li>
+<li>Health IT developers are encouraged but not required to follow <a href="https://www.rfc-editor.org/info/bcp195">TLS Best Current Practice (BCP 195)</a> for TLS version enforcement, referenced in <a href="http://hl7.org/fhir/R4/security.html#http">section 6.1.0.3 of the <abbr title="Health Level 7">HL7</abbr></a>® 4.0.1 Fast Healthcare Interoperability Resources Specification (<abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®) Release 4, October 30, 2019, which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the <abbr title="Application Programming Interface">API</abbr> documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii) and <abbr title="Application Programming Interface">API</abbr> Transparency Conditions at 45 <abbr title="Code of Federal Regulations">CFR</abbr> <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+</ul>
+</details>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10iv-secure-connection">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(iv): Secure Connection</a></p>
+</div>
+<h3 id="first-time-authentication-authorization-for-single-patient-services">First time Authentication / Authorization for Single Patient Services<a class="headerlink" href="#first-time-authentication-authorization-for-single-patient-services" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(V)(A)(1)</strong></summary>
+<p>(v) <em>Authentication and authorization</em>—(A) <em>Authentication and authorization for patient and user scopes</em>—(1) <em>First time connections</em>—(i) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (ii) Authentication and authorization must occur during the process of granting access to patient data in accordance with the implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(e). (iii) A Health IT Module's authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(1) Authentication and authorization – Authentication and authorization for patient and user scopes – First time connections"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(1)</em></summary>
+<p>Technical outcome – For first time connections, authentication and authorization must occur during the process of granting access to patient data in accordance with an implementation specification adopted in § 170.215(c) and standard adopted in § 170.215(<abbr title="OpenID Connect Core 1.0 incorporating errata set 1">e)(1</abbr>). Additionally, a Health IT Module’s authorization server must issue a refresh token valid for a period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c). Finally, a Health IT Module’s authorization server must issue a refresh token for a period of no less than three months to native applications capable of securing a refresh token.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT Modules will be explicitly tested for US Core <abbr title="Implementation guide">IG</abbr> operations using authentication and authorization tokens acquired via the process described in an implementation specification adopted in § 170.215(c).</li>
+<li>Only the relevant parts of the OpenID Connect Core 1.0 including errata set 1 adopted in § 170.215(<abbr title="OpenID Connect Core 1.0 incorporating errata set 1">e)(1</abbr>) that are also included in an implementation specification adopted in § 170.215(c) will be in-scope for testing and certification.</li>
+<li>Although Health IT Modules presented for testing and certification must include the ability for patients to authorize an application to receive their EHI based on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource-level scopes, Health IT Modules are not prohibited from presenting authorization scopes in a more user-friendly format (e.g. grouping resources under categories, renaming the scopes for easier comprehension by the end-user, using more granular scopes), as long as the ability for patients to authorize applications based on resource-level scopes is available, if requested by the patient.</li>
+<li>For § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A) regarding authorization for patient and user scopes, we clarify wildcard scopes as defined in the implementation specifications at § 170.215(c) are not required to be supported.</li>
+<li>Health IT Modules will only be tested for the "Patient Access for Standalone Apps" and "Clinician Access for EHR Launch" "Capability Sets” described in an implementation specification adopted at § 170.215(c).</li>
+<li>Since the “Patient Access for Standalone Apps” and “Clinician Access for EHR Launch” “Capability Sets” do not include “context-standalone-encounter" <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> will not test Health IT Modules for support for the "context-standalone-encounter" SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Capability described in an implementation specification adopted at § 170.215(c).</li>
+<li>Implementers of § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules should be mindful of the information blocking provisions.</li>
+<li>As part of the requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(1)(iii), health IT developers must publish the method(s) by which their Health IT Modules support the secure issuance of an initial refresh token to native applications according to the technical documentation requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii) and transparency conditions at § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2).</li>
+<li>Application developer affirmations to health IT developers regarding the ability of their applications to secure a refresh token, a client secret, or both, must be treated in a good faith manner consistent with the provisions established in the openness and pro-competitive conditions at § <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(4).</li>
+<li>Health IT developers can determine the method(s) they use to support interactions with native applications and clarify that health IT developers are not required to support all methods third-party application developers seek to use.</li>
+<li><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> recognizes there may be some ambiguity in the <abbr title="Health Level 7">HL7</abbr>® SMART Application Launch Framework Implementation Guide (incorporated by reference at § 170.215(c)) in its guidance for supporting native applications, in particular, in providing references to best practices, strategies, and examples such as “OAuth 2.0 for Native Apps: 8.5. Client Authentication”, “OAuth 2.0 Dynamic Client Registration Protocol”, and “universal redirect_uris” without a standardized solution. <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> provides flexibility for how the health IT developer implements the <abbr title="Health Level 7">HL7</abbr>® SMART Application Launch Framework implementation specification, as long as the Certified Health IT Module supports for first time connections the issuance of three-month refresh tokens to native applications capable of securing a refresh token.</li>
+<li>The paragraph at § 170.215(c) requires health IT developers to support the SMART Application Launch Framework Implementation Guide (<abbr title="SMART Application Launch Framework Implementation Guide Release 1.0.0">SMART IG</abbr>) “SMART [on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®] Core Capabilities,” including “permission-offline,” which grants support for refresh tokens. The implementation specifications adopted in § 170.215(c) require that patients have the ability to explicitly enable the “offline_access” scope during authorization. If the “offline_access” scope is not enabled by patients, patients will be required to re-authenticate and re-authorize an application's access to their EHI after the application's access token expires. However, the ability of a patient to explicitly enable the “offline_access” scope during authorization is not described in the implementation specification. <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> clarifies that health IT developers must support the ability for patients to be provided information about an application’s request for persistent access prior to the patient sharing their health information, in order to enable patients to make an informed decision during authorization. Examples include, but are not limited to a health IT developer allowing patients to granularly grant “offline-access” scopes during authorization or clearly providing this information as a notice during authorization. The critical requirement is that patients are empowered to deny authorization for offline access.</li>
+<li>The SMART capabilities in § 170.215(c) are explicitly required for testing and certification because these capabilities are otherwise indicated as optional in the implementation specification.</li>
+</ul>
+<p><strong>Applies to <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 and US Core 3.1.1 and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standard US Core 4.0.0 (expires on January 1, 2026):</strong></p>
+<ul>
+<li>Since "Encounter" is not a <abbr title="United States Core Data for Interoperability">USCDI</abbr> v1 data class or data element, <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> will not test Health IT Modules for support for "context-ehr-encounter" SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capabilities described in an implementation specification adopted at § 170.215(c).</li>
+</ul>
+<p><strong>Applies to SMART App Launch Framework 1.0.0 (expires on January 1, 2026):</strong></p>
+<ul>
+<li>As part of the “permission-patient” “SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® Core Capability” in § 170.215(c), Health IT Modules presented for testing and certification must include the ability for patients to authorize an application to receive their electronic health information (EHI) based on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource-level scopes. Specifically, this means patients would need to have the ability to authorize access to their EHI at the individual <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource level, from one specific <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resource (e.g., “Immunization”) up to all <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® resources necessary to implement a standard adopted in § <abbr title="United States Core Data for Interoperability (USCDI)">170.213</abbr> and corresponding implementation specification adopted in § 170.215(b)(1).</li>
+<li>As described in the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> <abbr title="21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program">Cures Act Final Rule</abbr>, we encourage implementers to adhere to industry best practices to mitigate Cross-Site Request Forgery (CSRF) and other known security threats (<a href="https://www.federalregister.gov/d/2020-07419/p-1186">85 FR 25742</a>). Proof Key for Code Exchange (PKCE) (<a href="https://datatracker.ietf.org/doc/html/rfc7636">Internet Engineering Task Force Request for Comments 7636</a>) is an industry standard that can help mitigate CSRF and other known security threats. The <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Health IT Certification Program will support the optional use of PKCE during authentication and authorization testing. Health IT developers that implement and require the use of PKCE should include documentation for their PKCE implementation as part of the <abbr title="Application Programming Interface">API</abbr> Documentation requirement at <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C#p-170.315(g)(10)(viii)">45 <abbr title="Code of Federal Regulations">CFR</abbr> 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)</a> and <abbr title="Application Programming Interface">API</abbr> Transparency Conditions at <a href="https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-D#p-170.404(a)(2)">45 <abbr title="Code of Federal Regulations">CFR</abbr> <abbr title="API Conditions and Maintenance of certification requirements that apply to health IT developers with Health IT Modules certified to § 170.315(g)(7) - (10)">170.404</abbr>(a)(2)</a>.</li>
+</ul>
+<p><strong>Applies to SMART App Launch 2.0.0 (required by December 31, 2025) and <abbr title="Standards Version Advancement Process">SVAP</abbr> approved standard SMART App Launch 2.2.0:</strong></p>
+<ul>
+<li>For certification purposes, a Health IT Module is not required to support authorization requests nor responses including a combination of SMART v1 and SMART v2 scopes. For example, an authorization request including simultaneously the SMART v1 scope of “patient/Observation.read” and the SMART v2 scope of “patient/Condition.rs” is not required to be supported.</li>
+<li>A Health IT Module may optionally support the "fhirContext" launch context parameter defined in the SMART App Launch 2.0.0 implementation guide. If the "fhirContext" parameter is supported, the Health IT Module must conform to the requirements for the parameter detailed in the SMART App Launch implementation guide.</li>
+<li>We clarify the following SMART App Launch capabilities must be supported as part of fulfilling the authentication and authorization requirements at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A) when certifying using the implementation specification at § 170.215(<abbr title="HL7® SMART App Launch Implementation Guide Release 2.0.0">c)(2</abbr>):<ul>
+<li>To support patient access for standalone apps, the Health IT Module must support:<ul>
+<li>the capabilities of "launch-standalone" and "context-standalone-patient"; and</li>
+<li>the capabilities in subsections "Authorization Methods", "Client Types", "Single Sign-on", and "Permissions" except the "permission-online" and "permission-user" capabilities</li>
+</ul>
+</li>
+<li>To support clinician access for EHR launch, the Health IT Module must support:<ul>
+<li>the capabilities of "launch-ehr", "context-banner", "context-style", "context-ehr-patient", and "context-ehr-encounter" (if supporting <abbr title="United States Core Data for Interoperability">USCDI</abbr> v2 or v3); and</li>
+<li>the capabilities in subsections "Authorization Methods", "Client Types", "Single Sign-on", and "Permissions" except the "permission-online" capability</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>As finalized in the <abbr title="Health Data, Technology, and Interoperability: Certification Program Updates, Algorithm Transparency, and Information Sharing">HTI-1</abbr> Final Rule (<a href="https://www.federalregister.gov/d/2023-28857/p-1250">89 FR 1294</a>), Health IT Modules are required to support SMART App Launch "Finer-grained resource constraints using search parameters" for the “category” parameter for the Condition resource with Condition sub-resources Encounter Diagnosis, Problem List, and Health Concern, and the Observation resource with Observation sub-resources Clinical Test, Laboratory, Social History, SDOH, Survey, and Vital Signs. We defer to the implementation guides referenced at § 170.215(b)(1) and § 170.215(c) for specific implementation guidance for this requirement. In the context of the US Core 6.1.0 implementation guide, the Observation sub-resources of Clinical Test and SDOH may have scopes supported as follows:<ul>
+<li>support for scopes for the Observation sub-resource Clinical Test using the "procedure" code from the <a href="https://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-clinical-result-observation-category.html">US Core Clinical Result Observation Category value set</a>.</li>
+<li>support for scopes for the Observation sub-resource SDOH using the "sdoh" code from the <a href="https://hl7.org/fhir/us/core/STU6.1/CodeSystem-us-core-category.html">US Core Category code system</a>.</li>
+</ul>
+</li>
+<li>The US Core 7.0.0 and 8.0.0 IGs include requirements for how scopes for the Condition and Observation resources must be supported, including  requirements in the <a href="https://hl7.org/fhir/us/core/STU7/scopes.html#smart-on-fhir-obligations-and-capabilities">“SMART on <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr> Obligations and Capabilities” section</a> as well as Condition and Observation profiles sections.</li>
+<li>For certification and testing purposes the Health IT Module must demonstrate support for patients and users to authorize an app to receive patient data using scopes with “Finer-grained resource constraints using search parameters” for the sub-resources specified in the <abbr title="Health Data, Technology, and Interoperability: Certification Program Updates, Algorithm Transparency, and Information Sharing">HTI-1</abbr> Final Rule. We require a Health IT Module to support a patient’s ability to provide authorization at the individual sub-resource scope level.</li>
+<li>Although Health IT Modules presented for testing and certification must include the ability for patients to authorize an application to receive their EHI based on individual <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr> resource level and individual sub-resource level scopes, Health IT Modules are not prohibited from presenting authorization scopes in a more user-friendly format (e.g. grouping scopes under categories, renaming the scopes for easier comprehension by the end-user), as long as the ability for patients to authorize applications based on individual resource level and individual sub-resource level scopes is available, if requested by the patient.</li>
+<li>As part of supporting the SMART App Launch “permission-v2” capability for the purposes of certification, if an app requests authorization for a resource level scope for the “Condition” or “Observation” resources, then for patient authorization purposes a Health IT Module must support presentation of the required sub-resource scopes to the patient for authorization. Specifically, sub-resource scopes must be presented for patient authorization as follows:<ul>
+<li>“Condition” sub-resource scopes “Encounter Diagnosis”, “Problem List”, and “Health Concern” if a “Condition” resource level scope is requested</li>
+<li>“Observation” sub-resource scopes “Clinical Test”, “Laboratory”, “Social History”, “SDOH”, “Survey”, and “Vital Signs” if an “Observation” resource level scope is requested</li>
+</ul>
+</li>
+<li>For purposes of certification to the § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion, a Health IT Module is not required to support for authorization purposes presentation of sub-resource scopes to the user during clinician access for EHR launch.</li>
+</ul>
+</details>
+<p><em>Additional Clarifications to the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr>:</em></p>
+<ul>
+<li><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> expects implementers of § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules to have the capability of revoking refresh tokens where appropriate.</li>
+<li>Neither § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) nor applicable <abbr title="Application Programming Interface">API</abbr> Condition and Maintenance of Certification requirements require restricting discretion of implementers (healthcare providers, clinician practices, hospitals, etc.) to set the length of refresh tokens for users of the <abbr title="Application Programming Interface">API</abbr> including patients and healthcare providers to align with their institutional policies.</li>
+<li>Implementers of § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules are not prohibited from implementing their § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules in accordance with their organizational security policies and posture, including by instituting policies for reauthentication and re-authorization (e.g., healthcare providers and/or patients could always be required to re-authenticate and re-authorize after a set number of refresh tokens have been issued).</li>
+<li>Patients are not prohibited from changing the length of refresh tokens to the degree this option is available to them.</li>
+<li>Implementers of § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules should be mindful of <a target = "_blank" href = "https://www.ecfr.gov/cgi-bin/text-idx?SID=034c12732e5cb9328303ecdf94ecde87&mc=true&tpl=/ecfrbrowse/Title45/45cfr171_main_02.tpl">information blocking provisions</a> applicable to them and that requiring patients to reauthenticate and re-authorize at a high frequency could inhibit patient access and implicate information blocking.</li>
+</ul>
+<details class="info">
+<summary>First time Authentication / Authorization for Single Patient Services: Sequence Diagram</summary>
+<p><strong>First time connections:</strong>
+<pre class="mermaid"><code>sequenceDiagram
+    participant app as App
+    participant authz as Health IT Module's Authorization Server
+    participant fhir as Health IT Module's FHIR® Server
+
+    alt EHR Launch
+        authz -&gt;&gt; authz: EHR user launches app
+        authz -&gt;&gt; app: Launch Request
+    else Standalone Launch
+        app -&gt;&gt; app: App user connects to EHR
+    end
+    app -&gt;&gt; fhir: Discovery request
+    fhir --&gt;&gt; app: Discovery response
+    app -&gt;&gt; authz: Authorization request
+    authz --&gt;&gt; authz: End-user authorization
+    alt Granted
+        authz --&gt;&gt; app: Authorization granted
+        alt App is a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
+        app -&gt;&gt; authz: Access token request
+        note over app,authz: Client secret used for authentication
+        else App is a native app capable of securing a refresh token
+        app -&gt;&gt; authz: Access token request
+        note over app,authz: Proof Key for Code Exchange (PKCE) can be used by &lt;br/&gt; any OAuth 2.0 app type to increase security when &lt;br/&gt; requesting a token on first time connections
+        end
+        authz --&gt;&gt; app: Initial access token and initial refresh token response
+        loop while initial access token is valid
+            app -&gt;&gt; fhir: Initial access token used to request resources
+        end
+    else Denied
+        authz --&gt;&gt; app: Authorization error
+    end</code></pre>
+As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/"><abbr title="Health Level 7">HL7</abbr>® SMART Application Launch Framework Implementation Guide</a>, some native applications are unable to claim they are confidential. By definition, these non-confidential (i.e., "public") native applications do not have a client secret and thus cannot authenticate with the authorization server when receiving access and refresh tokens. However, there are additional methods that non-confidential native applications can use to increase refresh token security during “First time connections.” Methods like Proof Key for Code Exchange (PKCE), the use of secure redirect URI schemes<sup id="fnref:2"><a class="footnote-ref" href="#fn:2">2</a></sup>, and utilizing on-device secure storage techniques to securely store the refresh token can increase the security of an initial refresh token. Methods like these ensure that an authorization server issues initial access and refresh tokens to the correct corresponding authorized application. The paragraph at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(1)(iii) requires that Health IT Modules issue an initial refresh token to native applications capable of securing a refresh token.</p>
+<p>See <a href="#subsequent-authentication-authorization-for-single-patient-services">Subsequent Authentication / Authorization for Single Patient Services</a> for sequence diagram once the initial access token is invalid (e.g., expiration).</p>
+</details>
+<div class="admonition tip">
+<p class="admonition-title">OAuth Implementation Presentations</p>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 10.5V7a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-3.5l4 4v-11z"/></svg></span> Below is a list of presentations that can be used by Certified Health IT Developers to kick-start their OAuth implementations.</p>
+<p>These presentations are best when consumed in the following order:</p>
+<ol>
+<li><a target = "_blank" href = "https://youtu.be/rURoGATC4L8">OAuth2 Overview</a> - Overview of the OAuth2.0 standard and the Authorization Code Grant Type.</li>
+<li><a target = "_blank" href = "https://youtu.be/zKudZCwTU4Q">SMART App Authorization Overview</a> - Overview of the SMART App Authorization and its value in implementing an interoperable OAuth2 compliant server.</li>
+<li><a target = "_blank" href = "https://youtu.be/X7l3a_jN24g">SMART App Client Registration</a> - Information on different concepts and software code for Client Registration.</li>
+<li><a target = "_blank" href = "https://youtu.be/MjTskVYjDNc">SMART App Client Authorization Part 1</a> - Indepth look at the authorization process, the requests and the specification.</li>
+<li><a target = "_blank" href = "https://youtu.be/lFolfRSVWJE">SMART App Client Authorization Part 2</a> - Indepth look at the code used for Client Authorization in Part 1.</li>
+</ol>
+<p>Video downloads and PowerPoint slides can be found here: <a target = "_blank" href = "https://github.com/onc-healthit/oauth-samples">oauth-samples</a></p>
+</div>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10va1-first-time-authentication-authorization-for-single-patients">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(1): First Time Authentication / Authorization for Single Patients</a></p>
+</div>
+<h3 id="subsequent-authentication-authorization-for-single-patient-services">Subsequent Authentication / Authorization for Single Patient Services<a class="headerlink" href="#subsequent-authentication-authorization-for-single-patient-services" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(V)(A)(2)</strong></summary>
+<p>(2) <em>Subsequent connections</em>. (i) Access must be granted to patient data in accordance with the implementation specification adopted in § 170.215(c) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. (ii) A Health IT Module's authorization server must issue a refresh token valid for a new period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c).</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(A)(2) Authentication and authorization – Authentication and authorization for patient user scopes – Subsequent connections"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(V)(A)(2)</em></summary>
+<p>Technical outcome – For subsequent connections, access must be granted to patient data in accordance with an implementation specification adopted in§ 170.215(c) without requiring re-authorization and re-authentication when a valid refresh token is supplied by the application. Additionally, a Health IT Module’s authorization server must issue a refresh token valid for a new period of no less than three months to applications using the “confidential app” profile according to an implementation specification adopted in § 170.215(c).</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>For subsequent connections of applications capable of storing a client secret, Health IT Modules are required to issue a refresh token valid for a new period of no shorter than three months per the <abbr title="Application Programming Interface">API</abbr> certification criterion requirement finalized in § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(2)(ii).</li>
+</ul>
+</details>
+<p><em>Additional Clarifications to the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr>:</em></p>
+<ul>
+<li>For subsequent connections, Certified Health IT Modules are not required to issue a new
+refresh token, but must issue a refresh token valid for a new period of no less than three
+months. Whether the application receives a “new” refresh token is an implementation
+decision left to the health IT developer, as long as the “refreshed” refresh token is valid for a
+new period of no less than three months.</li>
+</ul>
+<details class="info">
+<summary>Subsequent Authentication / Authorization for Single Patient Services: Sequence Diagram</summary>
+<p>As specified in <a target = "_blank" href = "https://tools.ietf.org/html/rfc6749">RFC 6749</a> and the <a target = "_blank" href = "https://hl7.org/fhir/smart-app-launch/1.0.0/"><abbr title="Health Level 7">HL7</abbr>® SMART Application Launch Framework Implementation Guide</a>, authorization servers can send and receive refresh tokens to and from apps in two different OAuth 2.0 connection flows. On <a href="#first-time-authentication-authorization-for-single-patient-services">first time connections (see sequence diagram above)</a>, an app requests an authorization code and is granted an authorization code after obtaining end-user authorization. An app can then exchange a valid authorization code for an initial access token and initial refresh token.</p>
+<p>After an access token expires, an app can subsequently connect to an authorization server to exchange a valid refresh token for a new access token and also have its refresh token renewed without needing to obtain end-user authorization. During both exchanges, security is increased (i.e., greater protection against leaked refresh tokens) when confidential apps use their client secret for client authentication. The (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion paragraphs at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(1)(ii) and § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(A)(2)(ii) require that apps using the “confidential app” profile and thus capable of authenticating themselves, must be given a refresh token upon valid first time connections and have their refresh tokens renewed upon valid subsequent connections. This enables persistent access for apps using the “confidential app” profile without requiring end-user re-authorization.</p>
+<p><strong>Subsequent connections:</strong>
+<pre class="mermaid"><code>    sequenceDiagram
+        participant app as App
+        participant authz as Health IT Module's Authorization Server
+        participant fhir as Health IT Module's FHIR® Server
+
+        loop while refresh token is valid
+            alt App is a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
+                app -&gt;&gt; authz: Refresh token
+                note over app,authz: Client secret used for authentication
+                note over authz: The (g)(10) criterion paragraph at § 170.315(g)(10)(v)(A)(2)(ii) requires &lt;br/&gt; that apps using the “confidential app” profile have their refresh tokens renewed &lt;br/&gt; (i.e., made valid for a new period of no less than three months). This could &lt;br/&gt; include the authorization server issuing a new refresh token or renewing the &lt;br/&gt; existing refresh token.
+                alt Health IT Module's Authorization Server issues a new refresh token
+                    authz --&gt;&gt; app: New access token and new refresh token response
+                else Health IT Module's Authorization Server renews existing refresh token
+                    authz --&gt;&gt; app: New access token response
+                    authz --&gt;&gt; authz: Existing refresh token renewed
+                end
+            else App is not a “confidential app” according to an implementation specification adopted in § 170.215(c) (SMART App Launch IG)
+                app -&gt;&gt; authz: Refresh token
+                authz --&gt;&gt; app: New access token response
+            end
+            loop while new access token is valid
+                app -&gt;&gt; fhir: New access token used to request resources
+            end
+        end</code></pre></p>
+</details>
+<h3 id="authentication-authorization-for-multiple-patient-services">Authentication / Authorization for Multiple Patient Services<a class="headerlink" href="#authentication-authorization-for-multiple-patient-services" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B)</strong></summary>
+<p>(B) <em>Authentication and authorization for system scopes</em>. Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of the implementation specification adopted in § 170.215(d) and the application must be issued a valid access token.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(v)(B) Authentication and authorization – Authentication and authorization for system scopes"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B)</em></summary>
+<p>Technical outcome – Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “SMART Backend Services: Authorization Guide” section of an implementation specification adopted in § 170.215(d) and the application must be issued a valid access token.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT Modules may use access control schemes other than OAuth 2.0 for controlling access to the file server, such as capability URLs. The <abbr title="Health Level 7">HL7</abbr>® <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>®-I Work Group has documented expectations for the use of capability URLs with the Bulk Data Access <abbr title="Implementation guide">IG</abbr> on the <a href="https://confluence.hl7.org/x/RGvUB"><abbr title="Health Level 7">HL7</abbr>® confluence website</a>. For purposes of Certification testing, Health IT Modules will be tested for the ability to share bulk data files either using OAuth 2.0 bearer tokens or via capability URLs accessible without preconditions or additional steps.</li>
+</ul>
+</details>
+<!-- https://sequencediagram.org/ -->
+<details class="info">
+<summary>Authentication / Authorization for Multiple Patient Services: Sequence Diagrams</summary>
+<p>The Bulk Data Export and Authentication/Authorization sequences, according to the §170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) requirements, are described below.</p>
+<p>First, according to <a target = "_blank" href = "https://www.federalregister.gov/d/2020-07419/p-3468">§170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B)</a>, Authentication and authorization must occur during the process of granting an application access to patient data in accordance with the “<a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/authorization/index.html">SMART Backend Services: Authorization Guide</a>” section of the Bulk Data implementation guide.</p>
+<pre class="mermaid"><code>sequenceDiagram
+Backend Service-&gt;&gt;FHIR Authorization Server: Client Registration (may be out of band)
+Backend Service -&gt;&gt; FHIR Resource Server: Discovery request
+FHIR Resource Server --&gt;&gt; Backend Service: Discovery response
+Backend Service -&gt;&gt; FHIR Authorization Server: Access token request
+note over FHIR Authorization Server: On approval
+FHIR Authorization Server --&gt;&gt; Backend Service: Access token response
+Backend Service-&gt;&gt;FHIR Resource Server: Bulk data kick-off request (including access token)
+note over FHIR Resource Server: On success
+FHIR Resource Server --&gt;&gt; Backend Service: URL of an endpoint for subsequent status requests
+Backend Service -&gt;&gt;FHIR Resource Server: Bulk data status request
+note over FHIR Resource Server: On export generation completion
+FHIR Resource Server --&gt;&gt; Backend Service: Link(s) to the generated bulk data files (output manifest)</code></pre>
+<p><em>Note that generated Bulk Data files <a target = "_blank" href = "https://hl7.org/fhir/uv/bulkdata/STU1.0.1/export/index.html#response---complete-status">may</a> be served by file servers other than a <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>-specific server.</em></p>
+<p>There are different ways for a client to receive generated Bulk Data files including via <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a>. The client will refer to the <code>requiresAccessToken</code> field included in the output manifest when retrieving files.</p>
+<p>If <code>reqiresAccessToken = true</code></p>
+<pre class="mermaid"><code>sequenceDiagram
+Backend Service-&gt;&gt;File Server: Request files (using access token)
+note over File Server: On success
+File Server--&gt;&gt;Backend Service: Receive files</code></pre>
+<p>If <code>reqiresAccessToken = false</code> </p>
+<pre class="mermaid"><code>sequenceDiagram
+Backend Service-&gt;&gt;File Server: Request files
+note over File Server: On success
+File Server--&gt;&gt;Backend Service: Receive files</code></pre>
+<p>It is critical that server developers follow the <abbr title="Health Level 7">HL7</abbr> guidance on  <a target = "_blank" href = "https://confluence.hl7.org/display/FHIRI/Capability+URLs+for+Download+Links">Capability URLs for Download Links</a> when choosing to generate output manifests with <code>requiresAccessToken = false</code>.</p>
+</details>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10vb-authentication-authorization-for-multiple-patient-services">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(v)(B): Authentication / Authorization for Multiple Patient Services</a></p>
+</div>
+<h3 id="patient-authorization-revocation">Patient Authorization Revocation<a class="headerlink" href="#patient-authorization-revocation" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vi)</strong></summary>
+<p>(vi) <em>Patient authorization revocation</em>. A Health IT Module's authorization server must be able to revoke and must revoke an authorized application's access at a patient's direction within 1 hour of the request.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vi) Patient authorization revocation"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vi)</em></summary>
+<p>Technical outcome – A Health IT Module’s authorization server must be able to revoke and must revoke an authorized application’s access at a patient’s direction within one hour of the request.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>This is a functional requirement to allow health IT developers the ability to implement it in a way that best suits their existing infrastructure and allows for innovative models for authorization revocation to develop.</li>
+<li>Patients are expected to have the ability to revoke an authorized application’s access to their EHI at any time.</li>
+<li>For authorization revocation, Health IT Modules presented for certification are permitted to allow short-lived access tokens to expire in lieu of immediate access token revocation. <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> recommends health IT developers limit the lifetime of access tokens to one hour or less as recommended in the implementation specifications adopted at § 170.215(c). For purposes of testing and certification, Health IT Modules will be tested for patient authorization revocation occurring within one hour of the request.</li>
+</ul>
+</details>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#paragraph-g10vi-patient-auhtorization-revocation">Health IT Feedback and Inquiry Portal Q&amp;A: Paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vi): Patient Authorization Revocation</a></p>
+</div>
+<h3 id="token-introspection">Token Introspection<a class="headerlink" href="#token-introspection" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vii)</strong></summary>
+<p>(vii) <em>Token introspection</em>. A Health IT Module's authorization server must be able to receive and validate tokens it has issued in accordance with an implementation specification in § 170.215(c).</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(vii) Token introspection"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(vii)</em></summary>
+<p>Technical outcome – A Health IT Module’s authorization server must be able to receive and validate tokens it has issued in accordance with an implementation specification in § 170.215(c).</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT Developers must update their § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Modules to support token introspection as defined in the SMART App Launch 2.0.0 or 2.2.0 implementation specification, and provide such updated Certified Health IT Modules to their customers by December 31, 2025.</li>
+</ul>
+</details>
+<h3 id="technical-api-documentation-content">Technical <abbr title="Application Programming Interface">API</abbr> Documentation Content<a class="headerlink" href="#technical-api-documentation-content" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A)</strong></summary>
+<p>(viii) <em>Documentation</em>. (A) The <abbr title="Application Programming Interface">API</abbr>(s) must include complete accompanying documentation that contains, at a minimum: (1) <abbr title="Application Programming Interface">API</abbr> syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns. (2) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the <abbr title="Application Programming Interface">API</abbr> and process its response(s). (3) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module's authorization server.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(A) Documentation – minimum requirements"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A)</em></summary>
+<p>Technical outcome – The <abbr title="Application Programming Interface">API</abbr>(s) must include complete accompanying documentation that contains, at a minimum: (<em>1</em>) <abbr title="Application Programming Interface">API</abbr> syntax, function names, required and optional parameters supported and their data types, return variables and their types/structures, exceptions and exception handling methods and their returns; (<em>2</em>) The software components and configurations that would be necessary for an application to implement in order to be able to successfully interact with the <abbr title="Application Programming Interface">API</abbr> and process its response(s); and (<em>3</em>) All applicable technical requirements and attributes necessary for an application to be registered with a Health IT Module’s authorization server.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>Health IT developers are not required to re-publish documentation from the adopted standards and implementation specifications. However, health IT developers must publish documentation that goes beyond the adopted standards and implementation specifications.</li>
+<li>Health IT developers are expected to disclose any additional data their § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)-certified Health IT Module supports in the context of the adopted standards and implementation specifications.</li>
+</ul>
+</details>
+<h3 id="technical-api-documentation-availability">Technical <abbr title="Application Programming Interface">API</abbr> Documentation Availability<a class="headerlink" href="#technical-api-documentation-availability" title="Permanent link">&para;</a></h3>
+<details class="quote" open="open">
+<summary><strong>Regulation text at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(B)</strong></summary>
+<p>(B) The documentation used to meet paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.</p>
+</details>
+<!-- $ref{g-10:CCG["Paragraph (g)(10)(viii)(B) Documentation – public access"], tabbed} -->
+<details class="quote">
+<summary><em>Clarifications included in the (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Certification Companion Guide">CCG</abbr> that apply to paragraph § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(B)</em></summary>
+<p>Technical outcome – The documentation used to meet paragraph (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)(viii)(A) of this section must be available via a publicly accessible hyperlink without any preconditions or additional steps.</p>
+<p><strong><em>Clarifications:</em></strong></p>
+<p><strong>Applies to all applicable base regulatory and <abbr title="Standards Version Advancement Process">SVAP</abbr> standards:</strong></p>
+<ul>
+<li>No additional clarifications.</li>
+</ul>
+</details>
+<h2 id="testing-and-certification">Testing and Certification<a class="headerlink" href="#testing-and-certification" title="Permanent link">&para;</a></h2>
+<h3 id="test-procedure">Test Procedure<a class="headerlink" href="#test-procedure" title="Permanent link">&para;</a></h3>
+<p>The § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) test procedure provides the structure for evaluating conformance of a Health IT Module to the <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/subtitle-A/subchapter-D/part-170/subpart-C/section-170.315#p-170.315(g)(10)">(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) certification criterion requirements</a>. </p>
+<p>The § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) test procedure is located <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">here on healthit.gov</a>.</p>
+<h3 id="inferno-framework">Inferno Framework<a class="headerlink" href="#inferno-framework" title="Permanent link">&para;</a></h3>
+<p>The <a target = "_blank" href = "https://inferno.healthit.gov/onc-certification-g10-test-kit">(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) Standardized <abbr title="Application Programming Interface">API</abbr> Test Kit</a>, built using the <a target = "_blank" href = "https://inferno-framework.github.io/inferno-core/">Inferno Framework</a>, is used for (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) <abbr title="Application Programming Interface">API</abbr> testing in the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Health IT Certification Program. The (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) Standardized <abbr title="Application Programming Interface">API</abbr> Test Kit comes with all of the services necessary to test health IT modules seeking to meet the requirements of the Standardized <abbr title="Application Programming Interface">API</abbr> for patient and population services criterion finalized at § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>). It is based on the requirements in the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> <abbr title="21st Century Cures Act: Interoperability, Information Blocking, and the ONC Health IT Certification Program">Cures Act Final Rule</abbr> and <a target = "_blank" href = "https://www.healthit.gov/test-method/standardized-api-patient-and-population-services#test_procedure">associated test procedure for § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>)</a>.</p>
+<div class="admonition note">
+<p><p align="center">
+    <img alt="Inferno (g)(10) testing tool logo" src="../images/inferno-logo.PNG" style="height:100px" />
+</p>
+<p style="text-align: center;"><a target = "_blank" href = "https://inferno.healthit.gov/"><span style="font-size:larger;">inferno.healthit.gov</a></span></p></p>
+</div>
+<details class="tip">
+<summary>Explore Inferno for (<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) Testing</summary>
+<p><strong>Get Involved and Ask Questions</strong></p>
+<ul>
+<li>Join the <a target = "_blank" href = "https://chat.fhir.org/#narrow/stream/179309-inferno">Inferno Zulip Stream</a> on chat.fhir.org (<em>creating a Zulip account is free</em>). This stream is actively monitored by Inferno's development team.</li>
+<li>Submit inquiries to <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> via the <a target = "_blank" href = "https://www.healthit.gov/feedback">Health IT Feedback Portal</a>.</li>
+<li>Submit discovered technical issues on <a target = "_blank" href = "https://github.com/onc-healthit/inferno-program/issues">GitHub</a>.</li>
+<li>Join the <a target = "_blank" href = "https://groups.google.com/g/inferno-testing">Inferno Google Group</a> (<em>Google account required, join by clicking "joining the group"</em>). Here you will also find information on the <strong>Inferno Monthly Tech Talk</strong> meeting which is open to anyone and occurs on the second Wednesday of each month from 1 - 2 PM EST.</li>
+</ul>
+</details>
+<div class="admonition note">
+<p><a href="../inquiry-portal/g10-inquiries/#inferno">Health IT Feedback and Inquiry Portal Q&amp;A: Inferno</a></p>
+</div>
+<h3 id="real-world-testing-condition-and-maintenance-of-certification">Real World Testing Condition and Maintenance of Certification<a class="headerlink" href="#real-world-testing-condition-and-maintenance-of-certification" title="Permanent link">&para;</a></h3>
+<p><strong>Health IT developers are required to test the real-world use of <abbr title="Application Programming Interfaces">APIs</abbr>.</strong></p>
+<p>The § 170.315(<abbr title="Standardized HL7® FHIR-based API certification criterion">g)(10</abbr>) criterion is included under the <a target = "_blank" href = "https://www.ecfr.gov/current/title-45/section-170.405">Real World Testing Condition and Maintenance of Certification requirements</a> in §<abbr title="Real World Testing Condition and Maintenance of Certification requirements">170.405</abbr>, which state:</p>
+<div class="admonition note">
+<p>“A health IT developer with one or more Health IT Module(s) certified to any one or more of the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Certification Criteria for Health IT in § 170.315(b), (<abbr title="HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0">c)(1</abbr>) through (3), (<abbr title="OpenID Connect Core 1.0 incorporating errata set 1">e)(1</abbr>), (f), (<abbr title="Non-standardized API certification criterion (patient selection)">g)(7</abbr>) through (10), and (h) must successfully test the real world use of those Health IT Module(s) for interoperability (as defined in 42 U.S.C. 300jj(9) and § 170.102) in the type of setting in which such Health IT Module(s) would be/is marketed.” </p>
+</div>
+<p>More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-02/Real-World-Testing-Fact-Sheet.pdf">Real World Testing Fact Sheet</a> and <a target = "_blank" href = "https://www.healthit.gov/sites/default/files/page/2021-08/ONC-Real%20World%20Testing%20Resource%20Guide_Aug%202021.pdf">Real World Testing Resource Guide</a>.</p>
+<h2 id="standards-version-advancement-process">Standards Version Advancement Process<a class="headerlink" href="#standards-version-advancement-process" title="Permanent link">&para;</a></h2>
+<p><strong>Health IT developers are permitted to test and certify using newer versions of implementation guides that have been approved by the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> National Coordinator.</strong></p>
+<p><abbr title="Office of the National Coordinator for Health IT">ONC</abbr> has established the voluntary Standards Version Advancement Process (<abbr title="Standards Version Advancement Process">SVAP</abbr>) to enable health IT developers to incorporate newer versions of approved standards and implementation specifications, as part of the Real World Testing Condition and Maintenance of Certification requirements (§ <abbr title="Real World Testing Condition and Maintenance of Certification requirements">170.405</abbr>) of the 21st Century Cures Act. </p>
+<p>Using <abbr title="Standards Version Advancement Process">SVAP</abbr>, Certified Health IT Developers are permitted to voluntarily use a more advanced version of the standard(s) and implementation specification(s) approved by the National Coordinator, than is adopted in the <abbr title="Office of the National Coordinator for Health IT">ONC</abbr> Certification Criteria. Currently, this flexibility is limited to standards and implementation specifications that are adopted in the certification criteria required to meet the Real World Testing Condition of Certification, which include § 170.315(b), (<abbr title="HL7® SMART Application Launch Framework Implementation Guide Release 1.0.0">c)(1</abbr>) through (3), (<abbr title="OpenID Connect Core 1.0 incorporating errata set 1">e)(1</abbr>), (f), (<abbr title="Non-standardized API certification criterion (patient selection)">g)(7</abbr>) through (10), and (h). Health IT developers must ensure that they address standards adopted under <abbr title="Standards Version Advancement Process">SVAP</abbr> in their Real World Testing plans and results submitted to Authorized Certification Bodies. More information can be found on the <a target = "_blank" href = "https://www.healthit.gov/isa/standards-version-advancement-process"><abbr title="Standards Version Advancement Process">SVAP</abbr> landing page</a>.</p>
+<mark class="critic block">
+<p style="text-align: center;"><a target = "_blank" href = "https://www.healthit.gov/buzz-blog/health-it/advancements-in-health-it-astp-oncs-approved-svap-standards-for-2025">Advancements in Health IT: ASTP/ONC’s Approved SVAP Standards for 2025</a></p>
+
+</mark>
+<!-- Standards Referenced -->
+<!-- ONC Certification Criteria -->
+<!-- ONC Rules -->
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:1">
+<p><abbr title="Health Level 7">HL7</abbr>®, and <abbr title="HL7® Fast Healthcare Interoperability Resources">FHIR</abbr>® are the registered trademarks of Health Level Seven International and their use of these trademarks does not constitute an endorsement by <abbr title="Health Level 7">HL7</abbr>.&#160;<a class="footnote-backref" href="#fnref:1" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+<li id="fn:2">
+<p>See RFC 8252 section <a target = "_blank" href = "https://www.rfc-editor.org/rfc/rfc8252#section-7">7 Receiving the Authorization Response in a Native App</a>&#160;<a class="footnote-backref" href="#fnref:2" title="Jump back to footnote 2 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+
+
+
+
+
+
+
+  
+    
+  
+  
+
+
+  <aside class="md-source-file">
+    
+      
+  <span class="md-source-file__fact">
+    <span class="md-icon" title="Last update">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
+    </span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="January 8, 2026 13:30:09 UTC">January 8, 2026</span>
+  </span>
+
+    
+    
+    
+    
+  </aside>
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      <a href="/api-resource-guide/privacy-policy/">Privacy Policy</a>
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://www.healthit.gov/" target="_blank" rel="noopener" title="HealthIT.gov" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M0 64C0 28.7 28.7 0 64 0h256c35.3 0 64 28.7 64 64v417.1c0 25.6-28.5 40.8-49.8 26.6L192 412.8 49.8 507.7C28.5 521.9 0 506.6 0 481.1zm64-16c-8.8 0-16 7.2-16 16v387.2L165.4 373c16.1-10.7 37.1-10.7 53.2 0L336 451.2V64c0-8.8-7.2-16-16-16z"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tracking", "navigation.sections", "navigation.expand", "navigation.top"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/g10-dynamic-tp.js"></script>
+      
+    
+  </body>
+</html>
