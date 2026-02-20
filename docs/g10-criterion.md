@@ -219,10 +219,6 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	* For demonstration of the SMART IG “Standalone Launch” steps, health IT developers are permitted to scope US Core IG resources that do not exist in either USCDI v4 or the “Compartment Patient” section of the standard adopted at § 170.215(a)(1) (HL7® FHIR® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(g)(10)(viii)(A) and § 170.404(a)(2).
 	
-	**Applies to SVAP approved standards USCDI v5 and US Core 8.0.0:**
-	
-	* For demonstration of the SMART IG “Standalone Launch” steps, health IT developers are permitted to scope US Core IG resources that do not exist in either USCDI v5 or the “Compartment Patient” section of the standard adopted at § 170.215(a)(1) (HL7® FHIR® Release 4.0.1) as either patient/[Resource] or user/[Resource]. These resources include “Device,” “Medication,” “Organization,” “Practitioner,” and “PractitionerRole.” Health IT developers must document their supported scopes according to the technical documentation requirements at § 170.315(g)(10)(viii)(A) and § 170.404(a)(2).
-	
 *Additional Clarifications to the (g)(10) CCG:*
 
 - ONC expects that apps executed within an implementer’s clinical environment will be registered with an authorization server, but ONC does not require a health IT developer to demonstrate its registration process for these “provider-facing” apps.
