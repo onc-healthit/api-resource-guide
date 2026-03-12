@@ -21,7 +21,7 @@ jobs:
         - name: install dependencies
           run: pip install -r ccg-api-code/requirements.txt
         - name: run python script
-          run: python ccg-api-code/drupal_api_markdown.py
+          run: python3 ccg-api-code/drupal_api_markdown.py
         - name: push changes to repo
           run : |
             git config --global user.name "github-actions[bot]"
