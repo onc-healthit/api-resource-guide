@@ -131,7 +131,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	
 	**Applies to USCDI v1 and US Core 3.1.1 and SVAP approved standards US Core 4.0.0 (expires on January 1, 2026) and USCDI v3 and US Core 6.1.0 (required by December 31, 2025):**
 	
-	* Health IT Modules must demonstrate support for the “Location” FHIR® resource by either by providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.
+	* Health IT Modules must demonstrate support for the “Location” FHIR® resource by either providing this resource as part of the multiple patient services response, or by including it as a contained resource as part of the multiple patient services response.
 	
 !!! note ""
 	[Health IT Feedback and Inquiry Portal Q&A: Paragraph (g)(10)(i)(B): Data Response (Multiple Patients)](inquiry-portal/g10-inquiries.md#paragraph-g10ib-data-response-multiple-patients)
@@ -225,7 +225,7 @@ healthcare providers to implement Health IT Modules certified to requirements in
 	**Applies to all applicable base regulatory and SVAP standards:**
 	
 	* TLS version 1.2 or above must be enforced for the appropriate connections.
-	* Health IT developers are encouraged but not required to follow [TLS Best Current Practice (BCP 195)](https://www.rfc-editor.org/info/bcp195) for TLS version enforcement, referenced in [section 6.1.0.3 of the HL7](http://hl7.org/fhir/R4/security.html#http)® 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR®) Release 4, October 30, 2019, which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet ONC Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the API documentation requirements at § 170.315(g)(10)(viii) and API Transparency Conditions at 45 CFR 170.404(a)(2).
+	* Health IT developers are encouraged but not required to follow [TLS Best Current Practice (BCP 195)](https://www.rfc-editor.org/info/bcp195) for TLS version enforcement, referenced in [section 6.1.0.3 of the HL7 4.0.1 Fast Healthcare Interoperability Resources Specification (FHIR) Release 4, October 30, 2019](http://hl7.org/fhir/R4/security.html#http), which recommends TLS 1.2 or above to be used for all production data exchange and limits support for lower versions of TLS. To meet ONC Certification requirements, Health IT developers must document how the Health IT Module enforces TLS version 1.2 or above to meet the API documentation requirements at § 170.315(g)(10)(viii) and API Transparency Conditions at 45 CFR 170.404(a)(2).
 	
 
 !!! note ""

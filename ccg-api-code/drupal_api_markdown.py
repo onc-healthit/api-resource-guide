@@ -44,6 +44,14 @@ def strip_non_alphanumeric(data):
     return p.sub("", data).strip()
 
 
+def normalize_inline_whitespace(data):
+    return re.sub(r"\s+", " ", data).strip()
+
+
+def is_valid_g10_paragraph_code(code):
+    return bool(re.match(r"^Paragraph\s+\(g\)\(10\)", normalize_inline_whitespace(code)))
+
+
 PARSED_KEY_ALIASES = {
     strip_non_alphanumeric(
         "Paragraph (g)(10)(v)(B) Authentication and authorization – Authentication and authorization for system scopes"
@@ -186,12 +194,56 @@ def inner_html(element):
     return "".join(str(child) for child in element.contents).strip()
 
 
+def build_g10_paragraph_codes_by_heading(soup):
+    codes_by_heading = {}
+
+    for card in soup.select("div.standards__cards__paragraph div.standards__cards__card"):
+        code_el = card.select_one("div.top h3.code")
+        heading_el = card.select_one("div.top a")
+        if not code_el or not heading_el:
+            continue
+
+        code = normalize_inline_whitespace(code_el.get_text(" ", strip=True))
+        heading = normalize_inline_whitespace(heading_el.get_text(" ", strip=True))
+        if not heading or not is_valid_g10_paragraph_code(code):
+            continue
+
+        heading_key = strip_non_alphanumeric(heading)
+        codes_by_heading.setdefault(heading_key, set()).add(code)
+
+    return codes_by_heading
+
+
+def resolve_g10_paragraph_code(heading_text, codes_by_heading):
+    heading_key = strip_non_alphanumeric(heading_text)
+    if not heading_key:
+        return None
+
+    candidate_codes = set(codes_by_heading.get(heading_key, set()))
+    if not candidate_codes:
+        for candidate_heading_key, codes in codes_by_heading.items():
+            if heading_key in candidate_heading_key or candidate_heading_key in heading_key:
+                candidate_codes.update(codes)
+
+    if len(candidate_codes) == 1:
+        return next(iter(candidate_codes))
+
+    if len(candidate_codes) > 1:
+        sorted_codes = ", ".join(sorted(candidate_codes))
+        raise ValueError(
+            f"Ambiguous fallback paragraph code for g10 heading '{heading_text}': {sorted_codes}"
+        )
+
+    return None
+
+
 def parse_g10_clarifications(soup):
     web_data = {}
     root = soup.select_one("div.clarifications-content[data-block='clarifications']")
     if not root:
         raise ValueError("Could not find (g)(10) clarifications container in HTML")
 
+    paragraph_codes_by_heading = build_g10_paragraph_codes_by_heading(soup)
     buttons = root.select("button.usa-accordion__button")
     for button in buttons:
         content_id = button.get("aria-controls")
@@ -206,16 +258,26 @@ def parse_g10_clarifications(soup):
         if not section_content:
             continue
 
-        heading_text = " ".join(button.stripped_strings)
-        heading_text = re.sub(r"\s+", " ", heading_text).strip()
+        heading_text = normalize_inline_whitespace(" ".join(button.stripped_strings))
 
         if heading_text == "Applies to Entire Criterion":
             key = heading_text
         else:
-            code = button.get("data-version", "").strip()
-            if not code:
-                raise ValueError(f"Missing data-version on g10 accordion heading: {heading_text}")
-            key = f"{code} {heading_text.replace(code, '', 1).strip()}"
+            code = normalize_inline_whitespace(button.get("data-version", ""))
+            heading_label = heading_text
+            if code and heading_text.startswith(code):
+                heading_label = heading_text[len(code):].strip()
+
+            if not is_valid_g10_paragraph_code(code):
+                fallback_code = resolve_g10_paragraph_code(heading_label, paragraph_codes_by_heading)
+                if not fallback_code:
+                    raise ValueError(
+                        "Malformed data-version on g10 accordion heading: "
+                        f"{heading_text} (data-version={code!r})"
+                    )
+                code = fallback_code
+
+            key = f"{code} {heading_label}"
 
         web_data[strip_non_alphanumeric(key)] = inner_html(section_content)
 
