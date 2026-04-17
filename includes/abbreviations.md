@@ -1,4 +1,4 @@
-*[ONC]: Office of the National Coordinator for Health IT
+*[ONC]: Office of the National Coordinator for Health Information Technology
 *[CCG]: Certification Companion Guide
 *[API]: Application Programming Interface
 *[APIs]: Application Programming Interfaces
@@ -9,7 +9,6 @@
 *[API criteria]: Certification criteria at § 170.315(g)(7) - (10)
 *[SVAP]: Standards Version Advancement Process
 *[USCDI]: United States Core Data for Interoperability
-*[ASTP]: Assistant Secretary for Technology Policy
 
 
 <!-- Standards Referenced -->
