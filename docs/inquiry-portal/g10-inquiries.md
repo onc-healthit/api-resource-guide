@@ -7,6 +7,62 @@ This section contains anonymized feedback and inquiries, related to the standard
     The date headers provide important context as some information may have changed since the time of an inquiry and response.
 
 ## Applies to Entire Criterion
+### 2026 Inquiries
+**Stakeholder Inquiry**: We are receiving requests from application developers who are providing patient applications to get connected via FHIR for patients medical records. As a certified software vendor we have the capabilities to provide the access to 3rd party developers, however, based on the exemptions we would like to better understand/confirm below points:
+
+1. Is consent required from the client (clinic) before Health IT software provider shares the information upon receiving a request via 3rd party developers for the patient's medical records? If yes, in what format is it supposed to be recorded?
+1. Can the client/clinic/patients deny information requested by such applications? If yes, how can a Health IT software handle the scenario/response to the developers?
+1. How can a Certified Health IT identify if the request is legit? Are there any parameters to check for the patients and/or 3rd party application developers?
+1. Can Certified Health IT charge the fees against their efforts to developers and/or clients as this is additional setup that the EMR team needs to provide upon requests? If yes, are there any limits or regulations on fees/charges?
+
+**ONC Response**: Thank you for your inquiry. A Certified API Developer that deploys certified API technology certified to the 45 CFR 170.315(g)(10) criterion on behalf of its customers (e.g., health care providers) should be mindful of the Individuals’ Right under HIPAA to Access their Health Information at 45 CFR § 164.524, the Information Blocking Condition of Certification requirement at § 170.401, the requirements of the 45 CFR 170.315(g)(10) criterion, and the API Condition and Maintenance of Certification requirements at 45 CFR 170.404.
+
+Individuals' HIPAA access right and apps
+
+In the <a target="_blank" href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html">Individuals’ Right under HIPAA to Access their Health Information 45 CFR § 164.524 Guidance Material</a>, the U.S. Department of Health & Human Services Health Information Privacy Division includes the following response to the question "Do individuals have a right under HIPAA to have a covered entity establish a direct connection between the covered entity's system and the individual's app or device in order to provide the individuals with access to their PHI?"
+
+Whether PHI is "readily producible" for purposes of providing access will depend on the extent to which establishing the connection is within the capabilities of the covered entity and would not present an unacceptable level of risk to the security of the PHI on a covered entity's systems, based on the covered entity's Security Rule risk analysis.
+
+A covered entity may determine that it has the capability to establish the type of connection requested in a manner consistent with the applicable security measures implemented in accordance with its security management process. In that case, the covered entity must provide access in the manner requested by the individual. Further, we note that starting in 2018, under Stage 3 of the EHR Incentive Program, eligible professionals, eligible hospitals, and critical access hospitals (CAHs) using Certified EHR Technology must enable application programming interface (API) functionality that would allow patients to use the application of their choice to access their data. In addition, we note that many provider systems are already using API functionality to provide patients with access to their data today in a secure manner. We expect that covered entities will assess and address any security considerations associated with connecting their systems with individual applications or devices, including through Certified EHR Technology (where applicable), as part of their HIPAA security management process.
+
+Information Blocking Condition of Certification requirements
+
+Developers participating in the ONC Health IT Certification Program have both initial and ongoing obligations as part of their compliance with the Conditions and Maintenance of Certification requirements. One of those is the Information Blocking Condition of Certification, which states that a health IT developer may not take any actions that constitute “information blocking” as defined in § 171.103. Among other Conditions and Maintenance of Certification requirements, to achieve and maintain certification of its products, a Health IT developer of certified health IT: (1) must not engage in information blocking (as defined in 45 CFR 171.103); and (2) must not take any other action that may inhibit the appropriate access, exchange, and use of electronic health information (EHI); and (3) must not take any action that could interfere with a user’s ability to access or use certified capabilities.
+
+Additional details about the obligations for Certified API Developers in the context of information blocking is available in the <a target="_blank" href="https://healthit.gov/wp-content/uploads/2025/02/Informatiion-Blocking-API_Fact-Sheet_508.pdf">Information Blocking Reminders Related to API Technology Fact Sheet</a>.
+
+HIPAA denial of individuals' request for access
+
+Under certain limited circumstances, a covered entity may deny an individual's request for access to all or a portion of the PHI requested. In some of these circumstances, an individual has a right to have the denial reviewed by a licensed health care professional designated by the covered entity who did not participate in the original decision to deny.
+
+Additional information about HIPAA denial of access is available in the <a target="_blank" href="https://www.hhs.gov/hipaa/for-professionals/privacy/guidance/access/index.html">Individuals’ Right under HIPAA to Access their Health Information 45 CFR § 164.524 Guidance Material</a>.
+
+45 CFR 170.315(g)(10) criterion requirements: patient authorization and authorization revocation
+
+In accordance with the requirement at 45 CFR 170.315(g)(10)(v)(A), Health IT Modules presented for testing and certification must include the ability for patients to authorize an application to receive their EHI based on individual FHIR resource level and individual sub-resource level scopes as finalized in the HTI-1 Final Rule (<a target="_blank" href="https://www.federalregister.gov/d/2023-28857/p-1250">89 FR 1294</a>). Furthermore, in accordance with the requirement at 45 CFR 170.315(g)(10)(vi), a Health IT Module's authorization server must be able to revoke and must revoke an authorized application's access at a patient's direction within 1 hour of the request.
+
+Additional information about the requirements in the § 170.315(g)(10) criterion to support patient authorization for apps to access their EHI is available in the <a target="_blank" href="https://healthit.gov/test-method/standardized-api-for-patient-and-population-services-acb-atl">45 CFR 170.315(g)(10) Certification Companion Guide</a>.
+
+API Maintenance of Certification requirements: API User authenticity verification and registration for production use
+
+In accordance with the API maintenance of certification requirements at 45 CFR 170.404(b)(1), a Certified API Developer is permitted to institute a process to verify the authenticity of API Users so long as such process is objective and the same for all API Users and completed within ten business days of receipt of an API User's request to register their software application for use with the Certified API Developer's Health IT Module certified to § 170.315(g)(10). Furthermore, a Certified API Developer must register and enable all applications for production use within five business days of completing its verification of an API User's authenticity.
+
+Additional information about authenticity verification and registration for production use API Maintenance of Certification requirements is available in the <a target="_blank" href="https://healthit.gov/certification-health-it/conditions-ccg/application-programming-interfaces/">§ 170.404 Application Programming Interfaces Certification Companion Guide</a> and the <a target="_blank" href="https://healthit.gov/blog/healthit-certification/app-registration-delay-no-more/">App Registration, Delay No More</a> blog post.
+
+API Condition of Certification requirements: API fees
+
+All fees related to certified API technology not otherwise permitted by the 45 CFR 170.404(a)(3) fees conditions section are prohibited from being imposed by a Certified API Developer.
+
+Additional information about fees related to certified API technology is available in the <a target="_blank" href="https://healthit.gov/certification-health-it/conditions-ccg/application-programming-interfaces/">§ 170.404 Application Programming Interfaces Certification Companion Guide</a>.
+
+***
+
+**Stakeholder Inquiry**: Is it compliant with CEHRT requirements for an EHR vendor to not support patient access to their health information via third-party apps (such as Apple Health, CommonHealth, MyLinks, One Record, etc.)?
+
+**ONC Response**: Thank you for your inquiry. Health IT Modules certified to the <a target="_blank" href="https://www.healthit.gov/test-method/standardized-api-patient-and-population-services">§ 170.315(g)(10)</a> "Standardized API for patient and population services" certification criterion are required to support the capability to respond to requests for a single patient’s data for all of the data included in the United States Core Data for Interoperability (USCDI) standard in accordance with the US Core implementation guide and Health Level 7 (HL7®) Fast Healthcare Interoperability Resources (FHIR®) v4.0.1 standards using application programming interface (API) technology. Additionally, in accordance with the <a target="_blank" href="https://www.healthit.gov/condition-ccg/application-programming-interfaces">§ 170.404</a> Maintenance of Certification requirements for app registration, a third-party app developer facilitating patients' access to their electronic health information (EHI) through an app should not have to wait more than 15 business days for a Certified API Developer to enable that app for production use with certified API technology certified to the § 170.315(g)(10) criterion. Background information about the registration process for third-party applications intended to be used by patients to access their EHI is available in the HealthIT.gov blog post <a target="_blank" href="https://www.healthit.gov/buzz-blog/information-blocking/app-registration-delay-no-more">"App Registration, Delay No More"</a>.
+
+Information about a Certified API Developer's certified API technology is available on the <a target="_blank" href="https://chpl.healthit.gov/">Certified Health IT Product List</a>, including publicly available links to complete business and technical documentation for Health IT Modules certified to the § 170.315(g)(10) criterion.
+
 ### 2025 Inquiries
 **Stakeholder Inquiry**: Is Pregnancy Intent required?
 
