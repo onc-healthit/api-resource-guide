@@ -6,4 +6,4 @@ markdownify==0.14.1
 requests==2.33.0
 six==1.16.0
 soupsieve==2.9
-urllib3==2.7.0
+urllib3==2.8.0
